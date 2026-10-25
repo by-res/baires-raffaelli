@@ -1,0 +1,8 @@
+entity_id,title,language,publisher,date_published,pages,isbn13,isbn10,work_id,verification_status,url
+inst-accessibility-en,The Fast Guide to Accessibility Design,en,BIS Publishers,2020,160,9789063695712,9063695713,work-accessibility,verified-primary,https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html
+inst-form-en,The Fast Guide to Architectural Form,en,BIS Publishers,2016,144,9789063694111,9063694113,work-form,verified-primary,https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form
+inst-form-fa,مبانی فرم,fa,Kasra Publishing,2019,144,9786006509952,,work-form-fa,verified-secondary,https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85
+inst-form-zh-hans,建筑造型速成指南: 创意、操作和实例,zh-Hans,机械工业出版社,2020,,9787111637998,,work-form-zh-hans,verified-primary,http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI
+inst-form-zh-hant,建築造型速成指南,zh-Hant,龍溪國際圖書,2022-02-25,144,9786269565818,6269565812,work-form-zh-hant,verified-primary,http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1
+inst-fundamentals-en,The Fast Guide to the Fundamentals of Architectural Design,en,BIS Publishers,2023,144,9789063696856,906369685X,work-fundamentals,verified-primary,https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X
+thesis-phd-print,Semantica e tipologia della forma nell'architettura contemporanea ...,it,Sapienza Università di Roma,2012,140,,,thesis-phd-work,verified-primary,https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805

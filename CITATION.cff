@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Baires Raffaelli – bibliographic, academic and authority control dataset"
+type: dataset
+version: "3.0"
+date-released: 2026-10-25
+license: CC0-1.0
+url: "https://w3id.org/baires-raffaelli/"
+repository-code: "https://github.com/by-res/baires-raffaelli"
+authors:
+  - family-names: Raffaelli
+    given-names: Baires
+    orcid: "https://orcid.org/0009-0001-6673-2672"
+keywords:
+  - authority control
+  - BIBFRAME
+  - Schema.org
+  - linked open data
+  - architecture
+  - accessibility

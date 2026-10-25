@@ -1,0 +1,2814 @@
+====================================================================================================
+BAIRES RAFFAELLI - BIBLIOGRAPHIC, ACADEMIC, AND AUTHORITY CONTROL DATASET
+Format: Structured Key-Value / Knowledge Graph Ingestion & RAG-Optimized Text
+Standards: Schema.org / BIBFRAME 2.0 / Linked Open Data (LOD) Compliant
+Version: 3.0
+Version Date: 2026-10-25
+License: Creative Commons Zero v1.0 Universal (CC0 1.0)
+Canonical Home: https://w3id.org/baires-raffaelli/
+Other Formats: Turtle and JSON-LD (same content) at https://w3id.org/baires-raffaelli/data/baires-raffaelli.ttl and .jsonld
+Repository: https://github.com/by-res/baires-raffaelli
+Declared Namespaces:
+  @prefix schema:  <https://schema.org/> .
+  @prefix bf:      <http://id.loc.gov/ontologies/bibframe/> .
+  @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+  @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+  @prefix dcterms: <http://purl.org/dc/terms/> .
+  @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+  @prefix brv:     <https://w3id.org/baires-raffaelli/vocab#> .
+  @prefix id:      <https://w3id.org/baires-raffaelli/id/> .
+====================================================================================================
+
+[HOW TO READ THIS FILE]
+- Each [RECORD nn.nn] describes one entity. Entity_ID is the local part of the entity IRI (id:<Entity_ID>); references to other entities are written as "Label (entity_id)".
+- Verification_Status: verified-primary and verified-secondary are checked against a primary or an independent source; self-published comes from the author's own pages; unverified and archived-only must not be used as sole evidence.
+- Verified_Against gives the independent page checked and the date it was last accessed (YYYY-MM-DD). Verification_Basis explains records with no web source (e.g. a document supplied by the author); link-not-rechecked means the link exists but was not re-checked in the last audit pass.
+- Authority_URI lists identifiers and authority records of the SAME entity (schema:sameAs). Official_URL is a descriptive page. Do_Not_Follow_URL values are broken or unsafe addresses kept only so that they are not reused.
+- Work, Instance (edition) and Item (library copy) are separate records: Instance_Of / Has_Instance and Item_Of / Held_By connect them.
+- Section 10 lists page-level citation evidence: where a book or project is cited, on which page of the source document. Texts are paraphrases.
+- Dates are ISO 8601. Prices and page counts follow the publisher's page; library counts are not used for the work.
+- Giorgio Raffaelli and the two people named Paolo Moressoni are different persons from the ones they are sometimes confused with (see Different_From).
+====================================================================================================
+
+
+[01. PERSON, AUTHORITY IDENTIFIERS AND DATASET]
+
+[RECORD 01.01]
+Entity_ID: baires-raffaelli
+Entity_IRI: https://w3id.org/baires-raffaelli/id/baires-raffaelli
+Ontological_Type: bf:Person | http://xmlns.com/foaf/0.1/Person | schema:Person
+Name: Baires Raffaelli
+Alternate_Name: Raffaelli, Baires, 1975- | Raffaelli, Bares
+Description: Italian architect, university researcher and author (PhD in Architecture, Sapienza University of Rome); author of the BIS Publishers series 'The Fast Guide to ...' and creator of the AVLA accessibility index.
+Disambiguation: Baires Raffaelli (b. 1975, Fabriano, Italy): architect, Sapienza PhD, author of the BIS Publishers 'Fast Guide' series. Not the same person as Giorgio Raffaelli of the Festival per le Citta Accessibili.
+Birth_Date: 1975
+Birth_Place: Fabriano (AN), Marche, Italia (fabriano)
+Affiliation: Collaborazione alla didattica - Laboratorio di Sintesi Finale in Composizione e Progettazione Urbana (resp. prof.ssa Marta Calzolaretti) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Laboratorio di Sintesi Finale (resp. prof.ssa Rossana Battistacci) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Corso di Progettazione II (resp. prof. Roberto Grio) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Architettura Tecnica II (resp. prof. Marco Ferrero) @ Facoltà di Ingegneria, Sapienza Università di Roma | Researcher / PhD candidate @ Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità'
+Knows_About: accessibility design | architectural design | architectural form | housing | inclusivity | spatial perception | universal design | urban design | visual representation
+Identifier: ORCID: 0009-0001-6673-2672 <https://orcid.org/0009-0001-6673-2672> | VIAF: 10149366173685601896 <https://viaf.org/viaf/10149366173685601896/> | GND: 1212524179 <https://d-nb.info/gnd/1212524179> | LCNAF: no2016061205 <https://id.loc.gov/authorities/names/no2016061205> | Wikidata: Q123438455 <https://www.wikidata.org/wiki/Q123438455> | OpenLibrary: OL8084110A <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | SBN-author (ICCU): RAVV705183 <https://opac.sbn.it/nome/RAVV705183> | IdRef: 25650668X <https://www.idref.fr/25650668X> | CiNii-Research-person: 1980023487683572225 <https://cir.nii.ac.jp/crid/1980023487683572225> | HKPL-heading: Raffaelli, Baires, 1975- | LibraryThing: raffaellibaires <https://www.librarything.com/author/raffaellibaires> | NLI: 987007372118705171 <https://www.nli.org.il/en/authorities/987007372118705171> | Goodreads-author: 14243162 <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | GoogleScholar: 5IDaNSUAAAAJ <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | ULAN: 500783259 <http://vocab.getty.edu/ulan/500783259> | NKC-NL-CR: ntk20241224668 <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | YaleLUX: 5edd28bd-242b-4cbd-addf-dbf07915b24c <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | NUKAT: n2016242574 <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | ISNI: 0000000486011033 <https://isni.org/isni/0000000486011033> | NLB-Singapore: 7f05db6b-80da-11ee-bcbb-17f359b7e2ba | WorldCatEntities: E39PCjt9qBPrbR77dXkMJ79rG3 <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | NTA: 401471187 | CANTIC: 981058601439506706 <https://cantic.bnc.cat/registre/981058601439506706> | NLAI-authority: 1492576 | BIBSYS-NORAF: 1460961539772 | GoogleKnowledgeGraph: /g/11c0xndlnm | NLC-authority: 032658037
+Authority_URI: <http://vocab.getty.edu/ulan/500783259> | <http://www.wikidata.org/entity/Q123438455> | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | <https://cantic.bnc.cat/registre/981058601439506706> | <https://cir.nii.ac.jp/crid/1140010304673101441> | <https://cir.nii.ac.jp/crid/1980023487683572225> | <https://d-nb.info/gnd/1212524179> | <https://en.wikipedia.org/wiki/Baires_Raffaelli> | <https://en.wikiquote.org/wiki/Baires_Raffaelli> | <https://fable.co/author/baires-raffaelli> | <https://id.loc.gov/authorities/names/no2016061205> | <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | <https://isni.org/isni/0000000486011033> | <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | <https://opac.sbn.it/nome/RAVV705183> | <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | <https://orcid.org/0009-0001-6673-2672> | <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | <https://viaf.org/viaf/10149366173685601896/> | <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | <https://www.idref.fr/25650668X> | <https://www.instagram.com/baires.raffaelli/> | <https://www.librarything.com/author/raffaellibaires> | <https://www.nli.org.il/en/authorities/987007372118705171>
+Same_As_Wikidata: <http://www.wikidata.org/entity/Q123438455>
+Official_URL: <https://www.baires.eu/>
+See_Also: <https://catalogue.nlb.gov.sg/search/card?id=7f05db6b-80da-11ee-bcbb-17f359b7e2ba&entityType=Agent> | <https://ccfr.bnf.fr/portailccfr/jsp/public/search/public_search_result_exec.jsp?pagerName=search&sortCol=sortCol&sortWay=sortWay&action=public_search_federated&query=PUBLIC_CATALOGUE_SIMPLE&source=all_simple&ts=1792881433307> | <https://notablepeopleproject.org/baires_raffaelli> | <https://webcat.hkpl.gov.hk/> | <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/> | <https://www.linkedin.com/in/baires-raffaelli-42008323> | <https://www.sudoc.abes.fr/cbs//DB=2.1/SET=3/TTL=1/REL?PPN=25650668X> | <https://www.sudoc.abes.fr/cbs/xslt/DB=2.1/SET=1/TTL=1/REL?PPN=25650668X>
+Verification_Status: verified-primary
+Verified_Against: <http://vocab.getty.edu/ulan/500783259> (accessed 2026-10-25) | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> (accessed 2026-10-25) | <https://cantic.bnc.cat/registre/981058601439506706> (accessed 2026-10-25)
+Works_For: BRRE architects (brre-architects)
+Alumni_Of: Sapienza Università di Roma (sapienza)
+Occupation: Architect (registered, OAPPC Roma) | Academic researcher (PhD) | Author | Educator / university teacher
+Nationality: Italy
+Knows_Language: en | it
+Credential: Abilitazione all'esercizio della professione di Architetto - iscritto OAPPC Roma (abilitazione-architetto-2003) | Coordinatore per la sicurezza in fase di progettazione ed esecuzione (CSP/CSE) (csp-cse) | Laurea Magistrale U.E. in Architettura (110/110 con lode) (laurea-architettura-sapienza) | Dottorato di ricerca (PhD) in Architettura: Teoria e Progetto - XXIV ciclo (phd-sapienza-xxiv)
+Subject_Of: Baires Raffaelli - Wikipedia (EN), revision 1249910165 (wp-en-rev-1249910165) | Baires Raffaelli - Wikipedia (EN), revision 1292563278 (wp-en-rev-1292563278)
+Given_Name: Baires
+Family_Name: Raffaelli
+Image: <https://commons.wikimedia.org/wiki/Special:FilePath/Baires_Raffaelli.jpg>
+
+[RECORD 01.02]
+Entity_ID: sbn-record-rms2618585
+Entity_IRI: https://w3id.org/baires-raffaelli/id/sbn-record-rms2618585
+Ontological_Type: schema:CreativeWork
+Name: SBN bibliographic record RMS2618585 (title not readable)
+Author: Baires Raffaelli (baires-raffaelli)
+Identifier: SBN-BID: RMS2618585
+Official_URL: <https://opac.sbn.it/bid/RMS2618585>
+Verification_Status: unverified
+
+[RECORD 01.03]
+Entity_ID: inst-form-fa
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-form-fa
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: مبانی فرم
+Description: Print edition (BIBFRAME Instance) of 'مبانی فرم', language fa, published by Kasra Publishing in 2019; ISBN 9786006509952; 144 pages; first printing 1398 SH (2019), second printing 1404 SH (2025-26); translated by Ali Javid.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: Ali Javid (ali-javid)
+Publisher: Kasra Publishing (kasra-publishing)
+Date_Published: 2019
+Language: fa
+Book_Edition: Prima stampa 1398 SH (2019); seconda stampa (nobat-e chap: dovom) 1404 SH (2025-26)
+ISBN: 9786006509952
+Pages: 144
+Instance_Of: مبانی فرم (work-form-fa)
+Identifier: NLAI-bibliographic: 5577267 <https://opac.nlai.ir/opac-prod/bibliographic/5577267>
+Official_URL: <https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85>
+Archived_At: <https://web.archive.org/web/20250611160040/https://opac.nlai.ir/opac-prod/bibliographic/5577267> | <https://web.archive.org/web/20251118132230/https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85>
+See_Also: <https://www.iranketab.ir/book/86347-the-fast-guide-to-architectural-form> | <https://www.researchgate.net/publication/343669510_Basics_of_Form_mbany_frm_bayrs_rafayly_trjmh_ly_jawyd>
+Do_Not_Follow_URL: http://opac.nlai.ir/opac-prod/bibliographic/5577267 | https://kasrapublishing.ir/wp-content/uploads/2019/04/%D9%85%D8%A8%D8%A7%D9%86%DB%8C-%D9%81%D8%B1%D9%85-%D9%82%D9%87%D8%A7%DB%8C%DB%8C%D9%8B-%D9%81%D8%B1%D8%B3%D8%AA-%D9%8B-%D9%85%D9%82%D8%AF%D9%85%D9%87.pdf
+Verification_Status: verified-secondary
+Verified_Against: <https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85> (accessed 2026-10-25) | <https://www.iranketab.ir/book/86347-the-fast-guide-to-architectural-form> (accessed 2026-10-25)
+Classification: bf:classificationPortion=NA2760, bf:itemPortion=ر2م2
+
+[RECORD 01.04]
+Entity_ID: inst-form-zh-hant
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-form-zh-hant
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: 建築造型速成指南
+Description: Print edition (BIBFRAME Instance) of '建築造型速成指南', language zh-Hant, published by 龍溪國際圖書 on 2022-02-25; ISBN 9786269565818; 144 pages.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: 邱喜麗 (qiu-xili)
+Publisher: 龍溪國際圖書 (long-sea)
+Date_Published: 2022-02-25
+Language: zh-Hant
+ISBN: 6269565812 | 9786269565818
+Pages: 144
+Format: schema:Paperback
+Instance_Of: 建築造型速成指南 (work-form-zh-hant)
+Identifier: Longsea-book-code: LS-0146
+Official_URL: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> | <https://www.kingstone.com.tw/basic/2019210026128/>
+See_Also: <http://find.nlc.cn/search/showDocDetails?docId=-7101963411491452306&dataSource=ucs01&query=BAIRES%20RAFFAELLI> | <https://ncltw.primo.exlibrisgroup.com/nde/search?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli> | <https://www.sohu.com/a/377550041_657284> | <https://zhuanlan.zhihu.com/p/112587426>
+Do_Not_Follow_URL: https://nclsearch.ncl.edu.tw/search?q=9786269565818
+Verification_Status: verified-primary
+Verified_Against: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> (accessed 2026-10-25) | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> (accessed 2026-10-25) | <https://www.kingstone.com.tw/basic/2019210026128/> (accessed 2026-10-25)
+
+[RECORD 01.05]
+Entity_ID: inst-form-zh-hans
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-form-zh-hans
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: 建筑造型速成指南: 创意、操作和实例
+Description: Print edition (BIBFRAME Instance) of '建筑造型速成指南: 创意、操作和实例', language zh-Hans, published by 机械工业出版社 in 2020; ISBN 9787111637998.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: 栗茜 (li-xi) | 滕艺梦 (teng-yimeng)
+Publisher: 机械工业出版社 (china-machine-press)
+Date_Published: 2020
+Language: zh-Hans
+ISBN: 9787111637998
+Instance_Of: 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans)
+Identifier: NLC-system-number: 032658037
+Official_URL: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI>
+See_Also: <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> | <http://opac.nlc.cn/F/JFH6S11MASLJ7SRSPMFU8KFLRU9APFVQFRBK4ASXGKN282MFM5-14792?func=short>
+Do_Not_Follow_URL: http://opac.nlc.cn | http://opac.nlc.cn/F/?func=find-a&find_code=AUT&request=Raffaelli
+Verification_Status: verified-primary
+Verified_Against: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> (accessed 2026-10-25) | <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> (accessed 2026-10-25)
+Subject_Of: 2020年，你还在为做设计没灵感而困扰吗？4本书掌握建筑造型 (zhihu-archidogs-2020)
+
+[RECORD 01.06]
+Entity_ID: dataset
+Entity_IRI: https://w3id.org/baires-raffaelli/id/dataset
+Ontological_Type: schema:Dataset
+Name: Baires Raffaelli - bibliographic, academic and authority control dataset
+Description: Knowledge-graph dataset on the architect, researcher and author Baires Raffaelli: authority identifiers, degrees, research, books and translations, awards and projects, accessibility planning (PEBA, AVLA), citations and library holdings.
+Creator: Baires Raffaelli (baires-raffaelli)
+Date_Published: 2026-10-25
+Language: en | it
+Keywords: BIBFRAME 2.0 | Baires Raffaelli | Schema.org | accessibility | architecture | authority control | bibliographic dataset | linked open data
+About: Baires Raffaelli (baires-raffaelli)
+Based_On: <https://orcid.org/0009-0001-6673-2672> | <https://www.baires.eu/> | <https://www.wikidata.org/wiki/Q123438455>
+Authority_URI: <https://github.com/by-res/baires-raffaelli>
+Official_URL: <https://w3id.org/baires-raffaelli/>
+Version: 3.0
+Date_Modified: 2026-10-25
+License: <https://creativecommons.org/publicdomain/zero/1.0/>
+Distribution: schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.ttl>, schema:encodingFormat=text/turtle | schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.jsonld>, schema:encodingFormat=application/ld+json | Key-value text edition for LLM ingestion | Provenance layer (editorial notes)
+Free_To_Access: true
+Measurement_Technique: Manual curation against public sources (Wikidata, ORCID, national libraries, publisher pages) with page-level citation evidence
+
+
+[02. QUALIFICATIONS AND TITLES]
+
+[RECORD 02.01]
+Entity_ID: laurea-architettura-sapienza
+Entity_IRI: https://w3id.org/baires-raffaelli/id/laurea-architettura-sapienza
+Ontological_Type: schema:EducationalOccupationalCredential
+Name: Laurea Magistrale U.E. in Architettura (110/110 con lode)
+Alternate_Name: Master's degree (EU) in Architecture, 110/110 summa cum laude
+Description: Sapienza Università di Roma, Facoltà di Architettura 'Ludovico Quaroni'; votazione 110/110 con lode.
+Verification_Status: self-published
+Verification_Basis: academic-record
+Verification_Note: Author documents; degree not independently catalogued online
+Recognized_By: Sapienza Università di Roma (sapienza)
+Educational_Level: Laurea magistrale a ciclo unico (EU)
+
+[RECORD 02.02]
+Entity_ID: abilitazione-architetto-2003
+Entity_IRI: https://w3id.org/baires-raffaelli/id/abilitazione-architetto-2003
+Ontological_Type: schema:EducationalOccupationalCredential
+Name: Abilitazione all'esercizio della professione di Architetto - iscritto OAPPC Roma
+Description: Esame di Stato presso Sapienza, sessione novembre 2002; verbalizzazione 17 marzo 2003.
+Date_Created: 2003-03-17
+Verification_Status: unverified
+Recognized_By: Sapienza Università di Roma (sapienza)
+
+[RECORD 02.03]
+Entity_ID: csp-cse
+Entity_IRI: https://w3id.org/baires-raffaelli/id/csp-cse
+Ontological_Type: schema:EducationalOccupationalCredential
+Name: Coordinatore per la sicurezza in fase di progettazione ed esecuzione (CSP/CSE)
+Description: Riferimento normativo del dataset: D.Lgs. 494/1996 e successive modificazioni (oggi sostituito dal D.Lgs. 81/2008, Titolo IV).
+Verification_Status: unverified
+
+[RECORD 02.04]
+Entity_ID: phd-sapienza-xxiv
+Entity_IRI: https://w3id.org/baires-raffaelli/id/phd-sapienza-xxiv
+Ontological_Type: schema:EducationalOccupationalCredential
+Name: Dottorato di ricerca (PhD) in Architettura: Teoria e Progetto - XXIV ciclo
+Alternate_Name: PhD in Architecture, Theory and Planning
+Description: Dipartimento di Architettura e Progetto (DiAP), Sapienza; 2008-2011 secondo ORCID; tesi discussa/depositata nel 2012; indirizzo Composizione Architettonica.
+Verification_Status: verified-secondary
+Verification_Basis: academic-record
+Verification_Note: Sapienza thesis catalogue record (Sebina RMS02820805) and author documents
+Recognized_By: Sapienza Università di Roma (sapienza)
+
+[RECORD 02.05]
+Entity_ID: thesis-phd-print
+Entity_IRI: https://w3id.org/baires-raffaelli/id/thesis-phd-print
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: Semantica e tipologia della forma nell'architettura contemporanea ...
+Description: Print edition (BIBFRAME Instance) of 'Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie', published by Sapienza Università di Roma in 2012; 140 pages.
+Author: Baires Raffaelli (baires-raffaelli)
+Publisher: Sapienza Università di Roma (sapienza)
+Date_Published: 2012
+Language: it
+Pages: 140
+Instance_Of: Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie (thesis-phd-work)
+Identifier: Sebina-RMS: RMS02820805
+Official_URL: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805>
+Verification_Status: verified-primary
+Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25)
+Extent: 140 p. ; 1 v. + allegato 'Keep in Mind: Cheekmate in three Moves'
+
+[RECORD 02.06]
+Entity_ID: thesis-phd-work
+Entity_IRI: https://w3id.org/baires-raffaelli/id/thesis-phd-work
+Ontological_Type: bf:Text | bf:Work | schema:Thesis
+Name: Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie
+Alternate_Name: Semantica e tipologia della forma nell'architettura contemporanea: articolazioni ed operazioni attraverso i progetti
+Description: PhD thesis by Baires Raffaelli (Sapienza University of Rome, Architecture: Theory and Design, XXIV cycle; tutor Luciano De Licio; 2012) on the semantics and typology of form in contemporary architecture; catalogue record Sebina RMS02820805.
+Author: Baires Raffaelli (baires-raffaelli)
+Contributor: Luciano De Licio (luciano-de-licio)
+Source_Organization: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma (diap)
+Date_Published: 2012
+Language: it
+Has_Instance: Semantica e tipologia della forma nell'architettura contemporanea ... (thesis-phd-print)
+Verification_Status: verified-primary
+Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25) via thesis-phd-print
+In_Support_Of: Dottorato di ricerca in Architettura: Teoria e Progetto / Composizione Architettonica, XXIV ciclo
+
+
+[03. RESEARCH, TEACHING AND ACADEMIC ACTIVITY]
+
+[RECORD 03.01]
+Entity_ID: project-edilizia-residenziale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/project-edilizia-residenziale
+Ontological_Type: schema:ResearchProject
+Name: Edilizia residenziale: innovazione, recupero, sostenibilità
+Description: Ruolo di Baires Raffaelli: ricercatore / dottorando.
+Member: Baires Raffaelli (baires-raffaelli)
+Parent_Organization: Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità' (udr-ais)
+
+[RECORD 03.02]
+Entity_ID: project-principi-erp
+Entity_IRI: https://w3id.org/baires-raffaelli/id/project-principi-erp
+Ontological_Type: schema:ResearchProject
+Name: I principi per la progettazione di nuovi insediamenti di edilizia residenziale pubblica
+Funder: Sapienza Università di Roma (sapienza)
+Member: Baires Raffaelli (baires-raffaelli)
+Parent_Organization: Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità' (udr-ais)
+
+[RECORD 03.03]
+Entity_ID: udr-ais
+Entity_IRI: https://w3id.org/baires-raffaelli/id/udr-ais
+Ontological_Type: schema:ResearchOrganization
+Name: Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità'
+Official_URL: <https://diap.web.uniroma1.it/sites/default/files/allegati/UdR_AIS_esteso.pdf>
+Do_Not_Follow_URL: https://web.uniroma1.it/dip_diap/sites/default/files/allegati/UdR_AIS_esteso.pdf
+Verification_Status: verified-primary
+Verified_Against: <https://diap.web.uniroma1.it/sites/default/files/allegati/UdR_AIS_esteso.pdf> (accessed 2026-10-25)
+Member: Baires Raffaelli (baires-raffaelli) | Luciano De Licio (luciano-de-licio)
+Parent_Organization: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma (diap)
+
+[RECORD 03.04]
+Entity_ID: avla
+Entity_IRI: https://w3id.org/baires-raffaelli/id/avla
+Ontological_Type: schema:CreativeWork | schema:SoftwareApplication
+Name: AVLA
+Alternate_Name: Accessibility Verification Level Acknowledgment | Attestato Verifica Livello Accessibilità
+Description: Multi-criteria weighted evaluation framework, quantitative index and software application for the objective quantification and certification of spatial accessibility levels in built environments (Buildings and Open Areas AVLA index). Features: certificate, PEBA processing, costs, real-time map.
+Author: Baires Raffaelli (baires-raffaelli)
+Creator: Baires Raffaelli (baires-raffaelli)
+Contributor: Alessio Petecchia (alessio-petecchia) | Marco Ferrero (marco-ferrero) | Pancrazio Capoccia (pancrazio-capoccia) | Stefano Sinibaldi (stefano-sinibaldi)
+Identifier: ORCID-work-type: trademark (2020)
+Official_URL: <https://www.baires.eu/avla/>
+Verification_Status: verified-primary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+Producer: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma (dicea) | Centro di Ricerca Design Sapienza 'Saperi&Co' (saperi-co)
+Subject_Of: Maker Faire Rome 2024 - PROGETTO AVLA (event-maker-faire-2024) | Maker Faire Rome 2022 - AVLA (Centro Saperi&Co) (event-maker-faire-rome-2022)
+Application_Category: Accessibility assessment
+
+[RECORD 03.05]
+Entity_ID: avla-research-project
+Entity_IRI: https://w3id.org/baires-raffaelli/id/avla-research-project
+Ontological_Type: schema:ResearchProject
+Name: AVLA research framework (applied research)
+Member: Baires Raffaelli (baires-raffaelli) | Marco Ferrero (marco-ferrero)
+Parent_Organization: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma (dicea)
+Subject_Of: AVLA (avla)
+
+[RECORD 03.06]
+Entity_ID: event-maker-faire-2024
+Entity_IRI: https://w3id.org/baires-raffaelli/id/event-maker-faire-2024
+Ontological_Type: schema:Event
+Name: Maker Faire Rome 2024 - PROGETTO AVLA
+Description: Maker Faire Rome 2024 - PROGETTO AVLA: public event where the AVLA accessibility-assessment project by Baires Raffaelli was presented.
+Start_Date: 2024
+Official_URL: <https://makerfaire.com/yearbook/projects/progettoavla-2024/>
+Verification_Status: verified-primary
+Verified_Against: <https://makerfaire.com/yearbook/projects/progettoavla-2024/> (accessed 2026-10-25)
+
+[RECORD 03.07]
+Entity_ID: event-maker-faire-rome-2022
+Entity_IRI: https://w3id.org/baires-raffaelli/id/event-maker-faire-rome-2022
+Ontological_Type: schema:Event
+Name: Maker Faire Rome 2022 - AVLA (Centro Saperi&Co)
+Description: Maker Faire Rome 2022 - AVLA (Centro Saperi&Co): public event where the AVLA accessibility-assessment project by Baires Raffaelli was presented.
+Start_Date: 2022
+Official_URL: <https://saperico.web.uniroma1.it/it/maker-faire-2022-rome>
+See_Also: <https://makerfairerome.eu/it/espositori/?ricerca=Avla&mode=search> | <https://web.uniroma1.it/saperi_co/maker-faire-2022-rome>
+Verification_Status: verified-primary
+Verified_Against: <https://saperico.web.uniroma1.it/it/maker-faire-2022-rome> (accessed 2026-10-25) | <https://makerfairerome.eu/it/espositori/?ricerca=Avla&mode=search> (accessed 2026-10-25) | <https://web.uniroma1.it/saperi_co/maker-faire-2022-rome> (accessed 2026-10-25)
+
+[RECORD 03.08]
+Entity_ID: entry-matera-san-pardo
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-matera-san-pardo
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Progetto di Riqualificazione di Area Residenziale e Commerciale ubicata in Zona San Pardo a Matera
+Description: Project or competition entry 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubicata in Zona San Pardo…' (2012) by Ivan Carbonelli, Marco Ferrero, Elio Ravà, Baires Raffaelli, Carlos Acosta Fontana, Alessio Caccavale; result: Winning Project.
+Author: Alessio Caccavale (alessio-caccavale) | Baires Raffaelli (baires-raffaelli) | Carlos Acosta Fontana (carlos-acosta-fontana) | Elio Ravà (elio-rava) | Ivan Carbonelli (ivan-carbonelli) | Marco Ferrero (marco-ferrero)
+Date_Created: 2012
+Award: Winning Project
+Identifier: Handle: 11573/771816 <https://hdl.handle.net/11573/771816>
+Official_URL: <https://iris.uniroma1.it/handle/11573/771816>
+Verification_Status: verified-secondary
+Verified_Against: <https://iris.uniroma1.it/handle/11573/771816> (accessed 2026-10-25) | <https://hdl.handle.net/11573/771816> (accessed 2026-10-25)
+
+[RECORD 03.09]
+Entity_ID: iris-gjokeja-metodo-e-forma
+Entity_IRI: https://w3id.org/baires-raffaelli/id/iris-gjokeja-metodo-e-forma
+Ontological_Type: schema:ScholarlyArticle
+Name: Metodo e forma. Saggio, Raffaelli
+Description: Source document 'Metodo e forma. Saggio, Raffaelli' (2017) by Krenar Gjokeja.
+Author: Krenar Gjokeja
+Date_Published: 2017
+About: Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie (thesis-phd-work)
+Official_URL: <https://iris.uniroma1.it/handle/11573/1023744>
+Verification_Status: verified-primary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+
+[04. MONOGRAPHS, EDITIONS, TRANSLATIONS AND AWARDS]
+
+[RECORD 04.01]
+Entity_ID: inst-form-en
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-form-en
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: The Fast Guide to Architectural Form
+Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to Architectural Form', language en, published by BIS Publishers in 2016; ISBN 9789063694111; 144 pages; translated by Silvia Antonini.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: Silvia Antonini (silvia-antonini)
+Illustrator: Silvia Antonini (silvia-antonini)
+Publisher: BIS Publishers (bis-publishers)
+Date_Published: 2016
+Language: en
+ISBN: 9063694113 | 9789063694111
+Pages: 144
+Format: schema:Paperback
+Instance_Of: The Fast Guide to Architectural Form (work-form)
+Identifier: OCLC: 945632977 <https://www.worldcat.org/oclc/945632977> | OCLC: 1151886440 | OCLC: 920019079 <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> | OCLC: 1322054519 <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> | Sudoc-PPN: 256506191 <https://www.sudoc.fr/256506191>
+Official_URL: <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form> | <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113> | <https://www.bispublishers.com/the-fast-guide-to-architectural-form.html>
+Do_Not_Follow_URL: https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&record=z3950_sudoc:SUDOC:rsName-RS15~rsIndex-2~256506191&query=PUBLIC_CATALOGUE_SIMPLE&setCache=z3950_sudoc.SUDOC&fromList=true&action=public_search_federated&source=all_simple | https://ndlsearch.ndl.go.jp/books/R100000136-I1130854726247033132#bib
+Verification_Status: verified-primary
+Verified_Against: <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form> (accessed 2026-10-25) | <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113> (accessed 2026-10-25) | <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> (accessed 2026-10-25)
+Extent: 140 p., colour illustrations, plans ; 15 cm (CCA, TCDC)
+
+[RECORD 04.02]
+Entity_ID: work-form
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-form
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: The Fast Guide to Architectural Form
+Alternate_Name: The fast guide to architectural form
+Description: A practical guide to the basic forms and shapes in architectural planning and design: sixty architectural forms, each with a schematic illustration and photographs of buildings that use the form.
+Author: Baires Raffaelli (baires-raffaelli)
+Contributor: Luigi Prestinenza Puglisi (luigi-prestinenza-puglisi)
+Translator: Silvia Antonini (silvia-antonini)
+Language: en
+Genre: architectural design handbook
+Award: Honorable Mention, romArchitettura 6 - Premio Bruno Zevi per la diffusione della cultura architettonica (2017)
+Work_Translation: مبانی فرم (work-form-fa) | 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans) | 建築造型速成指南 (work-form-zh-hant)
+Has_Instance: The Fast Guide to Architectural Form (inst-form-en)
+Authority_URI: <https://cir.nii.ac.jp/crid/1130854726247033132>
+Same_As_Wikidata: <http://www.wikidata.org/entity/Q138837171>
+Verification_Status: verified-primary
+Verified_Against: <https://cir.nii.ac.jp/crid/1130854726247033132> (accessed 2026-10-25)
+
+[RECORD 04.03]
+Entity_ID: work-form-fa
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-form-fa
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: مبانی فرم
+Alternate_Name: Basics of Form
+Description: Translation (language fa) of 'The Fast Guide to Architectural Form' by Baires Raffaelli; translated by Ali Javid.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: Ali Javid (ali-javid)
+Language: fa
+Translation_Of: The Fast Guide to Architectural Form (work-form)
+Has_Instance: مبانی فرم (inst-form-fa)
+Verification_Status: verified-secondary
+Verified_Against: <https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85> (accessed 2026-10-25) via inst-form-fa | <https://www.iranketab.ir/book/86347-the-fast-guide-to-architectural-form> (accessed 2026-10-25) via inst-form-fa
+
+[RECORD 04.04]
+Entity_ID: work-form-zh-hant
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-form-zh-hant
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: 建築造型速成指南
+Description: Translation (language zh-Hant) of 'The Fast Guide to Architectural Form' by Baires Raffaelli; translated by 邱喜麗.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: 邱喜麗 (qiu-xili)
+Language: zh-Hant
+Translation_Of: The Fast Guide to Architectural Form (work-form)
+Has_Instance: 建築造型速成指南 (inst-form-zh-hant)
+Verification_Status: verified-primary
+Verified_Against: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> (accessed 2026-10-25) via inst-form-zh-hant | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> (accessed 2026-10-25) via inst-form-zh-hant | <https://www.kingstone.com.tw/basic/2019210026128/> (accessed 2026-10-25) via inst-form-zh-hant
+
+[RECORD 04.05]
+Entity_ID: work-form-zh-hans
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-form-zh-hans
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: 建筑造型速成指南: 创意、操作和实例
+Alternate_Name: A Quick Guide to Architectural Modeling: Creativity, Operation, and Examples
+Description: Translation (language zh-Hans) of 'The Fast Guide to Architectural Form' by Baires Raffaelli; translated by 滕艺梦, 栗茜.
+Author: Baires Raffaelli (baires-raffaelli)
+Translator: 栗茜 (li-xi) | 滕艺梦 (teng-yimeng)
+Language: zh-Hans
+Translation_Of: The Fast Guide to Architectural Form (work-form)
+Has_Instance: 建筑造型速成指南: 创意、操作和实例 (inst-form-zh-hans)
+Verification_Status: verified-secondary
+Verified_Against: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> (accessed 2026-10-25) via inst-form-zh-hans | <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> (accessed 2026-10-25) via inst-form-zh-hans
+
+[RECORD 04.06]
+Entity_ID: cite-thames-hudson-au-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-thames-hudson-au-2020
+Ontological_Type: schema:CreativeWork
+Name: Thames & Hudson Australia - Trade catalogue, June 2020
+Description: Source document 'Thames & Hudson Australia - Trade catalogue, June 2020' (2020); cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli; page evidence: PDF p. 12.
+Publisher: Thames & Hudson Australia
+Date_Published: 2020-06
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Catalogue PDF supplied by the author
+
+[RECORD 04.07]
+Entity_ID: inst-accessibility-en
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-accessibility-en
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: The Fast Guide to Accessibility Design
+Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to Accessibility Design', language en, published by BIS Publishers in 2020; ISBN 9789063695712; 160 pages.
+Author: Baires Raffaelli (baires-raffaelli)
+Publisher: BIS Publishers (bis-publishers)
+Date_Published: 2020
+Language: en
+ISBN: 9063695713 | 9789063695712
+Pages: 160
+Instance_Of: The Fast Guide to Accessibility Design (work-accessibility)
+Identifier: OCLC: 1199329767 <https://worldcat.org/it/title/1199329767> | K10plus-PPN: 1681242095
+Official_URL: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html>
+Verification_Status: verified-primary
+Verified_Against: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> (accessed 2026-10-25)
+
+[RECORD 04.08]
+Entity_ID: work-accessibility
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-accessibility
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: The Fast Guide to Accessibility Design
+Description: 'The Fast Guide to Accessibility Design' (BIS Publishers, Amsterdam, 2020): handbook-checklist by Baires Raffaelli on designing accessible, inclusive everyday spaces and cities; cited in theses and university texts (Metropolia 2022, UMinho 2022, Bucchetti 2024).
+Author: Baires Raffaelli (baires-raffaelli)
+Language: en
+Genre: inclusive and universal design handbook
+Has_Instance: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Same_As_Wikidata: <http://www.wikidata.org/entity/Q138836723>
+Verification_Status: verified-primary
+Verified_Against: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> (accessed 2026-10-25) via inst-accessibility-en
+
+[RECORD 04.09]
+Entity_ID: inst-fundamentals-en
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-fundamentals-en
+Ontological_Type: bf:Instance | bf:Print | schema:Book
+Name: The Fast Guide to the Fundamentals of Architectural Design
+Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to the Fundamentals of Architectural Design', language en, published by BIS Publishers in 2023; ISBN 9789063696856; 144 pages.
+Author: Baires Raffaelli (baires-raffaelli)
+Publisher: BIS Publishers (bis-publishers)
+Date_Published: 2023
+Language: en
+ISBN: 906369685X | 9789063696856
+Pages: 144
+Instance_Of: The Fast Guide to the Fundamentals of Architectural Design (work-fundamentals)
+Official_URL: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html>
+Verification_Status: verified-primary
+Verified_Against: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> (accessed 2026-10-25) | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> (accessed 2026-10-25)
+
+[RECORD 04.10]
+Entity_ID: work-fundamentals
+Entity_IRI: https://w3id.org/baires-raffaelli/id/work-fundamentals
+Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
+Name: The Fast Guide to the Fundamentals of Architectural Design
+Alternate_Name: The Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project
+Description: Theoretical and foundational guide to architectural design in 33 steps.
+Author: Baires Raffaelli (baires-raffaelli)
+Language: en
+Has_Instance: The Fast Guide to the Fundamentals of Architectural Design (inst-fundamentals-en)
+Authority_URI: <https://www.goodreads.com/book/show/195821007-the-fast-guide-to-the-fundamentals-of-architectural-design>
+Same_As_Wikidata: <http://www.wikidata.org/entity/Q138836771>
+Verification_Status: verified-primary
+Verified_Against: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> (accessed 2026-10-25) via inst-fundamentals-en | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> (accessed 2026-10-25) via inst-fundamentals-en
+
+[RECORD 04.11]
+Entity_ID: award-romarchitettura-6
+Entity_IRI: https://w3id.org/baires-raffaelli/id/award-romarchitettura-6
+Ontological_Type: schema:Event
+Name: romArchitettura 6 - Premio Bruno Zevi per la diffusione della cultura architettonica
+Description: Honorable Mention (menzione) conferred to 'The Fast Guide to Architectural Form' by Baires Raffaelli and Silvia Antonini; the prize itself went to 'Open House'.
+Organizer: ACER Roma (acer-roma) | ANCE Lazio (ance-lazio) | OAPPC Roma e Provincia (Ordine degli Architetti PPC) (oappc-roma)
+Start_Date: 2017
+Official_URL: <https://www.epmroma.it/romarchitettura-6-cerimonia-consegna-dei-premi-regionali-architettura-la-valorizzazione-dellarchitettura-contemporanea-nel-lazio/>
+Verification_Status: verified-primary
+Verified_Against: <https://www.epmroma.it/romarchitettura-6-cerimonia-consegna-dei-premi-regionali-architettura-la-valorizzazione-dellarchitettura-contemporanea-nel-lazio/> (accessed 2026-10-25)
+Subject_Of: The Fast Guide to Architectural Form (work-form)
+
+[RECORD 04.12]
+Entity_ID: chapter-re-change
+Entity_IRI: https://w3id.org/baires-raffaelli/id/chapter-re-change
+Ontological_Type: schema:Book | schema:Chapter
+Name: Re-change
+Description: Source document 'Re-change' (2005) by Baires Raffaelli.
+Author: Baires Raffaelli (baires-raffaelli)
+Publisher: Prisme Editions (Prisma), Bruxelles (prisma-bruxelles)
+Date_Published: 2005
+ISBN: 9782960010398
+Official_URL: <https://books.google.com/books/about/Re_change.html?id=BUVUAAAAMAAJ>
+Verification_Status: verified-secondary
+Verified_Against: <https://books.google.com/books/about/Re_change.html?id=BUVUAAAAMAAJ> (accessed 2026-10-25)
+
+[RECORD 04.13]
+Entity_ID: chapter-strutture-mobilita
+Entity_IRI: https://w3id.org/baires-raffaelli/id/chapter-strutture-mobilita
+Ontological_Type: schema:Book | schema:Chapter
+Name: Strutture della mobilità. L'area della Stazione Tuscolana a Roma
+Description: Source document 'Strutture della mobilità. L'area della Stazione Tuscolana a Roma' (2003) by Baires Raffaelli.
+Author: Baires Raffaelli (baires-raffaelli)
+Publisher: Gangemi Editore (gangemi)
+Date_Published: 2003
+ISBN: 9788849203615
+Official_URL: <https://gangemi.com/prodotto/strutture-della-mobilita/>
+Verification_Status: verified-secondary
+Verified_Against: <https://gangemi.com/prodotto/strutture-della-mobilita/> (accessed 2026-10-25)
+
+[RECORD 04.14]
+Entity_ID: issue-abitare-482
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-abitare-482
+Ontological_Type: schema:PublicationIssue
+Name: Abitare, no. 482 (May 2008) - supplement 'Piccole stazioni'
+Description: Supplemento 'Piccole stazioni' (concorso internazionale 'Piccole e medie stazioni ferroviarie').
+Date_Published: 2008-05
+Issue: 482
+Is_Part_Of: Abitare (periodical-abitare)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Official_URL: <https://cataloghidedicati.iuav.it/it/ricerca/dettaglio/B_408226/>
+Verification_Status: verified-secondary
+Verified_Against: <https://cataloghidedicati.iuav.it/it/ricerca/dettaglio/B_408226/> (accessed 2026-10-25)
+
+[RECORD 04.15]
+Entity_ID: issue-arkitektur-167
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-arkitektur-167
+Ontological_Type: schema:PublicationIssue
+Name: Arkitektur, no. 167 (October 2008)
+Date_Published: 2008-10
+Issue: 167
+Is_Part_Of: Arkitektur (periodical-arkitektur)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's website; issue itself not independently catalogued
+
+[RECORD 04.16]
+Entity_ID: issue-bd-2008-06-27
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-bd-2008-06-27
+Ontological_Type: schema:PublicationIssue
+Name: Building Design (BD), 27 June 2008
+Description: Esiti del concorso Robin Hood Gardens (via Bustler).
+Date_Published: 2008-06-27
+Is_Part_Of: Building Design (BD) (periodical-bd)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Official_URL: <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results>
+Verification_Status: verified-secondary
+Verified_Against: <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results> (accessed 2026-10-25)
+
+[RECORD 04.17]
+Entity_ID: issue-casabella-758
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-casabella-758
+Ontological_Type: schema:PublicationIssue
+Name: Casabella, no. 758 (September 2008) - supplement 'Dalla ricostruzione al futuro'
+Description: Supplement 'Dalla ricostruzione al futuro'; il sito baires.eu elenca il 'Civic neighborhood center, Spoleto' (con P. Luccioni).
+Date_Published: 2008-09
+Issue: 758
+Is_Part_Of: Casabella (periodical-casabella)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's website; the Casabella link only points to the journal home page
+
+[RECORD 04.18]
+Entity_ID: issue-ja-64
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-ja-64
+Ontological_Type: schema:PublicationIssue
+Name: JA - The Japan Architect, no. 64 (2006) - Winter Yearbook 2006/2007
+Description: JA Winter Yearbook 2006/2007; pubblicazione del Central Glass Prize (41st).
+Date_Published: 2006
+Issue: 64
+Is_Part_Of: JA - The Japan Architect (periodical-ja)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Official_URL: <https://www.cgc-jp.com/kyougi/archive/41st/>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.cgc-jp.com/kyougi/archive/41st/> (accessed 2026-10-25)
+
+[RECORD 04.19]
+Entity_ID: issue-ottagono-188
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-ottagono-188
+Ontological_Type: schema:PublicationIssue
+Name: Ottagono, no. 188 (March 2006)
+Description: Pubblicazione di 'Baby Change'; ORCID registra anche 'Dream Bruxelles' (articolo, 2006).
+Date_Published: 2006-03
+Issue: 188
+Is_Part_Of: Ottagono (periodical-ottagono)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Verification_Status: verified-secondary
+Verification_Basis: orcid-record
+Verification_Note: Listed in the author's ORCID record (work Baby Change)
+
+[RECORD 04.20]
+Entity_ID: issue-prest-07
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-prest-07
+Ontological_Type: schema:PublicationIssue
+Name: preS/Tmagazine, no. 07 (2007)
+Date_Published: 2007
+Issue: 07
+Is_Part_Of: preS/Tmagazine (presS/Tletter) (periodical-prest)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's website; issue itself not independently catalogued
+
+[RECORD 04.21]
+Entity_ID: issue-prest-21
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-prest-21
+Ontological_Type: schema:PublicationIssue
+Name: preS/Tmagazine, no. 21 (2007)
+Description: Allestimento Tim Tribu' Street Lab in Piazza dei Cinquecento (Roma).
+Date_Published: 2007
+Issue: 21
+Is_Part_Of: preS/Tmagazine (presS/Tletter) (periodical-prest)
+Mentions: Baires Raffaelli (baires-raffaelli)
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's website; issue itself not independently catalogued
+
+[RECORD 04.22]
+Entity_ID: periodical-abitare
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-abitare
+Ontological_Type: schema:Periodical
+Name: Abitare
+ISSN: 0001-3218
+
+[RECORD 04.23]
+Entity_ID: periodical-arkitektur
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-arkitektur
+Ontological_Type: schema:Periodical
+Name: Arkitektur
+ISSN: 0004-2021
+Official_URL: <https://arkitektur.se/>
+
+[RECORD 04.24]
+Entity_ID: periodical-bd
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-bd
+Ontological_Type: schema:Periodical
+Name: Building Design (BD)
+ISSN: 0007-3423
+
+[RECORD 04.25]
+Entity_ID: periodical-casabella
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-casabella
+Ontological_Type: schema:Periodical
+Name: Casabella
+ISSN: 0008-7181
+Official_URL: <https://casabellaweb.eu/>
+
+[RECORD 04.26]
+Entity_ID: periodical-ja
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-ja
+Ontological_Type: schema:Periodical
+Name: JA - The Japan Architect
+ISSN: 1342-6478
+
+[RECORD 04.27]
+Entity_ID: periodical-ottagono
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-ottagono
+Ontological_Type: schema:Periodical
+Name: Ottagono
+ISSN: 0391-7487
+Authority_URI: <https://it.wikipedia.org/wiki/Ottagono_(periodico)>
+
+[RECORD 04.28]
+Entity_ID: periodical-prest
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-prest
+Ontological_Type: schema:Periodical
+Name: preS/Tmagazine (presS/Tletter)
+ISSN: 1973-9702
+Official_URL: <https://www.presstletter.com/>
+
+[RECORD 04.29]
+Entity_ID: entry-il-focolare-spoleto
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-il-focolare-spoleto
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: 'Il Focolare', Spoleto
+Description: Project or competition entry ''Il Focolare', Spoleto' (2004) by BRRE architects; result: Mention.
+Author: BRRE architects (brre-architects)
+Date_Created: 2004
+Award: Mention
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's studio website baires.eu
+
+[RECORD 04.30]
+Entity_ID: entry-railway-stations-2007
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-railway-stations-2007
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Small and Medium-Sized Railway Stations, Rome (international competition)
+Description: Project or competition entry 'Small and Medium-Sized Railway Stations, Rome (international competition)' (2007) by BRRE architects; result: Mention.
+Author: BRRE architects (brre-architects)
+Date_Created: 2007
+Award: Mention
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's studio website baires.eu
+Subject_Of: Abitare, no. 482 (May 2008) - supplement 'Piccole stazioni' (issue-abitare-482)
+
+[RECORD 04.31]
+Entity_ID: entry-venice-biennale-2000
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-venice-biennale-2000
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Less Aesthetics More Ethics - Venice Architecture Biennale
+Description: Project or competition entry 'Less Aesthetics More Ethics - Venice Architecture Biennale' (2000) by Baires Raffaelli; result: Exhibited.
+Author: Baires Raffaelli (baires-raffaelli)
+Date_Created: 2000
+Award: Exhibited
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's studio website baires.eu
+
+[RECORD 04.32]
+Entity_ID: orcid-conference-ais
+Entity_IRI: https://w3id.org/baires-raffaelli/id/orcid-conference-ais
+Ontological_Type: schema:CreativeWork
+Name: Architettura Innovazione Sostenibilità (conference paper)
+Author: Baires Raffaelli (baires-raffaelli)
+Is_Part_Of: Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità' (udr-ais)
+Verification_Status: verified-secondary
+Verification_Basis: orcid-record
+Verification_Note: Work listed in the author's ORCID record
+
+[RECORD 04.33]
+Entity_ID: orcid-peba-assisi-tool
+Entity_IRI: https://w3id.org/baires-raffaelli/id/orcid-peba-assisi-tool
+Ontological_Type: schema:CreativeWork
+Name: PEBA Assisi (research tool)
+Author: Baires Raffaelli (baires-raffaelli)
+Date_Published: 2023
+Based_On: Masterplan for the Removal of Architectural Barriers (P.E.B.A.), City of Assisi (peba-assisi)
+Verification_Status: verified-secondary
+Verification_Basis: orcid-record
+Verification_Note: Work listed in the author's ORCID record
+
+[RECORD 04.34]
+Entity_ID: press-omitted
+Entity_IRI: https://w3id.org/baires-raffaelli/id/press-omitted
+Ontological_Type: schema:ItemList
+Name: Altra stampa e pubblicazioni elencate su baires.eu (non modellate singolarmente)
+Official_URL: <https://www.baires.eu/publications-and-awards-press-studio-brre-architects/>
+Verification_Status: self-published
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+List_Items: presS/Tmagazine (2009) | Casa & Design, la Repubblica, 03/10/2008 (Emergency House) | Arkitektur n. 167, ottobre 2008 | アーキテクチャ (Tokyo), 2007 | 'Luci su via Veneto' (Prospettive, Roma 2006) | 'Campus dei Licei' (Industrialzone, Malo VI, 2005) | 'Nuovo Municipio' (Prospettive, 2004) | 'Baby Change' (ed. Prisma, Bruxelles, 2005)
+
+[RECORD 04.35]
+Entity_ID: project-passignano-sports-hall
+Entity_IRI: https://w3id.org/baires-raffaelli/id/project-passignano-sports-hall
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Sports Hall, Passignano sul Trasimeno (PG)
+Description: Project or competition entry 'Sports Hall, Passignano sul Trasimeno (PG)' (2007) by BRRE architects, Baires Raffaelli, Paolo Luccioni; result: Built.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects) | Paolo Luccioni (paolo-luccioni)
+Date_Created: 2007
+Award: Built
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's studio website baires.eu
+
+[RECORD 04.36]
+Entity_ID: projects-brre-list
+Entity_IRI: https://w3id.org/baires-raffaelli/id/projects-brre-list
+Ontological_Type: schema:ItemList
+Name: Altri progetti BRRE elencati su baires.eu (non modellati singolarmente)
+Official_URL: <https://www.baires.eu/brre-architects-projects/>
+Verification_Status: self-published
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+List_Items: Industrial Warehouse I and II, Rome | Urban Nexus | Renovation of optical/photography store | Villa with picture frame windows | Magix advertising shop | Innovative housing prototype for the elderly | Renovation of historic building into a resort, Spoleto | Unified architectural intervention
+
+
+[05. COMPETITIONS AND PROJECTS]
+
+[RECORD 05.01]
+Entity_ID: entry-cgc-41st
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-cgc-41st
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: 41st Central Glass International Architectural Design Competition: Conversion of an Existing Building for City Life - entry
+Description: Project or competition entry '41st Central Glass International Architectural Design Competition: Conversion of an Exist…' (2006) by Michela De Licio, Baires Raffaelli, Elio Ravà; result: Second Absolute Prize (2nd of 423 international entries); jury 2006-08-08, award ceremony 2006-09-23; sponsor: Central Glass Co., Ltd..
+Author: Baires Raffaelli (baires-raffaelli) | Elio Ravà (elio-rava) | Michela De Licio (michela-de-licio)
+Sponsor: Central Glass Co., Ltd. (central-glass) | Shinkenchiku-sha Co., Ltd. (shinkenchiku-sha)
+Date_Created: 2006
+Award: Second Absolute Prize (2nd of 423 international entries); jury 2006-08-08, award ceremony 2006-09-23
+Official_URL: <https://www.cgc-jp.com/kyougi/archive/41st/>
+Verification_Status: verified-primary
+Verified_Against: <https://www.cgc-jp.com/kyougi/archive/41st/> (accessed 2026-10-25)
+Subject_Of: JA - The Japan Architect, no. 64 (2006) - Winter Yearbook 2006/2007 (issue-ja-64)
+
+[RECORD 05.02]
+Entity_ID: entry-livingbox
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-livingbox
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: International Design Competition LIVINGBOX: Modulo Abitativo del Futuro - entry
+Description: Project or competition entry 'International Design Competition LIVINGBOX: Modulo Abitativo del Futuro - entry' (2006) by Baires Raffaelli, BRRE architects; result: Special Mention (among 12 mentions out of 1,048 projects from 65 countries); sponsor: Edilportale.com.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects)
+Sponsor: Edilportale.com (edilportale)
+Date_Published: 2006-05
+Date_Created: 2005
+Award: Special Mention (among 12 mentions out of 1,048 projects from 65 countries)
+Official_URL: <https://www.dexigner.com/news/8300>
+See_Also: <https://www.edilportale.com/news/2006/05/risultati/living-box-edilportale-com-premia-la-casa-del-futuro_8043_37.html>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.dexigner.com/news/8300> (accessed 2026-10-25) | <https://www.edilportale.com/news/2006/05/risultati/living-box-edilportale-com-premia-la-casa-del-futuro_8043_37.html> (accessed 2026-10-25)
+
+[RECORD 05.03]
+Entity_ID: entry-santa-margherita
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-santa-margherita
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittima in Via Milite Ignoto - entry
+Description: Project or competition entry 'Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittima in Via Milite Igno…' (2005) by Baires Raffaelli, Elio Ravà; result: 6th place (score 58/100, identified project n. 1); sponsor: Comune di Santa Margherita Ligure.
+Author: Baires Raffaelli (baires-raffaelli) | Elio Ravà (elio-rava)
+Sponsor: Comune di Santa Margherita Ligure (comune-santa-margherita)
+Date_Created: 2005
+Award: 6th place (score 58/100, identified project n. 1)
+Official_URL: <https://www.professionearchitetto.it/archivio/concorsi/200412/>
+Do_Not_Follow_URL: https://www.provincia.sp.it/flex/cm/pages/ServeAttachment.php/L/IT/D/a%252F6%252Ff%252FD.7af90cd6162bd4df8cc8/P/BLOB%3AID%3D6537
+Verification_Status: verified-secondary
+Verified_Against: <https://www.professionearchitetto.it/archivio/concorsi/200412/> (accessed 2026-10-25)
+
+[RECORD 05.04]
+Entity_ID: entry-unistrasi-aula-mobile
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-unistrasi-aula-mobile
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Concorso di Idee per la Realizzazione di un'Aula Multimediale Mobile con Opzione di Progettazione Definitiva - entry
+Alternate_Name: AMI - Aula Mobile Italia
+Description: Project or competition entry 'Concorso di Idee per la Realizzazione di un'Aula Multimediale Mobile con Opzione di Proge…' (2014) by Baires Raffaelli; result: 4th place (Special Mention); sponsor: Università per Stranieri di Siena (UniStraSi).
+Author: Baires Raffaelli (baires-raffaelli)
+Sponsor: Università per Stranieri di Siena (UniStraSi) (unistrasi)
+Date_Created: 2014
+Award: 4th place (Special Mention)
+Official_URL: <https://online.unistrasi.it/concorsi/475/atti.pdf>
+Verification_Status: verified-secondary
+Verified_Against: <https://online.unistrasi.it/concorsi/475/atti.pdf> (accessed 2026-10-25)
+
+[RECORD 05.05]
+Entity_ID: entry-albano-mazzini
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-albano-mazzini
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Riqualificazione Urbana e Paesaggistica di Piazza Mazzini ad Albano Laziale - entry
+Description: Project or competition entry 'Riqualificazione Urbana e Paesaggistica di Piazza Mazzini ad Albano Laziale - entry' (2015) by Baires Raffaelli, Studio TIX (Tix Studio Architetti Associati); result: Special Mention; sponsor: Comune di Albano Laziale.
+Author: Baires Raffaelli (baires-raffaelli) | Studio TIX (Tix Studio Architetti Associati) (studio-tix)
+Sponsor: Comune di Albano Laziale (comune-albano)
+Date_Created: 2015
+Award: Special Mention
+Official_URL: <https://www.professionearchitetto.it/concorsi/notizie/19478/Riqualificazione-urbana-di-Piazza-Mazzini> | <https://www.studiotix.it/riconoscimenti/>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.professionearchitetto.it/concorsi/notizie/19478/Riqualificazione-urbana-di-Piazza-Mazzini> (accessed 2026-10-25) | <https://www.studiotix.it/riconoscimenti/> (accessed 2026-10-25)
+
+[RECORD 05.06]
+Entity_ID: emergency-house
+Entity_IRI: https://w3id.org/baires-raffaelli/id/emergency-house
+Ontological_Type: schema:CreativeWork | schema:Product
+Name: Emergency House - Modulo Abitativo Rapido Gonfiabile ('La casa che si gonfia')
+Description: Inflatable housing module in elastic technical fabric with injection of expanded insulating polyurethane resin.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects)
+Date_Created: 2008
+Official_URL: <https://designlab-casa.blogautore.repubblica.it/2008/10/02/la-casa-che-si-gonfia/> | <https://www.infobuild.it/emergency-house/>
+Verification_Status: verified-secondary
+Verified_Against: <https://designlab-casa.blogautore.repubblica.it/2008/10/02/la-casa-che-si-gonfia/> (accessed 2026-10-25) | <https://www.infobuild.it/emergency-house/> (accessed 2026-10-25)
+Manufacturer: Kappazeta S.p.A.
+
+[RECORD 05.07]
+Entity_ID: entry-robin-hood-gardens
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-robin-hood-gardens
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Robin Hood Gardens Refurbishment and Regeneration Ideas Competition - entry
+Description: Project or competition entry 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition - entry' (2008) by Tommaso Passalacqua, BRRE architects, Baires Raffaelli, Elio Ravà, Carlos Acosta Fontana; result: Runner-up (Bustler); Special Mention (baires.eu); sponsor: The Architecture Foundation.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects) | Carlos Acosta Fontana (carlos-acosta-fontana) | Elio Ravà (elio-rava) | Tommaso Passalacqua (tommaso-passalacqua)
+Sponsor: The Architecture Foundation | Building Design (BD)
+Date_Created: 2008
+Award: Runner-up (Bustler); Special Mention (baires.eu)
+Official_URL: <http://akichiatlas.com/en/archives/robin_hood_gardens.php> | <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results>
+Verification_Status: verified-secondary
+Verified_Against: <http://akichiatlas.com/en/archives/robin_hood_gardens.php> (accessed 2026-10-25) | <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results> (accessed 2026-10-25)
+Subject_Of: Building Design (BD), 27 June 2008 (issue-bd-2008-06-27)
+
+[RECORD 05.08]
+Entity_ID: entry-nordic-built
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-nordic-built
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Nordic Built Competition - entry (Tampere, Finland)
+Description: Project or competition entry 'Nordic Built Competition - entry (Tampere, Finland)' (2014) by BRRE architects, Baires Raffaelli, Elio Ravà, Michela De Licio.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects) | Elio Ravà (elio-rava) | Michela De Licio (michela-de-licio)
+Date_Created: 2014
+Content_Location: Tampere, Finland
+Verification_Status: unverified
+
+[RECORD 05.09]
+Entity_ID: project-house-vb27
+Entity_IRI: https://w3id.org/baires-raffaelli/id/project-house-vb27
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: House vb27
+Description: Project or competition entry 'House vb27' (2011) by BRRE architects, Baires Raffaelli.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects)
+Date_Created: 2011
+Content_Location: Rome, Italy
+Verification_Status: unverified
+Temporal_Coverage: 2011/2012
+
+[RECORD 05.10]
+Entity_ID: entry-campus-dei-licei
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-campus-dei-licei
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Campus dei Licei
+Description: Project or competition entry 'Campus dei Licei' (2006) by BRRE architects, Baires Raffaelli.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects)
+Date_Created: 2006
+Content_Location: Schio (VI), Italy
+Verification_Status: self-published
+Verification_Basis: author-website
+Verification_Note: Listed on the author's studio website baires.eu
+
+[RECORD 05.11]
+Entity_ID: project-ims
+Entity_IRI: https://w3id.org/baires-raffaelli/id/project-ims
+Ontological_Type: schema:CreativeWork | schema:Product
+Name: IMS - Integrated Modular System
+Description: Applied research project for a prefabricated modular architectural system.
+Author: Baires Raffaelli (baires-raffaelli) | BRRE architects (brre-architects)
+Date_Created: 2007
+Content_Location: Rome, Italy
+Verification_Status: unverified
+
+
+[06. URBAN PLANNING, PEBA AND ACCESSIBILITY]
+
+[RECORD 06.01]
+Entity_ID: event-villa-umbra-2019
+Entity_IRI: https://w3id.org/baires-raffaelli/id/event-villa-umbra-2019
+Ontological_Type: schema:EducationEvent
+Name: Progettare la città e il territorio accessibile a tutt*
+Description: Talk: 'Presentazione della ricerca sul marchio di qualità per l'accessibilità degli edifici' (speaker: Baires Raffaelli).
+Organizer: Regione Umbria | Scuola Umbra di Amministrazione Pubblica <https://www.villaumbra.it/> | INU Umbria | Comune di Perugia | Associazione Festival per le città accessibili <http://www.cittaaccessibili.it/> | Ordine degli Ingegneri della Provincia di Perugia | ODAF (Ordine dei Dottori Agronomi e Forestali)
+Performer: Baires Raffaelli (baires-raffaelli)
+Start_Date: 2019-12-18T10:00:00
+End_Date: 2019-12-18T14:00:00
+Location: Villa Umbra, Pila (PG)
+Do_Not_Follow_URL: https://ordineingegneriperugia.it/formazione/offerta/progettare-la-citta%E2%80%99-e-il-territorio-accessibile-tutti | https://ordineingegneriperugia.it/sites/default/files/field/attachments/convegno_citta_accessibile_0.pdf
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Programme supplied by the author
+
+[RECORD 06.02]
+Entity_ID: peba-castellaneta
+Entity_IRI: https://w3id.org/baires-raffaelli/id/peba-castellaneta
+Ontological_Type: schema:CreativeWork | schema:GovernmentService
+Name: P.E.B.A. - Comune di Castellaneta (TA)
+Author: Baires Raffaelli (baires-raffaelli)
+Provider: Comune di Castellaneta (comune-castellaneta)
+Date_Created: 2021
+Official_URL: <https://archivio.comune.castellaneta.ta.it/informazioni-menu/p-e-b-a>
+Verification_Status: verified-secondary
+Verified_Against: <https://archivio.comune.castellaneta.ta.it/informazioni-menu/p-e-b-a> (accessed 2026-10-25)
+
+[RECORD 06.03]
+Entity_ID: peba-resources
+Entity_IRI: https://w3id.org/baires-raffaelli/id/peba-resources
+Ontological_Type: schema:CreativeWork | schema:ItemList
+Name: PEBA (accessibility plans) and universal design documents
+About: AVLA (avla)
+Archived_At: <https://web.archive.org/web/20241207214852/https://designforall.ch/it/article-pillole/21/p-avla-uno-strumento-di-valutazione-e-inclusione-p>
+Do_Not_Follow_URL: https://designforall.ch/upload/multimedia/2022-09-21-10-03-1110004.pdf | https://www.designforall.ch/it/article-pillole/21/p-avla-uno-strumento-di-valutazione-e-inclusione-p | https://www.inclusione-andicap-ticino.ch/wp-content/uploads/2021/06/inclusione-andicap-ticino-notiziario-no-02-2021-web.pdf
+Verification_Status: verified-secondary
+Verification_Basis: web-links
+Verification_Note: Collection of public web pages listed as items; individual pages carry their own audit status
+List_Items: Comune di Assisi - Indice PEBA <https://www.comune.assisi.pg.it/amministrazione/documenti_e_dati/documenti_di_programmazione_e_rendicontazione/documento_601.html> | Comune di Castellaneta - P.E.B.A. <https://archivio.comune.castellaneta.ta.it/informazioni-menu/p-e-b-a> | INU - Atlante Città Accessibili: linee guida e manuali <http://atlantecittaccessibili.inu.it/linee-guida-e-manuali/> | Urbanistica Informazioni - L'accessibilità come principio/criterio progettuale <http://www.urbanisticainformazioni.it/L-accessibilita-come-principio-criterio-progettuale-per-la-citta-di.html> | Design for All Switzerland - AVLA certificate PDF (non raggiungibile: 503) | Design for All Switzerland - AVLA article (503 sul sito; snapshot Wayback 2024-12-07) | Inclusione Andicap Ticino - notiziario 02-2021 (503 sul sito; snapshot Wayback 2023-11-02) | AccessEmotion - Troppe scale per il signore a rotelle <http://www.accessemotion.it/troppe-scale-per-il-signore-a-rotelle/>
+
+[RECORD 06.04]
+Entity_ID: peba-assisi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/peba-assisi
+Ontological_Type: schema:CreativeWork | schema:GovernmentService
+Name: Masterplan for the Removal of Architectural Barriers (P.E.B.A.), City of Assisi
+Alternate_Name: Piano per l'Eliminazione delle Barriere Architettoniche (PEBA) - Comune di Assisi
+Author: Baires Raffaelli (baires-raffaelli)
+Provider: Comune di Assisi (comune-assisi)
+Date_Created: 2019
+Official_URL: <https://www.comune.assisi.pg.it/amministrazione/documenti_e_dati/documenti_di_programmazione_e_rendicontazione/documento_601.html>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.comune.assisi.pg.it/amministrazione/documenti_e_dati/documenti_di_programmazione_e_rendicontazione/documento_601.html> (accessed 2026-10-25)
+Area_Served: Assisi (PG), Italy
+
+
+[07. SCHOLARLY LITERATURE, COURSE ADOPTIONS, EVENTS AND CITATIONS]
+
+[RECORD 07.01]
+Entity_ID: cite-gelfond-ahti-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-gelfond-ahti-2020
+Ontological_Type: schema:ScholarlyArticle
+Name: Building Arches: Typological Potential of an Architectural Form
+Description: Source document 'Building Arches: Typological Potential of an Architectural Form' (2020) by Anna Gelfond; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 5-6.
+Author: Anna Gelfond (anna-gelfond)
+Date_Published: 2020
+Is_Part_Of: Proceedings of the 2nd International Conference on Architecture: Heritage, Traditions and Innovations (AHTI 2020) (proceedings-ahti-2020)
+Cites: The Fast Guide to Architectural Form (work-form)
+Identifier: DOI: 10.2991/assehr.k.200923.043
+Authority_URI: <https://doi.org/10.2991/assehr.k.200923.043>
+Official_URL: <https://www.atlantis-press.com/article/125944750.pdf> | <https://www.atlantis-press.com/proceedings/ahti-20/125944750>
+See_Also: <https://www.researchgate.net/publication/346041708_Building_Arches_Typological_Potential_of_an_Architectural_Form>
+Do_Not_Follow_URL: https://doi.org/10.2991/assehr.k.200923.048
+Verification_Status: verified-primary
+Verified_Against: <https://www.atlantis-press.com/article/125944750.pdf> (accessed 2026-10-25) | <https://www.atlantis-press.com/proceedings/ahti-20/125944750> (accessed 2026-10-25) | <https://www.researchgate.net/publication/346041708_Building_Arches_Typological_Potential_of_an_Architectural_Form> (accessed 2026-10-25)
+Pagination: 250-255
+
+[RECORD 07.02]
+Entity_ID: proceedings-ahti-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/proceedings-ahti-2020
+Ontological_Type: schema:Book
+Name: Proceedings of the 2nd International Conference on Architecture: Heritage, Traditions and Innovations (AHTI 2020)
+Description: Source document 'Proceedings of the 2nd International Conference on Architecture: Heritage, Traditions and…' (2020).
+Publisher: Atlantis Press (atlantis-press)
+Date_Published: 2020
+ISBN: 9789462390584
+Is_Part_Of: Advances in Social Science, Education and Humanities Research, vol. 471 (volume-asseh-471)
+
+[RECORD 07.03]
+Entity_ID: cite-gelfond-raasn-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-gelfond-raasn-2020
+Ontological_Type: schema:ScholarlyArticle
+Name: О пространственной типологии зданий-арок
+Alternate_Name: On the Spatial Typology of Arch Buildings
+Description: Source document 'О пространственной типологии зданий-арок' (2020) by Anna Gelfond; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 13-14.
+Author: Anna Gelfond (anna-gelfond)
+Date_Published: 2020
+Is_Part_Of: Academia. Архитектура и строительство, 2020, no. 2 (issue-academia-2020-2)
+Cites: The Fast Guide to Architectural Form (work-form)
+Identifier: DOI: 10.22337/2077-9038-2020-2-47-60 <https://doi.org/10.22337/2077-9038-2020-2-47-60>
+Authority_URI: <https://doi.org/10.22337/2077-9038-2020-2-47-60>
+Official_URL: <https://aac.raasn.ru/index.php/aac/article/view/211> | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok>
+Verification_Status: verified-primary
+Verified_Against: <https://aac.raasn.ru/index.php/aac/article/view/211> (accessed 2026-10-25) | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-25)
+Pagination: 47-60
+
+[RECORD 07.04]
+Entity_ID: series-asseh
+Entity_IRI: https://w3id.org/baires-raffaelli/id/series-asseh
+Ontological_Type: schema:BookSeries
+Name: Advances in Social Science, Education and Humanities Research
+ISSN: 2352-5398
+Verification_Status: verified-secondary
+Verified_Against: <https://www.atlantis-press.com/article/125944750.pdf> (accessed 2026-10-25) via volume-asseh-471 | <https://www.atlantis-press.com/proceedings/ahti-20/125944750> (accessed 2026-10-25) via volume-asseh-471 | <https://www.researchgate.net/publication/346041708_Building_Arches_Typological_Potential_of_an_Architectural_Form> (accessed 2026-10-25) via volume-asseh-471
+
+[RECORD 07.05]
+Entity_ID: volume-asseh-471
+Entity_IRI: https://w3id.org/baires-raffaelli/id/volume-asseh-471
+Ontological_Type: schema:PublicationVolume
+Name: Advances in Social Science, Education and Humanities Research, vol. 471
+Is_Part_Of: Advances in Social Science, Education and Humanities Research (series-asseh)
+Verification_Status: verified-secondary
+Verified_Against: <https://www.atlantis-press.com/article/125944750.pdf> (accessed 2026-10-25) via proceedings-ahti-2020 | <https://www.atlantis-press.com/proceedings/ahti-20/125944750> (accessed 2026-10-25) via proceedings-ahti-2020 | <https://www.researchgate.net/publication/346041708_Building_Arches_Typological_Potential_of_an_Architectural_Form> (accessed 2026-10-25) via proceedings-ahti-2020
+Volume: 471
+
+[RECORD 07.06]
+Entity_ID: cite-scholar-architect-2022
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-scholar-architect-2022
+Ontological_Type: schema:Book
+Name: Scholar Architect 2022: Cercetarea și implementarea unor tendințe, inovații și experimente în învățământul de arhitectură și conexe
+Description: Source document 'Scholar Architect 2022: Cercetarea și implementarea unor tendințe, inovații și experiment…' (2022); cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli; page evidence: PDF p. 131.
+Editor: A.-I. Sfinteș
+Publisher: Editura Universitară 'Ion Mincu' (uauim-press)
+Date_Published: 2022
+ISBN: 9786066382472
+Work_Translation: Scholar Architect 2022 (English edition) (cite-scholar-architect-2023-en)
+Cites: The Fast Guide to Accessibility Design (work-accessibility) | The Fast Guide to Architectural Form (work-form)
+Authority_URI: <https://doi.org/10.54508/9786066382472>
+Official_URL: <https://editura.uauim.ro/pub/496> | <https://www.uauim.ro/cercetare/scholarh-2022/>
+See_Also: <https://www.researchgate.net/publication/375853926_The_urban_planning_basis_of_projects> | <https://www.researchgate.net/publication/375858164_Key_concepts_in_urban_planning>
+Verification_Status: verified-primary
+Verified_Against: <https://editura.uauim.ro/pub/496> (accessed 2026-10-25) | <https://www.uauim.ro/cercetare/scholarh-2022/> (accessed 2026-10-25) | <https://doi.org/10.54508/9786066382472> (accessed 2026-10-25)
+
+[RECORD 07.07]
+Entity_ID: cite-scholar-architect-2023-en
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-scholar-architect-2023-en
+Ontological_Type: schema:Book
+Name: Scholar Architect 2022 (English edition)
+Description: Source document 'Scholar Architect 2022 (English edition)' (2023); page evidence: PDF p. 131.
+Publisher: Editura Universitară 'Ion Mincu' (uauim-press)
+Date_Published: 2023
+ISBN: 9786066383004
+Translation_Of: Scholar Architect 2022: Cercetarea și implementarea unor tendințe, inovații și experimente în învățământul de arhitectură și conexe (cite-scholar-architect-2022)
+Authority_URI: <https://doi.org/10.54508/9786066383004>
+Official_URL: <https://editura.uauim.ro/pub/552> | <https://www.uauim.ro/cercetare/scholarh/>
+Verification_Status: verified-primary
+Verified_Against: <https://editura.uauim.ro/pub/552> (accessed 2026-10-25) | <https://www.uauim.ro/cercetare/scholarh/> (accessed 2026-10-25) | <https://doi.org/10.54508/9786066383004> (accessed 2026-10-25)
+
+[RECORD 07.08]
+Entity_ID: issue-academia-2020-2
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-academia-2020-2
+Ontological_Type: schema:PublicationIssue
+Name: Academia. Архитектура и строительство, 2020, no. 2
+Date_Published: 2020
+Issue: 2
+Is_Part_Of: Academia. Архитектура и строительство (periodical-academia)
+Verification_Status: verified-secondary
+Verified_Against: <https://aac.raasn.ru/index.php/aac/article/view/211> (accessed 2026-10-25) via cite-gelfond-raasn-2020 | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-25) via cite-gelfond-raasn-2020
+
+[RECORD 07.09]
+Entity_ID: periodical-academia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-academia
+Ontological_Type: schema:Periodical
+Name: Academia. Архитектура и строительство
+ISSN: 2077-9038
+Verification_Status: verified-secondary
+Verified_Against: <https://aac.raasn.ru/index.php/aac/article/view/211> (accessed 2026-10-25) via issue-academia-2020-2 | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-25) via issue-academia-2020-2
+
+[RECORD 07.10]
+Entity_ID: cite-aflalo-usp-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-aflalo-usp-2020
+Ontological_Type: schema:Thesis
+Name: Estruturas em madeira: forma e método
+Description: Source document 'Estruturas em madeira: forma e método' (2020) by Marcelo Aflalo; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 137.
+Author: Marcelo Aflalo
+Source_Organization: Universidade de São Paulo - Instituto de Arquitetura e Urbanismo
+Date_Published: 2020
+Cites: The Fast Guide to Architectural Form (work-form)
+Authority_URI: <https://doi.org/10.11606/T.102.2020.tde-27012021-092243>
+Official_URL: <https://teses.usp.br/teses/disponiveis/102/102131/tde-27012021-092243/>
+Do_Not_Follow_URL: https://www.teses.usp.br/teses/disponiveis/102/102131/tde-27012021-092243/publico/MarceloAflalo_revisada.pdf
+Verification_Status: verified-primary
+Verified_Against: <https://teses.usp.br/teses/disponiveis/102/102131/tde-27012021-092243/> (accessed 2026-10-25) | <https://doi.org/10.11606/T.102.2020.tde-27012021-092243> (accessed 2026-10-25)
+In_Support_Of: Doutorado em Arquitetura, Urbanismo e Tecnologia, IAU-USP
+
+[RECORD 07.11]
+Entity_ID: cite-bribiesca-2021
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-bribiesca-2021
+Ontological_Type: schema:Book
+Name: Metodología de diseño para el desarrollo de habilidades creativas con un lenguaje arquitectónico coherente
+Description: Source document 'Metodología de diseño para el desarrollo de habilidades creativas con un lenguaje arquite…' (2021) by Alejandro Bribiesca-Ortega; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 9, 19-21, 91.
+Author: Alejandro Bribiesca-Ortega
+Publisher: ECORFAN-México, S.C.
+Date_Published: 2021
+ISBN: 9786078695485
+Cites: The Fast Guide to Architectural Form (work-form)
+Authority_URI: <https://doi.org/10.35429/B.2021.4.1.102>
+Verification_Status: verified-primary
+Verified_Against: <https://doi.org/10.35429/B.2021.4.1.102> (accessed 2026-10-25)
+
+[RECORD 07.12]
+Entity_ID: cite-dova-familiarization
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-dova-familiarization
+Ontological_Type: schema:ScholarlyArticle
+Name: Formal Strategies of Familiarization and de-Familiarization
+Description: Source document 'Formal Strategies of Familiarization and de-Familiarization' by Evanthia Dova; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 354.
+Author: Evanthia Dova (evanthia-dova)
+Is_Part_Of: INITIATIONS: Practices of Teaching 1st Year Design in Architecture (Proceedings TFYD 2019) (cite-ucy-tfyd-2019)
+Cites: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://hdl.handle.net/11728/11797>
+Verification_Status: verified-primary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+Pagination: 346
+
+[RECORD 07.13]
+Entity_ID: cite-ucy-tfyd-2019
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-ucy-tfyd-2019
+Ontological_Type: schema:Book
+Name: INITIATIONS: Practices of Teaching 1st Year Design in Architecture (Proceedings TFYD 2019)
+Description: Source document 'INITIATIONS: Practices of Teaching 1st Year Design in Architecture (Proceedings TFYD 2019)' (2021).
+Editor: C. Chatzichristou | P. Iacovou | L. Koutsoumpos
+Publisher: University of Cyprus - Department of Architecture
+Date_Published: 2021
+ISBN: 9789925553297
+Official_URL: <https://cyprusconferences.org/tfyd2019/> | <https://lekythos.library.ucy.ac.cy/handle/10797/26836>
+See_Also: <https://www.researchgate.net/publication/350409486_Initiations_FINAL_BOOK_optimized>
+Verification_Status: verified-primary
+Verified_Against: <https://cyprusconferences.org/tfyd2019/> (accessed 2026-10-25) | <https://lekythos.library.ucy.ac.cy/handle/10797/26836> (accessed 2026-10-25)
+
+[RECORD 07.14]
+Entity_ID: cite-bucchetti-2024
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-bucchetti-2024
+Ontological_Type: schema:Book
+Name: Design della comunicazione. Un ritratto disciplinare: studi e traiettorie
+Description: Source document 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (2024); page evidence: PDF p. 92.
+Editor: Valeria Bucchetti
+Publisher: FrancoAngeli
+Date_Published: 2024
+ISBN: 9788835167013
+Is_Part_Of: Open Access - Saggi, vol. 07 (volume-fa-oa-saggi-07)
+Official_URL: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> | <https://series.francoangeli.it/index.php/oa/catalog/book/1199>
+Verification_Status: verified-secondary
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25)
+
+[RECORD 07.15]
+Entity_ID: cerpa-casa-foligno-2016
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cerpa-casa-foligno-2016
+Ontological_Type: schema:WebPage
+Name: Accessibilita' e creativita': casa Raffaelli a Foligno (CERPA Italia, 04/02/2016)
+Description: News item by CERPA Italia ETS (Trento), taken from a Superabile article, about an accessible ground-floor home in Foligno designed through a participatory process in several phases, with architect Baires Raffaelli on the latest renovation of the sleeping area.
+Date_Published: 2016-02-04
+Language: it
+About: Casa in via Pascoli, Foligno (PG) (house-via-pascoli-foligno-2006)
+Official_URL: <https://www.cerpa.org/index.html?pg=28&id=633>
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 07.16]
+Entity_ID: cite-tosi-pistolesi-2022
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-tosi-pistolesi-2022
+Ontological_Type: schema:Book
+Name: Home Care Design for Parkinson's Disease. Il Design dell'ambiente domestico per persone con malattia di Parkinson
+Description: Source document 'Home Care Design for Parkinson's Disease. Il Design dell'ambiente domestico per persone c…' (2022) by Francesca Tosi, Mattia Pistolesi; cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli; page evidence: PDF p. 59-60.
+Author: Francesca Tosi | Mattia Pistolesi
+Publisher: FrancoAngeli
+Date_Published: 2022
+ISBN: 9788835139195
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Mentions: Casa in via Pascoli, Foligno (PG) (house-via-pascoli-foligno-2006)
+Official_URL: <https://parkinson-trento.it/wp-content/uploads/2022/06/HOME-CRE-DESIGN-FOR-PARKINSONS-DISEASE_compressed.pdf> | <https://series.francoangeli.it/index.php/oa/catalog/book/799>
+Verification_Status: verified-primary
+Verified_Against: <https://parkinson-trento.it/wp-content/uploads/2022/06/HOME-CRE-DESIGN-FOR-PARKINSONS-DISEASE_compressed.pdf> (accessed 2026-10-25) | <https://series.francoangeli.it/index.php/oa/catalog/book/799> (accessed 2026-10-25)
+
+[RECORD 07.17]
+Entity_ID: house-via-pascoli-foligno-2006
+Entity_IRI: https://w3id.org/baires-raffaelli/id/house-via-pascoli-foligno-2006
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Casa in via Pascoli, Foligno (PG)
+Alternate_Name: House in via Pascoli, Foligno
+Description: Accessible home in via Pascoli, Foligno (2006), designed by Baires Raffaelli (sole author, per the author's statement of 25/10/2026); Tosi & Pistolesi (2022, printed p. 58-59, Fig. 4.3) state it was designed by the architect Baires Raffaelli and present its floor plan (source: Arch. Baires Raffaelli, 2006) as an example of accessible home design.
+Author: Baires Raffaelli (baires-raffaelli)
+Date_Created: 2006
+Genre: residential architecture; accessible housing
+Content_Location: Foligno
+Do_Not_Follow_URL: https://www.superabile.it/cs/superabile/accessibilita-colore-e-creativita-la-casa-in-via-pascoli-a-f.html
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Design credit confirmed by the author and by a published paper (Tosi & Pistolesi) supplied by the author
+Subject_Of: Accessibilita' e creativita': casa Raffaelli a Foligno (CERPA Italia, 04/02/2016) (cerpa-casa-foligno-2016) | Home Care Design for Parkinson's Disease. Il Design dell'ambiente domestico per persone con malattia di Parkinson (cite-tosi-pistolesi-2022)
+
+[RECORD 07.18]
+Entity_ID: cite-cabral-uminho-2022
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-cabral-uminho-2022
+Ontological_Type: schema:Thesis
+Name: A Acessibilidade na Habitação: A Privação Auditiva e Visual
+Description: Source document 'A Acessibilidade na Habitação: A Privação Auditiva e Visual' (2022) by Ana Rita Magalhães Cabral; cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli; page evidence: PDF p. 15.
+Author: Ana Rita Magalhães Cabral
+Source_Organization: Universidade do Minho
+Date_Published: 2022
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Official_URL: <https://repositorium.sdum.uminho.pt/handle/1822/79016>
+Do_Not_Follow_URL: http://hdl.handle.net/1822/76974 | https://repositorium.sdum.uminho.pt/handle/1822/76974
+Verification_Status: verified-primary
+Verified_Against: <https://repositorium.sdum.uminho.pt/handle/1822/79016> (accessed 2026-10-25)
+In_Support_Of: Mestrado Integrado em Arquitectura, Escola de Arquitectura, Arte e Design (EAAD)
+
+[RECORD 07.19]
+Entity_ID: cite-park-metropolia-2022
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-park-metropolia-2022
+Ontological_Type: schema:Thesis
+Name: Terveyskylän Naistalon mobiilikäytettävyystestaus ja käyttäjäkokemuksen arviointi
+Description: Master's thesis 'Terveyskylän Naistalon mobiilikäytettävyystestaus ja käyttäjäkokemuksen arviointi' (2022) by Tuulia Park (Metropolia UAS): a third party's work, NOT a thesis by Baires Raffaelli; it only cites 'The Fast Guide to Accessibility Design' (PDF p. 24, 28, 76). Baires Raffaelli's own work on the Tuscolana station area is a different record (:chapter-strutture-mobilita, 2003).
+Author: Tuulia Park
+Source_Organization: Metropolia Ammattikorkeakoulu
+Date_Published: 2022
+Date_Created: 2022-05-12
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Do_Not_Follow_URL: https://urn.fi/URN:NBN:fi:amk-202205129188 | https://www.theseus.fi/handle/10024/750462
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: PDF of the thesis supplied by the author
+In_Support_Of: Master's Thesis (YAMK), Clinical Expertise degree programme in Digital Health Care and Social Services
+
+[RECORD 07.20]
+Entity_ID: series-fa-oa-saggi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/series-fa-oa-saggi
+Ontological_Type: schema:BookSeries
+Name: Open Access - Saggi
+Publisher: FrancoAngeli (francoangeli)
+Verification_Status: verified-secondary
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via volume-fa-oa-saggi-07 | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25) via volume-fa-oa-saggi-07
+
+[RECORD 07.21]
+Entity_ID: volume-fa-oa-saggi-07
+Entity_IRI: https://w3id.org/baires-raffaelli/id/volume-fa-oa-saggi-07
+Ontological_Type: schema:PublicationVolume
+Name: Open Access - Saggi, vol. 07
+Is_Part_Of: Open Access - Saggi (series-fa-oa-saggi)
+Verification_Status: verified-secondary
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via cite-bucchetti-2024 | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25) via cite-bucchetti-2024
+Volume: 07
+
+[RECORD 07.22]
+Entity_ID: cite-cereskaite-vda-2013
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-cereskaite-vda-2013
+Ontological_Type: schema:Thesis
+Name: Dizainas ekstremalių situacijų atveju: laikinos gyvenamosios pastogės problema
+Description: Source document 'Dizainas ekstremalių situacijų atveju: laikinos gyvenamosios pastogės problema' (2013) by Diana Čereškaitė; page evidence: PDF p. 31, 39, 41, 47.
+Author: Diana Čereškaitė
+Source_Organization: Vilniaus dailės akademija (VDA) <https://www.vda.lt/>
+Date_Published: 2013
+About: Pump It Up House (entry-pump-it-up-house)
+Official_URL: <https://talpykla.elaba.lt/elaba-fedora/objects/elaba:2039280/datastreams/MAIN/content>
+Do_Not_Follow_URL: https://vb.vda.lt/object/elaba:2039280/2039280.pdf
+Verification_Status: verified-secondary
+Verified_Against: <https://talpykla.elaba.lt/elaba-fedora/objects/elaba:2039280/datastreams/MAIN/content> (accessed 2026-10-25)
+
+[RECORD 07.23]
+Entity_ID: entry-pump-it-up-house
+Entity_IRI: https://w3id.org/baires-raffaelli/id/entry-pump-it-up-house
+Ontological_Type: bf:Work | schema:CreativeWork
+Name: Pump It Up House
+Description: Experimental inflatable emergency-housing concept (2007) by Baires Raffaelli, Elio Rava, Paolo Moressoni and Tommaso Passalacqua, published on Europaconcorsi (project 24649); cited at p. 31 of a Vilnius Academy of Arts master's thesis (cite-cereskaite-vda-2013).
+Author: Baires Raffaelli (baires-raffaelli) | Elio Ravà (elio-rava) | Paolo Moressoni (paolo-moressoni) | Tommaso Passalacqua (tommaso-passalacqua)
+Date_Published: 2007-10-17
+Content_Location: Hofheim-Wallau, Germany
+Archived_At: <https://web.archive.org/web/20110920011707/http://europaconcorsi.com:80/projects/24649-Pump-It-Up-House>
+Do_Not_Follow_URL: https://europaconcorsi.com/projects/24649-Pump-It-Up-House
+Verification_Status: archived-only
+Producer: BRRE architects (brre-architects)
+
+[RECORD 07.24]
+Entity_ID: cite-ekedisy-2018
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-ekedisy-2018
+Ontological_Type: schema:Book
+Name: 3ο Πανελλήνιο Συνέδριο «Εκπαίδευση στον 21ο αιώνα: Αναζητώντας την καινοτομία, την τέχνη, τη δημιουργικότητα» - Τόμος Β΄
+Description: Source document '3ο Πανελλήνιο Συνέδριο «Εκπαίδευση στον 21ο αιώνα: Αναζητώντας την καινοτομία, την τέχνη,…' (2018); cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 178.
+Editor: G. Papadimitriou | C. Kostaris
+Publisher: Μουσείο Σχολικής Ζωής και Εκπαίδευσης του ΕΚΕΔΙΣΥ
+Date_Published: 2018
+ISBN: 9786188351745 | 9786188351769
+Cites: The Fast Guide to Architectural Form (work-form)
+Official_URL: <http://www.ekedisy.gr/praktika-3ou-synedrioy/> | <https://www.ekedisy.gr/> | <https://www.ekedisy.gr/wp-content/uploads/2019/01/3%CE%BF-%CE%A3%CF%85%CE%BD%CE%AD%CE%B4%CF%81%CE%B9%CE%BF-%CE%92-%CF%84%CF%8C%CE%BC%CE%BF%CF%821.pdf>
+Verification_Status: verified-primary
+Verified_Against: <http://www.ekedisy.gr/praktika-3ou-synedrioy/> (accessed 2026-10-25) | <https://www.ekedisy.gr/> (accessed 2026-10-25) | <https://www.ekedisy.gr/wp-content/uploads/2019/01/3%CE%BF-%CE%A3%CF%85%CE%BD%CE%AD%CE%B4%CF%81%CE%B9%CE%BF-%CE%92-%CF%84%CF%8C%CE%BC%CE%BF%CF%821.pdf> (accessed 2026-10-25)
+
+[RECORD 07.25]
+Entity_ID: cite-oliveira-dias
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-oliveira-dias
+Ontological_Type: schema:ScholarlyArticle
+Name: A linguagem como uma alternativa criativa no desenvolvimento do olhar tridimensional arquitetônico
+Description: Source document 'A linguagem como uma alternativa criativa no desenvolvimento do olhar tridimensional arqu…'; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli.
+Author: Oliveira | Dias
+Cites: The Fast Guide to Architectural Form (work-form)
+See_Also: <https://www.researchgate.net/publication/333991104_Reflection_on_the_Development_of_Architecture_Students'_Visual_Capacities_The_Interface_between_Textual_and_Pictorial_Languages>
+Verification_Status: unverified
+
+[RECORD 07.26]
+Entity_ID: cite-oliveira-ijvd-2019
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-oliveira-ijvd-2019
+Ontological_Type: schema:ScholarlyArticle
+Name: Reflection on the Development of Architecture Students' Visual Capacities: The Interface between Textual and Pictorial Languages
+Description: Source document 'Reflection on the Development of Architecture Students' Visual Capacities: The Interface …' (2019) by Débora Andrade de Oliveira; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli.
+Author: Débora Andrade de Oliveira
+Date_Published: 2019-06
+Is_Part_Of: The International Journal of Visual Design, vol. 13, no. 2 (2019) (issue-ijvd-13-2)
+Cites: The Fast Guide to Architectural Form (work-form)
+Identifier: EBSCO-AN: 137409244
+Authority_URI: <https://doi.org/10.18848/2325-1581/CGP/v13i02/39-55>
+Official_URL: <https://www.researchgate.net/publication/333991104_Reflection_on_the_Development_of_Architecture_Students%27_Visual_Capacities_The_Interface_between_Textual_and_Pictorial_Languages>
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+Pagination: 39-55
+
+[RECORD 07.27]
+Entity_ID: cite-ufjf-2018
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-ufjf-2018
+Ontological_Type: schema:Book
+Name: Caderno de Resumos - III Encontro de Semiótica do Projeto: do Ensino à Prática Projetual
+Description: Source document 'Caderno de Resumos - III Encontro de Semiótica do Projeto: do Ensino à Prática Projetual' (2018); cites 'The Fast Guide to Architectural Form' by Baires Raffaelli.
+Publisher: Universidade Federal de Juiz de Fora (UFJF)
+Date_Published: 2018
+Cites: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://www2.ufjf.br/encontrodesemiotica/files/2018/10/Caderno_Resumos_IIIEncontrodeSemioticadoProjeto.pdf>
+Verification_Status: verified-secondary
+Verified_Against: <https://www2.ufjf.br/encontrodesemiotica/files/2018/10/Caderno_Resumos_IIIEncontrodeSemioticadoProjeto.pdf> (accessed 2026-10-25)
+
+[RECORD 07.28]
+Entity_ID: cite-urbanistica-informazioni-2024
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-urbanistica-informazioni-2024
+Ontological_Type: schema:Article
+Name: L'accessibilità come principio/criterio progettuale per la città di tutti
+Description: Source document 'L'accessibilità come principio/criterio progettuale per la città di tutti'; cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli.
+Is_Part_Of: Urbanistica Informazioni, no. 313 (2024) (issue-urbanistica-informazioni-313)
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Official_URL: <http://www.urbanisticainformazioni.it/L-accessibilita-come-principio-criterio-progettuale-per-la-citta-di.html>
+Verification_Status: verified-primary
+Verified_Against: <http://www.urbanisticainformazioni.it/L-accessibilita-come-principio-criterio-progettuale-per-la-citta-di.html> (accessed 2026-10-25)
+
+[RECORD 07.29]
+Entity_ID: cite-iat-newsletter-2021
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-iat-newsletter-2021
+Ontological_Type: schema:Article
+Name: Notiziario 02-2021 - studio tematico sulla percezione dello spazio architettonico inclusivo
+Description: Source document 'Notiziario 02-2021 - studio tematico sulla percezione dello spazio architettonico inclusi…' (2021); cites 'The Fast Guide to Accessibility Design' by Baires Raffaelli.
+Publisher: Inclusione Andicap Ticino
+Date_Published: 2021
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Archived_At: <https://web.archive.org/web/20231102150816/https://www.inclusione-andicap-ticino.ch/wp-content/uploads/2021/06/inclusione-andicap-ticino-notiziario-no-02-2021-web.pdf>
+Do_Not_Follow_URL: https://www.inclusione-andicap-ticino.ch/wp-content/uploads/2021/06/inclusione-andicap-ticino-notiziario-no-02-2021-web.pdf
+Verification_Status: archived-only
+
+[RECORD 07.30]
+Entity_ID: cite-buntrock-acsa-2017
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cite-buntrock-acsa-2017
+Ontological_Type: schema:CreativeWork
+Name: 2017-2018 ACSA Distinguished Professor Award Statement
+Description: Source document '2017-2018 ACSA Distinguished Professor Award Statement' (2017) by Dana Buntrock; cites 'The Fast Guide to Architectural Form' by Baires Raffaelli; page evidence: PDF p. 13.
+Author: Dana Buntrock (dana-buntrock)
+Date_Published: 2017
+Cites: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://www.acsa-arch.org/wp-content/uploads/2020/05/DP-Buntrock-opt.pdf>
+Do_Not_Follow_URL: https://ced.berkeley.edu/faculty-staff/dana-buntrock | https://www.acsa-arch.org/awards/architectural-education-award-winners/
+Verification_Status: verified-secondary
+Verified_Against: <https://www.acsa-arch.org/wp-content/uploads/2020/05/DP-Buntrock-opt.pdf> (accessed 2026-10-25)
+
+[RECORD 07.31]
+Entity_ID: course-romania-atelier-2025
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-romania-atelier-2025
+Ontological_Type: schema:Course
+Name: Programa școlară pentru disciplina ATELIER DE SPECIALITATE, Clasele a IX-a - a XII-a (Curriculum de specialitate CS)
+Description: University or school course document 'Programa școlară pentru disciplina ATELIER DE SPECIALITATE, Clasele a IX-a - a XII-a (Cur…' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading; page evidence: PDF p. 25-26.
+Provider: Ministerul Educației și Cercetării (MEC) <https://www.edu.ro/> | Centrul Național pentru Curriculum și Evaluare (CNCE) <https://rocnee.eu/>
+Date_Published: 2025
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://rocnee.eu/images/rocnee/fisiere/curriculum/ordin3176/Anexa%20234.pdf>
+Verification_Status: verified-secondary
+Verified_Against: <https://rocnee.eu/images/rocnee/fisiere/curriculum/ordin3176/Anexa%20234.pdf> (accessed 2026-10-25)
+
+[RECORD 07.32]
+Entity_ID: course-ensacf
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-ensacf
+Ontological_Type: schema:Course
+Name: Livret de l'étudiant 2022-23 / 2021-22 - École Nationale Supérieure d'Architecture de Clermont-Ferrand
+Description: University or school course document 'Livret de l'étudiant 2022-23 / 2021-22 - École Nationale Supérieure d'Architecture de Cle…' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading; page evidence: PDF p. 78, 112, 146, 184.
+Provider: École Nationale Supérieure d'Architecture de Clermont-Ferrand (ENSACF) <https://www.clermont-fd.archi.fr/>
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://www.clermont-fd.archi.fr/wp-content/uploads/2021/09/Livret-de-l%C3%A9tudiant-2021_22_BD.pdf> | <https://www.clermont-fd.archi.fr/wp-content/uploads/2022/09/Guide-de-letudiant-2022_23_site.pdf>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.clermont-fd.archi.fr/wp-content/uploads/2021/09/Livret-de-l%C3%A9tudiant-2021_22_BD.pdf> (accessed 2026-10-25) | <https://www.clermont-fd.archi.fr/wp-content/uploads/2022/09/Guide-de-letudiant-2022_23_site.pdf> (accessed 2026-10-25)
+
+[RECORD 07.33]
+Entity_ID: course-univpm-af137990
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-univpm-af137990
+Ontological_Type: schema:Course
+Name: Architettura e Composizione Architettonica (AF 137990)
+Description: University or school course document 'Architettura e Composizione Architettonica (AF 137990)' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Università Politecnica delle Marche (UNIVPM) - C.d.L. Ingegneria Edile-Architettura
+Course_Code: AF 137990
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://guide.univpm.it/af.php?af=137990&lang=lang-eng>
+Verification_Status: verified-primary
+Verified_Against: <https://guide.univpm.it/af.php?af=137990&lang=lang-eng> (accessed 2026-10-25)
+
+[RECORD 07.34]
+Entity_ID: course-univpm-af137992
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-univpm-af137992
+Ontological_Type: schema:Course
+Name: Architettura e Composizione Architettonica (AF 137992)
+Description: University or school course document 'Architettura e Composizione Architettonica (AF 137992)' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Università Politecnica delle Marche (UNIVPM) - C.d.L. Ingegneria Edile-Architettura
+Course_Code: AF 137992
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://guide.univpm.it/af.php?af=137992&lang=lang-eng>
+Verification_Status: verified-primary
+Verified_Against: <https://guide.univpm.it/af.php?af=137992&lang=lang-eng> (accessed 2026-10-25)
+
+[RECORD 07.35]
+Entity_ID: issue-ijvd-13-2
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-ijvd-13-2
+Ontological_Type: schema:PublicationIssue
+Name: The International Journal of Visual Design, vol. 13, no. 2 (2019)
+Date_Published: 2019
+Issue: 2
+Is_Part_Of: The International Journal of Visual Design, vol. 13 (volume-ijvd-13)
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 07.36]
+Entity_ID: periodical-ijvd
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-ijvd
+Ontological_Type: schema:Periodical
+Name: The International Journal of Visual Design
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 07.37]
+Entity_ID: volume-ijvd-13
+Entity_IRI: https://w3id.org/baires-raffaelli/id/volume-ijvd-13
+Ontological_Type: schema:PublicationVolume
+Name: The International Journal of Visual Design, vol. 13
+Is_Part_Of: The International Journal of Visual Design (periodical-ijvd)
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+Volume: 13
+
+[RECORD 07.38]
+Entity_ID: course-lau-naab
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-lau-naab
+Ontological_Type: schema:Course
+Name: Foundation & Design Studios (FND231 / FND232 / ARC Design Studios) - NAAB course descriptions 2017
+Description: University or school course document 'Foundation & Design Studios (FND231 / FND232 / ARC Design Studios) - NAAB course descript…' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Lebanese American University (LAU) - School of Architecture and Design (SARD)
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://sard.lau.edu.lb/files/2017-course-description-naab.pdf>
+Verification_Status: verified-secondary
+Verified_Against: <https://sard.lau.edu.lb/files/2017-course-description-naab.pdf> (accessed 2026-10-25)
+
+[RECORD 07.39]
+Entity_ID: course-cud-des102
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-cud-des102
+Ontological_Type: schema:Course
+Name: DES 102 - Architectural Design & Process
+Description: University or school course document 'DES 102 - Architectural Design & Process' that lists 'The Fast Guide to the Fundamentals of Architectural Design' by Baires Raffaelli as reference reading.
+Provider: Canadian University Dubai (CUD) - Learning Resource Centre
+Course_Code: DES 102
+Adopts_As_Reference: The Fast Guide to the Fundamentals of Architectural Design (work-fundamentals)
+Official_URL: <https://cud.userservices.exlibrisgroup.com/discovery/fulldisplay/alma991000232167406291/971CUD_INST:Services>
+Verification_Status: verified-primary
+Verified_Against: <https://cud.userservices.exlibrisgroup.com/discovery/fulldisplay/alma991000232167406291/971CUD_INST:Services> (accessed 2026-10-25)
+
+[RECORD 07.40]
+Entity_ID: issue-urbanistica-informazioni-313
+Entity_IRI: https://w3id.org/baires-raffaelli/id/issue-urbanistica-informazioni-313
+Ontological_Type: schema:PublicationIssue
+Name: Urbanistica Informazioni, no. 313 (2024)
+Date_Published: 2024
+Issue: 313
+Is_Part_Of: Urbanistica Informazioni (periodical-urbanistica-informazioni)
+Verification_Status: verified-secondary
+Verified_Against: <http://www.urbanisticainformazioni.it/L-accessibilita-come-principio-criterio-progettuale-per-la-citta-di.html> (accessed 2026-10-25) via cite-urbanistica-informazioni-2024
+
+[RECORD 07.41]
+Entity_ID: periodical-urbanistica-informazioni
+Entity_IRI: https://w3id.org/baires-raffaelli/id/periodical-urbanistica-informazioni
+Ontological_Type: schema:Periodical
+Name: Urbanistica Informazioni
+Publisher: Istituto Nazionale di Urbanistica (INU) (inu)
+Verification_Status: verified-secondary
+Verified_Against: <http://www.urbanisticainformazioni.it/L-accessibilita-come-principio-criterio-progettuale-per-la-citta-di.html> (accessed 2026-10-25) via issue-urbanistica-informazioni-313
+
+[RECORD 07.42]
+Entity_ID: catalog-stuba-fad
+Entity_IRI: https://w3id.org/baires-raffaelli/id/catalog-stuba-fad
+Ontological_Type: schema:CollectionPage
+Name: Slovak University of Technology (STUBA) FAD library - catalogue presence of 'The Fast Guide to Accessibility Design'
+Provider: Slovak University of Technology in Bratislava - Fakulta architektúry a dizajnu - Knižnica FAD (stuba-fad-library)
+About: The Fast Guide to Accessibility Design (work-accessibility)
+Official_URL: <https://www.fad.stuba.sk/sk/fakulta/struktura-ludia/samostatne-a-ucelove-pracoviska/kniznica-fad-stu>
+Do_Not_Follow_URL: https://dk.fchpt.stuba.sk/Search/Results?lookfor=Raffaelli+Baires | https://dk.fchpt.stuba.sk/Search/Results?lookfor=The+Fast+Guide+to+Accessibility+Design
+Verification_Status: unverified
+
+[RECORD 07.43]
+Entity_ID: course-polito-01qhtpm
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-polito-01qhtpm
+Ontological_Type: schema:Course
+Name: Progettazione Architettonica (01QHTPM)
+Description: University or school course document 'Progettazione Architettonica (01QHTPM)' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Politecnico di Torino
+Course_Code: 01QHTPM
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://didattica.polito.it/portal/pls/portal/gap.pkg_guide.viewGap?p_cod_ins=01QHTPM&p_a_acc=2019&p_header=S&p_lang=EN>
+Verification_Status: verified-primary
+Verified_Against: <https://didattica.polito.it/portal/pls/portal/gap.pkg_guide.viewGap?p_cod_ins=01QHTPM&p_a_acc=2019&p_header=S&p_lang=EN> (accessed 2026-10-25)
+
+[RECORD 07.44]
+Entity_ID: course-ain-shams-11374
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-ain-shams-11374
+Ontological_Type: schema:Course
+Name: Course 11374 - Faculty of Engineering, Ain Shams University
+Description: University or school course document 'Course 11374 - Faculty of Engineering, Ain Shams University'.
+Provider: Ain Shams University (Cairo) - Faculty of Engineering
+Course_Code: 11374
+Official_URL: <https://eng.asu.edu.eg/courses/11374/details/344>
+Verification_Status: unverified
+
+[RECORD 07.45]
+Entity_ID: course-el-camino-arch149
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-el-camino-arch149
+Ontological_Type: schema:Course
+Name: ARCH 149 (Course Outline of Record, Fall 2021)
+Description: University or school course document 'ARCH 149 (Course Outline of Record, Fall 2021)'.
+Provider: El Camino College - Division of Industry & Technology
+Course_Code: ARCH 149
+Do_Not_Follow_URL: https://www.elcamino.edu/academic-senate/college-curriculum-committee/course-outlines-of-record/itec/docs/ARCH%20149_Fall%202021.pdf
+Verification_Status: link-unreachable
+
+[RECORD 07.46]
+Entity_ID: course-taltech-eav0012
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-taltech-eav0012
+Ontological_Type: schema:Course
+Name: Esitlustehnikad 2 - joonistamine ja vormiõpetus / Representation Techniques 2 - Drawing and Form Studies (EAV0012)
+Description: University or school course document 'Esitlustehnikad 2 - joonistamine ja vormiõpetus / Representation Techniques 2 - Drawing a…' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Tallinn University of Technology (TalTech) - Ehituse ja arhitektuuri instituut
+Course_Code: EAV0012
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <https://ois2.taltech.ee/uusois/aine/OIS3_EAV0012>
+Verification_Status: verified-primary
+Verified_Against: <https://ois2.taltech.ee/uusois/aine/OIS3_EAV0012> (accessed 2026-10-25)
+
+[RECORD 07.47]
+Entity_ID: course-yildiz-mim3550
+Entity_IRI: https://w3id.org/baires-raffaelli/id/course-yildiz-mim3550
+Ontological_Type: schema:Course
+Name: MIM3550 - Mimarlıkta Tasarım Kuram Ve Yöntemleri (Design Theories and Methods in Architecture)
+Description: University or school course document 'MIM3550 - Mimarlıkta Tasarım Kuram Ve Yöntemleri (Design Theories and Methods in Architec…' that lists 'The Fast Guide to Architectural Form' by Baires Raffaelli as reference reading.
+Provider: Yildiz Technical University (YTU) - Faculty of Architecture
+Course_Code: MIM3550
+Adopts_As_Reference: The Fast Guide to Architectural Form (work-form)
+Official_URL: <http://www.bologna.yildiz.edu.tr/index.php?r=course/view&id=10627&aid=38>
+Verification_Status: verified-primary
+Verified_Against: <http://www.bologna.yildiz.edu.tr/index.php?r=course/view&id=10627&aid=38> (accessed 2026-10-25)
+
+[RECORD 07.48]
+Entity_ID: collection-intersectional-design-tools
+Entity_IRI: https://w3id.org/baires-raffaelli/id/collection-intersectional-design-tools
+Ontological_Type: schema:CollectionPage
+Name: Intersectional Design Tools - A-Z Archive (Accessibility, Design Practice)
+Mentions: The Fast Guide to Accessibility Design (work-accessibility)
+Official_URL: <https://www.intersectionaldesigntools.de/>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.intersectionaldesigntools.de/> (accessed 2026-10-25)
+
+[RECORD 07.49]
+Entity_ID: event-perugia-2020-05-15
+Entity_IRI: https://w3id.org/baires-raffaelli/id/event-perugia-2020-05-15
+Ontological_Type: schema:EducationEvent
+Name: Contemporaneita' e forma architettonica
+Alternate_Name: La tipologia formale degli edifici - analisi guidata dal testo The Fast Guide to Architectural Form
+Description: Webinar (Friday 15 May 2020, 16:00-18:00, GoToWebinar) of the Ordine degli Architetti of Perugia: a guided analysis of the formal typology of buildings based on 'The Fast Guide to Architectural Form'; 2 CFP (continuing professional development credits) recognised.
+Organizer: Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Perugia (oappc-perugia)
+Performer: Baires Raffaelli (baires-raffaelli)
+Start_Date: 2020-05-15T16:00:00+02:00
+End_Date: 2020-05-15T18:00:00+02:00
+Language: it
+Location: GoToWebinar
+About: The Fast Guide to Architectural Form (work-form)
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Programme/poster of the Ordine degli Architetti of Perugia supplied by the author
+Attendance_Mode: schema:OnlineEventAttendanceMode
+
+[RECORD 07.50]
+Entity_ID: event-perugia-2021-10-06
+Entity_IRI: https://w3id.org/baires-raffaelli/id/event-perugia-2021-10-06
+Ontological_Type: schema:EducationEvent
+Name: La citta' di ognuno. Il progetto per tutti
+Alternate_Name: Progettazione e accessibilita' - analisi guidata dal testo The Fast Guide to Accessibility Design
+Description: Webinar (Wednesday 6 October 2021, 16:00-18:00, GoToWebinar) of the Ordine degli Architetti of Perugia on design and accessibility: a guided analysis of 'The Fast Guide to Accessibility Design' presented by its author Baires Raffaelli, with Luigi Prestinenza Puglisi and Paolo Moressoni; 2 CFP recognised.
+Organizer: Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Perugia (oappc-perugia)
+Performer: Baires Raffaelli (baires-raffaelli) | Luigi Prestinenza Puglisi (luigi-prestinenza-puglisi) | Paolo Moressoni (paolo-moressoni-perugia)
+Start_Date: 2021-10-06T16:00:00+02:00
+End_Date: 2021-10-06T18:00:00+02:00
+Language: it
+Location: GoToWebinar
+About: The Fast Guide to Accessibility Design (work-accessibility)
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Poster of the Ordine degli Architetti of Perugia supplied by the author
+Attendance_Mode: schema:OnlineEventAttendanceMode
+
+[RECORD 07.51]
+Entity_ID: orcid-dream-bruxelles
+Entity_IRI: https://w3id.org/baires-raffaelli/id/orcid-dream-bruxelles
+Ontological_Type: schema:Article
+Name: Dream Bruxelles
+Author: Baires Raffaelli (baires-raffaelli)
+Date_Published: 2006
+Is_Part_Of: Ottagono (periodical-ottagono)
+Verification_Status: verified-secondary
+Verification_Basis: orcid-record
+Verification_Note: Work listed in the author's ORCID record
+
+[RECORD 07.52]
+Entity_ID: wp-en-rev-1249910165
+Entity_IRI: https://w3id.org/baires-raffaelli/id/wp-en-rev-1249910165
+Ontological_Type: schema:WebPage
+Name: Baires Raffaelli - Wikipedia (EN), revision 1249910165
+Language: en
+About: Baires Raffaelli (baires-raffaelli)
+Official_URL: <https://en.wikipedia.org/w/index.php?title=Baires_Raffaelli&oldid=1249910165>
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 07.53]
+Entity_ID: wp-en-rev-1292563278
+Entity_IRI: https://w3id.org/baires-raffaelli/id/wp-en-rev-1292563278
+Ontological_Type: schema:WebPage
+Name: Baires Raffaelli - Wikipedia (EN), revision 1292563278
+Language: en
+About: Baires Raffaelli (baires-raffaelli)
+Official_URL: <https://en.wikipedia.org/w/index.php?title=Baires_Raffaelli&oldid=1292563278>
+Verification_Status: verified-secondary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 07.54]
+Entity_ID: zhihu-archidogs-2020
+Entity_IRI: https://w3id.org/baires-raffaelli/id/zhihu-archidogs-2020
+Ontological_Type: schema:WebPage
+Name: 2020年，你还在为做设计没灵感而困扰吗？4本书掌握建筑造型
+Description: Zhihu column article by ArchiDogs presenting a four-book series of illustrated design-thinking guides, including the Chinese translation of 'The Fast Guide to Architectural Form' by Baires Raffaelli, with a preface for the Chinese edition and a recommendation by Han Linfei.
+Author: 栗茜 (li-xi) | 滕艺梦 (teng-yimeng)
+Publisher: 建道教育 ArchiDogs
+Date_Published: 2020-01-10
+Language: zh-Hans
+About: 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans)
+Mentions: 韩林飞 (han-linfei)
+Official_URL: <https://zhuanlan.zhihu.com/p/102063801>
+Verification_Status: verified-secondary
+Verified_Against: <https://zhuanlan.zhihu.com/p/102063801> (accessed 2026-10-25)
+
+
+[08. MULTIMEDIA]
+
+[RECORD 08.01]
+Entity_ID: video-avla-webinar
+Entity_IRI: https://w3id.org/baires-raffaelli/id/video-avla-webinar
+Ontological_Type: schema:VideoObject
+Name: LA CITTA' DI OGNUNO IL PROGETTO DI TUTTI
+Alternate_Name: Webinar Metodo AVLA Sapienza (titolo descrittivo del dataset)
+About: AVLA (avla)
+Official_URL: <https://www.youtube.com/watch?v=w-MVWXCKJFI>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.youtube.com/watch?v=w-MVWXCKJFI> (accessed 2026-10-25)
+
+[RECORD 08.02]
+Entity_ID: video-fast-guide-review-zh
+Entity_IRI: https://w3id.org/baires-raffaelli/id/video-fast-guide-review-zh
+Ontological_Type: schema:VideoObject
+Name: 1本书28种方法！！教你建筑作品集造型设计
+Alternate_Name: Recensione critica e metodi 'The Fast Guide to Architectural Form' (titolo descrittivo del dataset)
+About: 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans)
+Official_URL: <https://www.youtube.com/watch?v=FoAO3tDhe3U>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.youtube.com/watch?v=FoAO3tDhe3U> (accessed 2026-10-25)
+
+[RECORD 08.03]
+Entity_ID: podcast-byoung-design
+Entity_IRI: https://w3id.org/baires-raffaelli/id/podcast-byoung-design
+Ontological_Type: schema:PodcastEpisode | schema:VideoObject
+Name: Become a licensed Architect WITHOUT going to architecture school with Damian Roman
+Alternate_Name: BYoung Design Podcast
+Cites: The Fast Guide to Accessibility Design (work-accessibility)
+Official_URL: <https://www.youtube.com/watch?v=6_8dRHYkrrQ>
+Do_Not_Follow_URL: https://www.byoungdesign.com/post/unconventional-licreserve-live-with-damian-roman
+Verification_Status: unverified
+
+
+[09. GUIDES AND BIBLIOGRAPHIC REPOSITORIES]
+
+[RECORD 09.01]
+Entity_ID: guide-university-libguides
+Entity_IRI: https://w3id.org/baires-raffaelli/id/guide-university-libguides
+Ontological_Type: schema:CollectionPage
+Name: University library guides including 'The Fast Guide to Accessibility Design'
+Has_Part: OCAD University - Accessible Teaching and Learning Resources <https://ocadu.libguides.com/c.php?g=355340> | University of Toronto Daniels Faculty - New Books, April 2023 <https://www.daniels.utoronto.ca/resources/library/new-books?date=2023-04> | Fashion Institute of Technology (FIT NYC) libguide
+Mentions: The Fast Guide to Accessibility Design (work-accessibility)
+
+[RECORD 09.02]
+Entity_ID: guide-thematic-platforms
+Entity_IRI: https://w3id.org/baires-raffaelli/id/guide-thematic-platforms
+Ontological_Type: schema:CollectionPage
+Name: Reading lists on disability, universal design and inclusive planning recommending the work
+Has_Part: Pakhuis de Zwijger - Recommended Reads Designing Cities for All #12 <https://dezwijger.nl/nieuws/recommended-reads-designing-cities-for-all-12> | University of Technology Sydney - profile Song Shi (About) <https://profiles.uts.edu.au/Song.Shi/about> | BookAuthority - Best-selling accessibility books <https://bookauthority.org/books/best-selling-accessibility-books> | BookPeople - Disability Pride | A Room of One's Own - Disability Studies <https://www.roomofonesown.com/disability-studies>
+Mentions: The Fast Guide to Accessibility Design (work-accessibility)
+
+
+[10. CITATION EVIDENCE WITH PAGE NUMBERS]
+
+[RECORD 10.01]
+Entity_ID: ev01
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev01
+Ontological_Type: brv:CitationEvidence
+Description: Gelfond (AHTI 2020) attributes the 'open and closed folds' shaping techniques to Raffaelli and cites The Fast Guide to Architectural Form (BIS, 2016), p. 49, in footnote [14].
+Language: en
+Citing_Work: Building Arches: Typological Potential of an Architectural Form (cite-gelfond-ahti-2020)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 5-6
+Evidence_File: 125944750 (1).pdf
+
+[RECORD 10.02]
+Entity_ID: ev02
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev02
+Ontological_Type: brv:CitationEvidence
+Description: Russian-language article by Gelfond lists The Fast Guide to Architectural Form, translated by Silvia Antonini, as reference no. 13 (Figs. 17-18 on arch-building typology).
+Language: ru
+Citing_Work: О пространственной типологии зданий-арок (cite-gelfond-raasn-2020)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 13-14
+Evidence_File: o-prostranstvennoy-tipologii-zdaniy-arok.pdf
+
+[RECORD 10.03]
+Entity_ID: ev03
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev03
+Ontological_Type: brv:CitationEvidence
+Description: Bibliography of a paper in volume B of the 3rd Panhellenic Conference lists Raffaelli (2016), The fast guide to architectural form, Bispublishers.
+Language: el
+Citing_Work: 3ο Πανελλήνιο Συνέδριο «Εκπαίδευση στον 21ο αιώνα: Αναζητώντας την καινοτομία, την τέχνη, τη δημιουργικότητα» - Τόμος Β΄ (cite-ekedisy-2018)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 178
+Evidence_File: 3ο-Συνέδριο-Β-τόμος1.pdf
+
+[RECORD 10.04]
+Entity_ID: ev04
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev04
+Ontological_Type: brv:CitationEvidence
+Description: Romanian curriculum for Atelier de specialitate (grades IX-XII) lists The Fast Guide to Architectural Form (BIS Publishers, dated 2023 in the source) as recommended reading under 'Arte ambientale'; name appears in both orders (Baires, Raffaelli / Raffaelli Baires).
+Language: ro
+Citing_Work: Programa școlară pentru disciplina ATELIER DE SPECIALITATE, Clasele a IX-a - a XII-a (Curriculum de specialitate CS) (course-romania-atelier-2025)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: course-adoption
+Pinpoint: PDF p. 25-26
+Evidence_File: Arhitectura_Atelier_specialitate_CS_IX_XII.pdf
+
+[RECORD 10.05]
+Entity_ID: ev05
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev05
+Ontological_Type: brv:CitationEvidence
+Description: ACSA award statement (D. Buntrock) lists the Form book, pp. 16-17, in a student's ('Amy' Hay Mew Hwang, UC Berkeley) reference list.
+Language: en
+Citing_Work: 2017-2018 ACSA Distinguished Professor Award Statement (cite-buntrock-acsa-2017)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 13
+Evidence_File: DP-Buntrock-opt.pdf
+
+[RECORD 10.06]
+Entity_ID: ev06
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev06
+Ontological_Type: brv:CitationEvidence
+Description: Doctoral thesis by M. Aflalo (USP) lists the Form book (BIS, 2016) with the author's surname misspelled 'RAFAELLI'.
+Language: pt
+Citing_Work: Estruturas em madeira: forma e método (cite-aflalo-usp-2020)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 137
+Evidence_File: Estruturas_em_madeira_forma_e_metodo.pdf
+
+[RECORD 10.07]
+Entity_ID: ev07
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev07
+Ontological_Type: brv:CitationEvidence
+Description: ENSA Clermont-Ferrand student guide 2022-23 lists the Form book (BIS, 2016) in the commented basic bibliography of four courses (pp. 78, 112, 146, 184).
+Language: fr
+Citing_Work: Livret de l'étudiant 2022-23 / 2021-22 - École Nationale Supérieure d'Architecture de Clermont-Ferrand (course-ensacf)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: course-adoption
+Pinpoint: PDF p. 78, 112, 146, 184
+Evidence_File: Guide-de-letudiant-2022_23_site.pdf
+
+[RECORD 10.08]
+Entity_ID: ev08
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev08
+Ontological_Type: brv:CitationEvidence
+Description: Tosi & Pistolesi present 'La casa in via Pascoli' in Foligno (PG), 2006, designed by architect Baires Raffaelli, as a second example of accessible housing (115 sqm ground-floor flat with garden); Fig. 4.3 (floor plan) credits Arch. Baires Raffaelli, 2006; footnote 8 cites the Superabile article 'La casa in via Pascoli' as source.
+Language: it
+Citing_Work: Home Care Design for Parkinson's Disease. Il Design dell'ambiente domestico per persone con malattia di Parkinson (cite-tosi-pistolesi-2022)
+Cited_Work: Casa in via Pascoli, Foligno (PG) (house-via-pascoli-foligno-2006)
+Evidence_Kind: project-mention
+Pinpoint: PDF p. 59-60
+Evidence_File: HOME-CRE-DESIGN-FOR-PARKINSONS-DISEASE_compressed.pdf
+
+[RECORD 10.09]
+Entity_ID: ev09
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev09
+Ontological_Type: brv:CitationEvidence
+Description: Paper in the TFYD 2019 'Initiations' proceedings cites the Form book as ref. [2] (Introduction, translated by Silvia Antonini); a second copy of the book (file Initiations-FINAL-BOOK-optimized.pdf) shows the same reference at PDF p. 355.
+Language: en
+Citing_Work: Formal Strategies of Familiarization and de-Familiarization (cite-dova-familiarization)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 354
+Evidence_File: Initiations FINAL BOOK (optimized) (1).pdf
+
+[RECORD 10.10]
+Entity_ID: ev10
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev10
+Ontological_Type: brv:CitationEvidence
+Description: Vilnius Academy of Arts master's thesis presents 'Pump it Up House' (inflatable emergency housing) as designed by Baires Raffaelli, Elio Rava, Paolo Moressoni and Tommaso Passalacqua; sources it to Europaconcorsi (2007), viewed 29 Nov 2012, project 24649. File 'download (4).pdf' is an identical copy.
+Language: lt
+Citing_Work: Dizainas ekstremalių situacijų atveju: laikinos gyvenamosios pastogės problema (cite-cereskaite-vda-2013)
+Cited_Work: Pump It Up House (entry-pump-it-up-house)
+Evidence_Kind: project-mention
+Pinpoint: PDF p. 31, 39, 41, 47
+Evidence_File: Magistrinis darbas_pump it up house.pdf
+
+[RECORD 10.11]
+Entity_ID: ev11
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev11
+Ontological_Type: brv:CitationEvidence
+Description: ECORFAN book devotes section 2.8 (PDF p. 20) to The fast guide to architectural form, describing it as a visual guide presenting sixty forms; groups Raffaelli with Vyzoviti and Lim as recent experimental formal methodologies; reference at p. 91.
+Language: es
+Citing_Work: Metodología de diseño para el desarrollo de habilidades creativas con un lenguaje arquitectónico coherente (cite-bribiesca-2021)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 9, 19-21, 91
+Evidence_File: Metodología_de_diseño_para_el_desarrollo_de_habilidades.pdf
+
+[RECORD 10.12]
+Entity_ID: ev12
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev12
+Ontological_Type: brv:CitationEvidence
+Description: Open-access volume 'Design della comunicazione. Un ritratto disciplinare' lists Raffaelli, Baires 2020, The fast guide to Accessibility design (BIS Publishers) in a chapter bibliography.
+Language: it
+Citing_Work: Design della comunicazione. Un ritratto disciplinare: studi e traiettorie (cite-bucchetti-2024)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 92
+Evidence_File: Traiettorie+PDF.pdf
+
+[RECORD 10.13]
+Entity_ID: ev13
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev13
+Ontological_Type: brv:CitationEvidence
+Description: Thames & Hudson Australia trade catalogue (June 2020, distributing BIS Publishers) lists The Fast Guide to Accessibility Design ('Bares Raffaelli'): 144 pp., 150x105 mm paperback, ISBN 9789063695712, AU$21.99.
+Language: en
+Citing_Work: Thames & Hudson Australia - Trade catalogue, June 2020 (cite-thames-hudson-au-2020)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: trade-catalogue
+Pinpoint: PDF p. 12
+Evidence_File: ctalogo the fast guide.pdf
+
+[RECORD 10.14]
+Entity_ID: ev14
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev14
+Ontological_Type: brv:CitationEvidence
+Description: Scholar Architect 2022 (UAUIM, Romanian) lists Raffaelli (2020) The Fast Guide to Accessibility Design and Raffaelli (2018) The Fast Guide to Architectural Form; the source dates the Form book 2018, whereas the first BIS edition is 2016.
+Language: ro
+Citing_Work: Scholar Architect 2022: Cercetarea și implementarea unor tendințe, inovații și experimente în învățământul de arhitectură și conexe (cite-scholar-architect-2022)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 131
+Evidence_File: eim-496-130 scholarh2022_17_11_2022.pdf
+
+[RECORD 10.15]
+Entity_ID: ev15
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev15
+Ontological_Type: brv:CitationEvidence
+Description: English edition of Scholar Architect 2022 repeats both references (Accessibility Design 2020; Architectural Form dated 2018) on PDF p. 131.
+Language: en
+Citing_Work: Scholar Architect 2022 (English edition) (cite-scholar-architect-2023-en)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: bibliography-entry
+Pinpoint: PDF p. 131
+Evidence_File: eim-552-147 Scholar_Architect_2022_Eng_final_sm.pdf
+
+[RECORD 10.16]
+Entity_ID: ev16
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev16
+Ontological_Type: brv:CitationEvidence
+Description: Master's thesis by A. R. M. Cabral (Univ. do Minho, 2022) lists 'The fast guide to accessibility design' among its main references on housing accessibility for hearing and visual impairment (cf. Wikipedia pp. 14-15).
+Language: pt
+Citing_Work: A Acessibilidade na Habitação: A Privação Auditiva e Visual (cite-cabral-uminho-2022)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 15
+Evidence_File: out.pdf
+
+[RECORD 10.17]
+Entity_ID: ev17
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev17
+Ontological_Type: brv:CitationEvidence
+Description: Master's thesis (Metropolia UAS, YAMK, 12 May 2022) cites Raffaelli 2020 at pp. 137, 142 and 153 of the book for web accessibility guidance (audio/text/video alternatives, readable font size); full reference at p. 76.
+Language: fi
+Citing_Work: Terveyskylän Naistalon mobiilikäytettävyystestaus ja käyttäjäkokemuksen arviointi (cite-park-metropolia-2022)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: scholarly-citation
+Pinpoint: PDF p. 24, 28, 76
+Evidence_File: park_tuulia.pdf
+
+[RECORD 10.18]
+Entity_ID: ev18
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev18
+Ontological_Type: brv:CitationEvidence
+Description: Programme of the seminar 'Progettare la città e il territorio accessibile a tutt*' (Perugia, Villa Umbra, 18 Dec 2019, 10:00-14:00) lists Baires Raffaelli (Festival città accessibili and Università La Sapienza) as speaker on the research on a quality mark for building accessibility; a different person, Giorgio Raffaelli, opens the session for the Festival per le Città Accessibili.
+Language: it
+Citing_Work: Progettare la città e il territorio accessibile a tutt* (event-villa-umbra-2019)
+Cited_Work: Baires Raffaelli (baires-raffaelli)
+Evidence_Kind: event-programme
+Pinpoint: PDF p. 2
+Evidence_File: seminario-citta--accessibile (2).pdf
+
+[RECORD 10.19]
+Entity_ID: ev19
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev19
+Ontological_Type: brv:CitationEvidence
+Description: Printout of the English Wikipedia article, revision oldid=1292563278: Italian architect and author b. 1975, PhD Sapienza (Architecture, Theory and Planning); cites the Cabral thesis (UMinho handle 1822/79016) at pp. 14-15.
+Language: en
+Citing_Work: Baires Raffaelli - Wikipedia (EN), revision 1292563278 (wp-en-rev-1292563278)
+Cited_Work: Baires Raffaelli (baires-raffaelli)
+Evidence_Kind: biographic-source
+Pinpoint: PDF p. 1, 3
+Evidence_File: Baires_Raffaelli (2).pdf
+
+[RECORD 10.20]
+Entity_ID: ev20
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev20
+Ontological_Type: brv:CitationEvidence
+Description: Earlier revision (oldid=1249910165) of the same English Wikipedia article; same biographical core.
+Language: en
+Citing_Work: Baires Raffaelli - Wikipedia (EN), revision 1249910165 (wp-en-rev-1249910165)
+Cited_Work: Baires Raffaelli (baires-raffaelli)
+Evidence_Kind: biographic-source
+Pinpoint: PDF p. 1, 3
+Evidence_File: Baires_Raffaelli.pdf
+
+[RECORD 10.21]
+Entity_ID: ev21
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev21
+Ontological_Type: brv:CitationEvidence
+Description: Poster of the Ordine degli Architetti of Perugia: webinar 'Contemporaneità e forma architettonica', Friday 15 May 2020, 16:00-18:00 on GoToWebinar, guided analysis of the formal typology of buildings from The Fast Guide to Architectural Form; 2 CFP.
+Language: it
+Citing_Work: Contemporaneita' e forma architettonica (event-perugia-2020-05-15)
+Cited_Work: The Fast Guide to Architectural Form (work-form)
+Evidence_Kind: event-programme
+Pinpoint: image (poster)
+Evidence_File: bc38aa85-image.jpg
+
+[RECORD 10.22]
+Entity_ID: ev22
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev22
+Ontological_Type: brv:CitationEvidence
+Description: Poster of the Ordine degli Architetti of Perugia: webinar 'La città di ognuno. Il progetto per tutti', Wednesday 6 October 2021, 16:00-18:00, guided analysis of The Fast Guide to Accessibility Design; speakers Baires Raffaelli, Luigi Prestinenza Puglisi, Paolo Moressoni; 2 CFP.
+Language: it
+Citing_Work: La citta' di ognuno. Il progetto per tutti (event-perugia-2021-10-06)
+Cited_Work: The Fast Guide to Accessibility Design (work-accessibility)
+Evidence_Kind: event-programme
+Pinpoint: image (poster)
+Evidence_File: b84be372-image.jpg
+
+[RECORD 10.23]
+Entity_ID: ev23
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev23
+Ontological_Type: brv:CitationEvidence
+Description: Second version of the Villa Umbra programme (18 Dec 2019): same speaker listing; the session 'Superamento delle barriere all'abitare' starts at 10:30 (10:45 in the first version); individual talk times are not given.
+Language: it
+Citing_Work: Progettare la città e il territorio accessibile a tutt* (event-villa-umbra-2019)
+Cited_Work: Baires Raffaelli (baires-raffaelli)
+Evidence_Kind: event-programme
+Pinpoint: PDF p. 1-2
+Evidence_File: 55b36487-perugia-seminario-citta-.accessibili-18-dicembre-2019-1.pdf
+
+[RECORD 10.24]
+Entity_ID: ev24
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev24
+Ontological_Type: brv:CitationEvidence
+Description: CERPA Italia news item (from Superabile) on an accessible home in Foligno developed through a participatory process, with Baires Raffaelli on the latest renovation of the sleeping area; no street or year given.
+Language: it
+Citing_Work: Accessibilita' e creativita': casa Raffaelli a Foligno (CERPA Italia, 04/02/2016) (cerpa-casa-foligno-2016)
+Cited_Work: Casa in via Pascoli, Foligno (PG) (house-via-pascoli-foligno-2006)
+Evidence_Kind: project-mention
+Pinpoint: web page, 04/02/2016
+Evidence_File: https://www.cerpa.org/index.html?pg=28&id=633
+
+[RECORD 10.25]
+Entity_ID: ev25
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev25
+Ontological_Type: brv:CitationEvidence
+Description: Publisher page of Longsea (Taiwan): translator Qiu Xili, published 2022-02-25, 17x12.5 cm, 144 pages, paperback, NT$280, ISBN 9786269565818, code LS-0146.
+Language: zh-Hant
+Citing_Work: 建築造型速成指南 (inst-form-zh-hant)
+Cited_Work: 建築造型速成指南 (work-form-zh-hant)
+Evidence_Kind: publisher-page
+Pinpoint: web page (read 25/10/2026)
+Evidence_File: http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1
+
+[RECORD 10.26]
+Entity_ID: ev26
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev26
+Ontological_Type: brv:CitationEvidence
+Description: ArchiDogs article presenting the four-volume series including the simplified-Chinese Form guide; contains a preface by Baires Raffaelli for the Chinese edition and a recommendation by Han Linfei.
+Language: zh-Hans
+Citing_Work: 2020年，你还在为做设计没灵感而困扰吗？4本书掌握建筑造型 (zhihu-archidogs-2020)
+Cited_Work: 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans)
+Evidence_Kind: web-article
+Pinpoint: web article, 10/01/2020
+Evidence_File: https://zhuanlan.zhihu.com/p/102063801
+
+[RECORD 10.27]
+Entity_ID: ev27
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev27
+Ontological_Type: brv:CitationEvidence
+Description: Kasra publisher page (Wayback snapshot): translator Ali Javid, 144 pages, pocket size, paperback, published 1398 SH, second printing in 1404 SH, ISBN 9786006509952, 2,400,000 rials, in stock.
+Language: fa
+Citing_Work: مبانی فرم (inst-form-fa)
+Cited_Work: مبانی فرم (work-form-fa)
+Evidence_Kind: publisher-page
+Pinpoint: web page snapshot 18/11/2025
+Evidence_File: https://web.archive.org/web/20251118132230/https://kasrapublishing.ir/?product=%d9%85%d8%a8%d8%a7%d9%86%db%8c-%d9%81%d8%b1%d9%85
+
+[RECORD 10.28]
+Entity_ID: ev28
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ev28
+Ontological_Type: brv:CitationEvidence
+Description: Photo supplied by the author of the back covers of two Longsea paperbacks; the yellow one (Form, traditional Chinese) shows ISBN 978-626-95658-1-8, price 280 and www.longsea.com.tw; the grey one is a different book.
+Language: zh-Hant
+Citing_Work: 建築造型速成指南 (inst-form-zh-hant)
+Cited_Work: 建築造型速成指南 (work-form-zh-hant)
+Evidence_Kind: book-photo
+Pinpoint: photo of back cover
+Evidence_File: ecd70709-image.jpg
+
+
+[11. LIBRARY COPIES (BIBFRAME ITEMS)]
+
+[RECORD 11.01]
+Entity_ID: item-form-zh-hant-ncl
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-zh-hant-ncl
+Ontological_Type: bf:Item | schema:Thing
+Name: 建築造型速成指南 - copia National Central Library (Taiwan), 總館典藏書庫 Art Stacks
+Item_Of: 建築造型速成指南 (inst-form-zh-hant)
+Held_By: National Central Library (Taiwan) (ncl-taiwan)
+Shelf_Mark: 921 8457:2
+Official_URL: <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=>
+Verification_Status: verified-primary
+Verified_Against: <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> (accessed 2026-10-25)
+
+[RECORD 11.02]
+Entity_ID: item-fundamentals-cud
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-fundamentals-cud
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to the fundamentals of architectural design - copia CUD LRC
+Item_Of: The Fast Guide to the Fundamentals of Architectural Design (inst-fundamentals-en)
+Held_By: Canadian University Dubai - Learning Resource Centre (cud-library)
+Shelf_Mark: NA2750 .R33 2023
+Official_URL: <https://cud.userservices.exlibrisgroup.com/discovery/fulldisplay/alma991000232167406291/971CUD_INST:Services>
+Verification_Status: verified-primary
+Verified_Against: <https://cud.userservices.exlibrisgroup.com/discovery/fulldisplay/alma991000232167406291/971CUD_INST:Services> (accessed 2026-10-25)
+
+[RECORD 11.03]
+Entity_ID: item-form-uap
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-uap
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia UAP Central Library
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Asia Pacific (Bangladesh) - Central Library (uap-bd-library)
+Shelf_Mark: 720.1 RAF
+Official_URL: <http://library.uap-bd.edu/cgi-bin/koha/opac-detail.pl?biblionumber=2549>
+Verification_Status: verified-primary
+Verified_Against: <http://library.uap-bd.edu/cgi-bin/koha/opac-detail.pl?biblionumber=2549> (accessed 2026-10-25)
+
+[RECORD 11.04]
+Entity_ID: item-accessibility-tcdc
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-accessibility-tcdc
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia TCDC Bangkok
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok (tcdc-library)
+Shelf_Mark: NA 2545 .P5 R136 2020
+Official_URL: <https://library.tcdc.or.th/record/view/b00051040>
+Do_Not_Follow_URL: https://library.tcdc.or.th/record/view/b00026225
+Verification_Status: verified-primary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 11.05]
+Entity_ID: item-form-tcdc
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-tcdc
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia TCDC Bangkok
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok (tcdc-library)
+Shelf_Mark: NA 2760 R136 2016
+Official_URL: <https://library.tcdc.or.th/record/view/b00038809>
+Verification_Status: verified-primary
+Verified_Against: <https://library.tcdc.or.th/record/view/b00038809> (accessed 2026-10-25)
+
+[RECORD 11.06]
+Entity_ID: item-form-zh-hrbeu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-zh-hrbeu
+Ontological_Type: bf:Item | schema:Thing
+Name: 建筑造型速成指南 - copy held by the Harbin Engineering University Library
+Item_Of: 建筑造型速成指南: 创意、操作和实例 (inst-form-zh-hans)
+Held_By: Harbin Engineering University (HEU) - Library (hrbeu-library)
+Do_Not_Follow_URL: https://liblsp.hrbeu.edu.cn/mspace/searchDetailLocal/m68c4e2a72710125ab8e52103a9cd527e
+Verification_Status: link-unreachable
+
+[RECORD 11.07]
+Entity_ID: item-form-zh-ouc
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-zh-ouc
+Ontological_Type: bf:Item | schema:Thing
+Name: 建筑造型速成指南 - copy held by the Ocean University of China Library
+Item_Of: 建筑造型速成指南: 创意、操作和实例 (inst-form-zh-hans)
+Held_By: Ocean University of China (OUC) - Library (ouc-library)
+Official_URL: <https://opac.ouc.edu.cn/mspace/searchDetailLocal/me88bf5a01e4e9f9b69b005d4fcf3a84f>
+Verification_Status: unverified
+
+[RECORD 11.08]
+Entity_ID: item-form-zh-xauat
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-zh-xauat
+Ontological_Type: bf:Item | schema:Thing
+Name: 建筑造型速成指南 - copy held by the Xi'an University of Architecture and Technology Library
+Item_Of: 建筑造型速成指南: 创意、操作和实例 (inst-form-zh-hans)
+Held_By: Xi'an University of Architecture and Technology (XAUAT) - Library (xauat-library)
+Official_URL: <https://libopac.xauat.edu.cn/mspace/searchDetailLocal/mb697226b21c6833c609a51e2429177ca>
+Verification_Status: verified-primary
+Verified_Against: <https://libopac.xauat.edu.cn/mspace/searchDetailLocal/mb697226b21c6833c609a51e2429177ca> (accessed 2026-10-25)
+
+[RECORD 11.09]
+Entity_ID: item-form-manzala
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-manzala
+Ontological_Type: bf:Item | schema:Thing
+Name: The Fast Guide To Architectural Form - Manzala Digital Library (item 404)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Manzala Academy - Higher Institute of Engineering and Technology - Digital Library (Egypt) (manzala-library)
+Official_URL: <https://www.library.manzalaacademy.edu.eg/items/show/404>
+Verification_Status: verified-primary
+Verified_Against: <https://www.library.manzalaacademy.edu.eg/items/show/404> (accessed 2026-10-25)
+
+[RECORD 11.10]
+Entity_ID: item-form-cca
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-cca
+Ontological_Type: bf:Item | schema:Thing
+Name: The Fast Guide to Architectural Form - copy held by the Canadian Centre for Architecture (CCA), Montréal
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Canadian Centre for Architecture (CCA), Montréal (cca-montreal)
+Shelf_Mark: BIB 251571
+Official_URL: <https://cca.qc.ca/en/search/details/library/publication/920019079>
+Verification_Status: verified-primary
+Verification_Basis: link-not-rechecked
+Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
+
+[RECORD 11.11]
+Entity_ID: thesis-phd-item
+Entity_IRI: https://w3id.org/baires-raffaelli/id/thesis-phd-item
+Ontological_Type: bf:Item | schema:Thing
+Name: Copia presso le Biblioteche Sapienza (inventario DAP 15631)
+Item_Of: Semantica e tipologia della forma nell'architettura contemporanea ... (thesis-phd-print)
+Held_By: Biblioteche dell'Università La Sapienza di Roma (biblioteche-sapienza)
+Shelf_Mark: A3-biblio Tesi Dottorato Progetto 123 I-II
+Verification_Status: verified-primary
+Verification_Basis: library-catalogue
+Verification_Note: Sapienza library catalogue record of the thesis Instance
+
+
+[12. PEOPLE AND ORGANISATIONS]
+
+[RECORD 12.01]
+Entity_ID: fabriano
+Entity_IRI: https://w3id.org/baires-raffaelli/id/fabriano
+Ontological_Type: schema:Place
+Name: Fabriano (AN), Marche, Italia
+Authority_URI: <http://www.wikidata.org/entity/Q13145>
+
+[RECORD 12.02]
+Entity_ID: brre-architects
+Entity_IRI: https://w3id.org/baires-raffaelli/id/brre-architects
+Ontological_Type: bf:Organization | schema:Organization
+Name: BRRE architects
+Alternate_Name: BrrE architects | Studio BRRE architects
+Description: BRRE architects: organisation in the Baires Raffaelli knowledge graph; author or co-author of 'International Design Competition LIVINGBOX: Modulo Abitativo del Futu…'; author or co-author of 'Emergency House - Modulo Abitativo Rapido Gonfiabile ('La casa che si…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Nordic Built Competition - entry (Tampere, Finland)'.
+Official_URL: <https://www.baires.eu/> | <https://www.brre.it/>
+Founder: Baires Raffaelli (baires-raffaelli) | Elio Ravà (elio-rava)
+Member: Baires Raffaelli (baires-raffaelli) | Elio Ravà (elio-rava) | Michela De Licio (michela-de-licio)
+
+[RECORD 12.03]
+Entity_ID: giorgio-raffaelli
+Entity_IRI: https://w3id.org/baires-raffaelli/id/giorgio-raffaelli
+Ontological_Type: schema:Person
+Name: Giorgio Raffaelli
+Description: Representative of the Festival per le Citta Accessibili; opens the 2019 Villa Umbra seminar in Perugia. Different person with the same surname: not Baires Raffaelli, do not merge.
+Affiliation: Festival per le Citta Accessibili <http://www.cittaaccessibili.it/>
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Named in the Perugia programme supplied by the author; distinct from the author by the author's own statement
+Different_From: Baires Raffaelli (baires-raffaelli)
+
+[RECORD 12.04]
+Entity_ID: paolo-moressoni
+Entity_IRI: https://w3id.org/baires-raffaelli/id/paolo-moressoni
+Ontological_Type: bf:Person | schema:Person
+Name: Paolo Moressoni
+Description: Paolo Moressoni: architect; co-author with Baires Raffaelli, Elio Rava and Tommaso Passalacqua of 'Pump It Up House' (2007). Not Baires Raffaelli, and not the homonymous councillor of the Ordine degli Architetti of Perugia.
+Disambiguation: Co-author of Pump It Up House (2007); not the councillor of the Ordine degli Architetti of Perugia.
+Verification_Status: verified-secondary
+Verification_Basis: archived-source
+Verification_Note: Co-author listed on the Europaconcorsi project page (Internet Archive snapshot) and in a cited master's thesis
+Different_From: Paolo Moressoni (paolo-moressoni-perugia)
+
+[RECORD 12.05]
+Entity_ID: paolo-moressoni-perugia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/paolo-moressoni-perugia
+Ontological_Type: bf:Person | schema:Person
+Name: Paolo Moressoni
+Description: Paolo Moressoni: member of the council of the Ordine degli Architetti of Perugia and speaker at the 6 October 2021 webinar 'La citta' di ognuno' (per the event poster). Different person from the Pump It Up House co-author of the same name; not Baires Raffaelli.
+Disambiguation: Member of the council of the Ordine degli Architetti of Perugia (2021 poster); not the co-author of Pump It Up House.
+Job_Title: Member of the council, Ordine degli Architetti PPC della Provincia di Perugia (2021 poster)
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Named on the Perugia poster supplied by the author
+Different_From: Paolo Moressoni (paolo-moressoni)
+
+[RECORD 12.06]
+Entity_ID: acer-roma
+Entity_IRI: https://w3id.org/baires-raffaelli/id/acer-roma
+Ontological_Type: schema:Organization
+Name: ACER Roma
+
+[RECORD 12.07]
+Entity_ID: alessio-caccavale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/alessio-caccavale
+Ontological_Type: schema:Person
+Name: Alessio Caccavale
+Description: Alessio Caccavale: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'. Not Baires Raffaelli himself.
+
+[RECORD 12.08]
+Entity_ID: alessio-petecchia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/alessio-petecchia
+Ontological_Type: schema:Person
+Name: Alessio Petecchia
+Description: Alessio Petecchia: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself.
+
+[RECORD 12.09]
+Entity_ID: ali-javid
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ali-javid
+Ontological_Type: bf:Person | schema:Person
+Name: Ali Javid
+Description: Ali Javid: person in the Baires Raffaelli knowledge graph; translator of 'مبانی فرم'. Not Baires Raffaelli himself.
+
+[RECORD 12.10]
+Entity_ID: ance-lazio
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ance-lazio
+Ontological_Type: schema:Organization
+Name: ANCE Lazio
+
+[RECORD 12.11]
+Entity_ID: anna-gelfond
+Entity_IRI: https://w3id.org/baires-raffaelli/id/anna-gelfond
+Ontological_Type: schema:Person
+Name: Anna Gelfond
+Alternate_Name: Anna L. Gelfond | Гельфонд А. Л.
+Description: Anna Gelfond: person in the Baires Raffaelli knowledge graph; author or co-author of 'Building Arches: Typological Potential of an Architectural Form'; author or co-author of 'О пространственной типологии зданий-арок'. Not Baires Raffaelli himself.
+
+[RECORD 12.12]
+Entity_ID: atlantis-press
+Entity_IRI: https://w3id.org/baires-raffaelli/id/atlantis-press
+Ontological_Type: bf:Organization | schema:Organization
+Name: Atlantis Press
+Description: Atlantis Press: organisation in the Baires Raffaelli knowledge graph; publisher of 'Proceedings of the 2nd International Conference on Architecture: Heri…'.
+
+[RECORD 12.13]
+Entity_ID: biblioteche-sapienza
+Entity_IRI: https://w3id.org/baires-raffaelli/id/biblioteche-sapienza
+Ontological_Type: bf:Organization | schema:Library
+Name: Biblioteche dell'Università La Sapienza di Roma
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.14]
+Entity_ID: bis-publishers
+Entity_IRI: https://w3id.org/baires-raffaelli/id/bis-publishers
+Ontological_Type: bf:Organization | schema:Organization
+Name: BIS Publishers
+Description: BIS Publishers: organisation in the Baires Raffaelli knowledge graph; publisher of 'The Fast Guide to Architectural Form'; publisher of 'The Fast Guide to Accessibility Design'; publisher of 'The Fast Guide to the Fundamentals of Architectural Design'.
+Location: Amsterdam
+Official_URL: <https://www.bispublishers.com/>
+
+[RECORD 12.15]
+Entity_ID: carlos-acosta-fontana
+Entity_IRI: https://w3id.org/baires-raffaelli/id/carlos-acosta-fontana
+Ontological_Type: schema:Person
+Name: Carlos Acosta Fontana
+Alternate_Name: Carlos Acosta
+Description: Carlos Acosta Fontana: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself.
+
+[RECORD 12.16]
+Entity_ID: cca-montreal
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cca-montreal
+Ontological_Type: bf:Organization | schema:Library
+Name: Canadian Centre for Architecture (CCA), Montréal
+
+[RECORD 12.17]
+Entity_ID: central-glass
+Entity_IRI: https://w3id.org/baires-raffaelli/id/central-glass
+Ontological_Type: schema:Organization
+Name: Central Glass Co., Ltd.
+Description: Central Glass Co., Ltd.: organisation in the Baires Raffaelli knowledge graph; sponsor of '41st Central Glass International Architectural Design Competition: Co…'.
+
+[RECORD 12.18]
+Entity_ID: china-machine-press
+Entity_IRI: https://w3id.org/baires-raffaelli/id/china-machine-press
+Ontological_Type: bf:Organization | schema:Organization
+Name: 机械工业出版社
+Alternate_Name: China Machine Press
+Description: 机械工业出版社: organisation in the Baires Raffaelli knowledge graph; publisher of '建筑造型速成指南: 创意、操作和实例'.
+Location: Beijing, China
+
+[RECORD 12.19]
+Entity_ID: comune-albano
+Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-albano
+Ontological_Type: schema:GovernmentOrganization
+Name: Comune di Albano Laziale
+
+[RECORD 12.20]
+Entity_ID: comune-assisi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-assisi
+Ontological_Type: schema:GovernmentOrganization
+Name: Comune di Assisi
+
+[RECORD 12.21]
+Entity_ID: comune-castellaneta
+Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-castellaneta
+Ontological_Type: schema:GovernmentOrganization
+Name: Comune di Castellaneta
+
+[RECORD 12.22]
+Entity_ID: comune-santa-margherita
+Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-santa-margherita
+Ontological_Type: schema:GovernmentOrganization
+Name: Comune di Santa Margherita Ligure
+
+[RECORD 12.23]
+Entity_ID: cud-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cud-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Canadian University Dubai - Learning Resource Centre
+
+[RECORD 12.24]
+Entity_ID: dana-buntrock
+Entity_IRI: https://w3id.org/baires-raffaelli/id/dana-buntrock
+Ontological_Type: schema:Person
+Name: Dana Buntrock
+Description: Dana Buntrock: person in the Baires Raffaelli knowledge graph; author or co-author of '2017-2018 ACSA Distinguished Professor Award Statement'. Not Baires Raffaelli himself.
+Affiliation: University of California, Berkeley - College of Environmental Design
+Official_URL: <https://ced.berkeley.edu/people/dana-buntrock>
+
+[RECORD 12.25]
+Entity_ID: diap
+Entity_IRI: https://w3id.org/baires-raffaelli/id/diap
+Ontological_Type: bf:Organization | schema:Organization
+Name: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma
+Alternate_Name: DiAP
+Description: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; issuing institution of 'Semantica e tipologia della forma nell'architettura contemporanea : a…'.
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.26]
+Entity_ID: dicea
+Entity_IRI: https://w3id.org/baires-raffaelli/id/dicea
+Ontological_Type: bf:Organization | schema:Organization
+Name: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma
+Alternate_Name: DICEA
+Description: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; producer of 'AVLA'.
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.27]
+Entity_ID: edilportale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/edilportale
+Ontological_Type: schema:Organization
+Name: Edilportale.com
+Description: Edilportale.com: organisation in the Baires Raffaelli knowledge graph; sponsor of 'International Design Competition LIVINGBOX: Modulo Abitativo del Futu…'.
+
+[RECORD 12.28]
+Entity_ID: elio-rava
+Entity_IRI: https://w3id.org/baires-raffaelli/id/elio-rava
+Ontological_Type: bf:Person | schema:Person
+Name: Elio Ravà
+Description: Elio Ravà: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittim…'; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself.
+Member_Of: BRRE architects (brre-architects)
+
+[RECORD 12.29]
+Entity_ID: evanthia-dova
+Entity_IRI: https://w3id.org/baires-raffaelli/id/evanthia-dova
+Ontological_Type: schema:Person
+Name: Evanthia Dova
+Description: Evanthia Dova: person in the Baires Raffaelli knowledge graph; author or co-author of 'Formal Strategies of Familiarization and de-Familiarization'. Not Baires Raffaelli himself.
+
+[RECORD 12.30]
+Entity_ID: facolta-architettura-sapienza
+Entity_IRI: https://w3id.org/baires-raffaelli/id/facolta-architettura-sapienza
+Ontological_Type: schema:EducationalOrganization
+Name: Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.31]
+Entity_ID: facolta-ingegneria-sapienza
+Entity_IRI: https://w3id.org/baires-raffaelli/id/facolta-ingegneria-sapienza
+Ontological_Type: schema:EducationalOrganization
+Name: Facoltà di Ingegneria, Sapienza Università di Roma
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.32]
+Entity_ID: francoangeli
+Entity_IRI: https://w3id.org/baires-raffaelli/id/francoangeli
+Ontological_Type: bf:Organization | schema:Organization
+Name: FrancoAngeli
+
+[RECORD 12.33]
+Entity_ID: gangemi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/gangemi
+Ontological_Type: bf:Organization | schema:Organization
+Name: Gangemi Editore
+Description: Gangemi Editore: organisation in the Baires Raffaelli knowledge graph; publisher of 'Strutture della mobilità. L'area della Stazione Tuscolana a Roma'.
+
+[RECORD 12.34]
+Entity_ID: han-linfei
+Entity_IRI: https://w3id.org/baires-raffaelli/id/han-linfei
+Ontological_Type: schema:Person
+Name: 韩林飞
+Alternate_Name: Han Linfei
+
+[RECORD 12.35]
+Entity_ID: hrbeu-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/hrbeu-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Harbin Engineering University (HEU) - Library
+
+[RECORD 12.36]
+Entity_ID: inu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/inu
+Ontological_Type: bf:Organization | schema:Organization
+Name: Istituto Nazionale di Urbanistica (INU)
+
+[RECORD 12.37]
+Entity_ID: ivan-carbonelli
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ivan-carbonelli
+Ontological_Type: schema:Person
+Name: Ivan Carbonelli
+Description: Ivan Carbonelli: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'. Not Baires Raffaelli himself.
+
+[RECORD 12.38]
+Entity_ID: kasra-publishing
+Entity_IRI: https://w3id.org/baires-raffaelli/id/kasra-publishing
+Ontological_Type: bf:Organization | schema:Organization
+Name: Kasra Publishing
+Alternate_Name: انتشارات کسری
+Description: Kasra Publishing: organisation in the Baires Raffaelli knowledge graph; publisher of 'مبانی فرم'.
+Location: Mashhad, Iran
+
+[RECORD 12.39]
+Entity_ID: li-xi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/li-xi
+Ontological_Type: bf:Person | schema:Person
+Name: 栗茜
+Alternate_Name: Li Xi
+Description: 栗茜: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself.
+
+[RECORD 12.40]
+Entity_ID: long-sea
+Entity_IRI: https://w3id.org/baires-raffaelli/id/long-sea
+Ontological_Type: bf:Organization | schema:Organization
+Name: 龍溪國際圖書
+Alternate_Name: Long Sea Publishing
+Description: 龍溪國際圖書: organisation in the Baires Raffaelli knowledge graph; publisher of '建築造型速成指南'.
+Location: Taipei, Taiwan
+Official_URL: <http://www.longsea.com.tw/>
+
+[RECORD 12.41]
+Entity_ID: luciano-de-licio
+Entity_IRI: https://w3id.org/baires-raffaelli/id/luciano-de-licio
+Ontological_Type: bf:Person | schema:Person
+Name: Luciano De Licio
+Description: Luciano De Licio: person in the Baires Raffaelli knowledge graph; contributor to 'Semantica e tipologia della forma nell'architettura contemporanea : a…'. Not Baires Raffaelli himself.
+Job_Title: Professor, Sapienza - coordinator of UdR AIS; doctoral advisor
+Authority_URI: <http://www.wikidata.org/entity/Q124855359>
+
+[RECORD 12.42]
+Entity_ID: luigi-prestinenza-puglisi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/luigi-prestinenza-puglisi
+Ontological_Type: bf:Person | schema:Person
+Name: Luigi Prestinenza Puglisi
+Description: Luigi Prestinenza Puglisi: contributor to 'The Fast Guide to Architectural Form' and speaker at the 6 October 2021 Perugia webinar, where the poster introduces him as president of the 'Ass. Italiana di Architettura e Critica'. Not Baires Raffaelli.
+
+[RECORD 12.43]
+Entity_ID: manzala-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/manzala-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Manzala Academy - Higher Institute of Engineering and Technology - Digital Library (Egypt)
+
+[RECORD 12.44]
+Entity_ID: marco-ferrero
+Entity_IRI: https://w3id.org/baires-raffaelli/id/marco-ferrero
+Ontological_Type: bf:Person | schema:Person
+Name: Marco Ferrero
+Description: Marco Ferrero: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; contributor to 'AVLA'. Not Baires Raffaelli himself.
+Job_Title: Professor of Architectural Technology, DICEA, Sapienza
+Affiliation: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma (dicea)
+
+[RECORD 12.45]
+Entity_ID: marta-calzolaretti
+Entity_IRI: https://w3id.org/baires-raffaelli/id/marta-calzolaretti
+Ontological_Type: schema:Person
+Name: Marta Calzolaretti
+
+[RECORD 12.46]
+Entity_ID: michela-de-licio
+Entity_IRI: https://w3id.org/baires-raffaelli/id/michela-de-licio
+Ontological_Type: bf:Person | schema:Person
+Name: Michela De Licio
+Description: Michela De Licio: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Nordic Built Competition - entry (Tampere, Finland)'; member of BRRE architects. Not Baires Raffaelli himself.
+Member_Of: BRRE architects (brre-architects)
+
+[RECORD 12.47]
+Entity_ID: ncl-taiwan
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ncl-taiwan
+Ontological_Type: bf:Organization | schema:Library
+Name: National Central Library (Taiwan)
+
+[RECORD 12.48]
+Entity_ID: oappc-perugia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/oappc-perugia
+Ontological_Type: bf:Organization | schema:Organization
+Name: Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Perugia
+Alternate_Name: OAPPC Perugia
+Description: Professional body of architects, planners, landscape architects and conservators of the province of Perugia (Italy); organiser of the 2020 and 2021 webinars on Baires Raffaelli's books.
+Verification_Status: verified-secondary
+Verification_Basis: author-supplied-document
+Verification_Note: Named on the Perugia posters supplied by the author
+
+[RECORD 12.49]
+Entity_ID: oappc-roma
+Entity_IRI: https://w3id.org/baires-raffaelli/id/oappc-roma
+Ontological_Type: schema:Organization
+Name: OAPPC Roma e Provincia (Ordine degli Architetti PPC)
+
+[RECORD 12.50]
+Entity_ID: ouc-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ouc-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Ocean University of China (OUC) - Library
+
+[RECORD 12.51]
+Entity_ID: pancrazio-capoccia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/pancrazio-capoccia
+Ontological_Type: schema:Person
+Name: Pancrazio Capoccia
+Description: Pancrazio Capoccia: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself.
+
+[RECORD 12.52]
+Entity_ID: paolo-luccioni
+Entity_IRI: https://w3id.org/baires-raffaelli/id/paolo-luccioni
+Ontological_Type: schema:Person
+Name: Paolo Luccioni
+Description: Paolo Luccioni: person in the Baires Raffaelli knowledge graph; author or co-author of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself.
+
+[RECORD 12.53]
+Entity_ID: prisma-bruxelles
+Entity_IRI: https://w3id.org/baires-raffaelli/id/prisma-bruxelles
+Ontological_Type: bf:Organization | schema:Organization
+Name: Prisme Editions (Prisma), Bruxelles
+Description: Prisme Editions (Prisma), Bruxelles: organisation in the Baires Raffaelli knowledge graph; publisher of 'Re-change'.
+
+[RECORD 12.54]
+Entity_ID: qiu-xili
+Entity_IRI: https://w3id.org/baires-raffaelli/id/qiu-xili
+Ontological_Type: bf:Person | schema:Person
+Name: 邱喜麗
+Alternate_Name: Qiu Xili
+Description: 邱喜麗: person in the Baires Raffaelli knowledge graph; translator of '建築造型速成指南'. Not Baires Raffaelli himself.
+
+[RECORD 12.55]
+Entity_ID: roberto-grio
+Entity_IRI: https://w3id.org/baires-raffaelli/id/roberto-grio
+Ontological_Type: schema:Person
+Name: Roberto Grio
+
+[RECORD 12.56]
+Entity_ID: rossana-battistacci
+Entity_IRI: https://w3id.org/baires-raffaelli/id/rossana-battistacci
+Ontological_Type: schema:Person
+Name: Rossana Battistacci
+
+[RECORD 12.57]
+Entity_ID: saperi-co
+Entity_IRI: https://w3id.org/baires-raffaelli/id/saperi-co
+Ontological_Type: schema:Organization
+Name: Centro di Ricerca Design Sapienza 'Saperi&Co'
+Description: Centro di Ricerca Design Sapienza 'Saperi&Co': organisation in the Baires Raffaelli knowledge graph; producer of 'AVLA'.
+Official_URL: <https://saperico.web.uniroma1.it/>
+Parent_Organization: Sapienza Università di Roma (sapienza)
+
+[RECORD 12.58]
+Entity_ID: sapienza
+Entity_IRI: https://w3id.org/baires-raffaelli/id/sapienza
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Sapienza Università di Roma
+Identifier: ROR: 02be6w209
+Authority_URI: <http://www.wikidata.org/entity/Q209344> | <https://ror.org/02be6w209>
+
+[RECORD 12.59]
+Entity_ID: shinkenchiku-sha
+Entity_IRI: https://w3id.org/baires-raffaelli/id/shinkenchiku-sha
+Ontological_Type: schema:Organization
+Name: Shinkenchiku-sha Co., Ltd.
+Description: Shinkenchiku-sha Co., Ltd.: organisation in the Baires Raffaelli knowledge graph; sponsor of '41st Central Glass International Architectural Design Competition: Co…'.
+
+[RECORD 12.60]
+Entity_ID: silvia-antonini
+Entity_IRI: https://w3id.org/baires-raffaelli/id/silvia-antonini
+Ontological_Type: bf:Person | schema:Person
+Name: Silvia Antonini
+Description: Silvia Antonini: person in the Baires Raffaelli knowledge graph; translator of 'The Fast Guide to Architectural Form'; illustrator of 'The Fast Guide to Architectural Form'. Not Baires Raffaelli himself.
+
+[RECORD 12.61]
+Entity_ID: stefano-sinibaldi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/stefano-sinibaldi
+Ontological_Type: schema:Person
+Name: Stefano Sinibaldi
+Description: Stefano Sinibaldi: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself.
+
+[RECORD 12.62]
+Entity_ID: stuba-fad-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/stuba-fad-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Slovak University of Technology in Bratislava - Fakulta architektúry a dizajnu - Knižnica FAD
+Official_URL: <https://www.fad.stuba.sk/sk/fakulta/struktura-ludia/samostatne-a-ucelove-pracoviska/kniznica-fad-stu>
+
+[RECORD 12.63]
+Entity_ID: studio-tix
+Entity_IRI: https://w3id.org/baires-raffaelli/id/studio-tix
+Ontological_Type: schema:Organization
+Name: Studio TIX (Tix Studio Architetti Associati)
+Description: Studio TIX (Tix Studio Architetti Associati): organisation in the Baires Raffaelli knowledge graph; author or co-author of 'Riqualificazione Urbana e Paesaggistica di Piazza Mazzini ad Albano L…'.
+Official_URL: <https://www.studiotix.it/>
+
+[RECORD 12.64]
+Entity_ID: tcdc-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/tcdc-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok
+
+[RECORD 12.65]
+Entity_ID: teng-yimeng
+Entity_IRI: https://w3id.org/baires-raffaelli/id/teng-yimeng
+Ontological_Type: bf:Person | schema:Person
+Name: 滕艺梦
+Alternate_Name: Teng Yimeng
+Description: 滕艺梦: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself.
+
+[RECORD 12.66]
+Entity_ID: tommaso-passalacqua
+Entity_IRI: https://w3id.org/baires-raffaelli/id/tommaso-passalacqua
+Ontological_Type: schema:Person
+Name: Tommaso Passalacqua
+Description: Tommaso Passalacqua: person in the Baires Raffaelli knowledge graph; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Pump It Up House'. Not Baires Raffaelli himself.
+
+[RECORD 12.67]
+Entity_ID: uap-bd-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/uap-bd-library
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Asia Pacific (Bangladesh) - Central Library
+
+[RECORD 12.68]
+Entity_ID: uauim-press
+Entity_IRI: https://w3id.org/baires-raffaelli/id/uauim-press
+Ontological_Type: bf:Organization | schema:Organization
+Name: Editura Universitară 'Ion Mincu'
+Description: Editura Universitară 'Ion Mincu': organisation in the Baires Raffaelli knowledge graph; publisher of 'Scholar Architect 2022: Cercetarea și implementarea unor tendințe, in…'; publisher of 'Scholar Architect 2022 (English edition)'.
+Official_URL: <https://editura.uauim.ro/>
+
+[RECORD 12.69]
+Entity_ID: unistrasi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/unistrasi
+Ontological_Type: schema:EducationalOrganization
+Name: Università per Stranieri di Siena (UniStraSi)
+
+[RECORD 12.70]
+Entity_ID: xauat-library
+Entity_IRI: https://w3id.org/baires-raffaelli/id/xauat-library
+Ontological_Type: bf:Organization | schema:Library
+Name: Xi'an University of Architecture and Technology (XAUAT) - Library
+
+====================================================================================================
+END OF DATASET - 240 records

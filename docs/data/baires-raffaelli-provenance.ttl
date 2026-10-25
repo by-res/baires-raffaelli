@@ -1,0 +1,436 @@
+# Baires Raffaelli dataset v3.0 - provenance layer
+# Editorial notes (brv:dataQualityNote, mostly in Italian) and ids of the records of the original working
+# dataset (brv:sourceRecord). Notes written about blank nodes (identifiers, roles) are attached to the
+# parent node and prefixed with the identifier in square brackets. Companion of baires-raffaelli.ttl. CC0 1.0.
+
+@prefix : <https://w3id.org/baires-raffaelli/id/> .
+@prefix brv: <https://w3id.org/baires-raffaelli/vocab#> .
+
+:abilitazione-architetto-2003 brv:dataQualityNote "L'URL CNAPPC risponde 200 ma mostra solo il modulo di ricerca (non e' un record persistente). Sessione/verbalizzazione provengono dal sito baires.eu."@it ;
+    brv:sourceRecord "02.02" .
+
+:avla brv:dataQualityNote "Pagina AVLA su baires.eu: idea e sviluppo Arch. PhD Baires Raffaelli; supervisore scientifico Prof. Ing. Marco Ferrero; team Alessio Petecchia, Stefano Sinibaldi, Pancrazio Capoccia; partner Association for Accessible Cities Festival. ORCID registra AVLA come marchio (trademark, 2020)."@it ;
+    brv:sourceRecord "03.03" .
+
+:avla-research-project brv:sourceRecord "03.03" .
+
+:award-romarchitettura-6 brv:dataQualityNote "La pagina epmroma.it elenca tra le MENZIONI 'The Fast Guide to Architectural Form di Baires Raffaelli e Silvia Antonini' (co-menzionata Silvia Antonini)."@it ;
+    brv:sourceRecord "04.07" .
+
+:baires-raffaelli brv:dataQualityNote "Profili social trovati sul sito ufficiale e non nel dataset: LinkedIn linkedin.com/in/baires-raffaelli-42008323, Facebook facebook.com/architects.BRRE (non verificati in questa sessione)."@it,
+        "[BIBSYS-NORAF / 1460961539772] Wikidata P1015."@it,
+        "[CiNii-Research-person / 1980023487683572225] CRID persona; il CRID 1140010304673101441 del dataset redirige a questa scheda. Valore aggiunto da Wikidata P11496."@it,
+        "[GND / 1212524179] d-nb.info ha risposto 503/429 durante l'audit; ID confermato da Wikidata P227."@it,
+        "[GoogleKnowledgeGraph / /g/11c0xndlnm] Wikidata P2671."@it,
+        "[ISNI / 0000000486011033] Link indicato come funzionante dall'autore (25/10/2026); dall'audit isni.org risulta dietro Cloudflare e non e' riproducibile. Confermato da OPAC SBN (ISNI 0000 0004 8601 1033), ORCID, NL CR e Wikidata; isni.org dietro Cloudflare."@it,
+        "[LibraryThing / raffaellibaires] HTTP 403 (Cloudflare) durante l'audit; Wikidata non riporta questo ID."@it,
+        "[NLAI-authority / 1492576] Wikidata P13906. Distinto dall'ID bibliografico NLAI 5577267 (che identifica il libro persiano)."@it,
+        "[NLB-Singapore / 7f05db6b-80da-11ee-bcbb-17f359b7e2ba] Il dataset indicava come URL la home del catalogo (non un URI di entita'): rimosso come link, ID confermato da Wikidata."@it,
+        "[NLC-authority / 032658037] Il dataset (01.09, 04.04) lo chiama 'NLC system identifier' del libro cinese; Wikidata lo riporta sia come P1213 (NLC) sia come P1048 (NCL Taiwan): valore sospetto, non verificato presso NLC."@it,
+        "[NTA / 401471187] Nessun URL nel dataset; ID confermato da Wikidata P1006."@it,
+        "[NUKAT / n2016242574] L'URL del dataset redirige al nuovo catalogo katalog.nukat.edu.pl, protetto da anti-bot."@it,
+        "[linked node] Le pagine corsidilaurea.uniroma1.it (corso 33470, Ingegneria edile-architettura) rispondono 200 ma NON nominano Raffaelli: non provano l'incarico."@it ;
+    brv:sourceRecord "01.01",
+        "01.02",
+        "01.03",
+        "01.04",
+        "01.05",
+        "01.06",
+        "01.07",
+        "01.08",
+        "01.09",
+        "01.10",
+        "01.11",
+        "01.12",
+        "01.13",
+        "01.14",
+        "01.15",
+        "01.16",
+        "01.17",
+        "01.18",
+        "01.19",
+        "01.20",
+        "01.21",
+        "01.22",
+        "01.23",
+        "01.24",
+        "01.25" .
+
+:brre-architects brv:dataQualityNote "Il dominio brre.it esiste e rimanda a baires.eu (verifica del 25/10/2026): la v1 e la prima stesura della v2 lo avevano segnato per errore come URL inventato. Co-fondatore dichiarato da Hachette; LinkedIn/Facebook ufficiali (facebook.com/architects.BRRE) non verificati."@it ;
+    brv:sourceRecord "05.09" .
+
+:catalog-stuba-fad brv:dataQualityNote "dk.fchpt.stuba.sk e' il catalogo della Facolta' di chimica e alimentazione (FCHPT), non della FAD, ed era irraggiungibile: la presenza del libro nella biblioteca FAD non e' provata. La home della biblioteca FAD risponde 200."@it ;
+    brv:sourceRecord "07.23" .
+
+:cerpa-casa-foligno-2016 brv:dataQualityNote "Pagina letta il 25/10/2026. Non cita via Pascoli ne' l'anno 2006, ma riprende l'articolo Superabile sulla casa di Foligno che il volume Tosi & Pistolesi cita (nota 8) come 'La casa in via Pascoli': identificazione coerente con l'indicazione dell'autore. Contiene dati personali di terzi, volutamente non riportati nel dataset."@it ;
+    brv:sourceRecord "07.08" .
+
+:chapter-re-change brv:dataQualityNote "Dataset: '2005/2006'. ORCID: book chapter 2005. Sito: 'Baby Change' (ed. Prisma, Brussels 2005). ISBN valido."@it ;
+    brv:sourceRecord "04.08" .
+
+:chapter-strutture-mobilita brv:dataQualityNote "Progetto di tesi di laurea (sito baires.eu); ORCID: book chapter 2003."@it ;
+    brv:sourceRecord "04.08" .
+
+:cite-aflalo-usp-2020 brv:dataQualityNote "DOI e record OK (la pagina redirige a /pt-br.html); il PDF 'MarceloAflalo_revisada.pdf' risponde 404. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Estruturas_em_madeira_forma_e_metodo.pdf, PDF p. 137); cfr. brv:CitationEvidence :ev06."@it ;
+    brv:sourceRecord "07.04" .
+
+:cite-bribiesca-2021 brv:dataQualityNote "Il DOI risolve al PDF su ecorfan.org con lo stesso titolo. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Metodología_de_diseño_para_el_desarrollo_de_habilidades.pdf, PDF p. 9, 19-21, 91); cfr. brv:CitationEvidence :ev11."@it ;
+    brv:sourceRecord "07.05" .
+
+:cite-bucchetti-2024 brv:dataQualityNote "Il catalogo FrancoAngeli redirige al login (non pubblico); il PDF Polimi risponde 200. L'opera citata ('Methodological works on information design and form') e' generica: quale libro di Raffaelli sia citato non e' specificato. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Traiettorie+PDF.pdf, PDF p. 92); cfr. brv:CitationEvidence :ev12."@it ;
+    brv:sourceRecord "07.07" .
+
+:cite-buntrock-acsa-2017 brv:dataQualityNote "PDF verificato sul testo (p. 13: bibliografia di una studentessa di Berkeley, 'Amy' Hay Mew Hwang, cita la Form guide alle pp. 16-17). La pagina premi ACSA risponde 404; la pagina facoltà redirige a ced.berkeley.edu/people/dana-buntrock. Data: il premio e' 2017-2018 ma il PDF e' caricato nel 2020. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (DP-Buntrock-opt.pdf, PDF p. 13); cfr. brv:CitationEvidence :ev05."@it ;
+    brv:sourceRecord "07.17" .
+
+:cite-cabral-uminho-2022 brv:dataQualityNote "ERRORE DEL DATASET: l'handle 1822/76974 risolve a 'Vasco Graça Moura: um modo verbal de estar no mundo'; la tesi Cabral e' 1822/79016 (redirect a repositorium.uminho.pt/entities/publication/3e1f49d9-…). Pagine citate: 14-15. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (out.pdf, PDF p. 15); cfr. brv:CitationEvidence :ev16."@it ;
+    brv:sourceRecord "07.09" .
+
+:cite-cereskaite-vda-2013 brv:dataQualityNote "Il PDF talpykla.elaba.lt risponde 200 (application/pdf, testo non estratto); il permalink vb.vda.lt risponde 400. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Magistrinis darbas_pump it up house.pdf, PDF p. 31, 39, 41, 47); cfr. brv:CitationEvidence :ev10."@it ;
+    brv:sourceRecord "07.11" .
+
+:cite-dova-familiarization brv:dataQualityNote "L'handle Hephaestus 11728/11797 risolve al saggio di Dova (200, hephaestus.nup.ac.cy). AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Initiations FINAL BOOK (optimized) (1).pdf, PDF p. 354); cfr. brv:CitationEvidence :ev09."@it ;
+    brv:sourceRecord "07.06" .
+
+:cite-ekedisy-2018 brv:dataQualityNote "Il PDF risponde 200 (application/pdf, titolo '3ο-Συνέδριο-Β-τόμος1.pdf'); contenuto della citazione non estratto. Il saggio 'Reflection on the Development of Architecture Students' Visual Capacities' e' attribuito dal dataset a questo volume. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (3ο-Συνέδριο-Β-τόμος1.pdf, PDF p. 178); cfr. brv:CitationEvidence :ev03."@it ;
+    brv:sourceRecord "07.12" .
+
+:cite-gelfond-ahti-2020 brv:dataQualityNote "ERRORE DEL DATASET: il DOI .048 risolve a 'High-Rise Dominants in the Urban Landscape of Baghdad'; il DOI corretto dell'articolo Gelfond (Atlantis 125944750) e' 10.2991/assehr.k.200923.043, coerente con Wikipedia. Verifica del 25/10/2026: la pagina Atlantis Press elenca il PDF; la pagina ResearchGate si apre (200) ed e' il record Gelfond, DOI .043, CC BY-NC 4.0 (Raffaelli non compare tra gli autori; la citazione non e' visibile nel testo caricato). AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (125944750 (1).pdf, PDF p. 5-6); cfr. brv:CitationEvidence :ev01."@it ;
+    brv:sourceRecord "07.01" .
+
+:cite-gelfond-raasn-2020 brv:dataQualityNote "DOI REGISTRATO (doi.org/api/handles: responseCode 1, verificato 25/10/2026) ma il target registrato http://aac.raasn.ru/article/view/211 da' 404; la pagina funzionante e' /index.php/aac/article/view/211 (redirige a /ru/article/view/211). Il DOI e' quindi valido come identificatore ma la sua risoluzione end-to-end e' fragile: si usa schema:url per l'accesso e il DOI come identificatore. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (o-prostranstvennoy-tipologii-zdaniy-arok.pdf, PDF p. 13-14); cfr. brv:CitationEvidence :ev02."@it ;
+    brv:sourceRecord "07.02" .
+
+:cite-iat-newsletter-2021 brv:dataQualityNote "Sito in manutenzione (503) anche il 25/10/2026; esiste uno snapshot Wayback del 02/11/2023 (contenuto non leggibile in automatico)."@it ;
+    brv:sourceRecord "07.16" .
+
+:cite-oliveira-dias brv:dataQualityNote "INCOERENZA: l'URL ResearchGate del record si riferisce a 'Reflection on the Development of Architecture Students' Visual Capacities: The Interface between Textual and Pictorial Languages' (stesso titolo del saggio del record 07.12), non all'articolo portoghese Oliveira & Dias. Link non caricato (anti-bot); autori senza nome proprio, rivista/anno mancanti. Verifica del 25/10/2026: la pagina ResearchGate si apre e il suo abstract nomina Baires Raffaelli (vedi :cite-oliveira-ijvd-2019)."@it ;
+    brv:sourceRecord "07.13" .
+
+:cite-oliveira-ijvd-2019 brv:dataQualityNote "Verificato il 25/10/2026 su ResearchGate (Request PDF, Federal University of Rio de Janeiro): l'abstract cita 'the surveys conducted by Anthony Di Mari, Nora Yoo, and Baires Raffaelli'. DOI letto sulla pagina, non risolto. Non e' l'articolo portoghese Oliveira & Dias del record 07.13, ma e' l'articolo a cui l'URL del dataset punta."@it ;
+    brv:sourceRecord "07.13" .
+
+:cite-park-metropolia-2022 brv:dataQualityNote "TESI DI TERZI (Tuulia Park, Metropolia): non e' una tesi di Baires Raffaelli (chiarito dall'autore il 25/10/2026; il suo lavoro sulla stazione Tuscolana e' un altro record, :chapter-strutture-mobilita, 2003; non e' provato che sia la forma pubblicata della sua tesi di laurea) e viene tenuta solo come documento che cita il suo libro. Tesi identificata e CITAZIONE VERIFICATA sul PDF fornito dall'autore (park_tuulia.pdf): 73 p. + 4 allegati, 12.5.2022, citazioni 'Raffaelli 2020' alle pp. 137, 142, 153 del libro (PDF pp. 24, 28; bibliografia p. 76). URL: l'handle Theseus 10024/750462 risolve a un'altra tesi (E. Mylläri) e la URN urn.fi non si risolve, quindi entrambi restano solo come brv:deprecatedUrl; URL corretto di Theseus non trovato."@it ;
+    brv:sourceRecord "07.10" .
+
+:cite-scholar-architect-2022 brv:dataQualityNote "DOI RO e EN risolvono (200). Il titolo completo del dataset termina con 'conex' (troncato); forma completa dedotta: 'conexe'. ResearchGate verificato il 25/10/2026: 375853926 = 'The urban planning basis of projects' (A. Mitrea, D. Milea, in SCHOLAR ARCHITECT 2022, English edition, DOI 10.54508/9786066383004.08), con Raffaelli tra le 3 referenze ('The Fast Guide to Accessibility Design', 2020, e 'The Fast Guide to Architectural Form', datato 2018 da RG); 375858164 = 'Key concepts in urban planning' (stessi autori, DOI 10.54508/9786066383004.07): la pagina si apre ma Raffaelli non compare nel testo letto. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (eim-496-130 scholarh2022_17_11_2022.pdf, PDF p. 131); cfr. brv:CitationEvidence :ev14."@it ;
+    brv:sourceRecord "07.03" .
+
+:cite-scholar-architect-2023-en brv:dataQualityNote "Citazione verificata sul PDF fornito dall'autore (eim-552-147 Scholar_Architect_2022_Eng_final_sm.pdf, PDF p. 131): Raffaelli 2020 (Accessibility Design) e Raffaelli 2018 (Architectural Form; la prima edizione BIS e' del 2016). Cfr. brv:CitationEvidence :ev15."@it ;
+    brv:sourceRecord "07.03" .
+
+:cite-thames-hudson-au-2020 brv:dataQualityNote "Catalogo commerciale (PDF p. 12): scheda 'The Fast Guide to Accessibility Design' (autore refuso 'Bares Raffaelli'), 144 pp., 150x105 mm, ISBN 9789063695712, AU$21.99; l'istanza adotta 160 pp. (scheda BIS; TCDC 157): le 144 pp. del catalogo AU coincidono con quelle del libro Form e sono probabilmente un refuso."@it ;
+    brv:sourceRecord "04.05" .
+
+:cite-tosi-pistolesi-2022 brv:dataQualityNote "Il catalogo FrancoAngeli conferma titolo e ISBN; partner: Università di Firenze (DIDA - Laboratorio LED) e Fondazione Zoé. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (HOME-CRE-DESIGN-FOR-PARKINSONS-DISEASE_compressed.pdf, PDF p. 59-60); cfr. brv:CitationEvidence :ev08."@it ;
+    brv:sourceRecord "07.08" .
+
+:cite-ucy-tfyd-2019 brv:sourceRecord "07.06" .
+
+:cite-ufjf-2018 brv:dataQualityNote "PDF 200; testo della citazione non estratto."@it ;
+    brv:sourceRecord "07.14" .
+
+:cite-urbanistica-informazioni-2024 brv:dataQualityNote "La pagina (pubblicata 20 marzo 2024) cita 'Raffaelli B. (2020), The Fast Guide to Accessibility Design'."@it ;
+    brv:sourceRecord "07.15" .
+
+:collection-intersectional-design-tools brv:dataQualityNote "Home 200; la voce specifica non e' stata verificata."@it ;
+    brv:sourceRecord "07.33" .
+
+:course-ain-shams-11374 brv:dataQualityNote "Pagina 200 ma nessuna occorrenza di Raffaelli/Fast Guide nel testo: l'adozione non e' attestata. Nessun Work indicato dal dataset."@it ;
+    brv:sourceRecord "07.28" .
+
+:course-cud-des102 brv:dataQualityNote "Il record Alma CUD (200) e' 'The fast guide to the fundamentals of architectural design: strategies and techniques for creating a successful project' (3 occorrenze): conferma il sottotitolo."@it ;
+    brv:sourceRecord "07.22" .
+
+:course-el-camino-arch149 brv:dataQualityNote "Il PDF risponde 404: adozione non verificabile. Nessun Work indicato dal dataset."@it ;
+    brv:sourceRecord "07.29" .
+
+:course-ensacf brv:dataQualityNote " AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Guide-de-letudiant-2022_23_site.pdf, PDF p. 78, 112, 146, 184); cfr. brv:CitationEvidence :ev07."@it ;
+    brv:sourceRecord "07.19" .
+
+:course-lau-naab brv:dataQualityNote "PDF 200 (testo non estratto)."@it ;
+    brv:sourceRecord "07.21" .
+
+:course-polito-01qhtpm brv:dataQualityNote "Pagina 200 con 3 occorrenze (anno accademico 2019). Quale libro sia citato non e' specificato nel dataset."@it ;
+    brv:sourceRecord "07.27" .
+
+:course-romania-atelier-2025 brv:dataQualityNote "Anexa 234 (ordin 3176) risponde 200 (PDF, testo non estratto: adozione non verificata). rocnee.eu home: risponde (verifica del 25/10/2026) ma e' la pagina del centro nazionale rumeno e non nomina Raffaelli; il 503 precedente era transitorio. Nota: 'ordin 3176' ricavato dal percorso URL. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Arhitectura_Atelier_specialitate_CS_IX_XII.pdf, PDF p. 25-26); cfr. brv:CitationEvidence :ev04."@it ;
+    brv:sourceRecord "07.18" .
+
+:course-taltech-eav0012 brv:dataQualityNote "Pagina 200 con 2 occorrenze. Nota: il dataset scrive 'Esitlustehnikad'; il nome corso estone non e' stato verificato."@it ;
+    brv:sourceRecord "07.31" .
+
+:course-univpm-af137990 brv:dataQualityNote "Pagina 200 con 2 occorrenze di Raffaelli/Fast Guide."@it ;
+    brv:sourceRecord "07.20" .
+
+:course-univpm-af137992 brv:dataQualityNote "Pagina 200 con 2 occorrenze di Raffaelli/Fast Guide."@it ;
+    brv:sourceRecord "07.20" .
+
+:course-yildiz-mim3550 brv:dataQualityNote "Pagina 200 con 2 occorrenze (Raffaelli, B., 2016, BIS Publishers)."@it ;
+    brv:sourceRecord "07.32" .
+
+:csp-cse brv:dataQualityNote "Sul sito baires.eu la certificazione CSP/CSE (2003) e l'appartenenza a 'Stone Academy' compaiono nel paragrafo di ELIO RAVA', non in quello di Baires Raffaelli: possibile attribuzione errata, da confermare."@it ;
+    brv:sourceRecord "02.02" .
+
+:dataset brv:dataQualityNote "v3 integra: foglio link validato dall'autore (160 link OK), 22 PDF di citazioni con pinpoint di pagina (nodi brv:CitationEvidence), edizione persiana corretta (Mashhad, 144 p. (143 secondo NLAI), 1398 SH = 2019, seconda stampa 1404 SH, NLAI/Kasra con snapshot Wayback), tesi Park identificata, casa di Foligno 2006, Pump It Up House (Europaconcorsi 2007, archivio), Giorgio Raffaelli, altra persona con lo stesso cognome (owl:differentFrom), revisioni Wikipedia. v2 corregge: handle IRIS della tesi, titolo tesi, DOI Gelfond, handle UMinho, date PEBA/Santa Margherita, domini schema.org, URL rotti; aggiunge identificativi, premi e contributi omessi."@it .
+
+:emergency-house brv:dataQualityNote "Il dataset parla di 'patenting': nessuna delle due pagine di stampa (infobuild 19/09/2008, blog Repubblica 02/10/2008) menziona un brevetto. Produttore Kappazeta citato da Infobuild."@it ;
+    brv:sourceRecord "05.07" .
+
+:entry-albano-mazzini brv:sourceRecord "05.06" .
+
+:entry-campus-dei-licei brv:dataQualityNote "baires.eu: pubblicazione 'Campus dei Licei' in Industrialzone, Malo VI, 2005 (non 2006)."@it ;
+    brv:sourceRecord "05.11" .
+
+:entry-cgc-41st brv:dataQualityNote "Il sito del promotore elenca 'Second Place: Michela De Licio, Baires raffaelli, Elio Rava'."@it ;
+    brv:sourceRecord "05.01" .
+
+:entry-il-focolare-spoleto brv:dataQualityNote "Omesso dal dataset."@it .
+
+:entry-livingbox brv:dataQualityNote "Dexigner nomina 'Baires Raffaelli - BrrE architects (Italy)'; la pagina Edilportale non nomina Raffaelli. Promotori citati dal dataset: Edilportale.com con MIT, CNI e Dip. BEST Politecnico di Milano. baires.eu data la menzione al 2005."@it ;
+    brv:sourceRecord "05.02" .
+
+:entry-matera-san-pardo brv:dataQualityNote "L'handle IRIS e' corretto (scheda breve: Ferrero Marco, Acosta Fontana Carlos; 2012; 'dato non validato dall'Ateneo'). Lo status 'Winning Project' e' attestato solo dalla lista premi di baires.eu (auto-pubblicata); ORCID registra il record come 'other', 2012."@it ;
+    brv:sourceRecord "03.04",
+        "05.04" .
+
+:entry-nordic-built brv:dataQualityNote "Nessun link nel dataset (Provenance: portfolio e archivi stampa) e la partecipazione non compare nella lista premi di baires.eu: non verificata."@it ;
+    brv:sourceRecord "05.09" .
+
+:entry-pump-it-up-house brv:dataQualityNote "Pagina Europaconcorsi (progetto 24649) oggi 404; snapshot Wayback del 2011-09-20 verificato il 25/10/2026: titolo 'Baires Raffaelli, Elio Rava, Paolo Moressoni, Tommaso Passalacqua - Pump It Up House', pubblicato il 17 ottobre 2007, localita' indicata Hofheim-Wallau (Germania). La tesi lituana cita la stessa fonte (consultata il 29/11/2012)."@en ;
+    brv:sourceRecord "07.11" .
+
+:entry-railway-stations-2007 brv:dataQualityNote "Omesso dal dataset; supplemento Abitare 482 'Piccole stazioni'."@it .
+
+:entry-robin-hood-gardens brv:dataQualityNote "Bustler: Runners-up 'Tommaso Passalacqua; Brre Architects with Baires Raffaelli, Elio Rava and Carlos Acosta'. Il dataset unisce 'Runner-up / Special Mention / Finalist': scegliere una sola formulazione."@it ;
+    brv:sourceRecord "05.08" .
+
+:entry-santa-margherita brv:dataQualityNote "DISCREPANZA DI DATA: il dataset indica 2007; baires.eu indica 2005 ('Coastal Area Redevelopment, Santa Margherita Ligure - Ranked') e il bando e' archiviato su professionearchitetto.it nel dicembre 2004: l'anno corretto e' verosimilmente 2005. Verifica del 25/10/2026: il PDF della Provincia della Spezia risponde ma e' il curriculum di un altro professionista (A. Frolla), che non nomina il concorso ne' Raffaelli: l'URL del dataset non documenta il record."@it ;
+    brv:sourceRecord "05.03" .
+
+:entry-unistrasi-aula-mobile brv:dataQualityNote "Il PDF risponde 200 (application/pdf) ma il testo non e' stato estratto: autore/posizione non letti. baires.eu: 2014 'Mobile Multimedia Classroom, Siena - Special Mention'."@it ;
+    brv:sourceRecord "05.05" .
+
+:entry-venice-biennale-2000 brv:dataQualityNote "Omesso dal dataset; il titolo coincide con il tema della 7a Mostra Internazionale di Architettura (2000)."@it .
+
+:event-maker-faire-2024 brv:sourceRecord "03.03" .
+
+:event-maker-faire-rome-2022 brv:dataQualityNote "Pagina Saperi&Co 200 (2 occorrenze AVLA/Raffaelli); mirror web.uniroma1.it/saperi_co redirige alla stessa pagina; la ricerca sul sito Maker Faire Rome risponde 200 ma senza occorrenze 'Avla' nel testo caricato."@it ;
+    brv:sourceRecord "03.03" .
+
+:event-perugia-2020-05-15 brv:dataQualityNote "Fonte: locandina dell'ente organizzatore fornita dall'autore (immagine). La locandina non nomina il relatore: il ruolo di Baires Raffaelli e' dichiarato dall'autore (25/10/2026). Nessuna pagina web indipendente trovata."@it ;
+    brv:sourceRecord "07.34" .
+
+:event-perugia-2021-10-06 brv:dataQualityNote "Fonte: locandina dell'ente organizzatore fornita dall'autore (immagine): Baires Raffaelli (architetto e autore del libro); intervengono L. Prestinenza Puglisi (presidente Ass. Italiana di Architettura e Critica) e P. Moressoni (membro del consiglio dell'Ordine, persona diversa dal co-autore di Pump It Up House). Nessuna pagina web indipendente trovata."@it ;
+    brv:sourceRecord "07.35" .
+
+:event-villa-umbra-2019 brv:dataQualityNote "Evento e ruolo di relatore PROVATI dal programma PDF fornito dall'autore (seminario_citta_accessibile, p. 2): relazione di Baires Raffaelli ('Festival citta accessibili e Universita La Sapienza') nella sessione 'Superamento delle barriere all'abitare, studi e ricerche' coordinata da Iginio Rossi (INU), che inizia alle 10:45 nella prima versione del programma e alle 10:30 nella seconda fornita dall'autore il 25/10/2026 (gli orari dei singoli interventi non sono indicati); sede Scuola Umbra di Amministrazione Pubblica, Villa Umbra, Pila, Perugia; in partenariato con il Festival per le Citta Accessibili 2019. Gli URL online del programma non sono raggiungibili (restano in deprecatedUrl). Nello stesso programma compare 'Giorgio Raffaelli' (Festival per le Citta Accessibili): altra persona con lo stesso cognome, da non fondere."@it ;
+    brv:sourceRecord "06.01" .
+
+:fabriano brv:sourceRecord "01.01" .
+
+:giorgio-raffaelli brv:sourceRecord "06.01" .
+
+:guide-thematic-platforms brv:dataQualityNote "Solo la pagina Pakhuis de Zwijger (5 occorrenze) cita il libro; UTS, BookAuthority e Room of One's Own rispondono 200 senza occorrenze nel testo caricato (profilo/lista dinamica); BookPeople: 404."@it ;
+    brv:sourceRecord "09.02" .
+
+:guide-university-libguides brv:dataQualityNote "OCAD e Daniels: pagine 200 con 3 occorrenze del titolo; FIT: 404; l'URL OCAD senza p= risponde 200 e nomina Raffaelli (verifica del 25/10/2026)."@it ;
+    brv:sourceRecord "09.01" .
+
+:house-via-pascoli-foligno-2006 brv:dataQualityNote "AUTORE: Baires Raffaelli e' l'unico autore del progetto (dichiarazione dell'autore, 25/10/2026); concorda Tosi & Pistolesi 2022, PDF pp. 59-60 (progetto dell'architetto Baires Raffaelli, 2006). Il testo di Tosi & Pistolesi (p. 58 stampata, PDF p. 59) dice 'La casa in via Pascoli a Foligno (PG) (2006), progettata dall'architetto Baires Raffaelli' e la Fig. 4.3 (pianta) ha come fonte 'Arch. Baires Raffaelli, 2006'; la nota 8 cita come fonte l'articolo Superabile 'La casa in via Pascoli' (URL oggi reindirizzato alla home, conservato come brv:deprecatedUrl). La pagina CERPA (04/02/2016) riprende un articolo di Superabile sulla casa di Foligno: la descrive come esito di un lavoro partecipato in piu' fasi, con Baires intervenuto nella piu' recente ristrutturazione della zona notte; non cita via ne' anno, ma per titolo e fonte coincide con la nota 8. Abitazione al piano terra di una palazzina plurifamiliare, 115 mq con giardino di 90 mq (Tosi). Per riservatezza il dataset non registra residenti, rapporti di parentela ne' numero civico."@it ;
+    brv:sourceRecord "07.08" .
+
+:inst-accessibility-en brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it ;
+    brv:sourceRecord "04.05" .
+
+:inst-form-en brv:dataQualityNote "ANNO E PAGINE (chiusi il 25/10/2026): la scheda dell'editore BIS indica Spring 2016, 144 p., 154 x 105 mm, ed e' la fonte adottata (regola: dati editoriali per l'opera, conteggi di biblioteca nelle note); l'autore conferma il 2016. CCA (Montreal) e TCDC (Bangkok) catalogano 140 p. (15 cm), UAP Bangladesh 124 p. (22 cm), il dataset originale 160. Le date 2018 (Scholar Architect, ricerca RG) e 2023 (curriculum rumeno) nei documenti citanti sono errori di fonte o riferimenti a ristampe: secondo l'autore esistono 2-3 ristampe in inglese, non documentate nei cataloghi e quindi non modellate come Instance. ISBN-10/13 con checksum valido. WorldCat: Cloudflare, quindi gli OCLC non sono stati confermati dall'audit; l'autore indica come funzionanti gli URL WorldCat 920019079 e 1322054519 (25/10/2026), e 920019079 compare comunque nel record CCA. Il link CCFr con parametro ts= si apre ma in una sessione nuova mostra 'Votre session a expire': e' un URL di sessione, non un permalink."@it ;
+    brv:sourceRecord "04.01" .
+
+:inst-form-fa brv:dataQualityNote "POLITICA LINK (risorsa istituzionale estera): URL live di NLAI (opac.nlai.ir) e Kasra mantenuti come schema:url perche' sono i riferimenti primari; non sono raggiungibili da reti esterne all'Iran in modo affidabile, quindi sono affiancati da snapshot Wayback (schema:archivedAt: NLAI 2025-06-11, Kasra 2025-11-18). Lo snapshot NLAI conferma: 143 p., editore Kasra (Mashhad), traduttore Ali Javid, anno 1398 SH (= 2019), ISBN 978-600-6509-95-2, collocazione LC NA2760 / ر2م2, n. bibliografia nazionale 5577267; SECONDA STAMPA: la scheda dell'editore Kasra (snapshot Wayback 18/11/2025) riporta 'تاریخ نشر: 1398', 'نوبت چاپ: دوم', 'سال چاپ: 1404' (= 2025-26), stesso ISBN, 144 p., formato tascabile, brossura, 125 g, 2.400.000 rial, disponibile; coincide con l'annotazione CIP di NLAI 'چاپ دوم: ۱۴۰۴ (فیپا)'. L'autore (25/10/2026) non ne era a conoscenza: e' una ristampa dell'editore, registrata nella nota e in schema:bookEdition e non come Instance separata (stesso ISBN, stesso testo). PAGINE: 144 secondo l'editore (adottate: regola editore-first); NLAI indica 143 p. L'anno 2021 di ORCID e' quindi un errore: si adotta 2019."@it ;
+    brv:sourceRecord "01.05",
+        "04.02" .
+
+:inst-form-zh-hans brv:dataQualityNote "Record NLC verificato il 25/10/2026 (find.nlc.cn, link confermato anche dall'autore): 建筑造型速成指南, (意)布亚斯·拉菲利 著, 滕艺梦 栗茜 译, 机械工业出版社, Beijing 2020, ISBN 978-7-111-63799-8, sottotitolo 创意、操作和实例, CLC TU2-64, paginazione '11,137' (xi + 137 p.). Gli URL find.nlc.cn sono query/sessione, non permalink: non usati come sameAs. Il vecchio opac.nlc.cn resta non verificato. Nota: il testo 'China Machine Press... ministerial publisher' del dataset e' una descrizione, non un fatto bibliografico; la Wikipedia cinese cita per questo libro un ISBN errato (978-9063694111)."@it ;
+    brv:sourceRecord "01.09",
+        "04.04" .
+
+:inst-form-zh-hant brv:dataQualityNote "SCHEDA EDITORE (letta nel browser il 25/10/2026, link fornito dall'autore): Longsea riporta 拜爾斯．拉菲利 (Baires Raffaelli) 作, 邱喜麗 譯, 龍溪圖書, 出版日期 2022-02-25, 17x12.5 cm, 144 p., brossura, NT$280, codice LS-0146, ISBN 9786269565818: adottati (regola editore-first; coerente con NCL 2022.02). La foto del retro fornita dall'autore mostra lo stesso ISBN e il prezzo 280 (con www.longsea.com.tw). Kingstone riporta 2022/03/01, verosimilmente la data di messa in vendita; la scheda NLC indica 140 p. Kingstone conferma traduttrice 邱喜麗. Le recensioni Zhihu (2020-02) e Sohu (04/03/2020) precedono la data 2022 del libro taiwanese e quindi riguardano verosimilmente l'edizione cinese semplificata. Sohu verificata il 25/10/2026: risponde, nomina Baires Raffaelli e cita il libro come 《建筑造型速成指南》. Zhihu verificata il 25/10/2026 (la pagina si apre senza login): articolo di 黄家骏 (ArchiDogs, modificato il 2020-03-12, revisione di 栗茜) 'Le forme architettoniche si imparano in fretta?', sul volume cinese semplificato. Record della National Central Library (Taiwan) verificato il 25/10/2026 (pagina Primo dinamica: i dati compaiono dopo il caricamento; link confermato anche dall'autore): 建築造型速成指南 = The fast guide to architectural form, 拜爾斯.拉菲利 作 ; 邱喜麗 譯, 新北市 (New Taipei): 龍溪國際圖書, 2022.02, ISBN 9786269565818, collocazione 921 8457:2 (copia in 總館典藏書庫). La data NCL 2022.02 differisce da Kingstone (2022/03/01, verosimilmente messa in vendita); la scheda NLC conferma 140 p., ISBN 978-626-95658-1-8, traduttrice 邱喜丽. Il sito baires.eu parla di una seconda stampa taiwanese. CORREZIONE v3: l'ISBN-10 6269565814 del dataset non supera il checksum (atteso 2); sostituito con 6269565812, derivato dall'ISBN-13 978-626-95658-1-8."@it ;
+    brv:sourceRecord "01.08",
+        "04.03" .
+
+:inst-fundamentals-en brv:dataQualityNote "DATA E PAGINE (chiuse il 25/10/2026): la scheda dell'editore BIS indica Fall 2023 e 144 p.: adottati (il dataset originale indicava 160 pp.; Goodreads 14 maggio 2024 e 144 pp.; il catalogo CUD (Dubai) usa 'NA2750 .R33 2023')."@it ;
+    brv:sourceRecord "04.06" .
+
+:iris-gjokeja-metodo-e-forma brv:dataQualityNote "Questo e' il documento a cui rimanda l'handle 11573/1023744 (saggio sulle tesi di Saggio e Raffaelli), non la tesi di dottorato di Raffaelli."@it ;
+    brv:sourceRecord "03.04" .
+
+:issue-abitare-482 brv:dataQualityNote "Il record IUAV B_408226 e' 'Piccole stazioni: i progetti del concorso internazionale' (supplemento di Abitare): non cita Raffaelli nel titolo."@it ;
+    brv:sourceRecord "04.08" .
+
+:issue-academia-2020-2 brv:sourceRecord "07.03" .
+
+:issue-arkitektur-167 brv:sourceRecord "04.08" .
+
+:issue-bd-2008-06-27 brv:sourceRecord "04.08" .
+
+:issue-casabella-758 brv:dataQualityNote "Il link del dataset e' la home di casabellaweb.eu (generica): non attesta il contenuto del numero."@it ;
+    brv:sourceRecord "04.08" .
+
+:issue-ijvd-13-2 brv:sourceRecord "07.20" .
+
+:issue-ja-64 brv:sourceRecord "04.08" .
+
+:issue-ottagono-188 brv:sourceRecord "04.08" .
+
+:issue-prest-07 brv:sourceRecord "04.08" .
+
+:issue-prest-21 brv:sourceRecord "04.08" .
+
+:issue-urbanistica-informazioni-313 brv:sourceRecord "07.22" .
+
+:item-accessibility-tcdc brv:dataQualityNote "ERRORE DEL DATASET: b00026225 e' 'The ADA companion guide' di Marcela Rhoads (il libro di Raffaelli compare solo tra i correlati). Il record corretto e' b00051040 (Amsterdam: BIS, 2020, 157 p., ISBN 9789063695712, NA 2545 .P5 R136 2020)."@it ;
+    brv:sourceRecord "07.25" .
+
+:item-form-cca brv:dataQualityNote "Item aggiunto: non presente nel dataset (fonte: catalogo CCA, Canadian Centre for Architecture)."@it .
+
+:item-form-manzala brv:dataQualityNote "Omeka (Dublin Core / RDF-XML); pagina 200 con 7 occorrenze."@it ;
+    brv:sourceRecord "07.30" .
+
+:item-form-tcdc brv:dataQualityNote "Record TCDC: Amsterdam: Bis, 2016, 140 p., ISBN 9063694113 / 9789063694111."@it ;
+    brv:sourceRecord "07.25" .
+
+:item-form-uap brv:dataQualityNote "Il catalogo Koha indica 124 pp., 22 cm (diverso da 140 pp. di CCA/TCDC e da 160 del dataset); collocazione DDC 720.1 RAF."@it ;
+    brv:sourceRecord "07.24" .
+
+:item-form-zh-hant-ncl brv:dataQualityNote "1 copia, disponibile (verifica del 25/10/2026); collezione inserita il 2025/07/08."@it ;
+    brv:sourceRecord "01.08" .
+
+:item-form-zh-hrbeu brv:dataQualityNote "Navigazione negata/fallita."@it ;
+    brv:sourceRecord "07.26" .
+
+:item-form-zh-ouc brv:dataQualityNote "Pagina 200 ma di soli 465 caratteri e senza occorrenze: record non leggibile."@it ;
+    brv:sourceRecord "07.26" .
+
+:item-form-zh-xauat brv:dataQualityNote "Pagina 200 con 52 occorrenze del titolo cinese/autore."@it ;
+    brv:sourceRecord "07.26" .
+
+:item-fundamentals-cud brv:sourceRecord "07.22" .
+
+:kasra-publishing brv:dataQualityNote "Sede: Mashhad (scheda NLAI, snapshot Wayback 2025-06-11); il dataset v2 indicava Tehran per errore."@it .
+
+:laurea-architettura-sapienza brv:dataQualityNote "Unica fonte e' il sito dell'autore (pagina condivisa con Elio Ravà); manca attestazione ufficiale. Anno di laurea non indicato."@it ;
+    brv:sourceRecord "02.01" .
+
+:orcid-conference-ais brv:dataQualityNote "Elencato nel record ORCID (conference paper); dettagli bibliografici non verificati."@it .
+
+:orcid-dream-bruxelles brv:dataQualityNote "ORCID: newspaper article, 2006, ISSN 0391-7487 (Ottagono)."@it .
+
+:orcid-peba-assisi-tool brv:dataQualityNote "ORCID: research tool 2023, mentre il dataset data l'incarico al 2019."@it .
+
+:paolo-luccioni brv:dataQualityNote "Indicato come 'P. Luccioni' su baires.eu."@it .
+
+:paolo-moressoni brv:sourceRecord "07.11" .
+
+:paolo-moressoni-perugia brv:dataQualityNote "Stesso nome del co-autore di Pump It Up House; l'autore ha confermato (25/10/2026) che sono persone diverse."@it ;
+    brv:sourceRecord "07.35" .
+
+:peba-assisi brv:dataQualityNote "Incarico del 2019 attestato dalla bio Hachette ('appointed by the City of Assisi in 2019'); ORCID registra 'PEBA Assisi' come research tool, 2023: distinguere data di incarico (2019) e data di consegna/pubblicazione (2023?). La pagina del Comune non nomina l'incaricato."@it ;
+    brv:sourceRecord "06.03" .
+
+:peba-castellaneta brv:dataQualityNote "Attestato da ORCID (research tool, 2021) e dal dataset; il sito del Comune cita il PEBA (DGC 81/2021) senza nominare l'autore."@it ;
+    brv:sourceRecord "06.02" .
+
+:peba-resources brv:dataQualityNote "La pagina Assisi 'Indice PEBA' contiene file di piano (Norme Tecniche di Attuazione Accessibilita', Schede Rilievo) ma non nomina Raffaelli e la descrizione parla di 'Piano Economico di Base Ambientale': incongruenza dell'Ente. Castellaneta: PEBA adottato con DGC 81/2021, Raffaelli non nominato. I siti svizzeri sono in manutenzione (503) anche il 25/10/2026; esistono snapshot Wayback: articolo AVLA (07/12/2024, il testo cita AVLA) e notiziario PDF (02/11/2023, esistenza dello snapshot confermata, testo non leggibile); il PDF del certificato AVLA non e' stato riprovato."@it ;
+    brv:sourceRecord "06.02" .
+
+:periodical-abitare brv:sourceRecord "04.08" .
+
+:periodical-academia brv:sourceRecord "07.03" .
+
+:periodical-arkitektur brv:sourceRecord "04.08" .
+
+:periodical-bd brv:sourceRecord "04.08" .
+
+:periodical-casabella brv:sourceRecord "04.08" .
+
+:periodical-ijvd brv:sourceRecord "07.20" .
+
+:periodical-ja brv:sourceRecord "04.08" .
+
+:periodical-ottagono brv:sourceRecord "04.08" .
+
+:periodical-prest brv:sourceRecord "04.08" .
+
+:periodical-urbanistica-informazioni brv:sourceRecord "07.22" .
+
+:phd-sapienza-xxiv brv:dataQualityNote "Verifica del 25/10/2026: la pagina arc1 del XXIV ciclo (2008-2011) risponde e elenca Baires Raffaelli con la ricerca 'Semantica e Tipologia della Forma nell'architettura Contemporanea', tutor Luciano De Licio, senza stato di decadenza o rinuncia. Titolo e periodo confermati anche da ORCID (Education 2008-2011, DiAP, ROR 02be6w209) e Wikidata (doctoral advisor Luciano De Licio Q124855359)."@it ;
+    brv:sourceRecord "02.03" .
+
+:podcast-byoung-design brv:dataQualityNote "Video 200; la menzione di Raffaelli nelle note non e' stata verificata. Il post del blog restituisce 404 (dominio Wix scollegato)."@it ;
+    brv:sourceRecord "08.03" .
+
+:prisma-bruxelles brv:dataQualityNote "Il dataset scrive 'Prisme Editions', baires.eu 'ed. Prisma, Brussels'."@it .
+
+:proceedings-ahti-2020 brv:sourceRecord "07.01" .
+
+:project-edilizia-residenziale brv:sourceRecord "03.01" .
+
+:project-house-vb27 brv:dataQualityNote "Nessun link; non presente nell'elenco progetti di baires.eu."@it ;
+    brv:sourceRecord "05.10" .
+
+:project-ims brv:dataQualityNote "Nessun link; non presente nell'elenco progetti di baires.eu."@it ;
+    brv:sourceRecord "05.12" .
+
+:project-passignano-sports-hall brv:dataQualityNote "Omesso dal dataset; realizzato, con P. Luccioni (fonte: baires.eu)."@it .
+
+:project-principi-erp brv:sourceRecord "03.01" .
+
+:sbn-record-rms2618585 brv:dataQualityNote "L'URL risponde 200 ma il corpo e' renderizzato via JS e risulta vuoto: titolo/Instance a cui il BID si riferisce non verificabili; collegare alla Instance corretta dopo verifica manuale."@it ;
+    brv:sourceRecord "01.04" .
+
+:series-asseh brv:sourceRecord "07.02" .
+
+:series-fa-oa-saggi brv:sourceRecord "07.10" .
+
+:thesis-phd-print brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it ;
+    brv:sourceRecord "02.03" .
+
+:thesis-phd-work brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it ;
+    brv:sourceRecord "02.03",
+        "03.04" .
+
+:udr-ais brv:dataQualityNote "Coordinatore: Prof. Luciano De Licio. Il mirror web.uniroma1.it/dip_diap risponde 403; il PDF su diap.web.uniroma1.it risponde 200."@it ;
+    brv:sourceRecord "03.01" .
+
+:video-avla-webinar brv:dataQualityNote "Il titolo reale del video YouTube e' 'LA CITTA' DI OGNUNO IL PROGETTO DI TUTTI'; il legame con AVLA/Raffaelli non e' provato dal titolo."@it ;
+    brv:sourceRecord "08.01" .
+
+:video-fast-guide-review-zh brv:dataQualityNote "Video cinese su '1 libro, 28 metodi' per la forma architettonica; il titolo italiano nel dataset non e' quello reale."@it ;
+    brv:sourceRecord "08.02" .
+
+:volume-asseh-471 brv:sourceRecord "07.02" .
+
+:volume-fa-oa-saggi-07 brv:sourceRecord "07.10" .
+
+:volume-ijvd-13 brv:sourceRecord "07.20" .
+
+:work-accessibility brv:sourceRecord "04.05" .
+
+:work-form brv:dataQualityNote "Il Work e' unico; CiNii crid 1130854726247033132 e' la scheda del libro (non della persona). Il record NDL R100000136-I1130854726247033132 del dataset risponde 404."@it ;
+    brv:sourceRecord "04.01" .
+
+:work-form-fa brv:dataQualityNote "Il sito baires.eu cita per il testo persiano una prefazione di Luigi Prestinenza Puglisi."@it ;
+    brv:sourceRecord "04.02" .
+
+:work-form-zh-hans brv:dataQualityNote "Il sito baires.eu cita una raccomandazione di 韩林飞 (Han Linfei) per l'edizione cinese e '28 tecniche'. Traduttori 滕艺梦 (Teng Yimeng) e 栗茜 (Li Xi) confermati dal record NLC (verifica del 25/10/2026); il dataset aveva solo la romanizzazione e la v2 precedente aveva ideogrammi errati (滕一萌, 李希). Articolo Zhihu di 建道教育 ArchiDogs del 10/01/2020 (:zhihu-archidogs-2020, letto il 25/10/2026): presenta la serie 《图解设计思维过程小书库》 (4 volumi, tra cui 建筑造型速成指南), a firma dei traduttori 滕艺梦 e 栗茜, riporta una prefazione per l'edizione cinese di Baires Raffaelli e la raccomandazione di 韩林飞; prova che il volume era in distribuzione a gennaio 2020."@it ;
+    brv:sourceRecord "04.04" .
+
+:work-form-zh-hant brv:sourceRecord "04.03" .
+
+:work-fundamentals brv:dataQualityNote "Il sottotitolo 'Strategies and Techniques for Creating a Successful Project' e i '33 passi' derivano dal sito baires.eu (omessi dal dataset). Wikidata ha un'entita' separata per questo libro (Q138836771)."@it ;
+    brv:sourceRecord "04.06" .
+
+:wp-en-rev-1292563278 brv:dataQualityNote "Permalink di revisione (stabile). La nota 16 rinvia a iris.uniroma1.it/handle/11573/1023744, che e' il saggio di K. Gjokeja sulle tesi di dottorato (Saggio e Raffaelli), NON la tesi di Raffaelli (tesi = Sebina RMS02820805)."@it .
+
+:zhihu-archidogs-2020 brv:dataQualityNote "Letta il 25/10/2026 (link fornito dall'autore). Distinta dall'articolo Zhihu p/112587426."@it .
+

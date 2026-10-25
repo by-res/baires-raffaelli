@@ -1,0 +1,104 @@
+# Local vocabulary of the Baires Raffaelli dataset (CC0 1.0)
+
+@prefix brv: <https://w3id.org/baires-raffaelli/vocab#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+brv:CitationEvidence a rdfs:Class ;
+    rdfs:label "citation evidence"@en ;
+    rdfs:comment "Documentary evidence: a document that cites or mentions a Work or Project by Baires Raffaelli, with the exact page (pinpoint). Texts are paraphrases, not quotations."@en .
+
+brv:Verification a rdfs:Class ;
+    rdfs:label "verification"@en ;
+    rdfs:comment "An act of checking a record against an independent source: which page (brv:source) and when it was last accessed (brv:accessedOn)."@en .
+
+brv: a owl:Ontology ;
+    rdfs:label "Baires Raffaelli dataset - local terms"@en ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    rdfs:comment "Small local vocabulary for what Schema.org and BIBFRAME do not cover: verification status, editorial notes, deprecated URLs, course adoption and page-level citation evidence."@en ;
+    rdfs:seeAlso <https://w3id.org/baires-raffaelli/> ;
+    owl:versionInfo "3.0" .
+
+brv:accessedOn a rdf:Property ;
+    rdfs:label "accessed on"@en ;
+    rdfs:comment "Date (xsd:date) on which the source was last accessed and found consistent with the record."@en ;
+    rdfs:domain brv:Verification ;
+    rdfs:range xsd:date .
+
+brv:adopts a rdf:Property ;
+    rdfs:label "adopts as reference text"@en ;
+    rdfs:comment "The course or catalogue adopts or recommends the Work (more specific than schema:citation)."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:subPropertyOf schema:citation .
+
+brv:citedWork a rdf:Property ;
+    rdfs:label "cited work"@en ;
+    rdfs:domain brv:CitationEvidence .
+
+brv:citingWork a rdf:Property ;
+    rdfs:label "citing work"@en ;
+    rdfs:domain brv:CitationEvidence .
+
+brv:dataQualityNote a rdf:Property ;
+    rdfs:label "data quality note"@en ;
+    rdfs:comment "Editorial note: discrepancies, corrections and warnings found while checking the data."@en ;
+    rdfs:domain schema:Thing .
+
+brv:deprecatedUrl a rdf:Property ;
+    rdfs:label "deprecated URL"@en ;
+    rdfs:comment "URL that is broken or not pertinent (kept as a string, not as a link, so that it is not followed)."@en ;
+    rdfs:domain schema:Thing .
+
+brv:evidenceFile a rdf:Property ;
+    rdfs:label "evidence file name"@en ;
+    rdfs:domain brv:CitationEvidence .
+
+brv:evidenceKind a rdf:Property ;
+    rdfs:label "evidence kind"@en ;
+    rdfs:comment "scholarly-citation | bibliography-entry | course-adoption | project-mention | event-programme | trade-catalogue | biographic-source | publisher-page | web-article | book-photo"@en ;
+    rdfs:domain brv:CitationEvidence .
+
+brv:pinpoint a rdf:Property ;
+    rdfs:label "pinpoint (PDF page numbers)"@en ;
+    rdfs:domain brv:CitationEvidence .
+
+brv:source a rdf:Property ;
+    rdfs:label "verification source"@en ;
+    rdfs:comment "Independent web page or catalogue record used to check the record."@en ;
+    rdfs:domain brv:Verification .
+
+brv:sourceRecord a rdf:Property ;
+    rdfs:label "source record"@en ;
+    rdfs:comment "Id of the record of the original working dataset (e.g. 04.01) from which the node derives."@en ;
+    rdfs:domain schema:Thing .
+
+brv:verification a rdf:Property ;
+    rdfs:label "verification"@en ;
+    rdfs:comment "Links a record to a brv:Verification."@en ;
+    rdfs:domain schema:Thing ;
+    rdfs:range brv:Verification .
+
+brv:verificationBasis a rdf:Property ;
+    rdfs:label "verification basis"@en ;
+    rdfs:comment "Why a record has no accessed web source: author-supplied-document | author-website | orcid-record | academic-record | library-catalogue | archived-source | web-links | link-not-rechecked."@en ;
+    rdfs:domain schema:Thing .
+
+brv:verificationNote a rdf:Property ;
+    rdfs:label "verification note"@en ;
+    rdfs:comment "Short public explanation of the verification basis."@en ;
+    rdfs:domain schema:Thing .
+
+brv:verificationStatus a rdf:Property ;
+    rdfs:label "verification status"@en ;
+    rdfs:comment "Verification status of the statement: verified-primary, verified-secondary, self-published, unverified, link-unreachable, link-wrong, archived-only (only a web-archive snapshot exists), deprecated."@en ;
+    rdfs:domain schema:Thing .
+
+brv:viaRecord a rdf:Property ;
+    rdfs:label "via record"@en ;
+    rdfs:comment "The related record (e.g. the edition of a work, the citing article of an issue) whose source was used."@en ;
+    rdfs:domain brv:Verification .
+

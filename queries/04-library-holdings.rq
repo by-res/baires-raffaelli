@@ -1,0 +1,8 @@
+# Which libraries hold which edition (BIBFRAME Items)
+PREFIX schema: <https://schema.org/>
+PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+SELECT ?title ?library WHERE {
+  ?item a bf:Item ; bf:itemOf ?inst ; bf:heldBy ?lib .
+  ?inst schema:name ?title .
+  OPTIONAL { ?lib schema:name ?library }
+} ORDER BY ?title

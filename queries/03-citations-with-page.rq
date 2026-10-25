@@ -1,0 +1,9 @@
+# Where is a book or project cited, and on which page? (page-level evidence)
+PREFIX schema: <https://schema.org/>
+PREFIX brv: <https://w3id.org/baires-raffaelli/vocab#>
+SELECT ?citing ?cited ?kind ?pages ?note WHERE {
+  ?e a brv:CitationEvidence ; brv:citingWork ?c ; brv:citedWork ?w ;
+     brv:evidenceKind ?kind ; brv:pinpoint ?pages ; schema:description ?note .
+  OPTIONAL { ?c schema:name ?citing }
+  OPTIONAL { ?w schema:name ?cited }
+} ORDER BY ?cited ?citing

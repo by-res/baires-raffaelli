@@ -1,0 +1,7 @@
+# Talks, seminars and webinars with date, organiser and subject
+PREFIX schema: <https://schema.org/>
+SELECT ?date ?event ?organizer ?about WHERE {
+  ?e a schema:Event ; schema:name ?event ; schema:startDate ?date .
+  OPTIONAL { ?e schema:organizer/schema:name ?organizer }
+  OPTIONAL { ?e schema:about/schema:name ?about }
+} ORDER BY ?date

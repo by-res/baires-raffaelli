@@ -1,0 +1,8 @@
+# Nodes that are NOT verified yet (to review before using the data in production)
+PREFIX schema: <https://schema.org/>
+PREFIX brv: <https://w3id.org/baires-raffaelli/vocab#>
+SELECT ?node ?name ?status WHERE {
+  ?node brv:verificationStatus ?status .
+  FILTER(?status NOT IN ("verified-primary", "verified-secondary"))
+  OPTIONAL { ?node schema:name ?name }
+} ORDER BY ?status

@@ -1,0 +1,7 @@
+# URLs kept only as strings because they are broken or unsafe (never to be followed)
+PREFIX schema: <https://schema.org/>
+PREFIX brv: <https://w3id.org/baires-raffaelli/vocab#>
+SELECT ?node ?name ?deprecatedUrl WHERE {
+  ?node brv:deprecatedUrl ?deprecatedUrl .
+  OPTIONAL { ?node schema:name ?name }
+} ORDER BY ?name

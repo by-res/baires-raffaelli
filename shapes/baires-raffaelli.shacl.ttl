@@ -1,0 +1,76 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix bf:     <http://id.loc.gov/ontologies/bibframe/> .
+@prefix brv:    <https://w3id.org/baires-raffaelli/vocab#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex:     <https://w3id.org/baires-raffaelli/shapes#> .
+
+# Quality rules for the Baires Raffaelli dataset. Run with: pyshacl -s shapes/baires-raffaelli.shacl.ttl docs/data/baires-raffaelli.ttl
+
+ex:PersonShape a sh:NodeShape ;
+    sh:targetClass schema:Person ;
+    sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:message "Every person needs a name." ] .
+
+ex:InstanceShape a sh:NodeShape ;
+    sh:targetClass bf:Instance ;
+    sh:property [ sh:path bf:instanceOf ; sh:minCount 1 ; sh:message "A BIBFRAME Instance needs bf:instanceOf (its Work)." ] ,
+                [ sh:path schema:exampleOfWork ; sh:minCount 1 ; sh:message "An Instance needs schema:exampleOfWork (mirror of bf:instanceOf)." ] ,
+                [ sh:path schema:inLanguage ; sh:minCount 1 ; sh:message "An Instance needs a language." ] ,
+                [ sh:path schema:publisher ; sh:minCount 1 ; sh:message "An Instance needs a publisher." ] .
+
+ex:WorkShape a sh:NodeShape ;
+    sh:targetClass bf:Work ;
+    sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:message "A Work needs a title." ] .
+
+ex:ItemShape a sh:NodeShape ;
+    sh:targetClass bf:Item ;
+    sh:property [ sh:path bf:itemOf ; sh:minCount 1 ; sh:class bf:Instance ; sh:message "An Item belongs to an Instance." ] ,
+                [ sh:path bf:heldBy ; sh:minCount 1 ; sh:message "An Item needs the holding library." ] .
+
+ex:EvidenceShape a sh:NodeShape ;
+    sh:targetClass brv:CitationEvidence ;
+    sh:property [ sh:path brv:citingWork ; sh:minCount 1 ; sh:maxCount 1 ] ,
+                [ sh:path brv:citedWork ; sh:minCount 1 ; sh:maxCount 1 ] ,
+                [ sh:path brv:pinpoint ; sh:minCount 1 ; sh:message "A citation evidence needs the exact page or location." ] ,
+                [ sh:path brv:evidenceKind ; sh:minCount 1 ] .
+
+ex:StatusShape a sh:NodeShape ;
+    sh:targetSubjectsOf brv:verificationStatus ;
+    sh:property [ sh:path brv:verificationStatus ;
+                  sh:in ( "verified-primary" "verified-secondary" "self-published" "unverified" "link-unreachable" "link-wrong" "archived-only" "deprecated" ) ;
+                  sh:message "Unknown verification status." ] .
+
+ex:VerifiedNeedsBasisShape a sh:NodeShape ;
+    sh:targetClass schema:Thing ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+        sh:message "A record with status verified-primary, verified-secondary or self-published needs brv:verification (source + date) or brv:verificationBasis." ;
+        sh:select """SELECT $this WHERE { $this <https://w3id.org/baires-raffaelli/vocab#verificationStatus> ?s . FILTER (?s IN ("verified-primary","verified-secondary","self-published")) FILTER NOT EXISTS { $this <https://w3id.org/baires-raffaelli/vocab#verification> ?v } FILTER NOT EXISTS { $this <https://w3id.org/baires-raffaelli/vocab#verificationBasis> ?b } }""" ] .
+
+ex:VerificationShape a sh:NodeShape ;
+    sh:targetClass brv:Verification ;
+    sh:property [ sh:path brv:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ,
+                [ sh:path brv:accessedOn ; sh:minCount 1 ; sh:datatype xsd:date ] .
+
+ex:ISBN13Shape a sh:NodeShape ;
+    sh:targetSubjectsOf schema:isbn ;
+    sh:property [ sh:path schema:isbn ; sh:pattern "^(\\d{13}|\\d{9}[\\dXx])$" ; sh:message "ISBN must be 10 or 13 characters without hyphens." ] .
+
+ex:ReciprocityInstance a sh:NodeShape ;
+    sh:targetSubjectsOf bf:instanceOf ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+        sh:message "bf:instanceOf without the inverse bf:hasInstance." ;
+        sh:select """SELECT $this WHERE { $this <http://id.loc.gov/ontologies/bibframe/instanceOf> ?w . FILTER NOT EXISTS { ?w <http://id.loc.gov/ontologies/bibframe/hasInstance> $this } }""" ] .
+
+ex:ReciprocityItem a sh:NodeShape ;
+    sh:targetSubjectsOf bf:itemOf ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+        sh:message "bf:itemOf without the inverse bf:hasItem." ;
+        sh:select """SELECT $this WHERE { $this <http://id.loc.gov/ontologies/bibframe/itemOf> ?i . FILTER NOT EXISTS { ?i <http://id.loc.gov/ontologies/bibframe/hasItem> $this } }""" ] .
+
+ex:DatasetShape a sh:NodeShape ;
+    sh:targetClass schema:Dataset ;
+    sh:property [ sh:path schema:license ; sh:minCount 1 ] ,
+                [ sh:path schema:version ; sh:minCount 1 ] ,
+                [ sh:path schema:creator ; sh:minCount 1 ] ,
+                [ sh:path schema:distribution ; sh:minCount 1 ] .

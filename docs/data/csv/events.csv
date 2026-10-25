@@ -1,0 +1,7 @@
+entity_id,name,start_date,end_date,organizer,about,attendance,verification_status
+award-romarchitettura-6,romArchitettura 6 - Premio Bruno Zevi per la diffusione della cultura architettonica,2017,,ACER Roma,,,verified-primary
+event-maker-faire-2024,Maker Faire Rome 2024 - PROGETTO AVLA,2024,,,,,verified-primary
+event-maker-faire-rome-2022,Maker Faire Rome 2022 - AVLA (Centro Saperi&Co),2022,,,,,verified-primary
+event-perugia-2020-05-15,Contemporaneita' e forma architettonica,2020-05-15T16:00:00+02:00,2020-05-15T18:00:00+02:00,"Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Perugia",The Fast Guide to Architectural Form,OnlineEventAttendanceMode,verified-secondary
+event-perugia-2021-10-06,La citta' di ognuno. Il progetto per tutti,2021-10-06T16:00:00+02:00,2021-10-06T18:00:00+02:00,"Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Perugia",The Fast Guide to Accessibility Design,OnlineEventAttendanceMode,verified-secondary
+event-villa-umbra-2019,Progettare la città e il territorio accessibile a tutt*,2019-12-18T10:00:00,2019-12-18T14:00:00,Regione Umbria,,,verified-secondary

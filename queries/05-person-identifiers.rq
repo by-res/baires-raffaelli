@@ -1,0 +1,11 @@
+# Authority identifiers and same-as links of Baires Raffaelli
+PREFIX schema: <https://schema.org/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <https://w3id.org/baires-raffaelli/id/>
+SELECT ?type ?value ?url WHERE {
+  { :baires-raffaelli schema:identifier ?i .
+    ?i schema:propertyID ?type ; schema:value ?value .
+    OPTIONAL { ?i schema:url ?url } }
+  UNION
+  { :baires-raffaelli owl:sameAs ?url BIND("owl:sameAs" AS ?type) }
+} ORDER BY ?type

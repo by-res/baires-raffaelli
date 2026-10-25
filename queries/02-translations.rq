@@ -1,0 +1,7 @@
+# Translations of the three English originals, with translators
+PREFIX schema: <https://schema.org/>
+SELECT ?original ?translation ?lang ?translatorName WHERE {
+  ?tr schema:translationOfWork ?o ; schema:name ?translation ; schema:inLanguage ?lang .
+  ?o schema:name ?original .
+  OPTIONAL { ?tr schema:translator/schema:name ?translatorName }
+} ORDER BY ?original ?lang

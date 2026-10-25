@@ -1,0 +1,10 @@
+# All editions (BIBFRAME Instances) of the books, with language, publisher, date and pages
+PREFIX schema: <https://schema.org/>
+PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+SELECT ?title ?lang ?publisher ?published ?pages ?isbn WHERE {
+  ?inst a bf:Instance ; schema:name ?title ; schema:inLanguage ?lang .
+  OPTIONAL { ?inst schema:publisher/schema:name ?publisher }
+  OPTIONAL { ?inst schema:datePublished ?published }
+  OPTIONAL { ?inst schema:numberOfPages ?pages }
+  OPTIONAL { ?inst schema:isbn ?isbn FILTER(STRLEN(?isbn) = 13) }
+} ORDER BY ?lang ?published

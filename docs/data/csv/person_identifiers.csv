@@ -1,0 +1,28 @@
+authority,identifier,url,relation
+ORCID,0009-0001-6673-2672,https://orcid.org/0009-0001-6673-2672,schema:identifier
+VIAF,10149366173685601896,https://viaf.org/viaf/10149366173685601896/,schema:identifier
+GND,1212524179,https://d-nb.info/gnd/1212524179,schema:identifier
+LCNAF,no2016061205,https://id.loc.gov/authorities/names/no2016061205,schema:identifier
+Wikidata,Q123438455,https://www.wikidata.org/wiki/Q123438455,schema:identifier
+OpenLibrary,OL8084110A,https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli,schema:identifier
+SBN-author (ICCU),RAVV705183,https://opac.sbn.it/nome/RAVV705183,schema:identifier
+IdRef,25650668X,https://www.idref.fr/25650668X,schema:identifier
+CiNii-Research-person,1980023487683572225,https://cir.nii.ac.jp/crid/1980023487683572225,schema:identifier
+HKPL-heading,"Raffaelli, Baires, 1975-",,schema:identifier
+LibraryThing,raffaellibaires,https://www.librarything.com/author/raffaellibaires,schema:identifier
+NLI,987007372118705171,https://www.nli.org.il/en/authorities/987007372118705171,schema:identifier
+Goodreads-author,14243162,https://www.goodreads.com/author/list/14243162.Baires_Raffaelli,schema:identifier
+GoogleScholar,5IDaNSUAAAAJ,https://scholar.google.com/citations?user=5IDaNSUAAAAJ,schema:identifier
+ULAN,500783259,http://vocab.getty.edu/ulan/500783259,schema:identifier
+NKC-NL-CR,ntk20241224668,https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668,schema:identifier
+YaleLUX,5edd28bd-242b-4cbd-addf-dbf07915b24c,https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c,schema:identifier
+NUKAT,n2016242574,https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574,schema:identifier
+ISNI,0000000486011033,https://isni.org/isni/0000000486011033,schema:identifier
+NLB-Singapore,7f05db6b-80da-11ee-bcbb-17f359b7e2ba,,schema:identifier
+WorldCatEntities,E39PCjt9qBPrbR77dXkMJ79rG3,https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3,schema:identifier
+NTA,401471187,,schema:identifier
+CANTIC,981058601439506706,https://cantic.bnc.cat/registre/981058601439506706,schema:identifier
+NLAI-authority,1492576,,schema:identifier
+BIBSYS-NORAF,1460961539772,,schema:identifier
+GoogleKnowledgeGraph,/g/11c0xndlnm,,schema:identifier
+NLC-authority,032658037,,schema:identifier
