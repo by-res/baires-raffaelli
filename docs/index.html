@@ -17,7 +17,7 @@ a{color:var(--acc)}code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
 <p class="lead">Linked Open Data · version 3.0.1 · 26 October 2026 · DOI <a href="https://doi.org/10.5281/zenodo.23647642">10.5281/zenodo.23647642</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a></p>
 <h1>Baires Raffaelli – bibliographic, academic and authority control dataset</h1>
 <p>A machine-readable record of the architect, researcher and author <strong>Baires Raffaelli</strong>: authority identifiers, the three “Fast Guide” books and their translations, page-level citation evidence, events, projects and library holdings. Modelled with Schema.org and BIBFRAME 2.0 (Work / Instance / Item), ready for knowledge graphs and retrieval-augmented generation.</p>
-<div class="stats"><div><b>3,656</b>triples</div><div><b>47</b>people</div><div><b>38</b>organisations</div><div><b>23 / 7</b>works / editions</div><div><b>28</b>citation evidences</div></div>
+<div class="stats"><div><b>3,656</b>triples</div><div><b>47</b>people</div><div><b>39</b>organisations</div><div><b>23 / 7</b>works / editions</div><div><b>28</b>citation evidences</div></div>
 <h2>Download</h2>
 <div class="tw"><table><tr><th>File</th><th>Format</th><th>Content</th></tr>
 <tr><td><a href="data/baires-raffaelli.ttl">baires-raffaelli.ttl</a></td><td>Turtle</td><td>Core graph (start here)</td></tr>
@@ -35,6 +35,6 @@ print(len(g))</pre>
 <h2>Modelling in short</h2>
 <p>Verifiable records have <code>brv:verificationStatus</code> and a checked source with access date; use <em>verified-primary</em> and <em>verified-secondary</em> for question answering. <code>schema:sameAs</code> links only identifiers, authority records and profile pages of the same entity. Broken or unsafe URLs are kept as strings (<code>brv:deprecatedUrl</code>), never as links. Descriptions of citing documents are paraphrases.</p>
 <h2>Cite</h2>
-<p>Raffaelli, B. (2026). <em>Baires Raffaelli – bibliographic, academic and authority control dataset</em> (v3.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.23647642">https://doi.org/10.5281/zenodo.23647642</a> · <a href="https://w3id.org/baires-raffaelli/">https://w3id.org/baires-raffaelli/</a>. After the first Zenodo release, cite the DOI of the version used.</p>
-<p class="lead">Built with the assistance of an AI model (Claude, Anthropic) and checked with the author.</p>
+<p>Raffaelli, B. (2026). <em>Baires Raffaelli – bibliographic, academic and authority control dataset</em> (v3.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.23647642">https://doi.org/10.5281/zenodo.23647642</a> · <a href="https://w3id.org/baires-raffaelli/">https://w3id.org/baires-raffaelli/</a>. The DOI above covers all versions; to cite this exact version use <a href="https://doi.org/10.5281/zenodo.23670542">10.5281/zenodo.23670542</a>.</p>
+<p class="lead">Provenance: compiled by the author from his own documents and public sources (publisher pages, library catalogues, authority files, archived pages). Drafted and reviewed with AI models (Gemini, Claude); final files compiled with Claude (Anthropic); facts reviewed and approved by the author. Each record states its verification status (brv:verificationStatus).</p>
 </main></body></html>
