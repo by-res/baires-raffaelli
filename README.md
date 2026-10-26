@@ -3,8 +3,8 @@
 Linked Open Data (Schema.org + BIBFRAME 2.0) about the architect, researcher and author **Baires Raffaelli**: authority identifiers, the three *Fast Guide* books (BIS Publishers) and their translations, page-level citation evidence, events, projects, awards and library holdings.
 
 - Version 3.0.1 · 2026-10-26 · DOI [10.5281/zenodo.23647642](https://doi.org/10.5281/zenodo.23647642) (all versions) · [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
-- Home: <https://w3id.org/baires-raffaelli/> (the w3id.org addresses resolve once the redirect pull request has been merged; the files are meanwhile available from this repository and GitHub Pages) · node IRIs `https://w3id.org/baires-raffaelli/id/…` · vocabulary `https://w3id.org/baires-raffaelli/vocab#`
-- About 3,600 triples · 47 people · 38 organisations · 23 works · 28 citation evidences
+- Home: <https://w3id.org/baires-raffaelli/> · node IRIs `https://w3id.org/baires-raffaelli/id/…` · vocabulary `https://w3id.org/baires-raffaelli/vocab#`
+- About 3,600 triples · 47 people · 39 organisations · 23 works · 28 citation evidences
 
 ## Repository layout
 
