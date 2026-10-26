@@ -69,4 +69,9 @@ For retrieval-augmented generation, index the JSON-LD `@graph` by `@id` and add 
 - Facts were checked against public sources on 24–25 October 2026; links can change. Foreign catalogues behind anti-bot protection could not be re-checked and are marked.
 - The author mentions 2–3 reprints of the English books; none is documented in any catalogue, so they are not modelled. The Persian second printing (1404 SH) is recorded in `schema:bookEdition`, not as a separate Instance.
 - Personal data are limited to public professional information (birth year and place only); no addresses, contacts or family relations.
-- Built with the assistance of an AI model (Claude, Anthropic) and checked with the author.
+
+## Provenance and method
+
+- **Sources and curation.** The data were compiled by the author from his own documents, published works and public sources: publisher pages, library catalogues, authority files and archived web pages. The author collected the public links and the source of each fact.
+- **Tools.** Drafts and reviews were produced with the assistance of AI models (Gemini and Claude); the final files were compiled with Claude (Anthropic). Syntax, vocabulary use and shape constraints were checked with RDF parsers and SHACL validation, and all facts were reviewed and approved by the author.
+- **Verification.** Every record that makes a verifiable claim states its verification status (`brv:verificationStatus`) and either the independent page checked with its access date (`brv:verification`) or the reason why no web page exists (`brv:verificationBasis`). Links not re-checked are marked in `audit/link_register.csv`.
