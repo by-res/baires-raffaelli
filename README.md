@@ -60,7 +60,7 @@ For retrieval-augmented generation, index the JSON-LD `@graph` by `@id` and add 
 
 1. Create the GitHub repository `baires-raffaelli`, push these files, enable GitHub Pages from `/docs` on the main branch.
 2. (Done) The GitHub account `by-res` is already set in `w3id/.htaccess`, `CITATION.cff` and `docs/index.html`; add a maintainer contact in `w3id/README.md`.
-3. Open a pull request to [perma-id/w3id.org](https://github.com/perma-id/w3id.org) adding the folder `baires-raffaelli/` with `.htaccess` and `README.md`.
+3. Open a pull request to [perma-id/w3id.org](https://github.com/perma-id/w3id.org) adding the folder `ids/baires-raffaelli/` with `.htaccess` and `README.md`.
 4. Each GitHub release is archived on Zenodo; the concept DOI above always resolves to the latest version.
 5. On the personal site, link to the landing page or embed the `Dataset` JSON-LD block of `docs/index.html`.
 
