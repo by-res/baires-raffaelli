@@ -2,8 +2,9 @@
 BAIRES RAFFAELLI - BIBLIOGRAPHIC, ACADEMIC, AND AUTHORITY CONTROL DATASET
 Format: Structured Key-Value / Knowledge Graph Ingestion & RAG-Optimized Text
 Standards: Schema.org / BIBFRAME 2.0 / Linked Open Data (LOD) Compliant
-Version: 3.0
-Version Date: 2026-10-25
+Version: 3.0.1
+Version Date: 2026-10-26
+DOI: 10.5281/zenodo.23647642 (https://doi.org/10.5281/zenodo.23647642, all versions)
 License: Creative Commons Zero v1.0 Universal (CC0 1.0)
 Canonical Home: https://w3id.org/baires-raffaelli/
 Other Formats: Turtle and JSON-LD (same content) at https://w3id.org/baires-raffaelli/data/baires-raffaelli.ttl and .jsonld
@@ -46,16 +47,16 @@ Birth_Date: 1975
 Birth_Place: Fabriano (AN), Marche, Italia (fabriano)
 Affiliation: Collaborazione alla didattica - Laboratorio di Sintesi Finale in Composizione e Progettazione Urbana (resp. prof.ssa Marta Calzolaretti) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Laboratorio di Sintesi Finale (resp. prof.ssa Rossana Battistacci) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Corso di Progettazione II (resp. prof. Roberto Grio) @ Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma | Collaborazione alla didattica - Architettura Tecnica II (resp. prof. Marco Ferrero) @ Facoltà di Ingegneria, Sapienza Università di Roma | Researcher / PhD candidate @ Unità di Ricerca UdR AIS 'Architettura Innovazione Sostenibilità'
 Knows_About: accessibility design | architectural design | architectural form | housing | inclusivity | spatial perception | universal design | urban design | visual representation
-Identifier: ORCID: 0009-0001-6673-2672 <https://orcid.org/0009-0001-6673-2672> | VIAF: 10149366173685601896 <https://viaf.org/viaf/10149366173685601896/> | GND: 1212524179 <https://d-nb.info/gnd/1212524179> | LCNAF: no2016061205 <https://id.loc.gov/authorities/names/no2016061205> | Wikidata: Q123438455 <https://www.wikidata.org/wiki/Q123438455> | OpenLibrary: OL8084110A <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | SBN-author (ICCU): RAVV705183 <https://opac.sbn.it/nome/RAVV705183> | IdRef: 25650668X <https://www.idref.fr/25650668X> | CiNii-Research-person: 1980023487683572225 <https://cir.nii.ac.jp/crid/1980023487683572225> | HKPL-heading: Raffaelli, Baires, 1975- | LibraryThing: raffaellibaires <https://www.librarything.com/author/raffaellibaires> | NLI: 987007372118705171 <https://www.nli.org.il/en/authorities/987007372118705171> | Goodreads-author: 14243162 <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | GoogleScholar: 5IDaNSUAAAAJ <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | ULAN: 500783259 <http://vocab.getty.edu/ulan/500783259> | NKC-NL-CR: ntk20241224668 <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | YaleLUX: 5edd28bd-242b-4cbd-addf-dbf07915b24c <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | NUKAT: n2016242574 <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | ISNI: 0000000486011033 <https://isni.org/isni/0000000486011033> | NLB-Singapore: 7f05db6b-80da-11ee-bcbb-17f359b7e2ba | WorldCatEntities: E39PCjt9qBPrbR77dXkMJ79rG3 <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | NTA: 401471187 | CANTIC: 981058601439506706 <https://cantic.bnc.cat/registre/981058601439506706> | NLAI-authority: 1492576 | BIBSYS-NORAF: 1460961539772 | GoogleKnowledgeGraph: /g/11c0xndlnm | NLC-authority: 032658037
-Authority_URI: <http://vocab.getty.edu/ulan/500783259> | <http://www.wikidata.org/entity/Q123438455> | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | <https://cantic.bnc.cat/registre/981058601439506706> | <https://cir.nii.ac.jp/crid/1140010304673101441> | <https://cir.nii.ac.jp/crid/1980023487683572225> | <https://d-nb.info/gnd/1212524179> | <https://en.wikipedia.org/wiki/Baires_Raffaelli> | <https://en.wikiquote.org/wiki/Baires_Raffaelli> | <https://fable.co/author/baires-raffaelli> | <https://id.loc.gov/authorities/names/no2016061205> | <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | <https://isni.org/isni/0000000486011033> | <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | <https://opac.sbn.it/nome/RAVV705183> | <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | <https://orcid.org/0009-0001-6673-2672> | <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | <https://viaf.org/viaf/10149366173685601896/> | <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | <https://www.idref.fr/25650668X> | <https://www.instagram.com/baires.raffaelli/> | <https://www.librarything.com/author/raffaellibaires> | <https://www.nli.org.il/en/authorities/987007372118705171>
+Identifier: ORCID: 0009-0001-6673-2672 <https://orcid.org/0009-0001-6673-2672> | VIAF: 10149366173685601896 <https://viaf.org/viaf/10149366173685601896/> | GND: 1212524179 <https://d-nb.info/gnd/1212524179> | LCNAF: no2016061205 <https://id.loc.gov/authorities/names/no2016061205> | Wikidata: Q123438455 <https://www.wikidata.org/wiki/Q123438455> | OpenLibrary: OL8084110A <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | SBN-author (ICCU): RAVV705183 <https://opac.sbn.it/nome/RAVV705183> | IdRef: 25650668X <https://www.idref.fr/25650668X> | CiNii-Research-person: 1980023487683572225 <https://cir.nii.ac.jp/crid/1980023487683572225> | HKPL-heading: Raffaelli, Baires, 1975- | LibraryThing: raffaellibaires <https://www.librarything.com/author/raffaellibaires> | NLI: 987007372118705171 <https://www.nli.org.il/en/authorities/987007372118705171> | Goodreads-author: 14243162 <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | GoogleScholar: 5IDaNSUAAAAJ <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | ULAN: 500783259 <http://vocab.getty.edu/ulan/500783259> | NKC-NL-CR: ntk20241224668 <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | YaleLUX: 5edd28bd-242b-4cbd-addf-dbf07915b24c <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | NUKAT: n2016242574 <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | ISNI: 0000000486011033 <https://isni.org/isni/0000000486011033> | NLB-Singapore: 7f05db6b-80da-11ee-bcbb-17f359b7e2ba | WorldCatEntities: E39PCjt9qBPrbR77dXkMJ79rG3 <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | NTA: 401471187 | CANTIC: 981058601439506706 <https://cantic.bnc.cat/registre/981058601439506706> | NLAI-authority: 1492576 | BIBSYS-NORAF: 1460961539772 | GoogleKnowledgeGraph: /g/11c0xndlnm | NLC-authority: 032658037 | Amazon-author-ID: B019OLSVX8 <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8>
+Authority_URI: <http://vocab.getty.edu/ulan/500783259> | <http://www.wikidata.org/entity/Q123438455> | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> | <https://cantic.bnc.cat/registre/981058601439506706> | <https://cir.nii.ac.jp/crid/1140010304673101441> | <https://cir.nii.ac.jp/crid/1980023487683572225> | <https://d-nb.info/gnd/1212524179> | <https://en.wikipedia.org/wiki/Baires_Raffaelli> | <https://en.wikiquote.org/wiki/Baires_Raffaelli> | <https://fable.co/author/baires-raffaelli> | <https://id.loc.gov/authorities/names/no2016061205> | <https://id.oclc.org/worldcat/entity/E39PCjt9qBPrbR77dXkMJ79rG3> | <https://isni.org/isni/0000000486011033> | <https://katalog.nukat.edu.pl/lib/authority?lccn=n2016242574> | <https://lux.collections.yale.edu/data/person/5edd28bd-242b-4cbd-addf-dbf07915b24c> | <https://opac.sbn.it/nome/RAVV705183> | <https://openlibrary.org/authors/OL8084110A/Baires_Raffaelli> | <https://orcid.org/0009-0001-6673-2672> | <https://scholar.google.com/citations?user=5IDaNSUAAAAJ> | <https://viaf.org/viaf/10149366173685601896/> | <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8> | <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli> | <https://www.idref.fr/25650668X> | <https://www.instagram.com/baires.raffaelli/> | <https://www.librarything.com/author/raffaellibaires> | <https://www.nli.org.il/en/authorities/987007372118705171>
 Same_As_Wikidata: <http://www.wikidata.org/entity/Q123438455>
 Official_URL: <https://www.baires.eu/>
-See_Also: <https://catalogue.nlb.gov.sg/search/card?id=7f05db6b-80da-11ee-bcbb-17f359b7e2ba&entityType=Agent> | <https://ccfr.bnf.fr/portailccfr/jsp/public/search/public_search_result_exec.jsp?pagerName=search&sortCol=sortCol&sortWay=sortWay&action=public_search_federated&query=PUBLIC_CATALOGUE_SIMPLE&source=all_simple&ts=1792881433307> | <https://notablepeopleproject.org/baires_raffaelli> | <https://webcat.hkpl.gov.hk/> | <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/> | <https://www.linkedin.com/in/baires-raffaelli-42008323> | <https://www.sudoc.abes.fr/cbs//DB=2.1/SET=3/TTL=1/REL?PPN=25650668X> | <https://www.sudoc.abes.fr/cbs/xslt/DB=2.1/SET=1/TTL=1/REL?PPN=25650668X>
+See_Also: <https://catalogue.nlb.gov.sg/search/card?id=7f05db6b-80da-11ee-bcbb-17f359b7e2ba&entityType=Agent> | <https://ccfr.bnf.fr/portailccfr/jsp/public/search/public_search_result_exec.jsp?pagerName=search&sortCol=sortCol&sortWay=sortWay&action=public_search_federated&query=PUBLIC_CATALOGUE_SIMPLE&source=all_simple&ts=1792881433307> | <https://notablepeopleproject.org/baires_raffaelli> | <https://webcat.hkpl.gov.hk/> | <https://www.amazon.it/stores/Baires-Raffaelli/author/B019OLSVX8> | <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/> | <https://www.linkedin.com/in/baires-raffaelli-42008323> | <https://www.sudoc.abes.fr/cbs//DB=2.1/SET=3/TTL=1/REL?PPN=25650668X> | <https://www.sudoc.abes.fr/cbs/xslt/DB=2.1/SET=1/TTL=1/REL?PPN=25650668X>
 Verification_Status: verified-primary
-Verified_Against: <http://vocab.getty.edu/ulan/500783259> (accessed 2026-10-25) | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> (accessed 2026-10-25) | <https://cantic.bnc.cat/registre/981058601439506706> (accessed 2026-10-25)
+Verified_Against: <http://vocab.getty.edu/ulan/500783259> (accessed 2026-10-25) | <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> (accessed 2026-10-25) | <https://cantic.bnc.cat/registre/981058601439506706> (accessed 2026-10-25) | <https://en.wikiquote.org/wiki/Baires_Raffaelli> (accessed 2026-10-26) | <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8> (accessed 2026-10-26)
 Works_For: BRRE architects (brre-architects)
 Alumni_Of: Sapienza Università di Roma (sapienza)
-Occupation: Architect (registered, OAPPC Roma) | Academic researcher (PhD) | Author | Educator / university teacher
+Occupation: Educator / university teacher | Architect (registered, OAPPC Roma) | Academic researcher (PhD) | Author
 Nationality: Italy
 Knows_Language: en | it
 Credential: Abilitazione all'esercizio della professione di Architetto - iscritto OAPPC Roma (abilitazione-architetto-2003) | Coordinatore per la sicurezza in fase di progettazione ed esecuzione (CSP/CSE) (csp-cse) | Laurea Magistrale U.E. in Architettura (110/110 con lode) (laurea-architettura-sapienza) | Dottorato di ricerca (PhD) in Architettura: Teoria e Progetto - XXIV ciclo (phd-sapienza-xxiv)
@@ -153,10 +154,11 @@ Language: en | it
 Keywords: BIBFRAME 2.0 | Baires Raffaelli | Schema.org | accessibility | architecture | authority control | bibliographic dataset | linked open data
 About: Baires Raffaelli (baires-raffaelli)
 Based_On: <https://orcid.org/0009-0001-6673-2672> | <https://www.baires.eu/> | <https://www.wikidata.org/wiki/Q123438455>
-Authority_URI: <https://github.com/by-res/baires-raffaelli>
+Identifier: DOI: 10.5281/zenodo.23647642 <https://doi.org/10.5281/zenodo.23647642>
+Authority_URI: <https://doi.org/10.5281/zenodo.23647642> | <https://github.com/by-res/baires-raffaelli>
 Official_URL: <https://w3id.org/baires-raffaelli/>
-Version: 3.0
-Date_Modified: 2026-10-25
+Version: 3.0.1
+Date_Modified: 2026-10-26
 License: <https://creativecommons.org/publicdomain/zero/1.0/>
 Distribution: schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.ttl>, schema:encodingFormat=text/turtle | schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.jsonld>, schema:encodingFormat=application/ld+json | Key-value text edition for LLM ingestion | Provenance layer (editorial notes)
 Free_To_Access: true
@@ -239,8 +241,9 @@ Source_Organization: Dipartimento di Architettura e Progetto (DiAP), Sapienza Un
 Date_Published: 2012
 Language: it
 Has_Instance: Semantica e tipologia della forma nell'architettura contemporanea ... (thesis-phd-print)
+Same_As_Wikidata: <http://www.wikidata.org/entity/Q138822782>
 Verification_Status: verified-primary
-Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25) via thesis-phd-print
+Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25) via thesis-phd-print | <https://www.wikidata.org/wiki/Q138822782> (accessed 2026-10-26)
 In_Support_Of: Dottorato di ricerca in Architettura: Teoria e Progetto / Composizione Architettonica, XXIV ciclo
 
 
@@ -1082,7 +1085,7 @@ Identifier: DOI: 10.22337/2077-9038-2020-2-47-60 <https://doi.org/10.22337/2077-
 Authority_URI: <https://doi.org/10.22337/2077-9038-2020-2-47-60>
 Official_URL: <https://aac.raasn.ru/index.php/aac/article/view/211> | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok>
 Verification_Status: verified-primary
-Verified_Against: <https://aac.raasn.ru/index.php/aac/article/view/211> (accessed 2026-10-25) | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-25)
+Verified_Against: <https://aac.raasn.ru/index.php/aac/article/view/211> (accessed 2026-10-25) | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-25) | <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> (accessed 2026-10-26)
 Pagination: 47-60
 
 [RECORD 07.04]
@@ -1229,10 +1232,11 @@ Editor: Valeria Bucchetti
 Publisher: FrancoAngeli
 Date_Published: 2024
 ISBN: 9788835167013
-Is_Part_Of: Open Access - Saggi, vol. 07 (volume-fa-oa-saggi-07)
-Official_URL: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> | <https://series.francoangeli.it/index.php/oa/catalog/book/1199>
+Is_Part_Of: Design della comunicazione, vol. 07 (volume-fa-design-comunicazione-07)
+Official_URL: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> | <https://series.francoangeli.it/index.php/oa/catalog/series/des-com>
+Do_Not_Follow_URL: https://series.francoangeli.it/index.php/oa/catalog/book/1199
 Verification_Status: verified-secondary
-Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25)
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) | <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> (accessed 2026-10-26)
 
 [RECORD 07.15]
 Entity_ID: cerpa-casa-foligno-2016
@@ -1315,22 +1319,23 @@ Verification_Note: PDF of the thesis supplied by the author
 In_Support_Of: Master's Thesis (YAMK), Clinical Expertise degree programme in Digital Health Care and Social Services
 
 [RECORD 07.20]
-Entity_ID: series-fa-oa-saggi
-Entity_IRI: https://w3id.org/baires-raffaelli/id/series-fa-oa-saggi
+Entity_ID: series-fa-design-comunicazione
+Entity_IRI: https://w3id.org/baires-raffaelli/id/series-fa-design-comunicazione
 Ontological_Type: schema:BookSeries
-Name: Open Access - Saggi
+Name: Design della comunicazione
 Publisher: FrancoAngeli (francoangeli)
+Official_URL: <https://series.francoangeli.it/index.php/oa/catalog/series/des-com>
 Verification_Status: verified-secondary
-Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via volume-fa-oa-saggi-07 | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25) via volume-fa-oa-saggi-07
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via volume-fa-design-comunicazione-07 | <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> (accessed 2026-10-26) via volume-fa-design-comunicazione-07
 
 [RECORD 07.21]
-Entity_ID: volume-fa-oa-saggi-07
-Entity_IRI: https://w3id.org/baires-raffaelli/id/volume-fa-oa-saggi-07
+Entity_ID: volume-fa-design-comunicazione-07
+Entity_IRI: https://w3id.org/baires-raffaelli/id/volume-fa-design-comunicazione-07
 Ontological_Type: schema:PublicationVolume
-Name: Open Access - Saggi, vol. 07
-Is_Part_Of: Open Access - Saggi (series-fa-oa-saggi)
+Name: Design della comunicazione, vol. 07
+Is_Part_Of: Design della comunicazione (series-fa-design-comunicazione)
 Verification_Status: verified-secondary
-Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via cite-bucchetti-2024 | <https://series.francoangeli.it/index.php/oa/catalog/book/1199> (accessed 2026-10-25) via cite-bucchetti-2024
+Verified_Against: <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> (accessed 2026-10-25) via cite-bucchetti-2024 | <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> (accessed 2026-10-26) via cite-bucchetti-2024
 Volume: 07
 
 [RECORD 07.22]

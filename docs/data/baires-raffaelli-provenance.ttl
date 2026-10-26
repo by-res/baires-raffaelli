@@ -98,7 +98,8 @@
 :cite-gelfond-ahti-2020 brv:dataQualityNote "ERRORE DEL DATASET: il DOI .048 risolve a 'High-Rise Dominants in the Urban Landscape of Baghdad'; il DOI corretto dell'articolo Gelfond (Atlantis 125944750) e' 10.2991/assehr.k.200923.043, coerente con Wikipedia. Verifica del 25/10/2026: la pagina Atlantis Press elenca il PDF; la pagina ResearchGate si apre (200) ed e' il record Gelfond, DOI .043, CC BY-NC 4.0 (Raffaelli non compare tra gli autori; la citazione non e' visibile nel testo caricato). AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (125944750 (1).pdf, PDF p. 5-6); cfr. brv:CitationEvidence :ev01."@it ;
     brv:sourceRecord "07.01" .
 
-:cite-gelfond-raasn-2020 brv:dataQualityNote "DOI REGISTRATO (doi.org/api/handles: responseCode 1, verificato 25/10/2026) ma il target registrato http://aac.raasn.ru/article/view/211 da' 404; la pagina funzionante e' /index.php/aac/article/view/211 (redirige a /ru/article/view/211). Il DOI e' quindi valido come identificatore ma la sua risoluzione end-to-end e' fragile: si usa schema:url per l'accesso e il DOI come identificatore. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (o-prostranstvennoy-tipologii-zdaniy-arok.pdf, PDF p. 13-14); cfr. brv:CitationEvidence :ev02."@it ;
+:cite-gelfond-raasn-2020 brv:dataQualityNote "DOI REGISTRATO (doi.org/api/handles: responseCode 1, verificato 25/10/2026) ma il target registrato http://aac.raasn.ru/article/view/211 da' 404; la pagina funzionante e' /index.php/aac/article/view/211 (redirige a /ru/article/view/211). Il DOI e' quindi valido come identificatore ma la sua risoluzione end-to-end e' fragile: si usa schema:url per l'accesso e il DOI come identificatore. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (o-prostranstvennoy-tipologii-zdaniy-arok.pdf, PDF p. 13-14); cfr. brv:CitationEvidence :ev02."@it,
+        "Pagina di CyberLeninka letta il 26/10/2026: autrice Anna Gelfond, Academia. Architettura e costruzione, 2020 n. 2; il riferimento 13 della bibliografia cita 'The Fast Guide to Architectural Form' (Amsterdam, BIS Publishers, 2016, 144 p., trad. Silvia Antonini)."@it ;
     brv:sourceRecord "07.02" .
 
 :cite-iat-newsletter-2021 brv:dataQualityNote "Sito in manutenzione (503) anche il 25/10/2026; esiste uno snapshot Wayback del 02/11/2023 (contenuto non leggibile in automatico)."@it ;
@@ -390,12 +391,14 @@
 
 :series-asseh brv:sourceRecord "07.02" .
 
-:series-fa-oa-saggi brv:sourceRecord "07.10" .
+:series-fa-design-comunicazione brv:dataQualityNote "La pagina della collana FrancoAngeli (controllata il 26/10/2026) elenca il volume 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (Bucchetti, ed., 17/09/2024); la collana e' 'Design della comunicazione', non 'Open Access - Saggi' come nella versione precedente. La pagina del singolo volume (catalog/book/1199) reindirizza ora al login e passa a brv:deprecatedUrl; il numero di volume 07 non e' confermato dalla pagina della collana."@it ;
+    brv:sourceRecord "07.10" .
 
 :thesis-phd-print brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it ;
     brv:sourceRecord "02.03" .
 
-:thesis-phd-work brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it ;
+:thesis-phd-work brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it,
+        "Wikidata Q138822782 descrive la tesi (doctoral thesis, autore Baires Raffaelli, Sapienza) e riporta come data di pubblicazione 2011; il catalogo Sapienza (Sebina RMS02820805) riporta 2012, che resta il dato adottato."@it ;
     brv:sourceRecord "02.03",
         "03.04" .
 
@@ -410,7 +413,7 @@
 
 :volume-asseh-471 brv:sourceRecord "07.02" .
 
-:volume-fa-oa-saggi-07 brv:sourceRecord "07.10" .
+:volume-fa-design-comunicazione-07 brv:sourceRecord "07.10" .
 
 :volume-ijvd-13 brv:sourceRecord "07.20" .
 

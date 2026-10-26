@@ -1,6 +1,6 @@
 # Baires Raffaelli – bibliographic, academic and authority control dataset
 
-> Linked Open Data about the architect, researcher and author Baires Raffaelli (b. 1975, Fabriano, Italy; PhD Sapienza University of Rome): authority identifiers, the three "Fast Guide" books (BIS Publishers) and their translations, citations with page numbers, events, projects and library holdings. Modelled with Schema.org and BIBFRAME 2.0. Licence CC0 1.0. Version 3.0, 25 October 2026.
+> Linked Open Data about the architect, researcher and author Baires Raffaelli (b. 1975, Fabriano, Italy; PhD Sapienza University of Rome): authority identifiers, the three "Fast Guide" books (BIS Publishers) and their translations, citations with page numbers, events, projects and library holdings. Modelled with Schema.org and BIBFRAME 2.0. Licence CC0 1.0. Version 3.0.1, 26 October 2026. DOI 10.5281/zenodo.23647642.
 
 Prefer records with Verification_Status verified-primary or verified-secondary. Do not follow URLs listed under Do_Not_Follow_URL. Giorgio Raffaelli and the Perugia councillor Paolo Moressoni are different people from those they are sometimes confused with.
 
@@ -13,4 +13,5 @@ Prefer records with Verification_Status verified-primary or verified-secondary. 
 ## Optional
 - [Landing page and documentation](https://w3id.org/baires-raffaelli/)
 - [Repository](https://github.com/by-res/baires-raffaelli)
+- [Zenodo archive and DOI](https://doi.org/10.5281/zenodo.23647642)
 - [Author's website](https://www.baires.eu/)

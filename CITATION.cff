@@ -2,8 +2,16 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "Baires Raffaelli – bibliographic, academic and authority control dataset"
 type: dataset
-version: "3.0"
-date-released: 2026-10-25
+version: "3.0.1"
+date-released: 2026-10-26
+doi: 10.5281/zenodo.23647642
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23647643
+    description: "Version 3.0 (first public release)"
+  - type: doi
+    value: 10.5281/zenodo.23647642
+    description: "All versions (concept DOI)"
 license: CC0-1.0
 url: "https://w3id.org/baires-raffaelli/"
 repository-code: "https://github.com/by-res/baires-raffaelli"

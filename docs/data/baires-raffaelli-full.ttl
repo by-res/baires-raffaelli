@@ -289,7 +289,7 @@ brv:Verification a rdfs:Class ;
 :dataset a schema:Dataset ;
     schema:about :baires-raffaelli ;
     schema:creator :baires-raffaelli ;
-    schema:dateModified "2026-10-25"^^xsd:date ;
+    schema:dateModified "2026-10-26"^^xsd:date ;
     schema:datePublished "2026-10-25"^^xsd:date ;
     schema:description "Knowledge-graph dataset on the architect, researcher and author Baires Raffaelli: authority identifiers, degrees, research, books and translations, awards and projects, accessibility planning (PEBA, AVLA), citations and library holdings."@en ;
     schema:distribution [ a schema:DataDownload ;
@@ -306,6 +306,11 @@ brv:Verification a rdfs:Class ;
             schema:contentUrl <https://w3id.org/baires-raffaelli/data/baires-raffaelli-provenance.ttl> ;
             schema:encodingFormat "text/turtle" ;
             schema:name "Provenance layer (editorial notes)"@en ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:description "Zenodo concept DOI: resolves to the latest version of the dataset."@en ;
+            schema:propertyID "DOI" ;
+            schema:url <https://doi.org/10.5281/zenodo.23647642> ;
+            schema:value "10.5281/zenodo.23647642" ] ;
     schema:inLanguage "en",
         "it" ;
     schema:isAccessibleForFree true ;
@@ -323,9 +328,10 @@ brv:Verification a rdfs:Class ;
     schema:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     schema:measurementTechnique "Manual curation against public sources (Wikidata, ORCID, national libraries, publisher pages) with page-level citation evidence"@en ;
     schema:name "Baires Raffaelli - bibliographic, academic and authority control dataset"@en ;
-    schema:sameAs <https://github.com/by-res/baires-raffaelli> ;
+    schema:sameAs <https://doi.org/10.5281/zenodo.23647642>,
+        <https://github.com/by-res/baires-raffaelli> ;
     schema:url <https://w3id.org/baires-raffaelli/> ;
-    schema:version "3.0" ;
+    schema:version "3.0.1" ;
     brv:dataQualityNote "v3 integra: foglio link validato dall'autore (160 link OK), 22 PDF di citazioni con pinpoint di pagina (nodi brv:CitationEvidence), edizione persiana corretta (Mashhad, 144 p. (143 secondo NLAI), 1398 SH = 2019, seconda stampa 1404 SH, NLAI/Kasra con snapshot Wayback), tesi Park identificata, casa di Foligno 2006, Pump It Up House (Europaconcorsi 2007, archivio), Giorgio Raffaelli, altra persona con lo stesso cognome (owl:differentFrom), revisioni Wikipedia. v2 corregge: handle IRIS della tesi, titolo tesi, DOI Gelfond, handle UMinho, date PEBA/Santa Margherita, domini schema.org, URL rotti; aggiunge identificativi, premi e contributi omessi."@it .
 
 :emergency-house a schema:CreativeWork,
@@ -620,10 +626,10 @@ brv:Verification a rdfs:Class ;
     brv:sourceRecord "05.08" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results> ],
+            brv:source <http://akichiatlas.com/en/archives/robin_hood_gardens.php> ],
         [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <http://akichiatlas.com/en/archives/robin_hood_gardens.php> ] ;
+            brv:source <https://bustler.net/news/455/robin-hood-gardens-design-competition-the-results> ] ;
     brv:verificationStatus "verified-secondary" .
 
 :entry-santa-margherita a bf:Work,
@@ -2228,18 +2234,20 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :volume-asseh-471 ] ;
     brv:verificationStatus "verified-secondary" .
 
-:series-fa-oa-saggi a schema:BookSeries ;
-    schema:name "Open Access - Saggi" ;
+:series-fa-design-comunicazione a schema:BookSeries ;
+    schema:name "Design della comunicazione" ;
     schema:publisher :francoangeli ;
+    schema:url <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> ;
+    brv:dataQualityNote "La pagina della collana FrancoAngeli (controllata il 26/10/2026) elenca il volume 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (Bucchetti, ed., 17/09/2024); la collana e' 'Design della comunicazione', non 'Open Access - Saggi' come nella versione precedente. La pagina del singolo volume (catalog/book/1199) reindirizza ora al login e passa a brv:deprecatedUrl; il numero di volume 07 non e' confermato dalla pagina della collana."@it ;
     brv:sourceRecord "07.10" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> ;
-            brv:viaRecord :volume-fa-oa-saggi-07 ],
+            brv:viaRecord :volume-fa-design-comunicazione-07 ],
         [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://series.francoangeli.it/index.php/oa/catalog/book/1199> ;
-            brv:viaRecord :volume-fa-oa-saggi-07 ] ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> ;
+            brv:viaRecord :volume-fa-design-comunicazione-07 ] ;
     brv:verificationStatus "verified-secondary" .
 
 :shinkenchiku-sha a schema:Organization ;
@@ -2632,21 +2640,22 @@ brv:viaRecord a rdf:Property ;
     schema:description "Source document 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (2024); page evidence: PDF p. 92."@en ;
     schema:editor [ a schema:Person ;
             schema:name "Valeria Bucchetti" ] ;
-    schema:isPartOf :volume-fa-oa-saggi-07 ;
+    schema:isPartOf :volume-fa-design-comunicazione-07 ;
     schema:isbn "9788835167013" ;
     schema:name "Design della comunicazione. Un ritratto disciplinare: studi e traiettorie"@it ;
     schema:publisher [ a schema:Organization ;
             schema:name "FrancoAngeli" ] ;
     schema:url <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf>,
-        <https://series.francoangeli.it/index.php/oa/catalog/book/1199> ;
+        <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> ;
     brv:dataQualityNote "Il catalogo FrancoAngeli redirige al login (non pubblico); il PDF Polimi risponde 200. L'opera citata ('Methodological works on information design and form') e' generica: quale libro di Raffaelli sia citato non e' specificato. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Traiettorie+PDF.pdf, PDF p. 92); cfr. brv:CitationEvidence :ev12."@it ;
+    brv:deprecatedUrl "https://series.francoangeli.it/index.php/oa/catalog/book/1199" ;
     brv:sourceRecord "07.07" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> ],
         [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://series.francoangeli.it/index.php/oa/catalog/book/1199> ] ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> ] ;
     brv:verificationStatus "verified-secondary" .
 
 :cite-gelfond-raasn-2020 a schema:ScholarlyArticle ;
@@ -2666,13 +2675,17 @@ brv:viaRecord a rdf:Property ;
     schema:sameAs <https://doi.org/10.22337/2077-9038-2020-2-47-60> ;
     schema:url <https://aac.raasn.ru/index.php/aac/article/view/211>,
         <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> ;
-    brv:dataQualityNote "DOI REGISTRATO (doi.org/api/handles: responseCode 1, verificato 25/10/2026) ma il target registrato http://aac.raasn.ru/article/view/211 da' 404; la pagina funzionante e' /index.php/aac/article/view/211 (redirige a /ru/article/view/211). Il DOI e' quindi valido come identificatore ma la sua risoluzione end-to-end e' fragile: si usa schema:url per l'accesso e il DOI come identificatore. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (o-prostranstvennoy-tipologii-zdaniy-arok.pdf, PDF p. 13-14); cfr. brv:CitationEvidence :ev02."@it ;
+    brv:dataQualityNote "DOI REGISTRATO (doi.org/api/handles: responseCode 1, verificato 25/10/2026) ma il target registrato http://aac.raasn.ru/article/view/211 da' 404; la pagina funzionante e' /index.php/aac/article/view/211 (redirige a /ru/article/view/211). Il DOI e' quindi valido come identificatore ma la sua risoluzione end-to-end e' fragile: si usa schema:url per l'accesso e il DOI come identificatore. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (o-prostranstvennoy-tipologii-zdaniy-arok.pdf, PDF p. 13-14); cfr. brv:CitationEvidence :ev02."@it,
+        "Pagina di CyberLeninka letta il 26/10/2026: autrice Anna Gelfond, Academia. Architettura e costruzione, 2020 n. 2; il riferimento 13 della bibliografia cita 'The Fast Guide to Architectural Form' (Amsterdam, BIS Publishers, 2016, 144 p., trad. Silvia Antonini)."@it ;
     brv:sourceRecord "07.02" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://aac.raasn.ru/index.php/aac/article/view/211> ],
         [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
             brv:source <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> ] ;
     brv:verificationStatus "verified-primary" .
 
@@ -2744,6 +2757,7 @@ brv:viaRecord a rdf:Property ;
             bf:role [ a bf:Role ;
                     rdfs:label "thesis advisor" ] ] ;
     bf:hasInstance :thesis-phd-print ;
+    owl:sameAs <http://www.wikidata.org/entity/Q138822782> ;
     schema:alternateName "Semantica e tipologia della forma nell'architettura contemporanea: articolazioni ed operazioni attraverso i progetti"@it ;
     schema:author :baires-raffaelli ;
     schema:contributor :luciano-de-licio ;
@@ -2754,18 +2768,22 @@ brv:viaRecord a rdf:Property ;
     schema:name "Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie"@it ;
     schema:sourceOrganization :diap ;
     schema:workExample :thesis-phd-print ;
-    brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it ;
+    brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it,
+        "Wikidata Q138822782 descrive la tesi (doctoral thesis, autore Baires Raffaelli, Sapienza) e riporta come data di pubblicazione 2011; il catalogo Sapienza (Sebina RMS02820805) riporta 2012, che resta il dato adottato."@it ;
     brv:sourceRecord "02.03",
         "03.04" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> ;
-            brv:viaRecord :thesis-phd-print ] ;
+            brv:viaRecord :thesis-phd-print ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q138822782> ] ;
     brv:verificationStatus "verified-primary" .
 
-:volume-fa-oa-saggi-07 a schema:PublicationVolume ;
-    schema:isPartOf :series-fa-oa-saggi ;
-    schema:name "Open Access - Saggi, vol. 07" ;
+:volume-fa-design-comunicazione-07 a schema:PublicationVolume ;
+    schema:isPartOf :series-fa-design-comunicazione ;
+    schema:name "Design della comunicazione, vol. 07" ;
     schema:volumeNumber "07" ;
     brv:sourceRecord "07.10" ;
     brv:verification [ a brv:Verification ;
@@ -2773,8 +2791,8 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://re.public.polimi.it/retrieve/28e5bbbd-7fee-4484-8e77-e2270c625ab3/Traiettorie%20PDF.pdf> ;
             brv:viaRecord :cite-bucchetti-2024 ],
         [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://series.francoangeli.it/index.php/oa/catalog/book/1199> ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://series.francoangeli.it/index.php/oa/catalog/series/des-com> ;
             brv:viaRecord :cite-bucchetti-2024 ] ;
     brv:verificationStatus "verified-secondary" .
 
@@ -3320,14 +3338,14 @@ brv:viaRecord a rdf:Property ;
         bf:Print,
         schema:Book ;
     bf:hasItem :item-form-zh-hant-ncl ;
-    bf:identifiedBy [ a bf:Local ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "6269565812" ],
+        [ a bf:Local ;
             bf:source [ a bf:Source ;
                     rdfs:label "National Central Library, Taiwan (Alma)" ] ;
             rdf:value "alma990054563240209684" ],
         [ a bf:Isbn ;
-            rdf:value "9786269565818" ],
-        [ a bf:Isbn ;
-            rdf:value "6269565812" ] ;
+            rdf:value "9786269565818" ] ;
     bf:instanceOf :work-form-zh-hant ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent :long-sea ;
@@ -3469,6 +3487,7 @@ brv:viaRecord a rdf:Property ;
         <https://ccfr.bnf.fr/portailccfr/jsp/public/search/public_search_result_exec.jsp?pagerName=search&sortCol=sortCol&sortWay=sortWay&action=public_search_federated&query=PUBLIC_CATALOGUE_SIMPLE&source=all_simple&ts=1792881433307>,
         <https://notablepeopleproject.org/baires_raffaelli>,
         <https://webcat.hkpl.gov.hk/>,
+        <https://www.amazon.it/stores/Baires-Raffaelli/author/B019OLSVX8>,
         <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/>,
         <https://www.linkedin.com/in/baires-raffaelli-42008323>,
         <https://www.sudoc.abes.fr/cbs//DB=2.1/SET=3/TTL=1/REL?PPN=25650668X>,
@@ -3511,13 +3530,13 @@ brv:viaRecord a rdf:Property ;
         :laurea-architettura-sapienza,
         :phd-sapienza-xxiv ;
     schema:hasOccupation [ a schema:Occupation ;
+            schema:name "Educator / university teacher"@en ],
+        [ a schema:Occupation ;
             schema:name "Architect (registered, OAPPC Roma)"@en ],
         [ a schema:Occupation ;
             schema:name "Academic researcher (PhD)"@en ],
         [ a schema:Occupation ;
-            schema:name "Author"@en ],
-        [ a schema:Occupation ;
-            schema:name "Educator / university teacher"@en ] ;
+            schema:name "Author"@en ] ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "ORCID" ;
             schema:url <https://orcid.org/0009-0001-6673-2672> ;
@@ -3644,7 +3663,12 @@ brv:viaRecord a rdf:Property ;
         [ a schema:PropertyValue ;
             schema:propertyID "NLC-authority" ;
             schema:value "032658037" ;
-            brv:verificationStatus "unverified" ] ;
+            brv:verificationStatus "unverified" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "Amazon-author-ID" ;
+            schema:url <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8> ;
+            schema:value "B019OLSVX8" ;
+            brv:verificationStatus "self-published" ] ;
     schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Baires_Raffaelli.jpg> ;
     schema:knowsAbout "accessibility design"@en,
         "architectural design"@en,
@@ -3680,6 +3704,7 @@ brv:viaRecord a rdf:Property ;
         <https://orcid.org/0009-0001-6673-2672>,
         <https://scholar.google.com/citations?user=5IDaNSUAAAAJ>,
         <https://viaf.org/viaf/10149366173685601896/>,
+        <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8>,
         <https://www.goodreads.com/author/list/14243162.Baires_Raffaelli>,
         <https://www.idref.fr/25650668X>,
         <https://www.instagram.com/baires.raffaelli/>,
@@ -3735,6 +3760,12 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ntk20241224668> ],
         [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://cantic.bnc.cat/registre/981058601439506706> ] ;
+            brv:source <https://cantic.bnc.cat/registre/981058601439506706> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://en.wikiquote.org/wiki/Baires_Raffaelli> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-26"^^xsd:date ;
+            brv:source <https://www.amazon.com/stores/Baires-Raffaelli/author/B019OLSVX8> ] ;
     brv:verificationStatus "verified-primary" .
 
