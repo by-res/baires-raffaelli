@@ -3,16 +3,35 @@
   "upload_type": "dataset",
   "description": "Linked Open Data (Schema.org + BIBFRAME 2.0) about the architect, researcher and author Baires Raffaelli: authority identifiers, the three Fast Guide books (BIS Publishers) and their translations, page-level citation evidence, events, projects, awards and library holdings. Formats: Turtle, JSON-LD, N-Triples, key-value text, CSV; SHACL shapes and SPARQL queries included.",
   "creators": [
-    {"name": "Raffaelli, Baires", "orcid": "0009-0001-6673-2672"}
+    {
+      "name": "Raffaelli, Baires",
+      "orcid": "0009-0001-6673-2672"
+    }
   ],
-  "version": "3.0.1",
-  "publication_date": "2026-10-26",
+  "version": "3.0.2",
+  "publication_date": "2026-10-27",
   "license": "cc-zero",
   "access_right": "open",
   "language": "eng",
-  "keywords": ["authority control", "BIBFRAME", "Schema.org", "linked open data", "knowledge graph", "architecture", "accessibility design"],
+  "keywords": [
+    "authority control",
+    "BIBFRAME",
+    "Schema.org",
+    "linked open data",
+    "knowledge graph",
+    "architecture",
+    "accessibility design"
+  ],
   "related_identifiers": [
-    {"identifier": "https://w3id.org/baires-raffaelli/", "relation": "isDocumentedBy", "scheme": "url"},
-    {"identifier": "https://orcid.org/0009-0001-6673-2672", "relation": "isDescribedBy", "scheme": "url"}
+    {
+      "identifier": "https://w3id.org/baires-raffaelli/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://orcid.org/0009-0001-6673-2672",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    }
   ]
 }
