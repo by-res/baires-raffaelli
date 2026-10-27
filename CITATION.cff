@@ -7,6 +7,12 @@ date-released: 2026-10-27
 doi: 10.5281/zenodo.23647642
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.23702011
+    description: "Version 3.0.2"
+  - type: doi
+    value: 10.5281/zenodo.23670542
+    description: "Version 3.0.1"
+  - type: doi
     value: 10.5281/zenodo.23647643
     description: "Version 3.0 (first public release)"
   - type: doi
