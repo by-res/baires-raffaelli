@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.2 – 2026-10-27
+- Credentials: registration with the Albo of Rome (no. 15256) from 23/04/2003 and qualification date 01/11/2002 verified on the CNAPPC national register (the 17/03/2003 date of earlier versions was the date of the examination record); degree date 23/07/2002 verified; grade 110/110 cum laude and thesis taken from the official degree certificate (not public, not published).
+- Thesis "Progetto della nuova Stazione Tuscolana e degli spazi aperti circostanti" (advisor Marta Calzolaretti) linked to the 2003 chapter "Strutture della mobilità".
+- Roles corrected from the official award sheets and the studio's documents: small railway stations competition 2007 (Baires Raffaelli lead designer; five consultants/collaborators, Junior under 39 section, mention); Pump It Up House (Paolo Moressoni collaborator, Kappazeta S.p.A. partner); Passignano sports hall (Paolo Luccioni and Baires Raffaelli designers, six collaborators); the two Paolo Moressoni records merged into one person.
+- New records from the author's press and studio archive: Bettona Contratto di Quartiere III (2009, commissioned by the Comune di Bettona; Luccioni Archstudio collaborator), San Nicolò civic centre in Spoleto (P. Luccioni; B. Raffaelli collaborator), Assisi PUC masterplan (invited designer), "La ville des anges", "CITY MILL" (Tatlin News #62-2), one competition result (Il camino d'autore).
+- HousingLab (Sapienza) membership documented (EAAE/ARCC 2012 volume); press sources for Livingbox and Central Glass recorded, with the differences in participant counts noted.
+- Link register: 6 rows added (CNAPPC register checked, IRIS handle, five project pages).
+
 ## 3.0 – 2026-10-25
 - First public release.
 - Core graph (Schema.org + BIBFRAME 2.0), local vocabulary, provenance layer with editorial notes.

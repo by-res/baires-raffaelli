@@ -6,7 +6,7 @@
 @prefix : <https://w3id.org/baires-raffaelli/id/> .
 @prefix brv: <https://w3id.org/baires-raffaelli/vocab#> .
 
-:abilitazione-architetto-2003 brv:dataQualityNote "L'URL CNAPPC risponde 200 ma mostra solo il modulo di ricerca (non e' un record persistente). Sessione/verbalizzazione provengono dal sito baires.eu."@it ;
+:abilitazione-architetto-2003 brv:dataQualityNote "Scheda dell'Albo Unico Nazionale CNAPPC (consultata il 27/10/2026): iscritto all'Ordine di Roma, matricola 15256, prima e attuale iscrizione 23/04/2003, data di abilitazione 01/11/2002; la stessa data e numero di iscrizione compaiono nella biografia di BrrE architects in presS/Tmagazine n.07/2007. Corregge la data 17/03/2003 (verbalizzazione) riportata dal sito baires.eu nelle versioni precedenti."@it ;
     brv:sourceRecord "02.02" .
 
 :avla brv:dataQualityNote "Pagina AVLA su baires.eu: idea e sviluppo Arch. PhD Baires Raffaelli; supervisore scientifico Prof. Ing. Marco Ferrero; team Alessio Petecchia, Stefano Sinibaldi, Pancrazio Capoccia; partner Association for Accessible Cities Festival. ORCID registra AVLA come marchio (trademark, 2020)."@it ;
@@ -17,7 +17,9 @@
 :award-romarchitettura-6 brv:dataQualityNote "La pagina epmroma.it elenca tra le MENZIONI 'The Fast Guide to Architectural Form di Baires Raffaelli e Silvia Antonini' (co-menzionata Silvia Antonini)."@it ;
     brv:sourceRecord "04.07" .
 
-:baires-raffaelli brv:dataQualityNote "Profili social trovati sul sito ufficiale e non nel dataset: LinkedIn linkedin.com/in/baires-raffaelli-42008323, Facebook facebook.com/architects.BRRE (non verificati in questa sessione)."@it,
+:baires-raffaelli brv:dataQualityNote "Biografia di BrrE architects in presS/Tmagazine n.02/2009 (copia fornita dall'autore): laurea con lode nel 2002; BrrE architects fondato nel 2005 da Baires Raffaelli ed Elio Rava dopo due anni di ricerca presso la Sapienza e di progettazione presso il T Studio di Roma; Michela De Licio (Housing Lab, Facolta' di Architettura 'Ludovico Quaroni') si aggiunge nel 2006; il gruppo svolge 'ricerca e didattica in diversi corsi sia presso la facolta' di Architettura che di Ingegneria'."@it,
+        "Corriere dell'Umbria online (2006, copia fornita dall'autore): Baires Raffaelli ed Elio Rava sono descritti come 'gia' collaboratori della facolta' di architettura all'Universita La Sapienza di Roma'."@it,
+        "Profili social trovati sul sito ufficiale e non nel dataset: LinkedIn linkedin.com/in/baires-raffaelli-42008323, Facebook facebook.com/architects.BRRE (non verificati in questa sessione)."@it,
         "[BIBSYS-NORAF / 1460961539772] Wikidata P1015."@it,
         "[CiNii-Research-person / 1980023487683572225] CRID persona; il CRID 1140010304673101441 del dataset redirige a questa scheda. Valore aggiunto da Wikidata P11496."@it,
         "[GND / 1212524179] d-nb.info ha risposto 503/429 durante l'audit; ID confermato da Wikidata P227."@it,
@@ -68,7 +70,7 @@
 :chapter-re-change brv:dataQualityNote "Dataset: '2005/2006'. ORCID: book chapter 2005. Sito: 'Baby Change' (ed. Prisma, Brussels 2005). ISBN valido."@it ;
     brv:sourceRecord "04.08" .
 
-:chapter-strutture-mobilita brv:dataQualityNote "Progetto di tesi di laurea (sito baires.eu); ORCID: book chapter 2003."@it ;
+:chapter-strutture-mobilita brv:dataQualityNote "Progetto di tesi di laurea (sito baires.eu); ORCID: book chapter 2003. Il capitolo pubblica la tesi discussa nel 2002 (conferma dell'autore, 27/10/2026)."@it ;
     brv:sourceRecord "04.08" .
 
 :cite-aflalo-usp-2020 brv:dataQualityNote "DOI e record OK (la pagina redirige a /pt-br.html); il PDF 'MarceloAflalo_revisada.pdf' risponde 404. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Estruturas_em_madeira_forma_e_metodo.pdf, PDF p. 137); cfr. brv:CitationEvidence :ev06."@it ;
@@ -88,6 +90,8 @@
 
 :cite-cereskaite-vda-2013 brv:dataQualityNote "Il PDF talpykla.elaba.lt risponde 200 (application/pdf, testo non estratto); il permalink vb.vda.lt risponde 400. AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Magistrinis darbas_pump it up house.pdf, PDF p. 31, 39, 41, 47); cfr. brv:CitationEvidence :ev10."@it ;
     brv:sourceRecord "07.11" .
+
+:cite-de-cesaris-eaae-2012 brv:dataQualityNote "Record pubblico: IRIS Sapienza (handle 11573/495011, ISBN 9782930301563, senza file). Il nome di B. Raffaelli compare solo nel PDF del volume (legenda di p. 13), non nel record."@it .
 
 :cite-dova-familiarization brv:dataQualityNote "L'handle Hephaestus 11728/11797 risolve al saggio di Dova (200, hephaestus.nup.ac.cy). AGGIORNAMENTO v3: citazione/adozione verificata sul PDF fornito dall'autore (Initiations FINAL BOOK (optimized) (1).pdf, PDF p. 354); cfr. brv:CitationEvidence :ev09."@it ;
     brv:sourceRecord "07.06" .
@@ -183,12 +187,20 @@
 :entry-campus-dei-licei brv:dataQualityNote "baires.eu: pubblicazione 'Campus dei Licei' in Industrialzone, Malo VI, 2005 (non 2006)."@it ;
     brv:sourceRecord "05.11" .
 
-:entry-cgc-41st brv:dataQualityNote "Il sito del promotore elenca 'Second Place: Michela De Licio, Baires raffaelli, Elio Rava'."@it ;
+:entry-cgc-41st brv:dataQualityNote "Il Messaggero 25/09/2006 ('Baires Raffaelli alla conquista del Giappone') riferisce la selezione tra i primi dieci per la fase finale a Tokyo e circa 450 concorrenti; il sito del promotore indica 423 progetti. Si mantiene il dato del promotore."@it,
+        "Il sito del promotore elenca 'Second Place: Michela De Licio, Baires raffaelli, Elio Rava'."@it,
+        "Rassegna stampa fornita dall'autore: La Nazione, 22/10/2006, Economia Umbria, p. VI ('Architetti umbri a Tokyo': secondo posto di Raffaelli, Rava e De Licio; il concorso e' presieduto da Toyo Ito); presS/Tmagazine n.02/2009, scheda 'BRRE architects: 41th Central Glass Competition - Tokyo, secondo premio'; annuncio dei premiati in giapponese (Central Glass / Shinkenchiku-sha)."@it ;
     brv:sourceRecord "05.01" .
+
+:entry-city-mill brv:dataQualityNote "Scheda baires.eu (2009; committente: 'The Self-Sufficient City: Envisioning the Habitat of the Future Contest', Institute for Advanced Architecture of Catalonia e HP; Design Team: E. Rava, B. Raffaelli, C. Acosta Fontana). Pubblicato in TATLIN NEWS #62-2 (copia fornita dall'autore): scheda del progetto n. 328173 'CITY MILL' a p. 73, e Baires Raffaelli compare nell'elenco dei partecipanti (pp. 114-116). Altri nomi dell'elenco Tatlin non associati con certezza al progetto."@it .
+
+:entry-il-camino-dautore brv:dataQualityNote "Fonte: biografia di BrrE architects in presS/Tmagazine n.02/2009 (copia fornita dall'autore); anno e composizione del gruppo per questo progetto non indicati."@it .
 
 :entry-il-focolare-spoleto brv:dataQualityNote "Omesso dal dataset."@it .
 
-:entry-livingbox brv:dataQualityNote "Dexigner nomina 'Baires Raffaelli - BrrE architects (Italy)'; la pagina Edilportale non nomina Raffaelli. Promotori citati dal dataset: Edilportale.com con MIT, CNI e Dip. BEST Politecnico di Milano. baires.eu data la menzione al 2005."@it ;
+:entry-livingbox brv:dataQualityNote "Dexigner nomina 'Baires Raffaelli - BrrE architects (Italy)'; la pagina Edilportale non nomina Raffaelli. Promotori citati dal dataset: Edilportale.com con MIT, CNI e Dip. BEST Politecnico di Milano. baires.eu data la menzione al 2005."@it,
+        "Numeri dei partecipanti nelle fonti: Edilportale/Dexigner 1.048 progetti da 65 paesi; stampa locale (Il Messaggero 26/05/2006 'un folignate inventa il quartiere componibile'; Il Messaggero 25/09/2006) parla di 2.800 proposte; Spoletonline circa 2.500. Si mantiene il dato dell'organizzatore."@it,
+        "Rassegna stampa fornita dall'autore: Spoletonline/Foligno Online 07/05/2006 ('Titolare e' l'architetto Baires Raffaelli in collaborazione con l'architetto Elio Rava come BrrE architects group'; 'LIVINGBOX special mention') e Corriere dell'Umbria online (Foligno-Spoleto), che definisce i due architetti 'gia' collaboratori della facolta' di architettura all'Universita La Sapienza di Roma'; Il Messaggero 26/05/2006 e La Nazione 09/05/2006 (ritagli immagine)."@it ;
     brv:sourceRecord "05.02" .
 
 :entry-matera-san-pardo brv:dataQualityNote "L'handle IRIS e' corretto (scheda breve: Ferrero Marco, Acosta Fontana Carlos; 2012; 'dato non validato dall'Ateneo'). Lo status 'Winning Project' e' attestato solo dalla lista premi di baires.eu (auto-pubblicata); ORCID registra il record come 'other', 2012."@it ;
@@ -198,10 +210,10 @@
 :entry-nordic-built brv:dataQualityNote "Nessun link nel dataset (Provenance: portfolio e archivi stampa) e la partecipazione non compare nella lista premi di baires.eu: non verificata."@it ;
     brv:sourceRecord "05.09" .
 
-:entry-pump-it-up-house brv:dataQualityNote "Pagina Europaconcorsi (progetto 24649) oggi 404; snapshot Wayback del 2011-09-20 verificato il 25/10/2026: titolo 'Baires Raffaelli, Elio Rava, Paolo Moressoni, Tommaso Passalacqua - Pump It Up House', pubblicato il 17 ottobre 2007, localita' indicata Hofheim-Wallau (Germania). La tesi lituana cita la stessa fonte (consultata il 29/11/2012)."@en ;
+:entry-pump-it-up-house brv:dataQualityNote "Ruoli: la scheda su baires.eu elenca il Design Team (E. Rava, B. Raffaelli, T. Passalacqua) e il partner Kappazeta S.p.A.; Paolo Moressoni e' collaboratore (conferma dell'autore, 27/10/2026), anche se Europaconcorsi e la tesi lituana lo citano con gli altri tre nel titolo della scheda. Pagina Europaconcorsi (progetto 24649) oggi 404; snapshot Wayback del 2011-09-20 verificato il 25/10/2026: titolo 'Baires Raffaelli, Elio Rava, Paolo Moressoni, Tommaso Passalacqua - Pump It Up House', pubblicato il 17 ottobre 2007, localita' indicata Hofheim-Wallau (Germania). La tesi lituana cita la stessa fonte (consultata il 29/11/2012)."@en ;
     brv:sourceRecord "07.11" .
 
-:entry-railway-stations-2007 brv:dataQualityNote "Omesso dal dataset; supplemento Abitare 482 'Piccole stazioni'."@it .
+:entry-railway-stations-2007 brv:dataQualityNote "Omesso dal dataset; supplemento Abitare 482 'Piccole stazioni'. FONTE UFFICIALE (fogli di premiazione del concorso internazionale sulle piccole stazioni, sezione Junior, e scheda su Abitare, copie fornite dall'autore): 'Junior under 39 - progetto menzionato', motto 'Obiettivo comune', progettista capogruppo arch. Baires Raffaelli (Foligno - Perugia); consulenti/collaboratori: ing. Alberto Capitanucci, arch. Michela De Licio, arch. Paolo Moressoni, dott. Tommaso Passalacqua, Gerardo Filocamo. La scheda baires.eu (Modular Synergy, committente: concorso di idee per piccole stazioni, Rete Ferroviaria Italiana S.p.A.) elenca gli stessi sei nomi come 'Design Team' senza ruoli: prevale il documento ufficiale."@it .
 
 :entry-robin-hood-gardens brv:dataQualityNote "Bustler: Runners-up 'Tommaso Passalacqua; Brre Architects with Baires Raffaelli, Elio Rava and Carlos Acosta'. Il dataset unisce 'Runner-up / Special Mention / Finalist': scegliere una sola formulazione."@it ;
     brv:sourceRecord "05.08" .
@@ -209,7 +221,8 @@
 :entry-santa-margherita brv:dataQualityNote "DISCREPANZA DI DATA: il dataset indica 2007; baires.eu indica 2005 ('Coastal Area Redevelopment, Santa Margherita Ligure - Ranked') e il bando e' archiviato su professionearchitetto.it nel dicembre 2004: l'anno corretto e' verosimilmente 2005. Verifica del 25/10/2026: il PDF della Provincia della Spezia risponde ma e' il curriculum di un altro professionista (A. Frolla), che non nomina il concorso ne' Raffaelli: l'URL del dataset non documenta il record."@it ;
     brv:sourceRecord "05.03" .
 
-:entry-unistrasi-aula-mobile brv:dataQualityNote "Il PDF risponde 200 (application/pdf) ma il testo non e' stato estratto: autore/posizione non letti. baires.eu: 2014 'Mobile Multimedia Classroom, Siena - Special Mention'."@it ;
+:entry-unistrasi-aula-mobile brv:dataQualityNote "Il PDF risponde 200 (application/pdf) ma il testo non e' stato estratto: autore/posizione non letti. baires.eu: 2014 'Mobile Multimedia Classroom, Siena - Special Mention'."@it,
+        "La scheda 'AMI - Aula Mobile Italia' su baires.eu (https://www.baires.eu/album/2214/) indica come Design Team Elio Rava e Baires Raffaelli e l'anno 2013; il bando UniStraSi e l'atto di aggiudicazione sono del 2014 (anno del concorso, mantenuto)."@it ;
     brv:sourceRecord "05.05" .
 
 :entry-venice-biennale-2000 brv:dataQualityNote "Omesso dal dataset; il titolo coincide con il tema della 7a Mostra Internazionale di Architettura (2000)."@it .
@@ -222,7 +235,7 @@
 :event-perugia-2020-05-15 brv:dataQualityNote "Fonte: locandina dell'ente organizzatore fornita dall'autore (immagine). La locandina non nomina il relatore: il ruolo di Baires Raffaelli e' dichiarato dall'autore (25/10/2026). Nessuna pagina web indipendente trovata."@it ;
     brv:sourceRecord "07.34" .
 
-:event-perugia-2021-10-06 brv:dataQualityNote "Fonte: locandina dell'ente organizzatore fornita dall'autore (immagine): Baires Raffaelli (architetto e autore del libro); intervengono L. Prestinenza Puglisi (presidente Ass. Italiana di Architettura e Critica) e P. Moressoni (membro del consiglio dell'Ordine, persona diversa dal co-autore di Pump It Up House). Nessuna pagina web indipendente trovata."@it ;
+:event-perugia-2021-10-06 brv:dataQualityNote "Fonte: locandina dell'ente organizzatore fornita dall'autore (immagine): Baires Raffaelli (architetto e autore del libro); intervengono L. Prestinenza Puglisi (presidente Ass. Italiana di Architettura e Critica) e P. Moressoni (membro del consiglio dell'Ordine; stessa persona del co-autore di Pump It Up House, identita' confermata dall'autore). Nessuna pagina web indipendente trovata."@it ;
     brv:sourceRecord "07.35" .
 
 :event-villa-umbra-2019 brv:dataQualityNote "Evento e ruolo di relatore PROVATI dal programma PDF fornito dall'autore (seminario_citta_accessibile, p. 2): relazione di Baires Raffaelli ('Festival citta accessibili e Universita La Sapienza') nella sessione 'Superamento delle barriere all'abitare, studi e ricerche' coordinata da Iginio Rossi (INU), che inizia alle 10:45 nella prima versione del programma e alle 10:30 nella seconda fornita dall'autore il 25/10/2026 (gli orari dei singoli interventi non sono indicati); sede Scuola Umbra di Amministrazione Pubblica, Villa Umbra, Pila, Perugia; in partenariato con il Festival per le Citta Accessibili 2019. Gli URL online del programma non sono raggiungibili (restano in deprecatedUrl). Nello stesso programma compare 'Giorgio Raffaelli' (Festival per le Citta Accessibili): altra persona con lo stesso cognome, da non fondere."@it ;
@@ -240,6 +253,8 @@
 
 :house-via-pascoli-foligno-2006 brv:dataQualityNote "AUTORE: Baires Raffaelli e' l'unico autore del progetto (dichiarazione dell'autore, 25/10/2026); concorda Tosi & Pistolesi 2022, PDF pp. 59-60 (progetto dell'architetto Baires Raffaelli, 2006). Il testo di Tosi & Pistolesi (p. 58 stampata, PDF p. 59) dice 'La casa in via Pascoli a Foligno (PG) (2006), progettata dall'architetto Baires Raffaelli' e la Fig. 4.3 (pianta) ha come fonte 'Arch. Baires Raffaelli, 2006'; la nota 8 cita come fonte l'articolo Superabile 'La casa in via Pascoli' (URL oggi reindirizzato alla home, conservato come brv:deprecatedUrl). La pagina CERPA (04/02/2016) riprende un articolo di Superabile sulla casa di Foligno: la descrive come esito di un lavoro partecipato in piu' fasi, con Baires intervenuto nella piu' recente ristrutturazione della zona notte; non cita via ne' anno, ma per titolo e fonte coincide con la nota 8. Abitazione al piano terra di una palazzina plurifamiliare, 115 mq con giardino di 90 mq (Tosi). Per riservatezza il dataset non registra residenti, rapporti di parentela ne' numero civico."@it ;
     brv:sourceRecord "07.08" .
+
+:housing-lab brv:dataQualityNote "Laboratorio di ricerca del DiAP, Sapienza (Facolta' di Architettura 'Ludovico Quaroni'). Baires Raffaelli ('B. Raffaelli') e' elencato nel gruppo di ricerca HousingLab della legenda del contributo di A. De Cesaris 'Strategies for the regeneration of suburban sprawl - Case Studies in Rome' (Cities in Transformation, EAAE/ARCC, Politecnico di Milano, 7-10 giugno 2012; volume del tema 4 fornito dall'autore, p. 13). Il record IRIS Sapienza del contributo non nomina Raffaelli."@it .
 
 :inst-accessibility-en brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it ;
     brv:sourceRecord "04.05" .
@@ -317,9 +332,11 @@
 
 :item-fundamentals-cud brv:sourceRecord "07.22" .
 
+:kappazeta brv:dataQualityNote "Partner indicato nella scheda 'Pump It Up House' su baires.eu (2007); gia' produttore dell'oggetto brevettato descritto in altro record."@it .
+
 :kasra-publishing brv:dataQualityNote "Sede: Mashhad (scheda NLAI, snapshot Wayback 2025-06-11); il dataset v2 indicava Tehran per errore."@it .
 
-:laurea-architettura-sapienza brv:dataQualityNote "Unica fonte e' il sito dell'autore (pagina condivisa con Elio Ravà); manca attestazione ufficiale. Anno di laurea non indicato."@it ;
+:laurea-architettura-sapienza brv:dataQualityNote "Data, ateneo e ordinamento (laurea in Architettura, ordinamento precedente al D.M. 509/99, Roma, 23/07/2002) confermati dall'Albo Unico Nazionale CNAPPC (consultato il 27/10/2026). Voto 110 e lode, tesi e relatrice confermati dal certificato di laurea con tesi rilasciato dalla Sapienza il 20/10/2020 (documento non pubblico, in possesso dell'autore; non allegato, dati personali non registrati)."@it ;
     brv:sourceRecord "02.01" .
 
 :orcid-conference-ais brv:dataQualityNote "Elencato nel record ORCID (conference paper); dettagli bibliografici non verificati."@it .
@@ -330,10 +347,8 @@
 
 :paolo-luccioni brv:dataQualityNote "Indicato come 'P. Luccioni' su baires.eu."@it .
 
-:paolo-moressoni brv:sourceRecord "07.11" .
-
-:paolo-moressoni-perugia brv:dataQualityNote "Stesso nome del co-autore di Pump It Up House; l'autore ha confermato (25/10/2026) che sono persone diverse."@it ;
-    brv:sourceRecord "07.35" .
+:paolo-moressoni brv:sourceRecord "07.11",
+        "07.35" .
 
 :peba-assisi brv:dataQualityNote "Incarico del 2019 attestato dalla bio Hachette ('appointed by the City of Assisi in 2019'); ORCID registra 'PEBA Assisi' come research tool, 2023: distinguere data di incarico (2019) e data di consegna/pubblicazione (2023?). La pagina del Comune non nomina l'incaricato."@it ;
     brv:sourceRecord "06.03" .
@@ -374,6 +389,12 @@
 
 :proceedings-ahti-2020 brv:sourceRecord "07.01" .
 
+:project-assisi-puc-santa-maria-degli-angeli brv:dataQualityNote "Fonte: Il Messaggero, edizione Umbria, 24/06/2008, pag. 38 (copia fornita dall'autore): l'architetto Paolo Luccioni, progettista del Master Plan dell'area ex Montedison/ex Fornace Hoffmann, dichiara di aver chiamato a progettare insieme varie opere architetti internazionali e italiani 'e i giovani emergenti Baires Raffaelli e Leo Berlenghi'. Altre fonti nella stessa cartella: La Nazione (elenco degli architetti 'coordinati dallo studio Luccioni di Foligno': Anselmi, Byrne, Botta, Cellini, Luciano De Licio, Hertzberger, Natalini, Purini, Thermes, Baires Raffaelli), Il Giornale dell'Umbria e Corriere dell'Umbria (presentazione del PUC, Luccioni redattore del master plan). L'incarico preciso e l'esito non sono indicati: da qui solo 'progettista invitato'."@it .
+
+:project-bettona-cq3 brv:dataQualityNote "Fonte: cartella di lavoro dello studio Luccioni Archstudio (0109 - CQ3 Bettona Centro Storico), copia fornita dall'autore. Candidatura del Comune di Bettona al bando regionale (DGR Umbria 14/07/2008 n. 883, contributo massimo 1.500.000 EUR): assemblee pubbliche 19 e 26 febbraio 2009, elaborati trasmessi al Sindaco il 27/02/2009 (lettera di Luccioni Archstudio, Prot. 011/09). Disciplinare di incarico del Comune per la redazione del Programma intestato all'arch. Angela Buompadre; interventi: ex scuola elementare di Viale Roma (edilizia residenziale a canone sociale e uffici), auditorium nella ex Chiesa di S. Caterina, riqualificazione di Via S. Giacomo, piano attuativo privato del comparto Co E/04 (Impresa Bellavista Costruzioni). Costo totale dichiarato: 3.162.368,25 EUR. Esito del finanziamento non documentato nella cartella. Ruolo confermato dall'autore (27/10/2026): incarico di Baires Raffaelli; Paolo Luccioni e il suo studio Luccioni Archstudio collaboratori (la cartella proviene dall'archivio dello studio, che ha curato anche l'invio degli elaborati al Comune, Prot. 011/09)."@it .
+
+:project-bettona-ex-scuola-via-san-giacomo brv:dataQualityNote "Incarico personale di Baires Raffaelli dal Comune di Bettona (area urbanistica): disciplinare di incarico professionale per la redazione del Progetto Preliminare del restauro e riqualificazione dell'edificio ex scuola elementare e dei Progetti Preliminari I e II stralcio e Definitivo I stralcio della riqualificazione di Via S. Giacomo (documento 'ATT2008 - BAIRES', copia fornita dall'autore; dati anagrafici e compensi non registrati). Elaborati E01 (ex scuola) ed E03 (Via S. Giacomo) del Contratto di Quartiere III, consegnati col progetto del 27/02/2009. La scheda baires.eu (2009) indica come Design Team Baires Raffaelli ed Elio Rava."@it .
+
 :project-edilizia-residenziale brv:sourceRecord "03.01" .
 
 :project-house-vb27 brv:dataQualityNote "Nessun link; non presente nell'elenco progetti di baires.eu."@it ;
@@ -382,9 +403,13 @@
 :project-ims brv:dataQualityNote "Nessun link; non presente nell'elenco progetti di baires.eu."@it ;
     brv:sourceRecord "05.12" .
 
-:project-passignano-sports-hall brv:dataQualityNote "Omesso dal dataset; realizzato, con P. Luccioni (fonte: baires.eu)."@it .
+:project-la-ville-des-anges brv:dataQualityNote "Fonti (copie fornite dall'autore): Ottagono n. 188 (marzo 2006), didascalia 'Il progetto La ville des anges degli architetti Baires Raffaelli, Elio Rava e Ulrich Rueffli: abitazioni-osservatori' (testo italiano e inglese); quarta di copertina del libro 'Baby Change' (Prisme Editions, Bruxelles, ISBN 2-9600103-9-6), che elenca tra i contributori 'Baires Raffaelli + Elio Rava + Ulrich Ruefli'. Il progetto e' il contributo di BRRE al libro Baby Change gia' presente nel dataset."@it .
+
+:project-passignano-sports-hall brv:dataQualityNote "Omesso dal dataset; realizzato (fonte: scheda baires.eu). Ruoli: Project and Coordination = Archstudio Luccioni s.r.l.; Design Team = Paolo Luccioni con Baires Raffaelli (progettisti); Collaborator = M. Baldella, A. Buompadre, F. Buratta, A. Spiccallunto, L. della Botte, V. Mastrotilli; Partner = Zampetti Costruzioni s.r.l. BRRE architects non e' accreditato sulla scheda e non e' piu' indicato come autore. Anno 2007; committente: gara per appalto integrato (progettazione esecutiva e realizzazione del palazzetto dello sport comunale, legata alla vendita di un ex campo sportivo comunale)."@it .
 
 :project-principi-erp brv:sourceRecord "03.01" .
+
+:project-spoleto-san-nicolo brv:dataQualityNote "Fonte: scheda tecnica dell'articolo 'Centro civico con uffici comunali, Quartiere San Nicolo, Spoleto' (rubrica Progetti, Costruire in Laterizio; testo di Adolfo F. L. Baratta, fotografie di Moreno Maggi; copia fornita dall'autore, estratto PDF 2009). Progetto: Paolo Luccioni; collaboratori elencati nella scheda: A. Buompadre, A. Cerquiglini, L. Della Botte, F. Grispo, V. Mastrolilli, Baires Raffaelli, C. Ronconi, L. Rossi, A. Spiccallunto; strutture Oikos Progetti; impianti Tetra Engineering; committenti Commerciale Immobiliare Balanzano S.r.l. e Immobiliare San Nicolo S.r.l.; cronologia: progetto 1998-05, costruzione 2002-07 (nella scheda). Baires Raffaelli e' collaboratore, non autore. Numero e anno della rivista da completare. Corrisponde al 'Civic neighborhood center, Spoleto (con P. Luccioni)' citato nel record del supplemento 'Dalla ricostruzione al futuro'."@it .
 
 :sbn-record-rms2618585 brv:dataQualityNote "L'URL risponde 200 ma il corpo e' renderizzato via JS e risulta vuoto: titolo/Instance a cui il BID si riferisce non verificabili; collegare alla Instance corretta dopo verifica manuale."@it ;
     brv:sourceRecord "01.04" .
@@ -401,6 +426,8 @@
         "Wikidata Q138822782 descrive la tesi (doctoral thesis, autore Baires Raffaelli, Sapienza) e riporta come data di pubblicazione 2011; il catalogo Sapienza (Sebina RMS02820805) riporta 2012, che resta il dato adottato."@it ;
     brv:sourceRecord "02.03",
         "03.04" .
+
+:thesis-stazione-tuscolana-2002 brv:dataQualityNote "Titolo, relatrice (prof.ssa Marta Calzolaretti, materia: Progettazione architettonica) e data di discussione dal certificato di laurea con tesi della Sapienza (20/10/2020, non pubblico). La tesi e' poi pubblicata nel capitolo 'Strutture della mobilita'. L'area della Stazione Tuscolana a Roma' (Gangemi, 2003)."@it .
 
 :udr-ais brv:dataQualityNote "Coordinatore: Prof. Luciano De Licio. Il mirror web.uniroma1.it/dip_diap risponde 403; il PDF su diap.web.uniroma1.it risponde 200."@it ;
     brv:sourceRecord "03.01" .

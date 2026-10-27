@@ -73,6 +73,7 @@ brv:Verification a rdfs:Class ;
     schema:author :baires-raffaelli ;
     schema:datePublished "2003"^^xsd:gYear ;
     schema:description "Source document 'Strutture della mobilità. L'area della Stazione Tuscolana a Roma' (2003) by Baires Raffaelli."@en ;
+    schema:isBasedOn :thesis-stazione-tuscolana-2002 ;
     schema:isbn "9788849203615" ;
     schema:name "Strutture della mobilità. L'area della Stazione Tuscolana a Roma"@it ;
     schema:publisher :gangemi ;
@@ -80,6 +81,22 @@ brv:Verification a rdfs:Class ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://gangemi.com/prodotto/strutture-della-mobilita/> ] ;
+    brv:verificationStatus "verified-secondary" .
+
+:cite-de-cesaris-eaae-2012 a bf:Work,
+        schema:ScholarlyArticle ;
+    schema:author :alessandra-de-cesaris ;
+    schema:datePublished "2012-06"^^xsd:gYearMonth ;
+    schema:description "Conference paper by Alessandra De Cesaris on HousingLab research on regenerating suburban sprawl in Rome; its legend lists B. Raffaelli among the HousingLab research group."@en ;
+    schema:isPartOf [ a schema:Event ;
+            schema:identifier [ a schema:PropertyValue ;
+                    schema:propertyID "ISBN" ;
+                    schema:value "9782930301563" ] ;
+            schema:name "Cities in Transformation - Research & Design. EAAE/ARCC International Conference on Architectural Research, Politecnico di Milano, 7-10 June 2012" ] ;
+    schema:mentions :baires-raffaelli ;
+    schema:name "Strategies for the regeneration of suburban sprawl - Case Studies in Rome"@en ;
+    schema:url <https://iris.uniroma1.it/handle/11573/495011> ;
+    brv:verificationBasis "author-supplied-document" ;
     brv:verificationStatus "verified-secondary" .
 
 :cite-iat-newsletter-2021 a schema:Article ;
@@ -257,7 +274,7 @@ brv:Verification a rdfs:Class ;
 :dataset a schema:Dataset ;
     schema:about :baires-raffaelli ;
     schema:creator :baires-raffaelli ;
-    schema:dateModified "2026-10-26"^^xsd:date ;
+    schema:dateModified "2026-10-27"^^xsd:date ;
     schema:datePublished "2026-10-25"^^xsd:date ;
     schema:description "Knowledge-graph dataset on the architect, researcher and author Baires Raffaelli: authority identifiers, degrees, research, books and translations, awards and projects, accessibility planning (PEBA, AVLA), citations and library holdings."@en ;
     schema:distribution [ a schema:DataDownload ;
@@ -299,7 +316,7 @@ brv:Verification a rdfs:Class ;
     schema:sameAs <https://doi.org/10.5281/zenodo.23647642>,
         <https://github.com/by-res/baires-raffaelli> ;
     schema:url <https://w3id.org/baires-raffaelli/> ;
-    schema:version "3.0.1" .
+    schema:version "3.0.2" .
 
 :emergency-house a schema:CreativeWork,
         schema:Product ;
@@ -397,6 +414,44 @@ brv:Verification a rdfs:Class ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://www.cgc-jp.com/kyougi/archive/41st/> ] ;
     brv:verificationStatus "verified-primary" .
+
+:entry-city-mill a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :elio-rava ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :carlos-acosta-fontana ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ] ;
+    schema:alternateName "Reka Moskva - self-sufficient city"@en ;
+    schema:author :baires-raffaelli,
+        :carlos-acosta-fontana,
+        :elio-rava ;
+    schema:dateCreated "2009"^^xsd:gYear ;
+    schema:description "'CITY MILL' (2009): self-sufficient city project on the Moskva river by Elio Rava, Baires Raffaelli and Carlos Acosta Fontana, entered in the IAAC/HP Self-Sufficient City contest and published in Tatlin News no. 62-2."@en ;
+    schema:name "CITY MILL"@en ;
+    schema:url <https://www.baires.eu/album/city-mill/> ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:entry-il-camino-dautore a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :brre-architects ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ] ;
+    schema:author :brre-architects ;
+    schema:award "Third prize"@en ;
+    schema:description "Competition entry 'Il camino d'autore' by BRRE architects; result: Third prize; listed in the group's biography in presS/Tmagazine n.02/2009."@en ;
+    schema:name "Il camino d'autore (competition entry)"@it ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :entry-il-focolare-spoleto a bf:Work,
         schema:CreativeWork ;
@@ -522,15 +577,43 @@ brv:Verification a rdfs:Class ;
 :entry-railway-stations-2007 a bf:Work,
         schema:CreativeWork ;
     bf:contribution [ a bf:Contribution ;
-            bf:agent :brre-architects ;
+            bf:agent :baires-raffaelli ;
             bf:role [ a bf:Role ;
-                    rdfs:label "author" ] ] ;
-    schema:author :brre-architects ;
-    schema:award "Mention"@en ;
+                    rdfs:label "lead designer" ] ],
+        [ a bf:Contribution ;
+            bf:agent :alberto-capitanucci ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant/collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :michela-de-licio ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant/collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :paolo-moressoni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant/collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :tommaso-passalacqua ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant/collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :gerardo-filocamo ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "consultant/collaborator" ] ] ;
+    schema:alternateName "Modular Synergy: A Visionary Architectural Approach for Railway Stations" ;
+    schema:author :baires-raffaelli ;
+    schema:award "Mention (Junior under 39 section)"@en ;
+    schema:contributor :alberto-capitanucci,
+        :gerardo-filocamo,
+        :michela-de-licio,
+        :paolo-moressoni,
+        :tommaso-passalacqua ;
     schema:dateCreated "2007"^^xsd:gYear ;
     schema:description "Project or competition entry 'Small and Medium-Sized Railway Stations, Rome (international competition)' (2007) by BRRE architects; result: Mention."@en ;
     schema:name "Small and Medium-Sized Railway Stations, Rome (international competition)"@en ;
+    schema:producer :brre-architects ;
     schema:subjectOf :issue-abitare-482 ;
+    schema:url <https://www.baires.eu/album/modular-synergy-a-visionary-architectural-approach-for-railway-stations/> ;
     brv:verificationBasis "author-website" ;
     brv:verificationNote "Listed on the author's studio website baires.eu"@en ;
     brv:verificationStatus "self-published" .
@@ -610,9 +693,14 @@ brv:Verification a rdfs:Class ;
     bf:contribution [ a bf:Contribution ;
             bf:agent :baires-raffaelli ;
             bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :elio-rava ;
+            bf:role [ a bf:Role ;
                     rdfs:label "author" ] ] ;
     schema:alternateName "AMI - Aula Mobile Italia" ;
-    schema:author :baires-raffaelli ;
+    schema:author :baires-raffaelli,
+        :elio-rava ;
     schema:award "4th place (Special Mention)"@en ;
     schema:dateCreated "2014"^^xsd:gYear ;
     schema:description "Project or competition entry 'Concorso di Idee per la Realizzazione di un'Aula Multimediale Mobile con Opzione di Proge…' (2014) by Baires Raffaelli; result: 4th place (Special Mention); sponsor: Università per Stranieri di Siena (UniStraSi)."@en ;
@@ -976,17 +1064,6 @@ brv:Verification a rdfs:Class ;
     brv:verificationNote "Listed on the author's website; the Casabella link only points to the journal home page"@en ;
     brv:verificationStatus "self-published" .
 
-:issue-ottagono-188 a schema:PublicationIssue ;
-    schema:datePublished "2006-03"^^xsd:gYearMonth ;
-    schema:description "Pubblicazione di 'Baby Change'; ORCID registra anche 'Dream Bruxelles' (articolo, 2006)."@it ;
-    schema:isPartOf :periodical-ottagono ;
-    schema:issueNumber "188" ;
-    schema:mentions :baires-raffaelli ;
-    schema:name "Ottagono, no. 188 (March 2006)"@en ;
-    brv:verificationBasis "orcid-record" ;
-    brv:verificationNote "Listed in the author's ORCID record (work Baby Change)"@en ;
-    brv:verificationStatus "verified-secondary" .
-
 :issue-prest-07 a schema:PublicationIssue ;
     schema:datePublished "2007"^^xsd:gYear ;
     schema:isPartOf :periodical-prest ;
@@ -1007,9 +1084,6 @@ brv:Verification a rdfs:Class ;
     brv:verificationBasis "author-website" ;
     brv:verificationNote "Listed on the author's website; issue itself not independently catalogued"@en ;
     brv:verificationStatus "self-published" .
-
-:marta-calzolaretti a schema:Person ;
-    schema:name "Marta Calzolaretti" .
 
 :orcid-conference-ais a schema:CreativeWork ;
     schema:author :baires-raffaelli ;
@@ -1130,6 +1204,55 @@ brv:Verification a rdfs:Class ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "self-published" .
 
+:project-assisi-puc-santa-maria-degli-angeli a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :paolo-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "invited designer" ] ],
+        [ a bf:Contribution ;
+            bf:agent :luciano-de-licio ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "invited designer" ] ] ;
+    schema:author :paolo-luccioni ;
+    schema:contentLocation [ a schema:Place ;
+            schema:name "Santa Maria degli Angeli, Assisi (PG)" ] ;
+    schema:contributor :baires-raffaelli,
+        :luciano-de-licio ;
+    schema:dateCreated "2008"^^xsd:gYear ;
+    schema:description "Masterplan (Programma Urbano Complesso) for the former Montedison area at Santa Maria degli Angeli, Assisi, designed by Paolo Luccioni, who invited Baires Raffaelli among the designers of the individual works (Il Messaggero, 24 June 2008)."@en ;
+    schema:name "Programma Urbano Complesso (PUC) di Santa Maria degli Angeli, Assisi (PG): masterplan e 'parco dell'architettura contemporanea'"@it ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:project-bettona-ex-scuola-via-san-giacomo a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :elio-rava ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ] ;
+    schema:author :baires-raffaelli,
+        :elio-rava ;
+    schema:contentLocation [ a schema:Place ;
+            schema:name "Bettona (PG)" ] ;
+    schema:dateCreated "2009"^^xsd:gYear ;
+    schema:description "Preliminary design (2009) of the restoration of the former elementary school and of the redevelopment of Via S. Giacomo in Bettona, commissioned to Baires Raffaelli by the Comune di Bettona within the Contratto di Quartiere III."@en ;
+    schema:isPartOf :project-bettona-cq3 ;
+    schema:name "Bettona CQ3: progetto preliminare di restauro e riqualificazione dell'ex scuola elementare e riqualificazione di Via S. Giacomo"@it ;
+    schema:producer :brre-architects ;
+    schema:sponsor :comune-bettona ;
+    schema:url <https://www.baires.eu/album/transformative-urban-revitalization-bettona-pg/> ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
 :project-edilizia-residenziale a schema:ResearchProject ;
     schema:description "Ruolo di Baires Raffaelli: ricercatore / dottorando."@it ;
     schema:member :baires-raffaelli ;
@@ -1167,27 +1290,87 @@ brv:Verification a rdfs:Class ;
     schema:name "IMS - Integrated Modular System"@en ;
     brv:verificationStatus "unverified" .
 
-:project-passignano-sports-hall a bf:Work,
+:project-la-ville-des-anges a bf:Work,
         schema:CreativeWork ;
     bf:contribution [ a bf:Contribution ;
             bf:agent :baires-raffaelli ;
             bf:role [ a bf:Role ;
                     rdfs:label "author" ] ],
         [ a bf:Contribution ;
-            bf:agent :brre-architects ;
+            bf:agent :elio-rava ;
             bf:role [ a bf:Role ;
                     rdfs:label "author" ] ],
         [ a bf:Contribution ;
-            bf:agent :paolo-luccioni ;
+            bf:agent :ulrich-ruefli ;
             bf:role [ a bf:Role ;
                     rdfs:label "author" ] ] ;
     schema:author :baires-raffaelli,
-        :brre-architects,
+        :elio-rava,
+        :ulrich-ruefli ;
+    schema:dateCreated "2005"^^xsd:gYear ;
+    schema:description "'La ville des anges' (c. 2005): project of 'homes/observatories' by Baires Raffaelli, Elio Rava and Ulrich Ruefli, published in the book Baby Change (Prisme Editions, Brussels) and in Ottagono no. 188 (2006)."@en ;
+    schema:name "La ville des anges"@fr ;
+    schema:subjectOf :issue-ottagono-188 ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:project-passignano-sports-hall a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :paolo-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :archstudio-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "project and coordination" ] ],
+        [ a bf:Contribution ;
+            bf:agent :marta-baldella ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :angela-buompadre ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :francesca-buratta ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :andrea-spiccallunto ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :loretta-della-botte ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :viviana-mastrotilli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :zampetti-costruzioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "partner" ] ] ;
+    schema:author :baires-raffaelli,
         :paolo-luccioni ;
     schema:award "Built"@en ;
+    schema:contributor :andrea-spiccallunto,
+        :angela-buompadre,
+        :francesca-buratta,
+        :loretta-della-botte,
+        :marta-baldella,
+        :viviana-mastrotilli,
+        :zampetti-costruzioni ;
     schema:dateCreated "2007"^^xsd:gYear ;
     schema:description "Project or competition entry 'Sports Hall, Passignano sul Trasimeno (PG)' (2007) by BRRE architects, Baires Raffaelli, Paolo Luccioni; result: Built."@en ;
     schema:name "Sports Hall, Passignano sul Trasimeno (PG)"@en ;
+    schema:producer :archstudio-luccioni ;
+    schema:url <https://www.baires.eu/album/passignano-sul-trasimeno-sports-hall/> ;
     brv:verificationBasis "author-website" ;
     brv:verificationNote "Listed on the author's studio website baires.eu"@en ;
     brv:verificationStatus "self-published" .
@@ -1197,6 +1380,77 @@ brv:Verification a rdfs:Class ;
     schema:member :baires-raffaelli ;
     schema:name "I principi per la progettazione di nuovi insediamenti di edilizia residenziale pubblica"@it ;
     schema:parentOrganization :udr-ais .
+
+:project-spoleto-san-nicolo a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :paolo-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :angela-buompadre ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :andrea-cerquiglini ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :loretta-della-botte ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :francesco-grispo ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :viviana-mastrotilli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :claudio-ronconi ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :laura-rossi ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :andrea-spiccallunto ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :oikos-progetti ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "structural engineering" ] ],
+        [ a bf:Contribution ;
+            bf:agent :tetra-engineering ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "building services engineering" ] ] ;
+    schema:alternateName "Civic neighborhood center, Spoleto"@en ;
+    schema:author :paolo-luccioni ;
+    schema:contentLocation [ a schema:Place ;
+            schema:name "Spoleto (PG)" ] ;
+    schema:contributor :andrea-cerquiglini,
+        :andrea-spiccallunto,
+        :angela-buompadre,
+        :baires-raffaelli,
+        :claudio-ronconi,
+        :francesco-grispo,
+        :laura-rossi,
+        :loretta-della-botte,
+        :oikos-progetti,
+        :tetra-engineering,
+        :viviana-mastrotilli ;
+    schema:dateCreated "1998-05"^^xsd:gYearMonth ;
+    schema:dateModified "2002-07"^^xsd:gYearMonth ;
+    schema:description "San Nicolo civic centre with municipal offices, Spoleto (PG): project by Paolo Luccioni (design May 1998, built to July 2002) with a list of collaborators that includes Baires Raffaelli; published in Costruire in Laterizio."@en ;
+    schema:name "Centro civico con uffici comunali, Quartiere San Nicolo, Spoleto (PG)"@it ;
+    brv:verificationStatus "verified-secondary" .
 
 :projects-brre-list a schema:ItemList ;
     schema:itemListElement [ a schema:ListItem ;
@@ -1352,14 +1606,25 @@ brv:viaRecord a rdf:Property ;
 :abilitazione-architetto-2003 a schema:EducationalOccupationalCredential ;
     dcterms:source <https://www.cnappc.it/risultato.aspx?Nome=baires&Cognome=raffaelli&Ordine=97#edit> ;
     schema:credentialCategory "license" ;
-    schema:dateCreated "2003-03-17"^^xsd:date ;
-    schema:description "Esame di Stato presso Sapienza, sessione novembre 2002; verbalizzazione 17 marzo 2003."@it ;
+    schema:dateCreated "2002-11-01"^^xsd:date ;
+    schema:description "Abilitazione all'esercizio della professione di architetto il 1 novembre 2002 (Esame di Stato, Sapienza); iscrizione all'Albo dell'Ordine degli Architetti PPC di Roma e Provincia dal 23 aprile 2003, matricola 15256."@it ;
     schema:name "Abilitazione all'esercizio della professione di Architetto - iscritto OAPPC Roma"@it ;
     schema:recognizedBy :sapienza ;
-    brv:verificationStatus "unverified" .
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-27"^^xsd:date ;
+            brv:source <https://www.cnappc.it/risultato.aspx?Nome=baires&Cognome=raffaelli&Ordine=97#edit> ] ;
+    brv:verificationStatus "verified-primary" .
 
 :acer-roma a schema:Organization ;
     schema:name "ACER Roma" .
+
+:alessandra-de-cesaris a bf:Person,
+        schema:Person ;
+    schema:affiliation :sapienza ;
+    schema:description "Alessandra De Cesaris: researcher at Sapienza (HousingLab); author of 'Strategies for the regeneration of suburban sprawl - Case Studies in Rome' (EAAE/ARCC 2012), whose HousingLab research group includes Baires Raffaelli. Not Baires Raffaelli himself."@en ;
+    schema:name "Alessandra De Cesaris" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :alessio-petecchia a schema:Person ;
     schema:description "Alessio Petecchia: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself."@en ;
@@ -1730,7 +1995,7 @@ brv:viaRecord a rdf:Property ;
     schema:organizer :oappc-perugia ;
     schema:performer :baires-raffaelli,
         :luigi-prestinenza-puglisi,
-        :paolo-moressoni-perugia ;
+        :paolo-moressoni ;
     schema:startDate "2021-10-06T16:00:00+02:00"^^xsd:dateTime ;
     brv:verificationBasis "author-supplied-document" ;
     brv:verificationNote "Poster of the Ordine degli Architetti of Perugia supplied by the author"@en ;
@@ -1756,6 +2021,14 @@ brv:viaRecord a rdf:Property ;
 :han-linfei a schema:Person ;
     schema:alternateName "Han Linfei" ;
     schema:name "韩林飞"@zh-Hans .
+
+:housing-lab a bf:Organization,
+        schema:ResearchOrganization ;
+    schema:description "HousingLab: research laboratory of the Department of Architecture and Design (DiAP), Sapienza University of Rome, on regeneration of suburban sprawl; Baires Raffaelli is listed among its research group in 2012."@en ;
+    schema:name "HousingLab"@en ;
+    schema:parentOrganization :diap ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :hrbeu-library a bf:Organization,
         schema:Library ;
@@ -1810,6 +2083,17 @@ brv:viaRecord a rdf:Property ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://www.cgc-jp.com/kyougi/archive/41st/> ] ;
+    brv:verificationStatus "verified-secondary" .
+
+:issue-ottagono-188 a schema:PublicationIssue ;
+    schema:datePublished "2006-03"^^xsd:gYearMonth ;
+    schema:description "Pubblicazione di 'Baby Change'; ORCID registra anche 'Dream Bruxelles' (articolo, 2006)."@it ;
+    schema:isPartOf :periodical-ottagono ;
+    schema:issueNumber "188" ;
+    schema:mentions :baires-raffaelli ;
+    schema:name "Ottagono, no. 188 (March 2006)"@en ;
+    brv:verificationBasis "orcid-record" ;
+    brv:verificationNote "Listed in the author's ORCID record (work Baby Change)"@en ;
     brv:verificationStatus "verified-secondary" .
 
 :item-accessibility-tcdc a bf:Item,
@@ -1931,16 +2215,21 @@ brv:viaRecord a rdf:Property ;
     brv:verificationStatus "verified-primary" .
 
 :laurea-architettura-sapienza a schema:EducationalOccupationalCredential ;
-    dcterms:source <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/> ;
+    dcterms:source <https://www.baires.eu/author-page-elio-rava-baires-raffaelli/>,
+        <https://www.cnappc.it/risultato.aspx?Nome=baires&Cognome=raffaelli&Ordine=97#edit> ;
     schema:alternateName "Master's degree (EU) in Architecture, 110/110 summa cum laude"@en ;
     schema:credentialCategory "degree" ;
-    schema:description "Sapienza Università di Roma, Facoltà di Architettura 'Ludovico Quaroni'; votazione 110/110 con lode."@it ;
+    schema:dateCreated "2002-07-23"^^xsd:date ;
+    schema:description "Sapienza Università di Roma, Facoltà di Architettura 'Ludovico Quaroni'; laurea di vecchio ordinamento (ante D.M. 509/99, 5 anni), conseguita il 23 luglio 2002; votazione 110/110 con lode."@it ;
     schema:educationalLevel "Laurea magistrale a ciclo unico (EU)"@it ;
     schema:name "Laurea Magistrale U.E. in Architettura (110/110 con lode)"@it ;
     schema:recognizedBy :sapienza ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-27"^^xsd:date ;
+            brv:source <https://www.cnappc.it/risultato.aspx?Nome=baires&Cognome=raffaelli&Ordine=97#edit> ] ;
     brv:verificationBasis "academic-record" ;
-    brv:verificationNote "Author documents; degree not independently catalogued online"@en ;
-    brv:verificationStatus "self-published" .
+    brv:verificationNote "Degree date and university from the public CNAPPC national register; grade from the official Sapienza degree certificate held by the author (not public)"@en ;
+    brv:verificationStatus "verified-primary" .
 
 :manzala-library a bf:Organization,
         schema:Library ;
@@ -2042,6 +2331,39 @@ brv:viaRecord a rdf:Property ;
     schema:description "Prisme Editions (Prisma), Bruxelles: organisation in the Baires Raffaelli knowledge graph; publisher of 'Re-change'."@en ;
     schema:name "Prisme Editions (Prisma), Bruxelles" .
 
+:project-bettona-cq3 a bf:Work,
+        schema:CreativeWork ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :angela-buompadre ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author (incarico: redazione del Programma)" ] ],
+        [ a bf:Contribution ;
+            bf:agent :paolo-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :archstudio-luccioni ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "collaborator" ] ] ;
+    schema:alternateName "Neighborhood Contract 3, Bettona historic centre"@en ;
+    schema:author :angela-buompadre,
+        :baires-raffaelli ;
+    schema:contentLocation [ a schema:Place ;
+            schema:name "Bettona (PG)" ] ;
+    schema:contributor :archstudio-luccioni,
+        :paolo-luccioni ;
+    schema:dateCreated "2009"^^xsd:gYear ;
+    schema:description "Contratto di Quartiere III of Bettona (PG), 2009: urban regeneration programme for the historic centre submitted by the Comune di Bettona to the Umbria Region; programme drafted by Angela Buompadre, with Baires Raffaelli as the commissioned designer (former elementary school and Via S. Giacomo) and Paolo Luccioni with his studio Luccioni Archstudio as collaborators."@en ;
+    schema:name "Contratto di Quartiere III - Bettona Centro Storico (Programma di riqualificazione urbana per alloggi a canone sostenibile)"@it ;
+    schema:sponsor :comune-bettona ;
+    schema:url <https://www.baires.eu/album/transformative-urban-revitalization-bettona-pg/> ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
 :saperi-co a schema:Organization ;
     schema:description "Centro di Ricerca Design Sapienza 'Saperi&Co': organisation in the Baires Raffaelli knowledge graph; producer of 'AVLA'."@en ;
     schema:name "Centro di Ricerca Design Sapienza 'Saperi&Co'"@it ;
@@ -2106,6 +2428,25 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Sapienza library catalogue record of the thesis Instance"@en ;
     brv:verificationStatus "verified-primary" .
 
+:thesis-stazione-tuscolana-2002 a bf:Work,
+        schema:Thesis ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent :baires-raffaelli ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :marta-calzolaretti ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "thesis advisor" ] ] ;
+    schema:author :baires-raffaelli ;
+    schema:contributor :marta-calzolaretti ;
+    schema:datePublished "2002-07-23"^^xsd:date ;
+    schema:description "Degree thesis (Sapienza, Faculty of Architecture 'Ludovico Quaroni', 23 July 2002) by Baires Raffaelli, advisor Marta Calzolaretti, on the new Tuscolana station and surrounding open spaces in Rome; published in 2003 as 'Strutture della mobilita'."@en ;
+    schema:name "Progetto della nuova Stazione Tuscolana e degli spazi aperti circostanti"@it ;
+    schema:sourceOrganization :sapienza ;
+    brv:verificationBasis "academic-record" ;
+    brv:verificationStatus "verified-primary" .
+
 :uap-bd-library a bf:Organization,
         schema:Library ;
     schema:name "University of Asia Pacific (Bangladesh) - Central Library" .
@@ -2125,9 +2466,22 @@ brv:viaRecord a rdf:Property ;
         schema:Library ;
     schema:name "Xi'an University of Architecture and Technology (XAUAT) - Library" .
 
+:alberto-capitanucci a bf:Person,
+        schema:Person ;
+    schema:description "Alberto Capitanucci: engineer; consultant/collaborator on the 2007 small railway stations competition entry (Baires Raffaelli, lead designer). Not Baires Raffaelli himself."@en ;
+    schema:name "Alberto Capitanucci" ;
+    brv:verificationStatus "self-published" .
+
 :alessio-caccavale a schema:Person ;
     schema:description "Alessio Caccavale: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'. Not Baires Raffaelli himself."@en ;
     schema:name "Alessio Caccavale" .
+
+:andrea-cerquiglini a bf:Person,
+        schema:Person ;
+    schema:description "Andrea Cerquiglini: person in the Baires Raffaelli knowledge graph; collaborator on the San Nicolo civic centre in Spoleto (Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Andrea Cerquiglini" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :anna-gelfond a schema:Person ;
     schema:alternateName "Anna L. Gelfond",
@@ -2225,12 +2579,21 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://series.francoangeli.it/index.php/oa/catalog/book/799> ] ;
     brv:verificationStatus "verified-primary" .
 
-:diap a bf:Organization,
-        schema:Organization ;
-    schema:alternateName "DiAP" ;
-    schema:description "Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; issuing institution of 'Semantica e tipologia della forma nell'architettura contemporanea : a…'."@en ;
-    schema:name "Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma"@it ;
-    schema:parentOrganization :sapienza .
+:claudio-ronconi a bf:Person,
+        schema:Person ;
+    schema:description "Claudio Ronconi: person in the Baires Raffaelli knowledge graph; collaborator on the San Nicolo civic centre in Spoleto (Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Claudio Ronconi" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:comune-bettona a bf:Organization,
+        schema:GovernmentOrganization ;
+    schema:description "Comune di Bettona: municipality (Perugia, Umbria) that commissioned the 2009 Contratto di Quartiere III programme for the historic centre and Baires Raffaelli's preliminary design of the former elementary school and of Via S. Giacomo."@en ;
+    schema:location [ a schema:Place ;
+            schema:name "Bettona (PG), Italy" ] ;
+    schema:name "Comune di Bettona" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :entry-pump-it-up-house a bf:Work,
         schema:CreativeWork ;
@@ -2243,22 +2606,27 @@ brv:viaRecord a rdf:Property ;
             bf:role [ a bf:Role ;
                     rdfs:label "author" ] ],
         [ a bf:Contribution ;
-            bf:agent :paolo-moressoni ;
+            bf:agent :tommaso-passalacqua ;
             bf:role [ a bf:Role ;
                     rdfs:label "author" ] ],
         [ a bf:Contribution ;
-            bf:agent :tommaso-passalacqua ;
+            bf:agent :paolo-moressoni ;
             bf:role [ a bf:Role ;
-                    rdfs:label "author" ] ] ;
+                    rdfs:label "collaborator" ] ],
+        [ a bf:Contribution ;
+            bf:agent :kappazeta ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "partner" ] ] ;
     schema:archivedAt <https://web.archive.org/web/20110920011707/http://europaconcorsi.com:80/projects/24649-Pump-It-Up-House> ;
     schema:author :baires-raffaelli,
         :elio-rava,
-        :paolo-moressoni,
         :tommaso-passalacqua ;
     schema:contentLocation [ a schema:Place ;
             schema:name "Hofheim-Wallau, Germany" ] ;
+    schema:contributor :kappazeta,
+        :paolo-moressoni ;
     schema:datePublished "2007-10-17"^^xsd:date ;
-    schema:description "Experimental inflatable emergency-housing concept (2007) by Baires Raffaelli, Elio Rava, Paolo Moressoni and Tommaso Passalacqua, published on Europaconcorsi (project 24649); cited at p. 31 of a Vilnius Academy of Arts master's thesis (cite-cereskaite-vda-2013)."@en ;
+    schema:description "Experimental inflatable emergency-housing concept (2007) by the design team Baires Raffaelli, Elio Rava and Tommaso Passalacqua, with Paolo Moressoni as collaborator and Kappazeta S.p.A. as partner; published on Europaconcorsi (project 24649); cited at p. 31 of a Vilnius Academy of Arts master's thesis (cite-cereskaite-vda-2013)."@en ;
     schema:name "Pump It Up House"@en ;
     schema:producer :brre-architects ;
     brv:deprecatedUrl "https://europaconcorsi.com/projects/24649-Pump-It-Up-House" ;
@@ -2294,6 +2662,25 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Programme supplied by the author"@en ;
     brv:verificationStatus "verified-secondary" .
 
+:francesca-buratta a bf:Person,
+        schema:Person ;
+    schema:description "Francesca Buratta: person in the Baires Raffaelli knowledge graph; collaborator on 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
+    schema:name "Francesca Buratta" ;
+    brv:verificationStatus "self-published" .
+
+:francesco-grispo a bf:Person,
+        schema:Person ;
+    schema:description "Francesco Grispo: person in the Baires Raffaelli knowledge graph; collaborator on the San Nicolo civic centre in Spoleto (Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Francesco Grispo" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:gerardo-filocamo a bf:Person,
+        schema:Person ;
+    schema:description "Gerardo Filocamo: person in the Baires Raffaelli knowledge graph; collaborator on the 2007 small railway stations competition entry (Baires Raffaelli, lead designer). Not Baires Raffaelli himself."@en ;
+    schema:name "Gerardo Filocamo" ;
+    brv:verificationStatus "self-published" .
+
 :issue-urbanistica-informazioni-313 a schema:PublicationIssue ;
     schema:datePublished "2024"^^xsd:gYear ;
     schema:isPartOf :periodical-urbanistica-informazioni ;
@@ -2309,6 +2696,12 @@ brv:viaRecord a rdf:Property ;
     schema:description "Ivan Carbonelli: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'. Not Baires Raffaelli himself."@en ;
     schema:name "Ivan Carbonelli" .
 
+:kappazeta a bf:Organization,
+        schema:Organization ;
+    schema:description "Kappazeta S.p.A.: organisation in the Baires Raffaelli knowledge graph; partner on 'Pump It Up House' (2007)."@en ;
+    schema:name "Kappazeta S.p.A." ;
+    brv:verificationStatus "self-published" .
+
 :kasra-publishing a bf:Organization,
         schema:Organization ;
     schema:alternateName "انتشارات کسری"@fa ;
@@ -2316,6 +2709,13 @@ brv:viaRecord a rdf:Property ;
     schema:location [ a schema:Place ;
             schema:name "Mashhad, Iran" ] ;
     schema:name "Kasra Publishing" .
+
+:laura-rossi a bf:Person,
+        schema:Person ;
+    schema:description "Laura Rossi: person in the Baires Raffaelli knowledge graph; collaborator on the San Nicolo civic centre in Spoleto (Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Laura Rossi" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :long-sea a bf:Organization,
         schema:Organization ;
@@ -2326,6 +2726,15 @@ brv:viaRecord a rdf:Property ;
     schema:name "龍溪國際圖書"@zh-Hant ;
     schema:url <http://www.longsea.com.tw/> .
 
+:marta-baldella a bf:Person,
+        schema:Person ;
+    schema:description "Marta Baldella: person in the Baires Raffaelli knowledge graph; collaborator on 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
+    schema:name "Marta Baldella" ;
+    brv:verificationStatus "self-published" .
+
+:marta-calzolaretti a schema:Person ;
+    schema:name "Marta Calzolaretti" .
+
 :oappc-perugia a bf:Organization,
         schema:Organization ;
     schema:alternateName "OAPPC Perugia" ;
@@ -2335,19 +2744,11 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Named on the Perugia posters supplied by the author"@en ;
     brv:verificationStatus "verified-secondary" .
 
-:paolo-luccioni a schema:Person ;
-    schema:description "Paolo Luccioni: person in the Baires Raffaelli knowledge graph; author or co-author of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
-    schema:name "Paolo Luccioni" .
-
-:paolo-moressoni-perugia a bf:Person,
-        schema:Person ;
-    owl:differentFrom :paolo-moressoni ;
-    schema:description "Paolo Moressoni: member of the council of the Ordine degli Architetti of Perugia and speaker at the 6 October 2021 webinar 'La citta' di ognuno' (per the event poster). Different person from the Pump It Up House co-author of the same name; not Baires Raffaelli."@en ;
-    schema:disambiguatingDescription "Member of the council of the Ordine degli Architetti of Perugia (2021 poster); not the co-author of Pump It Up House."@en ;
-    schema:jobTitle "Member of the council, Ordine degli Architetti PPC della Provincia di Perugia (2021 poster)"@en ;
-    schema:name "Paolo Moressoni" ;
+:oikos-progetti a bf:Organization,
+        schema:Organization ;
+    schema:description "Oikos Progetti: organisation in the Baires Raffaelli knowledge graph; structural engineering of the San Nicolo civic centre in Spoleto."@en ;
+    schema:name "Oikos Progetti" ;
     brv:verificationBasis "author-supplied-document" ;
-    brv:verificationNote "Named on the Perugia poster supplied by the author"@en ;
     brv:verificationStatus "verified-secondary" .
 
 :periodical-ottagono a schema:Periodical ;
@@ -2369,11 +2770,26 @@ brv:viaRecord a rdf:Property ;
         schema:Library ;
     schema:name "Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok" .
 
+:tetra-engineering a bf:Organization,
+        schema:Organization ;
+    schema:description "Tetra Engineering: organisation in the Baires Raffaelli knowledge graph; building services engineering of the San Nicolo civic centre in Spoleto."@en ;
+    schema:name "Tetra Engineering" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
 :uauim-press a bf:Organization,
         schema:Organization ;
     schema:description "Editura Universitară 'Ion Mincu': organisation in the Baires Raffaelli knowledge graph; publisher of 'Scholar Architect 2022: Cercetarea și implementarea unor tendințe, in…'; publisher of 'Scholar Architect 2022 (English edition)'."@en ;
     schema:name "Editura Universitară 'Ion Mincu'"@ro ;
     schema:url <https://editura.uauim.ro/> .
+
+:ulrich-ruefli a bf:Person,
+        schema:Person ;
+    schema:alternateName "Ulrich Rüefli" ;
+    schema:description "Ulrich Ruefli: person in the Baires Raffaelli knowledge graph; co-author of 'La ville des anges' with Baires Raffaelli and Elio Rava; also listed in the design team of the 2004 University Campus Schio entry on baires.eu. Not Baires Raffaelli himself."@en ;
+    schema:name "Ulrich Ruefli" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
 
 :wp-en-rev-1249910165 a schema:WebPage ;
     schema:about :baires-raffaelli ;
@@ -2392,6 +2808,12 @@ brv:viaRecord a rdf:Property ;
     brv:verificationBasis "link-not-rechecked" ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "verified-secondary" .
+
+:zampetti-costruzioni a bf:Organization,
+        schema:Organization ;
+    schema:description "Zampetti Costruzioni s.r.l.: organisation in the Baires Raffaelli knowledge graph; partner on 'Sports Hall, Passignano sul Trasimeno (PG)'."@en ;
+    schema:name "Zampetti Costruzioni s.r.l." ;
+    brv:verificationStatus "self-published" .
 
 :zhihu-archidogs-2020 a schema:WebPage ;
     schema:about :work-form-zh-hans ;
@@ -2489,6 +2911,13 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://cyberleninka.ru/article/n/o-prostranstvennoy-tipologii-zdaniy-arok> ] ;
     brv:verificationStatus "verified-primary" .
 
+:diap a bf:Organization,
+        schema:Organization ;
+    schema:alternateName "DiAP" ;
+    schema:description "Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; issuing institution of 'Semantica e tipologia della forma nell'architettura contemporanea : a…'."@en ;
+    schema:name "Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma"@it ;
+    schema:parentOrganization :sapienza .
+
 :dicea a bf:Organization,
         schema:Organization ;
     schema:alternateName "DICEA" ;
@@ -2515,27 +2944,10 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :cite-gelfond-raasn-2020 ] ;
     brv:verificationStatus "verified-secondary" .
 
-:luciano-de-licio a bf:Person,
-        schema:Person ;
-    schema:description "Luciano De Licio: person in the Baires Raffaelli knowledge graph; contributor to 'Semantica e tipologia della forma nell'architettura contemporanea : a…'. Not Baires Raffaelli himself."@en ;
-    schema:jobTitle "Professor, Sapienza - coordinator of UdR AIS; doctoral advisor"@en ;
-    schema:name "Luciano De Licio" ;
-    schema:sameAs <http://www.wikidata.org/entity/Q124855359> .
-
 :luigi-prestinenza-puglisi a bf:Person,
         schema:Person ;
     schema:description "Luigi Prestinenza Puglisi: contributor to 'The Fast Guide to Architectural Form' and speaker at the 6 October 2021 Perugia webinar, where the poster introduces him as president of the 'Ass. Italiana di Architettura e Critica'. Not Baires Raffaelli."@en ;
     schema:name "Luigi Prestinenza Puglisi" .
-
-:paolo-moressoni a bf:Person,
-        schema:Person ;
-    owl:differentFrom :paolo-moressoni-perugia ;
-    schema:description "Paolo Moressoni: architect; co-author with Baires Raffaelli, Elio Rava and Tommaso Passalacqua of 'Pump It Up House' (2007). Not Baires Raffaelli, and not the homonymous councillor of the Ordine degli Architetti of Perugia."@en ;
-    schema:disambiguatingDescription "Co-author of Pump It Up House (2007); not the councillor of the Ordine degli Architetti of Perugia."@en ;
-    schema:name "Paolo Moressoni" ;
-    brv:verificationBasis "archived-source" ;
-    brv:verificationNote "Co-author listed on the Europaconcorsi project page (Internet Archive snapshot) and in a cited master's thesis"@en ;
-    brv:verificationStatus "verified-secondary" .
 
 :qiu-xili a bf:Person,
         schema:Person ;
@@ -2615,10 +3027,17 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :inst-fundamentals-en ] ;
     brv:verificationStatus "verified-primary" .
 
-:carlos-acosta-fontana a schema:Person ;
-    schema:alternateName "Carlos Acosta" ;
-    schema:description "Carlos Acosta Fontana: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself."@en ;
-    schema:name "Carlos Acosta Fontana" .
+:andrea-spiccallunto a bf:Person,
+        schema:Person ;
+    schema:description "Andrea Spiccallunto: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and on the San Nicolo civic centre in Spoleto (both by Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Andrea Spiccallunto" ;
+    brv:verificationStatus "self-published" .
+
+:archstudio-luccioni a bf:Organization,
+        schema:Organization ;
+    schema:description "Archstudio Luccioni s.r.l.: organisation in the Baires Raffaelli knowledge graph; project and coordination of 'Sports Hall, Passignano sul Trasimeno (PG)'."@en ;
+    schema:name "Archstudio Luccioni s.r.l." ;
+    brv:verificationStatus "self-published" .
 
 :house-via-pascoli-foligno-2006 a bf:Work,
         schema:CreativeWork ;
@@ -2691,6 +3110,12 @@ brv:viaRecord a rdf:Property ;
     schema:description "栗茜: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself."@en ;
     schema:name "栗茜"@zh-Hans .
 
+:loretta-della-botte a bf:Person,
+        schema:Person ;
+    schema:description "Loretta della Botte: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and on the San Nicolo civic centre in Spoleto (both by Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Loretta della Botte" ;
+    brv:verificationStatus "self-published" .
+
 :marco-ferrero a bf:Person,
         schema:Person ;
     schema:affiliation :dicea ;
@@ -2746,10 +3171,6 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> ] ;
     brv:verificationStatus "verified-primary" .
 
-:tommaso-passalacqua a schema:Person ;
-    schema:description "Tommaso Passalacqua: person in the Baires Raffaelli knowledge graph; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Pump It Up House'. Not Baires Raffaelli himself."@en ;
-    schema:name "Tommaso Passalacqua" .
-
 :udr-ais a schema:ResearchOrganization ;
     schema:member :baires-raffaelli,
         :luciano-de-licio ;
@@ -2761,6 +3182,13 @@ brv:viaRecord a rdf:Property ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://diap.web.uniroma1.it/sites/default/files/allegati/UdR_AIS_esteso.pdf> ] ;
     brv:verificationStatus "verified-primary" .
+
+:viviana-mastrotilli a bf:Person,
+        schema:Person ;
+    schema:alternateName "Viviana Mastrolilli" ;
+    schema:description "Viviana Mastrotilli: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and (spelled 'Mastrolilli') on the San Nicolo civic centre in Spoleto. Not Baires Raffaelli himself."@en ;
+    schema:name "Viviana Mastrotilli" ;
+    brv:verificationStatus "self-published" .
 
 :volume-asseh-471 a schema:PublicationVolume ;
     schema:isPartOf :series-asseh ;
@@ -2890,11 +3318,22 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> ] ;
     brv:verificationStatus "verified-primary" .
 
-:michela-de-licio a bf:Person,
+:luciano-de-licio a bf:Person,
         schema:Person ;
-    schema:description "Michela De Licio: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Nordic Built Competition - entry (Tampere, Finland)'; member of BRRE architects. Not Baires Raffaelli himself."@en ;
-    schema:memberOf :brre-architects ;
-    schema:name "Michela De Licio" .
+    schema:description "Luciano De Licio: person in the Baires Raffaelli knowledge graph; contributor to 'Semantica e tipologia della forma nell'architettura contemporanea : a…'. Not Baires Raffaelli himself."@en ;
+    schema:jobTitle "Professor, Sapienza - coordinator of UdR AIS; doctoral advisor"@en ;
+    schema:name "Luciano De Licio" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q124855359> .
+
+:paolo-moressoni a bf:Person,
+        schema:Person ;
+    schema:description "Paolo Moressoni: architect; collaborator on 'Pump It Up House' (2007) with the design team Baires Raffaelli, Elio Rava and Tommaso Passalacqua, and consultant/collaborator on the 2007 small railway stations competition entry; member of the council of the Ordine degli Architetti of Perugia and speaker at the 6 October 2021 webinar 'La citta' di ognuno' (per the event poster). Not Baires Raffaelli."@en ;
+    schema:disambiguatingDescription "Architect; collaborator on Pump It Up House (2007) and member of the council of the Ordine degli Architetti of Perugia (2021 poster); the same person (identity confirmed by the author)."@en ;
+    schema:jobTitle "Member of the council, Ordine degli Architetti PPC della Provincia di Perugia (2021 poster)"@en ;
+    schema:name "Paolo Moressoni" ;
+    brv:verificationBasis "archived-source" ;
+    brv:verificationNote "Named with the design team on the Europaconcorsi project page (Internet Archive snapshot) and in a cited master's thesis; collaborator role and design-team role confirmed by the author and by baires.eu; Perugia role from the organiser's poster supplied by the author; identity of the two records confirmed by the author"@en ;
+    brv:verificationStatus "verified-secondary" .
 
 :work-form-zh-hant a bf:Text,
         bf:Work,
@@ -2930,6 +3369,12 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :inst-form-zh-hant ] ;
     brv:verificationStatus "verified-primary" .
 
+:angela-buompadre a bf:Person,
+        schema:Person ;
+    schema:description "Angela Buompadre: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and on the San Nicolo civic centre in Spoleto (both by Paolo Luccioni). Not Baires Raffaelli himself."@en ;
+    schema:name "Angela Buompadre" ;
+    brv:verificationStatus "self-published" .
+
 :bis-publishers a bf:Organization,
         schema:Organization ;
     schema:description "BIS Publishers: organisation in the Baires Raffaelli knowledge graph; publisher of 'The Fast Guide to Architectural Form'; publisher of 'The Fast Guide to Accessibility Design'; publisher of 'The Fast Guide to the Fundamentals of Architectural Design'."@en ;
@@ -2937,6 +3382,11 @@ brv:viaRecord a rdf:Property ;
             schema:name "Amsterdam" ] ;
     schema:name "BIS Publishers" ;
     schema:url <https://www.bispublishers.com/> .
+
+:carlos-acosta-fontana a schema:Person ;
+    schema:alternateName "Carlos Acosta" ;
+    schema:description "Carlos Acosta Fontana: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself."@en ;
+    schema:name "Carlos Acosta Fontana" .
 
 :inst-form-en a bf:Instance,
         bf:Print,
@@ -3022,6 +3472,10 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> ] ;
     brv:verificationStatus "verified-primary" .
 
+:tommaso-passalacqua a schema:Person ;
+    schema:description "Tommaso Passalacqua: person in the Baires Raffaelli knowledge graph; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Pump It Up House'. Not Baires Raffaelli himself."@en ;
+    schema:name "Tommaso Passalacqua" .
+
 :work-form-zh-hans a bf:Text,
         bf:Work,
         schema:CreativeWork ;
@@ -3100,6 +3554,12 @@ brv:viaRecord a rdf:Property ;
             brv:source <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> ] ;
     brv:verificationStatus "verified-primary" .
 
+:michela-de-licio a bf:Person,
+        schema:Person ;
+    schema:description "Michela De Licio: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Nordic Built Competition - entry (Tampere, Finland)'; member of BRRE architects. Not Baires Raffaelli himself."@en ;
+    schema:memberOf :brre-architects ;
+    schema:name "Michela De Licio" .
+
 :inst-form-zh-hant a bf:Instance,
         bf:Print,
         schema:Book ;
@@ -3152,6 +3612,10 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://www.kingstone.com.tw/basic/2019210026128/> ] ;
     brv:verificationStatus "verified-primary" .
 
+:paolo-luccioni a schema:Person ;
+    schema:description "Paolo Luccioni: architect (Archstudio Luccioni s.r.l.); lead designer of the San Nicolo civic centre in Spoleto, on which Baires Raffaelli collaborated, and co-designer with Baires Raffaelli of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
+    schema:name "Paolo Luccioni" .
+
 :sapienza a bf:Organization,
         schema:CollegeOrUniversity ;
     schema:identifier [ a schema:PropertyValue ;
@@ -3160,12 +3624,6 @@ brv:viaRecord a rdf:Property ;
     schema:name "Sapienza Università di Roma"@it ;
     schema:sameAs <http://www.wikidata.org/entity/Q209344>,
         <https://ror.org/02be6w209> .
-
-:elio-rava a bf:Person,
-        schema:Person ;
-    schema:description "Elio Ravà: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittim…'; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself."@en ;
-    schema:memberOf :brre-architects ;
-    schema:name "Elio Ravà" .
 
 :brre-architects a bf:Organization,
         schema:Organization ;
@@ -3180,6 +3638,12 @@ brv:viaRecord a rdf:Property ;
     schema:name "BRRE architects" ;
     schema:url <https://www.baires.eu/>,
         <https://www.brre.it/> .
+
+:elio-rava a bf:Person,
+        schema:Person ;
+    schema:description "Elio Ravà: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittim…'; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself."@en ;
+    schema:memberOf :brre-architects ;
+    schema:name "Elio Ravà" .
 
 :work-accessibility a bf:Text,
         bf:Work,
@@ -3439,6 +3903,7 @@ brv:viaRecord a rdf:Property ;
         "visual representation"@en ;
     schema:knowsLanguage "en",
         "it" ;
+    schema:memberOf :housing-lab ;
     schema:name "Baires Raffaelli" ;
     schema:nationality [ a schema:Country ;
             schema:name "Italy" ] ;
