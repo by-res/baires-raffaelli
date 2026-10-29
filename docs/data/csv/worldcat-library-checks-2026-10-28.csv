@@ -1,0 +1,94 @@
+oclc_number,work_id,worldcat_registry_id,library_checked,result,shelfmark_seen,note,checked_on
+1151886440,work-accessibility,63457,Ngee Ann Polytechnic,inconclusive,,retry,2026-10-28
+1151886440,work-accessibility,87476,SDU Odense,inconclusive,,retry (landed on home),2026-10-28
+1151886440,work-accessibility,18559,TH Deggendorf,inconclusive,,JS OPAC no text,2026-10-28
+1151886440,work-accessibility,148878,UPV/EHU,inconclusive,,retry,2026-10-28
+1151886440,work-accessibility,14223,Cleveland Public Library,not-found-or-unreachable,,catalogue error page,2026-10-28
+1151886440,work-accessibility,99984,HafenCity Univ Hamburg,not-found-or-unreachable,,katalog.b.tu-harburg.de DNS unreachable,2026-10-28
+1151886440,work-accessibility,63422,Institute of Technical Education Singapore,not-found-or-unreachable,,library.ite.edu.sg DNS unreachable,2026-10-28
+1151886440,work-accessibility,216333,Museu del Disseny Barcelona,not-found-or-unreachable,,no match,2026-10-28
+1151886440,work-accessibility,40102,North Metropolitan TAFE,not-found-or-unreachable,,tafewa-primo DNS unreachable,2026-10-28
+1151886440,work-accessibility,87413,TIB Hannover,not-found-or-unreachable,,K10plus OCLC link 404 no hits,2026-10-28
+1151886440,work-accessibility,142073,ArtEZ,record-found,,WorldCat Discovery record; Antonini translator,2026-10-28
+1151886440,work-accessibility,42128,Bibliotheque de Brossard,record-found,,public library; listed,2026-10-28
+1151886440,work-accessibility,13438,Buffalo and Erie County Public Library,record-found,,157 p. in catalogue,2026-10-28
+1151886440,work-accessibility,87048,Dakota County Technical College,record-found,,"full-display page, shelfmark not extracted",2026-10-28
+1151886440,work-accessibility,105808,Danish Union Catalogue (bibliotek.dk),record-found,,listed,2026-10-28
+1151886440,work-accessibility,18382,HTWK Leipzig,record-found,,Antonini Uebersetzerin,2026-10-28
+1151886440,work-accessibility,5279,Indiana University (IUCAT Indianapolis),record-found,,listed,2026-10-28
+1151886440,work-accessibility,1031,Iowa State University,record-found,,Antonini translator,2026-10-28
+1151886440,work-accessibility,8528,Los Angeles County Library,record-found,,public library; 157 p.,2026-10-28
+1151886440,work-accessibility,63464,National Library Board Singapore,record-found,,listed,2026-10-28
+1151886440,work-accessibility,8557,Palos Verdes Library District,record-found,,Peninsula Center Library; Nonfiction; Antonini added author,2026-10-28
+1151886440,work-accessibility,2929,UT Austin,record-found,,Antonini translator,2026-10-28
+1151886440,work-accessibility,5415,University of Illinois Urbana-Champaign (I-Share),record-found,,Antonini translator,2026-10-28
+1151886440,work-accessibility,374,University of Redlands,record-found,,WorldCat Discovery local; Antonini translator,2026-10-28
+1151886440,work-accessibility,448,Woodbury University,record-found,,WorldCat Discovery local; Antonini translator,2026-10-28
+1151886440,work-accessibility,4861,Columbia,record-found-with-shelfmark,NA2545.P5 R34 2020g,already in graph,2026-10-28
+1151886440,work-accessibility,1914,Fashion Institute of Technology,record-found-with-shelfmark,NA2545.P5 R34 2020,Gladys Marcus Library 5th fl Main Stacks; Antonini translator,2026-10-28
+1151886440,work-accessibility,5616,Getty Research Institute,record-found-with-shelfmark,NA2545.P5 R34 2020,General Collections LIBRARY ANNEX; Antonini translator,2026-10-28
+1151886440,work-accessibility,73876,Harvard (Frances Loeb Library),record-found-with-shelfmark,NA2545.P5 R34 2020,Offsite storage; author spelled Bares in catalogue,2026-10-28
+1151886440,work-accessibility,1549,Minneapolis College of Art and Design,record-found-with-shelfmark,NA2545.P5 R34 2020,MCAD Book Stacks; permalink offered by catalogue,2026-10-28
+1151886440,work-accessibility,44004,OCAD University,record-found-with-shelfmark,NA2545 P5 R23 2020,Dorothy H. Hoover Library Circulating; Antonini translator,2026-10-28
+1151886440,work-accessibility,1791,Princeton,record-found-with-shelfmark,NA2545.P5 R34 2020,screenshot 2026-10-29 from author; ReCAP,2026-10-29
+1151886440,work-accessibility,5689,UC Berkeley,record-found-with-shelfmark,NA2545.P5 R34 2020,Environmental Design Library; Antonini translator,2026-10-28
+1151886440,work-accessibility,2583,UPenn,record-found-with-shelfmark,NA2545.P5 R34 2020,Fine Arts Library,2026-10-28
+1151886440,work-accessibility,2062,Union College,record-found-with-shelfmark,NA2545.P5 R34 2020,Schaffer Library Basement - Books; Antonini translator,2026-10-28
+1151886440,work-accessibility,5293,University of Michigan,record-found-with-shelfmark,NA 2545 .P5 R34 2020,screenshot 2026-10-29 from author; Art Architecture & Engineering Main Collection,2026-10-29
+1151886440,work-accessibility,2390,University of Oklahoma,record-found-with-shelfmark,NA 2545 .P5 R34 2020,Off-Site Storage Library Service Center; Antonini translator,2026-10-28
+1151886440,work-accessibility,5725,University of Washington,record-found-with-shelfmark,NA2545.P5 R34 2020,Built Environments Library General Stacks,2026-10-28
+1151886440,work-accessibility,3066,VCU,record-found-with-shelfmark,NA2545.P5 R34 2020,Cabell Library General Collection,2026-10-28
+1151886440,work-accessibility,544,Yale,record-found-with-shelfmark,NA2545.P5 R34 2020,Offsite Library Collection (2 records),2026-10-28
+920019079,work-form,115152,British Library,inconclusive,,error page; retry,2026-10-28
+920019079,work-form,14584,Multnomah County Library,inconclusive,,BiblioCommons no text; retry,2026-10-28
+920019079,work-form,112602,SBT Ticino,inconclusive,,no result in ISBN search,2026-10-28
+920019079,work-form,104481,UB Weimar,inconclusive,,timeout,2026-10-28
+920019079,work-form,105192,Zentralinstitut fuer Kunstgeschichte (kubikat),inconclusive,,no text,2026-10-28
+920019079,work-form,57291;57394,Almere/OBA,not-found-or-unreachable,,redirect 404,2026-10-28
+920019079,work-form,117087,American University in Dubai,not-found-or-unreachable,,koha.aud.edu DNS unreachable,2026-10-28
+920019079,work-form,57663,Biblioteksentralen,not-found-or-unreachable,,redirect unavailable,2026-10-28
+920019079,work-form,87775,CUHK,not-found-or-unreachable,,no match at retry,2026-10-28
+920019079,work-form,18380,Hochschule Muenchen,not-found-or-unreachable,,OCLC search found no match,2026-10-28
+920019079,work-form,87606,KB,not-found-or-unreachable,,no match at retry,2026-10-28
+920019079,work-form,54156,Liverpool,not-found-or-unreachable,,ISBN search returned no record at retry,2026-10-28
+920019079,work-form,65554,MMU,not-found-or-unreachable,,ISBN search returned no record at retry,2026-10-28
+920019079,work-form,46712,Newcastle,not-found-or-unreachable,,No records found at retry,2026-10-28
+920019079,work-form,118565,USP-CEU,not-found-or-unreachable,,WorldCat Discovery no text match,2026-10-28
+920019079,work-form,9,University of Alabama,not-found-or-unreachable,,legacy http vwebv endpoint unreachable,2026-10-28
+920019079,work-form,132607,Bristol,record-found,,Antonini listed as illustrator and translator,2026-10-28
+920019079,work-form,44008,CCA Montreal,record-found,,WorldCat Discovery local; Antonini listed as illustrator and translator,2026-10-28
+920019079,work-form,105808,DBC bibliotek.dk,record-found,,listed,2026-10-28
+920019079,work-form,62465,LIBRIS,record-found,,"union catalogue, 1 library",2026-10-28
+920019079,work-form,2571,Penn State,record-found,,University Park Libraries; Antonini translator,2026-10-28
+920019079,work-form,18573,SLUB,record-found,,found,2026-10-28
+920019079,work-form,1586,St. Catherine University,record-found,,Antonini listed,2026-10-28
+920019079,work-form,2054,Syracuse,record-found,,Antonini translator,2026-10-28
+920019079,work-form,65299,TU Berlin,record-found,,found,2026-10-28
+920019079,work-form,2929,UT Austin,record-found,,Antonini translator; call number not in result list,2026-10-28
+920019079,work-form,85653,Universidad de Sevilla,record-found,,found,2026-10-28
+920019079,work-form,577,University of Central Florida,record-found,,Antonini listed,2026-10-28
+920019079,work-form,5027,Virginia Tech,record-found,,catalogue lists Antonini as illustrator,2026-10-28
+920019079,work-form,784,Art Institute of Chicago (Ryerson & Burnham),record-found-with-shelfmark,NA2760 .R34 2016,RBL Stack 4; Antonini translator,2026-10-28
+920019079,work-form,462,CU Boulder,record-found-with-shelfmark,NA2760 .R34 2016,Norlin Library Art & Architecture Stacks; Antonini translator,2026-10-28
+920019079,work-form,61511,Cardiff,record-found-with-shelfmark,720.1 RAF,Antonini translator; Architecture Library,2026-10-28
+920019079,work-form,4861,Columbia,record-found-with-shelfmark,NA2760 .R34 2016g,already in graph,2026-10-28
+920019079,work-form,57335,Hanze,record-found-with-shelfmark,711.3 RAFF,Antonini translator,2026-10-28
+920019079,work-form,73876,Harvard (Frances Loeb Library),record-found-with-shelfmark,NA2760 .R34X 2016,record id not yet extracted,2026-10-28
+920019079,work-form,1993,Pratt Institute,record-found-with-shelfmark,729 R136,Brooklyn Stacks; Antonini translator,2026-10-28
+920019079,work-form,1791,Princeton,record-found-with-shelfmark,NA2760 .R34 2016,screenshot 2026-10-29 from author; ReCAP; also NA2760 .R34 2016g,2026-10-29
+920019079,work-form,3227,Stanford,record-found-with-shelfmark,NA2760 .R24 2016 T,screenshot 2026-10-29 from author; SAL3,2026-10-29
+920019079,work-form,87413,TIB Hannover,record-found-with-shelfmark,U 16 B 979,translated by Siliva [sic] Antonini; Antonini UEbersetzerin; 140 S.,2026-10-28
+920019079,work-form,2942,Texas Tech,record-found-with-shelfmark,NA2760 .R3413 2016,Architecture Library Stacks 8th floor; Antonini translator,2026-10-28
+920019079,work-form,5461,Tulane,record-found-with-shelfmark,NA2760 .R25 2016,Howard-Tilton Stacks (call number differs from LC cutter used elsewhere),2026-10-28
+920019079,work-form,5689,UC Berkeley,record-found-with-shelfmark,NA2760 .R34 2016,Environmental Design Library; catalogue lists Antonini as illustrator,2026-10-28
+920019079,work-form,1733,UNLV,record-found-with-shelfmark,NA2760 .R34 2016,Architecture Studies Library; catalogue lists Antonini as illustrator,2026-10-28
+920019079,work-form,2583,UPenn,record-found-with-shelfmark,NA2760 .R34 2016,Fine Arts Library,2026-10-28
+920019079,work-form,100017,USI Accademia di architettura,record-found-with-shelfmark,AAM 720.011 Raff,Sala 4 Collezione generale,2026-10-28
+920019079,work-form,1150,University of Kentucky,record-found-with-shelfmark,NA2760 .R34 2016,Fine Arts Library Miniature; catalogue lists Antonini as illustrator,2026-10-28
+920019079,work-form,2429,University of Oregon,record-found-with-shelfmark,NA2760 .R34x 2016,Design Library Stacks Floors 2-3,2026-10-28
+920019079,work-form,103741,University of Toronto,record-found-with-shelfmark,NA2760 .R3413 2016,"Architecture, Landscape & Design (Eberhard Zeidler Library) Stacks",2026-10-28
+920019079,work-form,544,Yale,record-found-with-shelfmark,NA2760 .R34 2016g,Offsite Library Collection; also NA2760 .R34 2016 (2 records),2026-10-28
+1322054519,work-form-zh-hant,269098,Chaoyang Univ of Technology,record-found-with-shelfmark,921.026 5042 C681621,Main Library 6F-Stack; translator shown 邱喜麗; 2022 Longxi/Beixing,2026-10-28
+1437299399,work-fundamentals,5063,NC State University,record-found,,Fundamentals; only Raffaelli as author,2026-10-28
+1437299399,work-fundamentals,5360,University of Minnesota,record-found-with-shelfmark,NA2750 .R34 2023,T.C. Wilson Library General Collection,2026-10-28
+1437299399,work-fundamentals,54040,University of Sydney,record-found-with-shelfmark,729 251,SciTech Library General,2026-10-28

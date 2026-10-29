@@ -58,11 +58,15 @@
         "01.24",
         "01.25" .
 
+:biblioteche-sapienza brv:dataQualityNote "Sistema bibliotecario della Sapienza (nodo gia' collegato a :sapienza): citta' e coordinate della sede centrale dell'universita' (Wikidata Q209344), non delle singole biblioteche. Nessun ISIL in Wikidata."@it .
+
 :brre-architects brv:dataQualityNote "Il dominio brre.it esiste e rimanda a baires.eu (verifica del 25/10/2026): la v1 e la prima stesura della v2 lo avevano segnato per errore come URL inventato. Co-fondatore dichiarato da Hachette; LinkedIn/Facebook ufficiali (facebook.com/architects.BRRE) non verificati."@it ;
     brv:sourceRecord "05.09" .
 
 :catalog-stuba-fad brv:dataQualityNote "dk.fchpt.stuba.sk e' il catalogo della Facolta' di chimica e alimentazione (FCHPT), non della FAD, ed era irraggiungibile: la presenza del libro nella biblioteca FAD non e' provata. La home della biblioteca FAD risponde 200."@it ;
     brv:sourceRecord "07.23" .
+
+:cca-montreal brv:dataQualityNote "Wikidata Q57697917 (CCA Library): ISIL CA-QMCCA; Wikidata riporta anche US-NNCCA (codice OCLC/US), non registrato. Quartiere Ville-Marie, Montréal."@it .
 
 :cerpa-casa-foligno-2016 brv:dataQualityNote "Pagina letta il 25/10/2026. Non cita via Pascoli ne' l'anno 2006, ma riprende l'articolo Superabile sulla casa di Foligno che il volume Tosi & Pistolesi cita (nota 8) come 'La casa in via Pascoli': identificazione coerente con l'indicazione dell'autore. Contiene dati personali di terzi, volutamente non riportati nel dataset."@it ;
     brv:sourceRecord "07.08" .
@@ -141,6 +145,8 @@
 :collection-intersectional-design-tools brv:dataQualityNote "Home 200; la voce specifica non e' stata verificata."@it ;
     brv:sourceRecord "07.33" .
 
+:columbia-libraries brv:dataQualityNote "Nodo creato dal catalogo CLIO (clio.columbia.edu). Indirizzo ridotto a citta' e paese; nessun ISIL o coordinata verificati."@it .
+
 :course-ain-shams-11374 brv:dataQualityNote "Pagina 200 ma nessuna occorrenza di Raffaelli/Fast Guide nel testo: l'adozione non e' attestata. Nessun Work indicato dal dataset."@it ;
     brv:sourceRecord "07.28" .
 
@@ -176,6 +182,8 @@
 
 :csp-cse brv:dataQualityNote "Sul sito baires.eu la certificazione CSP/CSE (2003) e l'appartenenza a 'Stone Academy' compaiono nel paragrafo di ELIO RAVA', non in quello di Baires Raffaelli: possibile attribuzione errata, da confermare."@it ;
     brv:sourceRecord "02.02" .
+
+:cud-library brv:dataQualityNote "Citta' dall'istituzione (Wikidata). Nessuna coordinata ne' ISIL in Wikidata."@it .
 
 :dataset brv:dataQualityNote "v3 integra: foglio link validato dall'autore (160 link OK), 22 PDF di citazioni con pinpoint di pagina (nodi brv:CitationEvidence), edizione persiana corretta (Mashhad, 144 p. (143 secondo NLAI), 1398 SH = 2019, seconda stampa 1404 SH, NLAI/Kasra con snapshot Wayback), tesi Park identificata, casa di Foligno 2006, Pump It Up House (Europaconcorsi 2007, archivio), Giorgio Raffaelli, altra persona con lo stesso cognome (owl:differentFrom), revisioni Wikipedia. v2 corregge: handle IRIS della tesi, titolo tesi, DOI Gelfond, handle UMinho, date PEBA/Santa Margherita, domini schema.org, URL rotti; aggiunge identificativi, premi e contributi omessi."@it .
 
@@ -256,25 +264,31 @@
 
 :housing-lab brv:dataQualityNote "Laboratorio di ricerca del DiAP, Sapienza (Facolta' di Architettura 'Ludovico Quaroni'). Baires Raffaelli ('B. Raffaelli') e' elencato nel gruppo di ricerca HousingLab della legenda del contributo di A. De Cesaris 'Strategies for the regeneration of suburban sprawl - Case Studies in Rome' (Cities in Transformation, EAAE/ARCC, Politecnico di Milano, 7-10 giugno 2012; volume del tema 4 fornito dall'autore, p. 13). Il record IRIS Sapienza del contributo non nomina Raffaelli."@it .
 
-:inst-accessibility-en brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it ;
+:hrbeu-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
+
+:inst-accessibility-en brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it,
+        "OCLC 1151886440 e' il record WorldCat di questa edizione (screenshot dell'autore, 28/10/2026), in precedenza attribuito per errore alla Instance di Form. 1199329767 resta come altro record OCLC (non mostrato negli screenshot, forse un'altra edizione o formato tra le 3 raggruppate)."@it ;
     brv:sourceRecord "04.05" .
 
-:inst-form-en brv:dataQualityNote "ANNO E PAGINE (chiusi il 25/10/2026): la scheda dell'editore BIS indica Spring 2016, 144 p., 154 x 105 mm, ed e' la fonte adottata (regola: dati editoriali per l'opera, conteggi di biblioteca nelle note); l'autore conferma il 2016. CCA (Montreal) e TCDC (Bangkok) catalogano 140 p. (15 cm), UAP Bangladesh 124 p. (22 cm), il dataset originale 160. Le date 2018 (Scholar Architect, ricerca RG) e 2023 (curriculum rumeno) nei documenti citanti sono errori di fonte o riferimenti a ristampe: secondo l'autore esistono 2-3 ristampe in inglese, non documentate nei cataloghi e quindi non modellate come Instance. ISBN-10/13 con checksum valido. WorldCat: Cloudflare, quindi gli OCLC non sono stati confermati dall'audit; l'autore indica come funzionanti gli URL WorldCat 920019079 e 1322054519 (25/10/2026), e 920019079 compare comunque nel record CCA. Il link CCFr con parametro ts= si apre ma in una sessione nuova mostra 'Votre session a expire': e' un URL di sessione, non un permalink."@it ;
+:inst-form-en brv:dataQualityNote "ANNO E PAGINE (chiusi il 25/10/2026): la scheda dell'editore BIS indica Spring 2016, 144 p., 154 x 105 mm, ed e' la fonte adottata (regola: dati editoriali per l'opera, conteggi di biblioteca nelle note); l'autore conferma il 2016. CCA (Montreal) e TCDC (Bangkok) catalogano 140 p. (15 cm), UAP Bangladesh 124 p. (22 cm), il dataset originale 160. Le date 2018 (Scholar Architect, ricerca RG) e 2023 (curriculum rumeno) nei documenti citanti sono errori di fonte o riferimenti a ristampe: secondo l'autore esistono 2-3 ristampe in inglese, non documentate nei cataloghi e quindi non modellate come Instance. ISBN-10/13 con checksum valido. WorldCat: Cloudflare, quindi gli OCLC non sono stati confermati dall'audit; l'autore indica come funzionanti gli URL WorldCat 920019079 e 1322054519 (25/10/2026), e 920019079 compare comunque nel record CCA. CORREZIONE del 28/10/2026 (screenshot WorldCat con numero OCLC): 920019079 e' la scheda di Form (2016, 140 p.); 1151886440 e' invece l'edizione 2020 di Accessibility e 1322054519 l'edizione di Taiwan 2022: i due numeri erano stati attribuiti per errore a questa Instance e sono stati spostati sulle Instance corrette. 945632977 resta qui, non e' contraddetto ma non e' stato rivisto. Il link CCFr con parametro ts= si apre ma in una sessione nuova mostra 'Votre session a expire': e' un URL di sessione, non un permalink."@it ;
     brv:sourceRecord "04.01" .
 
 :inst-form-fa brv:dataQualityNote "POLITICA LINK (risorsa istituzionale estera): URL live di NLAI (opac.nlai.ir) e Kasra mantenuti come schema:url perche' sono i riferimenti primari; non sono raggiungibili da reti esterne all'Iran in modo affidabile, quindi sono affiancati da snapshot Wayback (schema:archivedAt: NLAI 2025-06-11, Kasra 2025-11-18). Lo snapshot NLAI conferma: 143 p., editore Kasra (Mashhad), traduttore Ali Javid, anno 1398 SH (= 2019), ISBN 978-600-6509-95-2, collocazione LC NA2760 / ر2م2, n. bibliografia nazionale 5577267; SECONDA STAMPA: la scheda dell'editore Kasra (snapshot Wayback 18/11/2025) riporta 'تاریخ نشر: 1398', 'نوبت چاپ: دوم', 'سال چاپ: 1404' (= 2025-26), stesso ISBN, 144 p., formato tascabile, brossura, 125 g, 2.400.000 rial, disponibile; coincide con l'annotazione CIP di NLAI 'چاپ دوم: ۱۴۰۴ (فیپا)'. L'autore (25/10/2026) non ne era a conoscenza: e' una ristampa dell'editore, registrata nella nota e in schema:bookEdition e non come Instance separata (stesso ISBN, stesso testo). PAGINE: 144 secondo l'editore (adottate: regola editore-first); NLAI indica 143 p. L'anno 2021 di ORCID e' quindi un errore: si adotta 2019."@it ;
     brv:sourceRecord "01.05",
         "04.02" .
 
-:inst-form-zh-hans brv:dataQualityNote "Record NLC verificato il 25/10/2026 (find.nlc.cn, link confermato anche dall'autore): 建筑造型速成指南, (意)布亚斯·拉菲利 著, 滕艺梦 栗茜 译, 机械工业出版社, Beijing 2020, ISBN 978-7-111-63799-8, sottotitolo 创意、操作和实例, CLC TU2-64, paginazione '11,137' (xi + 137 p.). Gli URL find.nlc.cn sono query/sessione, non permalink: non usati come sameAs. Il vecchio opac.nlc.cn resta non verificato. Nota: il testo 'China Machine Press... ministerial publisher' del dataset e' una descrizione, non un fatto bibliografico; la Wikipedia cinese cita per questo libro un ISBN errato (978-9063694111)."@it ;
+:inst-form-zh-hans brv:dataQualityNote "Record NLC verificato il 25/10/2026 (find.nlc.cn, link confermato anche dall'autore): 建筑造型速成指南, (意)布亚斯·拉菲利 著, 滕艺梦 栗茜 译, 机械工业出版社, Beijing 2020, ISBN 978-7-111-63799-8, sottotitolo 创意、操作和实例, CLC TU2-64, paginazione '11,137' (xi + 137 p.). Gli URL find.nlc.cn sono query/sessione, non permalink: non usati come sameAs. Il vecchio opac.nlc.cn resta non verificato. Nota: il testo 'China Machine Press... ministerial publisher' del dataset e' una descrizione, non un fatto bibliografico; la Wikipedia cinese cita per questo libro un ISBN errato (978-9063694111)."@it,
+        "WORLDCAT, OCLC 1511286356 (screenshot dell'autore, 28/10/2026): titolo '建筑造型速成指南 创意、操作和实例 = The fast guide to architectural form', 机械工业出版社 Beijing 2020, Di 1 ban, collana 图解设计思维过程小书库, 137 p. : ill. (chiefly col.) ; 19 cm, ISBN 9787111637998 / 7111637992. Traduttori: WorldCat (pagina riletta il 28/10/2026) riporta 滕艺梦 e 栗茜, con romanizzazioni 'Yimeng Teng', 'teng yi meng' e 'Qian Li' / 'li qian yi'; la variante 'Qian Li' di 栗茜 (nel dataset 'Li Xi', da NLC) e' registrata come alternateName. Pagine 137: concordano NLC (xi + 137) e WorldCat; aggiunte al nodo."@it ;
     brv:sourceRecord "01.09",
         "04.04" .
 
-:inst-form-zh-hant brv:dataQualityNote "SCHEDA EDITORE (letta nel browser il 25/10/2026, link fornito dall'autore): Longsea riporta 拜爾斯．拉菲利 (Baires Raffaelli) 作, 邱喜麗 譯, 龍溪圖書, 出版日期 2022-02-25, 17x12.5 cm, 144 p., brossura, NT$280, codice LS-0146, ISBN 9786269565818: adottati (regola editore-first; coerente con NCL 2022.02). La foto del retro fornita dall'autore mostra lo stesso ISBN e il prezzo 280 (con www.longsea.com.tw). Kingstone riporta 2022/03/01, verosimilmente la data di messa in vendita; la scheda NLC indica 140 p. Kingstone conferma traduttrice 邱喜麗. Le recensioni Zhihu (2020-02) e Sohu (04/03/2020) precedono la data 2022 del libro taiwanese e quindi riguardano verosimilmente l'edizione cinese semplificata. Sohu verificata il 25/10/2026: risponde, nomina Baires Raffaelli e cita il libro come 《建筑造型速成指南》. Zhihu verificata il 25/10/2026 (la pagina si apre senza login): articolo di 黄家骏 (ArchiDogs, modificato il 2020-03-12, revisione di 栗茜) 'Le forme architettoniche si imparano in fretta?', sul volume cinese semplificato. Record della National Central Library (Taiwan) verificato il 25/10/2026 (pagina Primo dinamica: i dati compaiono dopo il caricamento; link confermato anche dall'autore): 建築造型速成指南 = The fast guide to architectural form, 拜爾斯.拉菲利 作 ; 邱喜麗 譯, 新北市 (New Taipei): 龍溪國際圖書, 2022.02, ISBN 9786269565818, collocazione 921 8457:2 (copia in 總館典藏書庫). La data NCL 2022.02 differisce da Kingstone (2022/03/01, verosimilmente messa in vendita); la scheda NLC conferma 140 p., ISBN 978-626-95658-1-8, traduttrice 邱喜丽. Il sito baires.eu parla di una seconda stampa taiwanese. CORREZIONE v3: l'ISBN-10 6269565814 del dataset non supera il checksum (atteso 2); sostituito con 6269565812, derivato dall'ISBN-13 978-626-95658-1-8."@it ;
+:inst-form-zh-hant brv:dataQualityNote "SCHEDA EDITORE (letta nel browser il 25/10/2026, link fornito dall'autore): Longsea riporta 拜爾斯．拉菲利 (Baires Raffaelli) 作, 邱喜麗 譯, 龍溪圖書, 出版日期 2022-02-25, 17x12.5 cm, 144 p., brossura, NT$280, codice LS-0146, ISBN 9786269565818: adottati (regola editore-first; coerente con NCL 2022.02). La foto del retro fornita dall'autore mostra lo stesso ISBN e il prezzo 280 (con www.longsea.com.tw). Kingstone riporta 2022/03/01, verosimilmente la data di messa in vendita; la scheda NLC indica 140 p. Kingstone conferma traduttrice 邱喜麗. Le recensioni Zhihu (2020-02) e Sohu (04/03/2020) precedono la data 2022 del libro taiwanese e quindi riguardano verosimilmente l'edizione cinese semplificata. Sohu verificata il 25/10/2026: risponde, nomina Baires Raffaelli e cita il libro come 《建筑造型速成指南》. Zhihu verificata il 25/10/2026 (la pagina si apre senza login): articolo di 黄家骏 (ArchiDogs, modificato il 2020-03-12, revisione di 栗茜) 'Le forme architettoniche si imparano in fretta?', sul volume cinese semplificato. Record della National Central Library (Taiwan) verificato il 25/10/2026 (pagina Primo dinamica: i dati compaiono dopo il caricamento; link confermato anche dall'autore): 建築造型速成指南 = The fast guide to architectural form, 拜爾斯.拉菲利 作 ; 邱喜麗 譯, 新北市 (New Taipei): 龍溪國際圖書, 2022.02, ISBN 9786269565818, collocazione 921 8457:2 (copia in 總館典藏書庫). La data NCL 2022.02 differisce da Kingstone (2022/03/01, verosimilmente messa in vendita); la scheda NLC conferma 140 p., ISBN 978-626-95658-1-8, traduttrice 邱喜丽. Il sito baires.eu parla di una seconda stampa taiwanese. CORREZIONE v3: l'ISBN-10 6269565814 del dataset non supera il checksum (atteso 2); sostituito con 6269565812, derivato dall'ISBN-13 978-626-95658-1-8."@it,
+        "WORLDCAT, OCLC 1322054519 (screenshot dell'autore, 28/10/2026): 建築造型速成指南, 拉菲利, Baires Raffaelli, 邱喜麗; 2022[民111], 初版; 龍溪國際出版 : 北星文化總經銷, 新北市永和區; [143]面 : 部份彩圖 ; 17公分; ISBN 9786269565818 / 6269565812; soggetto 建築美術設計; nota '譯自: The fastest guide to architectural form' (titolo originale citato con refuso 'fastest'). Il numero OCLC 1322054519 era stato attribuito per errore alla Instance inglese di Form e qui e' stato corretto. Pagine: 143 (WorldCat), 140 (NLC), 144 (editore, adottato)."@it ;
     brv:sourceRecord "01.08",
         "04.03" .
 
-:inst-fundamentals-en brv:dataQualityNote "DATA E PAGINE (chiuse il 25/10/2026): la scheda dell'editore BIS indica Fall 2023 e 144 p.: adottati (il dataset originale indicava 160 pp.; Goodreads 14 maggio 2024 e 144 pp.; il catalogo CUD (Dubai) usa 'NA2750 .R33 2023')."@it ;
+:inst-fundamentals-en brv:dataQualityNote "DATA E PAGINE (chiuse il 25/10/2026): la scheda dell'editore BIS indica Fall 2023 e 144 p.: adottati (il dataset originale indicava 160 pp.; Goodreads 14 maggio 2024 e 144 pp.; il catalogo CUD (Dubai) usa 'NA2750 .R33 2023')."@it,
+        "OCLC 1437299399 (screenshot WorldCat dell'autore, 28/10/2026): anno catalogato 2024, adottato 2023 (vedi nota sul Work)."@it ;
     brv:sourceRecord "04.06" .
 
 :iris-gjokeja-metodo-e-forma brv:dataQualityNote "Questo e' il documento a cui rimanda l'handle 11573/1023744 (saggio sulle tesi di Saggio e Raffaelli), non la tesi di dottorato di Raffaelli."@it ;
@@ -304,19 +318,130 @@
 
 :issue-urbanistica-informazioni-313 brv:sourceRecord "07.22" .
 
+:item-acc-berkeley brv:dataQualityNote "Catalogo della biblioteca (UC Berkeley Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Environmental Design Library; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 5689. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-fit brv:dataQualityNote "Catalogo della biblioteca (Fashion Institute of Technology Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Gladys Marcus Library, 5th floor Main Stacks; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 1914. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-getty brv:dataQualityNote "Catalogo della biblioteca (Getty Research Institute), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: General Collections, Library Annex; segnatura 'NA2545.P5 R34 2020'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 5616. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-harvard brv:dataQualityNote "Catalogo della biblioteca (Harvard University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Frances Loeb Library, Offsite Storage; segnatura 'NA2545.P5 R34 2020'. Il catalogo scrive l'autore \"Bares\" (refuso). Registro WorldCat: ID 73876. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-mcad brv:dataQualityNote "Catalogo della biblioteca (Minneapolis College of Art & Design), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: MCAD Book Stacks; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 1549. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-ocad brv:dataQualityNote "Catalogo della biblioteca (OCAD University, Dorothy H. Hoover Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Dorothy H. Hoover Library, Circulating; segnatura 'NA2545 P5 R23 2020'. Segnatura con cutter .R23 invece di .R34: cosi' riportata dal catalogo. Antonini elencata come translator. Registro WorldCat: ID 44004. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-oklahoma brv:dataQualityNote "Catalogo della biblioteca (University of Oklahoma), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Off-Site Storage, Library Service Center; segnatura 'NA 2545 .P5 R34 2020'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 2390. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-penn brv:dataQualityNote "Catalogo della biblioteca (University of Pennsylvania Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 2583. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-union brv:dataQualityNote "Catalogo della biblioteca (Union College, Schaffer Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Schaffer Library, Basement - Books; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 2062. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-uw brv:dataQualityNote "Catalogo della biblioteca (University of Washington Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Built Environments Library, General Stacks; segnatura 'NA2545.P5 R34 2020'. Nota di catalogo: \"Translated from the Italian\". Registro WorldCat: ID 5725. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-vcu brv:dataQualityNote "Catalogo della biblioteca (Virginia Commonwealth University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Cabell Library, General Collection; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 3066. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-acc-yale brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection; segnatura 'NA2545.P5 R34 2020'. Il catalogo ha due record per l'edizione 2020; letta la segnatura del primo. Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-accessibility-columbia brv:dataQualityNote "CLIO bib 14971752 (permalink): 'translated by Silvia Antonini' (also listed under: Antonini, Silvia, translator), Amsterdam: BIS Publishers 2020, 157 pages, 15 cm, ISBN 9789063695712 / 9063695713; collocazione 'Offsite <Avery> (Non-Circulating)', segnatura NA2545.P5 R34 2020g."@it ;
+    brv:sourceRecord "07.32" .
+
+:item-accessibility-michigan brv:dataQualityNote "Record del catalogo della biblioteca (University of Michigan Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: Art Architecture & Engineering Main Collection, 3rd floor; segnatura 'NA 2545 .P5 R34 2020'. Il record elenca due numeri OCLC (1151886440 e 1122187692); indicizzato il 05/10/2026; Antonini translator e contributor. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" .
+
+:item-accessibility-princeton brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage; segnatura 'NA2545.P5 R34 2020'. OCLC 1151886440 nel record; Antonini translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" .
+
 :item-accessibility-tcdc brv:dataQualityNote "ERRORE DEL DATASET: b00026225 e' 'The ADA companion guide' di Marcela Rhoads (il libro di Raffaelli compare solo tra i correlati). Il record corretto e' b00051040 (Amsterdam: BIS, 2020, 157 p., ISBN 9789063695712, NA 2545 .P5 R136 2020)."@it ;
     brv:sourceRecord "07.25" .
 
+:item-form-aic brv:dataQualityNote "Catalogo della biblioteca (Art Institute of Chicago), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Ryerson & Burnham Libraries, RBL Stack 4; segnatura 'NA2760 .R34 2016'. Antonini elencata. Registro WorldCat: ID 784. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-berkeley brv:dataQualityNote "Catalogo della biblioteca (UC Berkeley Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Environmental Design Library; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\" oltre che nel titolo come traduttrice: errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 5689. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-cardiff brv:dataQualityNote "Catalogo della biblioteca (Cardiff University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Library; segnatura '720.1 RAF'. Antonini elencata come translator. Registro WorldCat: ID 61511. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
 :item-form-cca brv:dataQualityNote "Item aggiunto: non presente nel dataset (fonte: catalogo CCA, Canadian Centre for Architecture)."@it .
+
+:item-form-colorado brv:dataQualityNote "Catalogo della biblioteca (University of Colorado Boulder), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Norlin Library, Art & Architecture Stacks; segnatura 'NA2760 .R34 2016'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 462. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-columbia brv:dataQualityNote "CLIO bib 11876088 (permalink): 'translated by Silvia Antonini', Amsterdam: Bis Publishers 2016, 140 pages, 15 cm, ISBN 9063694113 / 9789063694111; collocazione 'Offsite <Avery> (Non-Circulating)', segnatura NA2760 .R34 2016g. La disponibilita' del momento non e' registrata. CLIO elenca anche una copia in 'Offsite Shared Collection (Princeton)' sullo stesso record: non modellata."@it ;
+    brv:sourceRecord "07.32" .
+
+:item-form-hanze brv:dataQualityNote "Catalogo della biblioteca (Hanze University of Applied Sciences), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: HanzeMediatheek, Minerva; segnatura '711.3 RAFF'. Antonini elencata come translator. Registro WorldCat: ID 57335. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-harvard brv:dataQualityNote "Catalogo della biblioteca (Harvard University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Frances Loeb Library; segnatura 'NA2760 .R34X 2016'. Registro WorldCat: ID 73876. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-kentucky brv:dataQualityNote "Catalogo della biblioteca (University of Kentucky Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library, Miniature; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\": errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 1150. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
 
 :item-form-manzala brv:dataQualityNote "Omeka (Dublin Core / RDF-XML); pagina 200 con 7 occorrenze."@it ;
     brv:sourceRecord "07.30" .
 
+:item-form-oregon brv:dataQualityNote "Catalogo della biblioteca (University of Oregon Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Design Library, Stacks (floors 2-3); segnatura 'NA2760 .R34x 2016'. Registro WorldCat: ID 2429. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-penn brv:dataQualityNote "Catalogo della biblioteca (University of Pennsylvania Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library; segnatura 'NA2760 .R34 2016'. Registro WorldCat: ID 2583. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-pratt brv:dataQualityNote "Catalogo della biblioteca (Pratt Institute Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Brooklyn Stacks; segnatura '729 R136'. Titolo \"translated by Silvia Antonini\"; 140 p. Registro WorldCat: ID 1993. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-princeton brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage; segnatura 'NA2760 .R34 2016'. Copia a scaffale remoto; il catalogo riporta \"translated by Silvia Antonini\" e Antonini come translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" .
+
+:item-form-princeton-2 brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage (In Library Use Only); segnatura 'NA2760 .R34 2016g'. Secondo record Princeton della stessa edizione (segnatura con suffisso g). La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" .
+
+:item-form-stanford brv:dataQualityNote "Record del catalogo della biblioteca (Stanford University Libraries) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: SAL3 (Off-campus collections); segnatura 'NA2760 .R24 2016 T'. Catkey 11897196; segnatura con cutter .R24 invece di .R34 (cosi' nel catalogo); Antonini translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" .
+
 :item-form-tcdc brv:dataQualityNote "Record TCDC: Amsterdam: Bis, 2016, 140 p., ISBN 9063694113 / 9789063694111."@it ;
     brv:sourceRecord "07.25" .
 
+:item-form-tib brv:dataQualityNote "Catalogo della biblioteca (Technische Informationsbibliothek (TIB)), letto in Chrome il 28/10/2026 aprendo il link WorldCat: record permalink. Collocazione: Hannover; segnatura 'U 16 B 979'. Record con \"translated by Siliva [sic] Antonini\" e \"Antonini Uebersetzerin\"; 140 S. Registro WorldCat: ID 87413. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-ttu brv:dataQualityNote "Catalogo della biblioteca (Texas Tech University Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Library, Stacks (8th floor); segnatura 'NA2760 .R3413 2016'. Il catalogo elenca Raffaelli come \"architect\" e Antonini come translator. Registro WorldCat: ID 2942. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-tulane brv:dataQualityNote "Catalogo della biblioteca (Tulane University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Howard-Tilton Library, Stacks; segnatura 'NA2760 .R25 2016'. Segnatura con cutter diverso (.R25) da quella usata dalle altre biblioteche LC (.R34): cosi' riportata dal catalogo. Registro WorldCat: ID 5461. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
 :item-form-uap brv:dataQualityNote "Il catalogo Koha indica 124 pp., 22 cm (diverso da 140 pp. di CCA/TCDC e da 160 del dataset); collocazione DDC 720.1 RAF."@it ;
     brv:sourceRecord "07.24" .
+
+:item-form-unlv brv:dataQualityNote "Catalogo della biblioteca (University of Nevada, Las Vegas Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Studies Library, Architecture Book Stacks; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\": errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 1733. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-usi brv:dataQualityNote "Catalogo della biblioteca (Università della Svizzera italiana), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Biblioteca Accademia di architettura, Sala 4 (Collezione generale); segnatura 'AAM 720.011 Raff'. Titolo catalogato \"Fast guide to architectural form\". Registro WorldCat: ID 100017. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-utoronto brv:dataQualityNote "Catalogo della biblioteca (University of Toronto Architecture Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture, Landscape & Design (Eberhard Zeidler Library), Stacks; segnatura 'NA2760 .R3413 2016'. Registro WorldCat: ID 103741. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-yale brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection (In Library Use Only); segnatura 'NA2760 .R34 2016g'. Il catalogo ha due record: l'altro porta NA2760 .R34 2016 (Offsite, richiesta in qualsiasi biblioteca Yale). Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-form-yale-2 brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection (richiesta in qualsiasi biblioteca Yale); segnatura 'NA2760 .R34 2016'. Secondo record Yale della stessa edizione. Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
 
 :item-form-zh-hant-ncl brv:dataQualityNote "1 copia, disponibile (verifica del 25/10/2026); collezione inserita il 2025/07/08."@it ;
     brv:sourceRecord "01.08" .
@@ -330,7 +455,16 @@
 :item-form-zh-xauat brv:dataQualityNote "Pagina 200 con 52 occorrenze del titolo cinese/autore."@it ;
     brv:sourceRecord "07.26" .
 
+:item-fun-sydney brv:dataQualityNote "Catalogo della biblioteca (University of Sydney Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: SciTech Library, General; segnatura '729 251'. Edizione 2023. Registro WorldCat: ID 54040. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
+:item-fun-umn brv:dataQualityNote "Catalogo della biblioteca (University of Minnesota, Twin Cities), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: T. C. Wilson Library, General Collection; segnatura 'NA2750 .R34 2023'. Edizione 2023, Amsterdam: BIS Publishers; coerente con la data dell'editore. Registro WorldCat: ID 5360. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
+
 :item-fundamentals-cud brv:sourceRecord "07.22" .
+
+:item-tw-cyut brv:dataQualityNote "Catalogo della biblioteca (Chaoyang University of Technology Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Main Library, 6F Stack; segnatura '921.026 5042 C681621'. Record WorldCat Discovery locale: 建築造型速成指南, 龍溪國際, 2022; traduttrice 邱喜麗. Registro WorldCat: ID 269098. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" .
 
 :kappazeta brv:dataQualityNote "Partner indicato nella scheda 'Pump It Up House' su baires.eu (2007); gia' produttore dell'oggetto brevettato descritto in altro record."@it .
 
@@ -339,11 +473,79 @@
 :laurea-architettura-sapienza brv:dataQualityNote "Data, ateneo e ordinamento (laurea in Architettura, ordinamento precedente al D.M. 509/99, Roma, 23/07/2002) confermati dall'Albo Unico Nazionale CNAPPC (consultato il 27/10/2026). Voto 110 e lode, tesi e relatrice confermati dal certificato di laurea con tesi rilasciato dalla Sapienza il 20/10/2020 (documento non pubblico, in possesso dell'autore; non allegato, dati personali non registrati)."@it ;
     brv:sourceRecord "02.01" .
 
+:lib-aic brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-berkeley brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-cardiff brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-colorado brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-cyut brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-fit brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-getty brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-hanze brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-harvard brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-kentucky brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-mcad brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-michigan brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it .
+
+:lib-ocad brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-oklahoma brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-oregon brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-penn brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-pratt brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-princeton brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it .
+
+:lib-stanford brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it .
+
+:lib-sydney brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-tib brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-ttu brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-tulane brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-umn brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-union brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-unlv brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-usi brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-utoronto brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-uw brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-vcu brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:lib-yale brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it .
+
+:manzala-library brv:dataQualityNote "Biblioteca digitale (Omeka) di Manzala Academy, Egitto: nessuna voce Wikidata trovata; citta' non verificata, quindi omessa."@it .
+
+:ncl-taiwan brv:dataQualityNote "Wikidata Q618340 (National Central Library, Taiwan): sito ufficiale; nessuna coordinata ne' ISIL in Wikidata (distretto Zhongzheng, Taipei)."@it .
+
 :orcid-conference-ais brv:dataQualityNote "Elencato nel record ORCID (conference paper); dettagli bibliografici non verificati."@it .
 
 :orcid-dream-bruxelles brv:dataQualityNote "ORCID: newspaper article, 2006, ISSN 0391-7487 (Ottagono)."@it .
 
 :orcid-peba-assisi-tool brv:dataQualityNote "ORCID: research tool 2023, mentre il dataset data l'incarico al 2019."@it .
+
+:ouc-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
 
 :paolo-luccioni brv:dataQualityNote "Indicato come 'P. Luccioni' su baires.eu."@it .
 
@@ -419,7 +621,15 @@
 :series-fa-design-comunicazione brv:dataQualityNote "La pagina della collana FrancoAngeli (controllata il 26/10/2026) elenca il volume 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (Bucchetti, ed., 17/09/2024); la collana e' 'Design della comunicazione', non 'Open Access - Saggi' come nella versione precedente. La pagina del singolo volume (catalog/book/1199) reindirizza ora al login e passa a brv:deprecatedUrl; il numero di volume 07 non e' confermato dalla pagina della collana."@it ;
     brv:sourceRecord "07.10" .
 
-:thesis-phd-print brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it ;
+:silvia-antonini brv:dataQualityNote "CATALOGHI DELLE BIBLIOTECHE (28/10/2026): nei cataloghi letti in Chrome Antonini compare come traduttrice (translated by Silvia Antonini / translator) in quasi tutti i record; alcuni cataloghi (UC Berkeley, Kentucky, UNLV, Virginia Tech, Bristol, CCA) la elencano anche o solo come 'illustrator' per Form: errore di catalogazione, ruolo corretto traduttrice (conferma dell'autore)."@it,
+        "Ruolo di traduttrice confermato da una fonte indipendente: i record CLIO di Columbia University (28/10/2026) riportano 'translated by Silvia Antonini' per Form e per Accessibility; WorldCat la indica traduttrice di Accessibility e illustratrice di Form (errore del catalogo, secondo l'autore). Per Fundamentals il ruolo e' dichiarazione dell'autore."@it .
+
+:stuba-fad-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
+
+:tcdc-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
+
+:thesis-phd-print brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it,
+        "WORLDCAT, OCLC 1508168248 (screenshot dell'autore, 28/10/2026): 'Bares Raffaelli' autore, Luciano De Licio relatore di tesi, Sapienza Universita' di Roma, Roma 2012, 140 p. : ill. ; 21 cm; nota 'Tesi di Dottorato in Architettura Teorie e progetto, XXIV ciclo, a.a. 2008-201[1]'; 1 edizione posseduta da 1 biblioteca (non identificata nello screenshot; la Sapienza e' gia' registrata come Item)."@it ;
     brv:sourceRecord "02.03" .
 
 :thesis-phd-work brv:dataQualityNote "ERRORE DEL DATASET: il titolo '...attraverso i progetti' non compare in Sebina/ORCID, dove il titolo e' '...attraverso l'analisi degli esempi e delle teorie'. L'handle IRIS 11573/1023744 usato dal dataset NON e' la tesi (e' il saggio 'Metodo e forma. Saggio, Raffaelli' di K. Gjokeja, 2017)."@it,
@@ -428,6 +638,8 @@
         "03.04" .
 
 :thesis-stazione-tuscolana-2002 brv:dataQualityNote "Titolo, relatrice (prof.ssa Marta Calzolaretti, materia: Progettazione architettonica) e data di discussione dal certificato di laurea con tesi della Sapienza (20/10/2020, non pubblico). La tesi e' poi pubblicata nel capitolo 'Strutture della mobilita'. L'area della Stazione Tuscolana a Roma' (Gangemi, 2003)."@it .
+
+:uap-bd-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
 
 :udr-ais brv:dataQualityNote "Coordinatore: Prof. Luciano De Licio. Il mirror web.uniroma1.it/dip_diap risponde 403; il PDF su diap.web.uniroma1.it risponde 200."@it ;
     brv:sourceRecord "03.01" .
@@ -444,23 +656,36 @@
 
 :volume-ijvd-13 brv:sourceRecord "07.20" .
 
-:work-accessibility brv:sourceRecord "04.05" .
+:work-accessibility brv:dataQualityNote "WORLDCAT (screenshot dell'autore con numero OCLC, 28/10/2026): scheda OCLC 1151886440 (inglese, Bis Publishers Amsterdam 2020, 157 p., 15 cm, ISBN 9789063695712 / 9063695713, note 'Translated from the Italian'); la scheda raggruppa 3 edizioni e formati posseduti da 64 biblioteche. Il numero e' aggregato su piu' record OCLC e cambia nel tempo. WorldCat indica Silvia Antonini come traduttrice, e l'autore conferma (28/10/2026): ruolo registrato su Work e Instance. Pagine: il dataset mantiene 160 (scheda dell'editore), WorldCat 157 come TCDC. Soggetti di WorldCat riportati in schema:keywords."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1151886440: dichiarate 3 edizioni e formati in 64 biblioteche; l'elenco restituito contiene 44 voci (nel CSV worldcat-libraries-2026-10-28.csv)."@it ;
+    brv:sourceRecord "04.05" .
 
-:work-form brv:dataQualityNote "Il Work e' unico; CiNii crid 1130854726247033132 e' la scheda del libro (non della persona). Il record NDL R100000136-I1130854726247033132 del dataset risponde 404."@it ;
+:work-form brv:dataQualityNote "Il Work e' unico; CiNii crid 1130854726247033132 e' la scheda del libro (non della persona). Il record NDL R100000136-I1130854726247033132 del dataset risponde 404."@it,
+        "WORLDCAT (screenshot dell'autore, 28/10/2026, autore collegato, posizione impostata su Bologna): la scheda raggruppa 2 edizioni e formati posseduti da 62 biblioteche (Stati Uniti, Canada, Germania, Paesi Bassi, Regno Unito, Hong Kong, Singapore, Australia, Nuova Zelanda e altri). Il numero e' un dato aggregato su piu' record OCLC, cambia nel tempo e non e' riferito a una singola Instance; l'elenco delle biblioteche non e' stato registrato (nessun segno di inventario, solo il nome)."@it,
+        "WORLDCAT, OCLC 920019079 (pagina riletta il 28/10/2026): Bis Publishers Amsterdam 2016, 140 p. : colour illustrations, plans ; 15 cm, ISBN 9789063694111 / 9063694113. Responsabilita' in WorldCat: Baires Raffaelli (Autore), Silvia Antonini (Illustratore). L'autore precisa (28/10/2026) che Silvia Antonini e' solo traduttrice, mai illustratrice: il ruolo 'illustratore' di WorldCat e' un errore del catalogo e il dataset registra solo 'translator' (rimosso il ruolo di illustratrice che era presente). Contenuti: prefazione di Luigi Prestinenza Puglisi, gia' presente."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 920019079: dichiarate 3 edizioni e formati in 92 biblioteche (nello screenshot dell'autore erano 2 edizioni e 62 biblioteche: il conteggio cambia con le impostazioni e nel tempo). L'elenco restituito contiene 66 voci su 2 pagine; le voci sono nel file CSV worldcat-libraries-2026-10-28.csv, fuori dal grafo."@it ;
     brv:sourceRecord "04.01" .
 
 :work-form-fa brv:dataQualityNote "Il sito baires.eu cita per il testo persiano una prefazione di Luigi Prestinenza Puglisi."@it ;
     brv:sourceRecord "04.02" .
 
-:work-form-zh-hans brv:dataQualityNote "Il sito baires.eu cita una raccomandazione di 韩林飞 (Han Linfei) per l'edizione cinese e '28 tecniche'. Traduttori 滕艺梦 (Teng Yimeng) e 栗茜 (Li Xi) confermati dal record NLC (verifica del 25/10/2026); il dataset aveva solo la romanizzazione e la v2 precedente aveva ideogrammi errati (滕一萌, 李希). Articolo Zhihu di 建道教育 ArchiDogs del 10/01/2020 (:zhihu-archidogs-2020, letto il 25/10/2026): presenta la serie 《图解设计思维过程小书库》 (4 volumi, tra cui 建筑造型速成指南), a firma dei traduttori 滕艺梦 e 栗茜, riporta una prefazione per l'edizione cinese di Baires Raffaelli e la raccomandazione di 韩林飞; prova che il volume era in distribuzione a gennaio 2020."@it ;
+:work-form-zh-hans brv:dataQualityNote "Il sito baires.eu cita una raccomandazione di 韩林飞 (Han Linfei) per l'edizione cinese e '28 tecniche'. Traduttori 滕艺梦 (Teng Yimeng) e 栗茜 (Li Xi) confermati dal record NLC (verifica del 25/10/2026); il dataset aveva solo la romanizzazione e la v2 precedente aveva ideogrammi errati (滕一萌, 李希). Articolo Zhihu di 建道教育 ArchiDogs del 10/01/2020 (:zhihu-archidogs-2020, letto il 25/10/2026): presenta la serie 《图解设计思维过程小书库》 (4 volumi, tra cui 建筑造型速成指南), a firma dei traduttori 滕艺梦 e 栗茜, riporta una prefazione per l'edizione cinese di Baires Raffaelli e la raccomandazione di 韩林飞; prova che il volume era in distribuzione a gennaio 2020."@it,
+        "WORLDCAT (screenshot dell'autore, 28/10/2026): 1 edizione posseduta da 2 biblioteche (tra cui Shanghai Library); 机械工业出版社, Beijing 2020, Di 1 ban, collana 图解设计思维过程小书库; responsabilita' (意)布亚斯·拉菲利 著, 滕艺梦, 栗茜 译. Il conteggio WorldCat e' un minimo: il dataset registra altre tre biblioteche cinesi con copie (XAUAT, HRBEU, OUC)."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1511286356: dichiarata 1 edizione in 2 biblioteche; l'elenco non restituisce voci ('Nessuna biblioteca con abbonamento WorldCat.org e' in possesso di questo articolo')."@it ;
     brv:sourceRecord "04.04" .
 
-:work-form-zh-hant brv:sourceRecord "04.03" .
+:work-form-zh-hant brv:dataQualityNote "WORLDCAT (screenshot dell'autore, 28/10/2026): 2 edizioni e formati posseduti da 4 biblioteche (tra cui National Central Library, Taipei e National Cheng Kung University Library). Editore catalogato 龍溪國際出版 : 北星文化總經銷, 新北市, 2022[民111], 初版; responsabilita': 拉菲利 / Baires Raffaelli, 邱喜麗."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1322054519: dichiarate 2 edizioni e formati in 4 biblioteche; l'elenco restituito contiene 1 voce (Chaoyang University of Technology, Taichung)."@it ;
+    brv:sourceRecord "04.03" .
 
-:work-fundamentals brv:dataQualityNote "Il sottotitolo 'Strategies and Techniques for Creating a Successful Project' e i '33 passi' derivano dal sito baires.eu (omessi dal dataset). Wikidata ha un'entita' separata per questo libro (Q138836771)."@it ;
+:work-fundamentals brv:dataQualityNote "Il sottotitolo 'Strategies and Techniques for Creating a Successful Project' e i '33 passi' derivano dal sito baires.eu (omessi dal dataset). Wikidata ha un'entita' separata per questo libro (Q138836771)."@it,
+        "WORLDCAT (screenshot dell'autore con numero OCLC, 28/10/2026): scheda OCLC 1437299399 (Bis B.V., Uitgeverij (BIS Publishers), anno 2024, 144 p., ISBN 9789063696856 / 906369685X, soggetto BISAC 'ARCHITECTURE / General'); la scheda raggruppa 4 edizioni e formati posseduti da 13 biblioteche. Titolo catalogato con il sottotitolo 'Strategies and Techniques for Creating a Successful Project'. ANNO: WorldCat indica 2024, il dataset mantiene 2023 per decisione dell'autore (28/10/2026), perche' coincide con la scheda dell'editore (Fall 2023); il 2024 e' coerente con Goodreads (14/05/2024) e va letto come data di catalogazione o di distribuzione. TRADUTRICE: WorldCat non mostra Silvia Antonini per questo libro (solo l'autore); il ruolo di traduttrice e' registrato su dichiarazione dell'autore (28/10/2026), non su una fonte indipendente."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1437299399: dichiarate 4 edizioni e formati in 13 biblioteche; l'elenco restituito contiene 4 voci (NC State, Minnesota, CUHK, Sydney; nel CSV)."@it ;
     brv:sourceRecord "04.06" .
 
 :wp-en-rev-1292563278 brv:dataQualityNote "Permalink di revisione (stabile). La nota 16 rinvia a iris.uniroma1.it/handle/11573/1023744, che e' il saggio di K. Gjokeja sulle tesi di dottorato (Saggio e Raffaelli), NON la tesi di Raffaelli (tesi = Sebina RMS02820805)."@it .
+
+:xauat-library brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it .
 
 :zhihu-archidogs-2020 brv:dataQualityNote "Letta il 25/10/2026 (link fornito dall'autore). Distinta dall'articolo Zhihu p/112587426."@it .
 

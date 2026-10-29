@@ -84,7 +84,7 @@ brv:verification a rdf:Property ;
 
 brv:verificationBasis a rdf:Property ;
     rdfs:label "verification basis"@en ;
-    rdfs:comment "Why a record has no accessed web source: author-supplied-document | author-website | orcid-record | academic-record | library-catalogue | archived-source | web-links | link-not-rechecked."@en ;
+    rdfs:comment "Why a record has no accessed web source: author-supplied-document | author-website | orcid-record | academic-record | library-catalogue | worldcat-list (name, city and country taken from the WorldCat library list) | archived-source | web-links | link-not-rechecked."@en ;
     rdfs:domain schema:Thing .
 
 brv:verificationNote a rdf:Property ;

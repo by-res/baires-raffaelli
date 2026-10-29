@@ -307,7 +307,7 @@ brv:Verification a rdfs:Class ;
 :dataset a schema:Dataset ;
     schema:about :baires-raffaelli ;
     schema:creator :baires-raffaelli ;
-    schema:dateModified "2026-10-27"^^xsd:date ;
+    schema:dateModified "2026-10-28"^^xsd:date ;
     schema:datePublished "2026-10-25"^^xsd:date ;
     schema:description "Knowledge-graph dataset on the architect, researcher and author Baires Raffaelli: authority identifiers, degrees, research, books and translations, awards and projects, accessibility planning (PEBA, AVLA), citations and library holdings."@en ;
     schema:distribution [ a schema:DataDownload ;
@@ -349,7 +349,7 @@ brv:Verification a rdfs:Class ;
     schema:sameAs <https://doi.org/10.5281/zenodo.23647642>,
         <https://github.com/by-res/baires-raffaelli> ;
     schema:url <https://w3id.org/baires-raffaelli/> ;
-    schema:version "3.0.2" ;
+    schema:version "3.0.3" ;
     brv:dataQualityNote "v3 integra: foglio link validato dall'autore (160 link OK), 22 PDF di citazioni con pinpoint di pagina (nodi brv:CitationEvidence), edizione persiana corretta (Mashhad, 144 p. (143 secondo NLAI), 1398 SH = 2019, seconda stampa 1404 SH, NLAI/Kasra con snapshot Wayback), tesi Park identificata, casa di Foligno 2006, Pump It Up House (Europaconcorsi 2007, archivio), Giorgio Raffaelli, altra persona con lo stesso cognome (owl:differentFrom), revisioni Wikipedia. v2 corregge: handle IRIS della tesi, titolo tesi, DOI Gelfond, handle UMinho, date PEBA/Santa Margherita, domini schema.org, URL rotti; aggiunge identificativi, premi e contributi omessi."@it .
 
 :emergency-house a schema:CreativeWork,
@@ -1687,7 +1687,7 @@ brv:verification a rdf:Property ;
 
 brv:verificationBasis a rdf:Property ;
     rdfs:label "verification basis"@en ;
-    rdfs:comment "Why a record has no accessed web source: author-supplied-document | author-website | orcid-record | academic-record | library-catalogue | archived-source | web-links | link-not-rechecked."@en ;
+    rdfs:comment "Why a record has no accessed web source: author-supplied-document | author-website | orcid-record | academic-record | library-catalogue | worldcat-list (name, city and country taken from the WorldCat library list) | archived-source | web-links | link-not-rechecked."@en ;
     rdfs:domain schema:Thing .
 
 brv:verificationNote a rdf:Property ;
@@ -1744,12 +1744,39 @@ brv:viaRecord a rdf:Property ;
 
 :biblioteche-sapienza a bf:Organization,
         schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "IT" ;
+            schema:addressLocality "Roma" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 41.903333333 ;
+            schema:longitude 12.515833333 ] ;
     schema:name "Biblioteche dell'Università La Sapienza di Roma"@it ;
-    schema:parentOrganization :sapienza .
+    schema:parentOrganization :sapienza ;
+    brv:dataQualityNote "Sistema bibliotecario della Sapienza (nodo gia' collegato a :sapienza): citta' e coordinate della sede centrale dell'universita' (Wikidata Q209344), non delle singole biblioteche. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q209344> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :cca-montreal a bf:Organization,
         schema:Library ;
-    schema:name "Canadian Centre for Architecture (CCA), Montréal" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CA" ;
+            schema:addressLocality "Montréal" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 45.491086671 ;
+            schema:longitude -73.578726002 ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "ISIL" ;
+            schema:value "CA-QMCCA" ] ;
+    schema:name "Canadian Centre for Architecture (CCA), Montréal" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q57697917> ;
+    schema:url <https://www.cca.qc.ca/en/34195/guide-to-the-library-collection> ;
+    brv:dataQualityNote "Wikidata Q57697917 (CCA Library): ISIL CA-QMCCA; Wikidata riporta anche US-NNCCA (codice OCLC/US), non registrato. Quartiere Ville-Marie, Montréal."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q57697917> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :central-glass a schema:Organization ;
     schema:description "Central Glass Co., Ltd.: organisation in the Baires Raffaelli knowledge graph; sponsor of '41st Central Glass International Architectural Design Competition: Co…'."@en ;
@@ -2051,9 +2078,24 @@ brv:viaRecord a rdf:Property ;
     brv:sourceRecord "02.02" ;
     brv:verificationStatus "unverified" .
 
+:cud a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "Canadian University Dubai" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5030654> ;
+    schema:url <http://www.cud.ac.ae/> .
+
 :cud-library a bf:Organization,
         schema:Library ;
-    schema:name "Canadian University Dubai - Learning Resource Centre" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "AE" ;
+            schema:addressLocality "Dubai" ] ;
+    schema:name "Canadian University Dubai - Learning Resource Centre" ;
+    schema:parentOrganization :cud ;
+    brv:dataQualityNote "Citta' dall'istituzione (Wikidata). Nessuna coordinata ne' ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q5030654> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :dana-buntrock a schema:Person ;
     schema:affiliation [ a schema:CollegeOrUniversity ;
@@ -2172,9 +2214,27 @@ brv:viaRecord a rdf:Property ;
     brv:verificationBasis "author-supplied-document" ;
     brv:verificationStatus "verified-secondary" .
 
+:hrbeu a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "Harbin Engineering University" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q23102> ;
+    schema:url <http://www.hrbeu.edu.cn> .
+
 :hrbeu-library a bf:Organization,
         schema:Library ;
-    schema:name "Harbin Engineering University (HEU) - Library" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CN" ;
+            schema:addressLocality "Harbin" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 45.77222222 ;
+            schema:longitude 126.675 ] ;
+    schema:name "Harbin Engineering University (HEU) - Library" ;
+    schema:parentOrganization :hrbeu ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q23102> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :inu a bf:Organization,
         schema:Organization ;
@@ -2244,6 +2304,213 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Listed in the author's ORCID record (work Baby Change)"@en ;
     brv:verificationStatus "verified-secondary" .
 
+:item-acc-berkeley a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-berkeley ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia UC Berkeley Libraries (Environmental Design Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (UC Berkeley Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Environmental Design Library; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 5689. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.library.berkeley.edu/discovery/search?vid=01UCS_BER:UCB&lang=en&tab=Everything&offset=0&search_scope=MyInstitution&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-fit a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-fit ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Fashion Institute of Technology Library (Gladys Marcus Library, 5th floor Main Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Fashion Institute of Technology Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Gladys Marcus Library, 5th floor Main Stacks; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 1914. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://onesearch.fitnyc.edu/discovery/search?vid=01SUNY_FIT:01SUNY_FIT&mode=advanced&offset=0&tab=Everything&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-getty a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-getty ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Getty Research Institute (General Collections, Library Annex)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Getty Research Institute), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: General Collections, Library Annex; segnatura 'NA2545.P5 R34 2020'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 5616. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://primo.getty.edu/primo-explore/search?tab=all_gri&search_scope=COMBINED&vid=GRI&institution=01GRI_INST&mode=basic&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-harvard a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-harvard ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Harvard University Library (Frances Loeb Library, Offsite Storage)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Harvard University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Frances Loeb Library, Offsite Storage; segnatura 'NA2545.P5 R34 2020'. Il catalogo scrive l'autore \"Bares\" (refuso). Registro WorldCat: ID 73876. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://hollis.harvard.edu/discovery/search?vid=01HVD_INST:HVD2&tab=LibraryCatalog&query=isbn,contains,9789063695712&search_scope=MyInstitution> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-mcad a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-mcad ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Minneapolis College of Art & Design (MCAD Book Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Minneapolis College of Art & Design), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: MCAD Book Stacks; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 1549. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://mnpals-mcad.primo.exlibrisgroup.com/discovery/openurl?institution=01MNPALS_MCAD&vid=01MNPALS_MCAD:MCAD&rft.isbn=9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-ocad a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-ocad ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545 P5 R23 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia OCAD University, Dorothy H. Hoover Library (Dorothy H. Hoover Library, Circulating)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (OCAD University, Dorothy H. Hoover Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Dorothy H. Hoover Library, Circulating; segnatura 'NA2545 P5 R23 2020'. Segnatura con cutter .R23 invece di .R34: cosi' riportata dal catalogo. Antonini elencata come translator. Registro WorldCat: ID 44004. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://ocadu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_OCAD:OMNI&tab=Everything&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-oklahoma a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-oklahoma ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA 2545 .P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia University of Oklahoma (Off-Site Storage, Library Service Center)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Oklahoma), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Off-Site Storage, Library Service Center; segnatura 'NA 2545 .P5 R34 2020'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 2390. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&query=any,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-penn a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-penn ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia University of Pennsylvania Libraries (Fine Arts Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Pennsylvania Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 2583. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://find.library.upenn.edu/?search_field=isxn_search&q=9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-union a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-union ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Union College, Schaffer Library (Schaffer Library, Basement - Books)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Union College, Schaffer Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Schaffer Library, Basement - Books; segnatura 'NA2545.P5 R34 2020'. Antonini elencata come translator. Registro WorldCat: ID 2062. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://union.primo.exlibrisgroup.com/discovery/search?tab=Everything&search_scope=MyInst_and_CI&vid=01UCNY_INST:01UCNY_INST&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-uw a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-uw ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia University of Washington Libraries (Built Environments Library, General Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Washington Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Built Environments Library, General Stacks; segnatura 'NA2545.P5 R34 2020'. Nota di catalogo: \"Translated from the Italian\". Registro WorldCat: ID 5725. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://orbiscascade-washington.primo.exlibrisgroup.com/nde/search?tab=UW_default&search_scope=UW_EVERYTHING&mode=advanced&vid=01ALLIANCE_UW:UW_NDE&lang=en&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-vcu a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-vcu ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Virginia Commonwealth University (Cabell Library, General Collection)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Virginia Commonwealth University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Cabell Library, General Collection; segnatura 'NA2545.P5 R34 2020'. Registro WorldCat: ID 3066. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://vcu.primo.exlibrisgroup.com/discovery/search?vid=01VCU_INST:VCUL&sortby=rank&lang=en&query=isbn,contains,9789063695712> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-acc-yale a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-yale ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Yale University Library (Offsite Library Collection)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection; segnatura 'NA2545.P5 R34 2020'. Il catalogo ha due record per l'edizione 2020; letta la segnatura del primo. Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.library.yale.edu/catalog> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-accessibility-columbia a bf:Item,
+        schema:Thing ;
+    bf:heldBy :columbia-libraries ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020g" ] ;
+    schema:name "The fast guide to accessibility design - copia Columbia (Avery, offsite)"@en ;
+    schema:url <https://clio.columbia.edu/catalog/14971752> ;
+    brv:dataQualityNote "CLIO bib 14971752 (permalink): 'translated by Silvia Antonini' (also listed under: Antonini, Silvia, translator), Amsterdam: BIS Publishers 2020, 157 pages, 15 cm, ISBN 9789063695712 / 9063695713; collocazione 'Offsite <Avery> (Non-Circulating)', segnatura NA2545.P5 R34 2020g."@it ;
+    brv:sourceRecord "07.32" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://clio.columbia.edu/catalog/14971752> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-accessibility-michigan a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-michigan ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA 2545 .P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia University of Michigan Library (Art Architecture & Engineering Main Collection, 3rd floor)"@en ;
+    brv:dataQualityNote "Record del catalogo della biblioteca (University of Michigan Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: Art Architecture & Engineering Main Collection, 3rd floor; segnatura 'NA 2545 .P5 R34 2020'. Il record elenca due numeri OCLC (1151886440 e 1122187692); indicizzato il 05/10/2026; Antonini translator e contributor. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
+:item-accessibility-princeton a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-princeton ;
+    bf:itemOf :inst-accessibility-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2545.P5 R34 2020" ] ;
+    schema:name "The fast guide to accessibility design - copia Princeton University Library (ReCAP Remote Storage)"@en ;
+    brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage; segnatura 'NA2545.P5 R34 2020'. OCLC 1151886440 nel record; Antonini translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
 :item-accessibility-tcdc a bf:Item,
         schema:Thing ;
     bf:heldBy :tcdc-library ;
@@ -2259,6 +2526,48 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "verified-primary" .
 
+:item-form-aic a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-aic ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Art Institute of Chicago (Ryerson & Burnham Libraries, RBL Stack 4)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Art Institute of Chicago), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Ryerson & Burnham Libraries, RBL Stack 4; segnatura 'NA2760 .R34 2016'. Antonini elencata. Registro WorldCat: ID 784. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://artic.primo.exlibrisgroup.com/discovery/search?vid=01ARTIC_INST:01ARTIC&mode=advanced&tab=default_tab&offset=0&query=isbn,exact,9789063694111&sortby=rank&search_scope=MyInst_and_CI&lang=en> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-berkeley a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-berkeley ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia UC Berkeley Libraries (Environmental Design Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (UC Berkeley Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Environmental Design Library; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\" oltre che nel titolo come traduttrice: errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 5689. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.library.berkeley.edu/discovery/search?vid=01UCS_BER:UCB&lang=en&tab=Everything&offset=0&search_scope=MyInstitution&query=isbn,contains,9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-cardiff a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-cardiff ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "720.1 RAF" ] ;
+    schema:name "The fast guide to architectural form - copia Cardiff University (Architecture Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Cardiff University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Library; segnatura '720.1 RAF'. Antonini elencata come translator. Registro WorldCat: ID 61511. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://librarysearch.cardiff.ac.uk/nde/search?vid=44WHELF_CAR:CAR&tab=CSCOP_EVERYTHING&search_scope=CU_Search_ALL&query=9789063694111&lang=en> ] ;
+    brv:verificationStatus "verified-primary" .
+
 :item-form-cca a bf:Item,
         schema:Thing ;
     bf:heldBy :cca-montreal ;
@@ -2270,6 +2579,77 @@ brv:viaRecord a rdf:Property ;
     brv:dataQualityNote "Item aggiunto: non presente nel dataset (fonte: catalogo CCA, Canadian Centre for Architecture)."@it ;
     brv:verificationBasis "link-not-rechecked" ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-colorado a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-colorado ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Colorado Boulder (Norlin Library, Art & Architecture Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Colorado Boulder), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Norlin Library, Art & Architecture Stacks; segnatura 'NA2760 .R34 2016'. Titolo \"translated by Silvia Antonini\". Registro WorldCat: ID 462. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://libcat.colorado.edu/Search/Results?type=oclc_num&lookfor=920019079> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-columbia a bf:Item,
+        schema:Thing ;
+    bf:heldBy :columbia-libraries ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016g" ] ;
+    schema:name "The fast guide to architectural form - copia Columbia (Avery, offsite)"@en ;
+    schema:url <https://clio.columbia.edu/catalog/11876088> ;
+    brv:dataQualityNote "CLIO bib 11876088 (permalink): 'translated by Silvia Antonini', Amsterdam: Bis Publishers 2016, 140 pages, 15 cm, ISBN 9063694113 / 9789063694111; collocazione 'Offsite <Avery> (Non-Circulating)', segnatura NA2760 .R34 2016g. La disponibilita' del momento non e' registrata. CLIO elenca anche una copia in 'Offsite Shared Collection (Princeton)' sullo stesso record: non modellata."@it ;
+    brv:sourceRecord "07.32" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://clio.columbia.edu/catalog/11876088> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-hanze a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-hanze ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "711.3 RAFF" ] ;
+    schema:name "The fast guide to architectural form - copia Hanze University of Applied Sciences (HanzeMediatheek, Minerva)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Hanze University of Applied Sciences), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: HanzeMediatheek, Minerva; segnatura '711.3 RAFF'. Antonini elencata come translator. Registro WorldCat: ID 57335. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://hanze.on.worldcat.org/search?queryString=bn%3A9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-harvard a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-harvard ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34X 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Harvard University Library (Frances Loeb Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Harvard University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Frances Loeb Library; segnatura 'NA2760 .R34X 2016'. Registro WorldCat: ID 73876. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://hollis.harvard.edu/discovery/search?vid=01HVD_INST:HVD2&tab=LibraryCatalog&query=isbn,contains,9789063694111&search_scope=MyInstitution> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-kentucky a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-kentucky ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Kentucky Libraries (Fine Arts Library, Miniature)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Kentucky Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library, Miniature; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\": errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 1150. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://saalck-uky.primo.exlibrisgroup.com/discovery/search?sortby=rank&vid=01SAA_UKY:UKY&lang=en_US&query=any,contains,9789063694111> ] ;
     brv:verificationStatus "verified-primary" .
 
 :item-form-manzala a bf:Item,
@@ -2288,6 +2668,84 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://www.library.manzalaacademy.edu.eg/items/show/404> ] ;
     brv:verificationStatus "verified-primary" .
 
+:item-form-oregon a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-oregon ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34x 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Oregon Libraries (Design Library, Stacks (floors 2-3))"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Oregon Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Design Library, Stacks (floors 2-3); segnatura 'NA2760 .R34x 2016'. Registro WorldCat: ID 2429. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://alliance-uoregon.primo.exlibrisgroup.com/discovery/search?vid=01ALLIANCE_UO:UO&tab=Rollup&search_scope=Everything&sortby=rank&offset=0&query=isbn,contains,9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-penn a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-penn ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Pennsylvania Libraries (Fine Arts Library)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Pennsylvania Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Fine Arts Library; segnatura 'NA2760 .R34 2016'. Registro WorldCat: ID 2583. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://find.library.upenn.edu/?search_field=isxn_search&q=9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-pratt a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-pratt ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "729 R136" ] ;
+    schema:name "The fast guide to architectural form - copia Pratt Institute Libraries (Brooklyn Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Pratt Institute Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Brooklyn Stacks; segnatura '729 R136'. Titolo \"translated by Silvia Antonini\"; 140 p. Registro WorldCat: ID 1993. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://cat.pratt.edu/search/?searchtype=i&SORT=D&searcharg=9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-princeton a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-princeton ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Princeton University Library (ReCAP Remote Storage)"@en ;
+    brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage; segnatura 'NA2760 .R34 2016'. Copia a scaffale remoto; il catalogo riporta \"translated by Silvia Antonini\" e Antonini come translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-princeton-2 a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-princeton ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016g" ] ;
+    schema:name "The fast guide to architectural form - copia Princeton University Library (ReCAP Remote Storage (In Library Use Only))"@en ;
+    brv:dataQualityNote "Record del catalogo della biblioteca (Princeton University Library) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: ReCAP Remote Storage (In Library Use Only); segnatura 'NA2760 .R34 2016g'. Secondo record Princeton della stessa edizione (segnatura con suffisso g). La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-stanford a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-stanford ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R24 2016 T" ] ;
+    schema:name "The fast guide to architectural form - copia Stanford University Libraries (SAL3 (Off-campus collections))"@en ;
+    brv:dataQualityNote "Record del catalogo della biblioteca (Stanford University Libraries) inviato dall'autore come screenshot il 29/10/2026 (non aperto da Claude: il catalogo mostrava un controllo anti-bot). Collocazione: SAL3 (Off-campus collections); segnatura 'NA2760 .R24 2016 T'. Catkey 11897196; segnatura con cutter .R24 invece di .R34 (cosi' nel catalogo); Antonini translator. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.34" ;
+    brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-primary" .
+
 :item-form-tcdc a bf:Item,
         schema:Thing ;
     bf:heldBy :tcdc-library ;
@@ -2303,6 +2761,48 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://library.tcdc.or.th/record/view/b00038809> ] ;
     brv:verificationStatus "verified-primary" .
 
+:item-form-tib a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-tib ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "U 16 B 979" ] ;
+    schema:name "The fast guide to architectural form - copia Technische Informationsbibliothek (TIB) (Hannover)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Technische Informationsbibliothek (TIB)), letto in Chrome il 28/10/2026 aprendo il link WorldCat: record permalink. Collocazione: Hannover; segnatura 'U 16 B 979'. Record con \"translated by Siliva [sic] Antonini\" e \"Antonini Uebersetzerin\"; 140 S. Registro WorldCat: ID 87413. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://opac.tib.eu/DB=1/LNG=EN/CLK?IKT=12&TRM=1618773887> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-ttu a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-ttu ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R3413 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Texas Tech University Libraries (Architecture Library, Stacks (8th floor))"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Texas Tech University Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Library, Stacks (8th floor); segnatura 'NA2760 .R3413 2016'. Il catalogo elenca Raffaelli come \"architect\" e Antonini come translator. Registro WorldCat: ID 2942. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://ttu.primo.exlibrisgroup.com/discovery/search?vid=01TTU_INST:01TTU&mode=advanced&tab=LibraryCatalog&query=isbn,contains,9789063694111&lang=en&search_scope=MyInstitution> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-tulane a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-tulane ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R25 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Tulane University (Howard-Tilton Library, Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Tulane University), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Howard-Tilton Library, Stacks; segnatura 'NA2760 .R25 2016'. Segnatura con cutter diverso (.R25) da quella usata dalle altre biblioteche LC (.R34): cosi' riportata dal catalogo. Registro WorldCat: ID 5461. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://library.search.tulane.edu/discovery/search?mode=simple&vid=01TUL_INST:Tulane&search_scope=MyInst_and_CI&query=isbn,contains,9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
 :item-form-uap a bf:Item,
         schema:Thing ;
     bf:heldBy :uap-bd-library ;
@@ -2316,6 +2816,76 @@ brv:viaRecord a rdf:Property ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <http://library.uap-bd.edu/cgi-bin/koha/opac-detail.pl?biblionumber=2549> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-unlv a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-unlv ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Nevada, Las Vegas Libraries (Architecture Studies Library, Architecture Book Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Nevada, Las Vegas Libraries), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture Studies Library, Architecture Book Stacks; segnatura 'NA2760 .R34 2016'. Il catalogo elenca Antonini come \"illustrator\": errore di catalogazione (ruolo corretto: traduttrice). Registro WorldCat: ID 1733. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://unlv.primo.exlibrisgroup.com/discovery/search?vid=01UNLV_INST:UNLV&query=isbn,contains,9789063694111&sortby=rank&lang=en> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-usi a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-usi ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "AAM 720.011 Raff" ] ;
+    schema:name "The fast guide to architectural form - copia Università della Svizzera italiana (Biblioteca Accademia di architettura, Sala 4 (Collezione generale))"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Università della Svizzera italiana), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Biblioteca Accademia di architettura, Sala 4 (Collezione generale); segnatura 'AAM 720.011 Raff'. Titolo catalogato \"Fast guide to architectural form\". Registro WorldCat: ID 100017. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://reperio.usi.ch/discovery/search?tab=41SLSP_USI_MyInst_and_CI&search_scope=MyInst_MEGA&vid=41SLSP_USI:BiUSI&mode=advanced&offset=0&query=isbn,contains,9789063694111> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-utoronto a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-utoronto ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R3413 2016" ] ;
+    schema:name "The fast guide to architectural form - copia University of Toronto Architecture Library (Architecture, Landscape & Design (Eberhard Zeidler Library), Stacks)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Toronto Architecture Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Architecture, Landscape & Design (Eberhard Zeidler Library), Stacks; segnatura 'NA2760 .R3413 2016'. Registro WorldCat: ID 103741. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://librarysearch.library.utoronto.ca/nde/search?vid=01UTORONTO_INST:UTORONTO_NDE&mode=advanced&tab=Everything&query=isbn,contains,9789063694111&lang=en> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-yale a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-yale ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016g" ] ;
+    schema:name "The fast guide to architectural form - copia Yale University Library (Offsite Library Collection (In Library Use Only))"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection (In Library Use Only); segnatura 'NA2760 .R34 2016g'. Il catalogo ha due record: l'altro porta NA2760 .R34 2016 (Offsite, richiesta in qualsiasi biblioteca Yale). Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.library.yale.edu/catalog> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-form-yale-2 a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-yale ;
+    bf:itemOf :inst-form-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2760 .R34 2016" ] ;
+    schema:name "The fast guide to architectural form - copia Yale University Library (Offsite Library Collection (richiesta in qualsiasi biblioteca Yale))"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (Yale University Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Offsite Library Collection (richiesta in qualsiasi biblioteca Yale); segnatura 'NA2760 .R34 2016'. Secondo record Yale della stessa edizione. Registro WorldCat: ID 544. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.library.yale.edu/catalog> ] ;
     brv:verificationStatus "verified-primary" .
 
 :item-form-zh-hant-ncl a bf:Item,
@@ -2366,6 +2936,34 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://libopac.xauat.edu.cn/mspace/searchDetailLocal/mb697226b21c6833c609a51e2429177ca> ] ;
     brv:verificationStatus "verified-primary" .
 
+:item-fun-sydney a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-sydney ;
+    bf:itemOf :inst-fundamentals-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "729 251" ] ;
+    schema:name "The fast guide to fundamentals of architectural design - copia University of Sydney Library (SciTech Library, General)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Sydney Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: SciTech Library, General; segnatura '729 251'. Edizione 2023. Registro WorldCat: ID 54040. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://sydney.primo.exlibrisgroup.com/discovery/search?vid=61USYD_INST:sydney&lang=en&query=isbn,contains,9789063696856> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-fun-umn a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-umn ;
+    bf:itemOf :inst-fundamentals-en ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "NA2750 .R34 2023" ] ;
+    schema:name "The fast guide to fundamentals of architectural design - copia University of Minnesota, Twin Cities (T. C. Wilson Library, General Collection)"@en ;
+    brv:dataQualityNote "Catalogo della biblioteca (University of Minnesota, Twin Cities), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: T. C. Wilson Library, General Collection; segnatura 'NA2750 .R34 2023'. Edizione 2023, Amsterdam: BIS Publishers; coerente con la data dell'editore. Registro WorldCat: ID 5360. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://primo.lib.umn.edu/discovery/search?vid=01UMN_INST:TWINCITIES&institution=TWINCITIES&highlight=true&query=isbn,exact,9789063696856&indx=1&dym=true&search_scope=TwinCitiesCampus&lang=en> ] ;
+    brv:verificationStatus "verified-primary" .
+
 :item-fundamentals-cud a bf:Item,
         schema:Thing ;
     bf:heldBy :cud-library ;
@@ -2378,6 +2976,20 @@ brv:viaRecord a rdf:Property ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://cud.userservices.exlibrisgroup.com/discovery/fulldisplay/alma991000232167406291/971CUD_INST:Services> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:item-tw-cyut a bf:Item,
+        schema:Thing ;
+    bf:heldBy :lib-cyut ;
+    bf:itemOf :inst-form-zh-hant ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "921.026 5042 C681621" ] ;
+    schema:name "建築造型速成指南 - copia Chaoyang University of Technology Library (Main Library, 6F Stack)"@zh-Hant ;
+    brv:dataQualityNote "Catalogo della biblioteca (Chaoyang University of Technology Library), letto in Chrome il 28/10/2026 aprendo il link WorldCat: ricerca per ISBN/OCLC (URL di ricerca, non permalink). Collocazione: Main Library, 6F Stack; segnatura '921.026 5042 C681621'. Record WorldCat Discovery locale: 建築造型速成指南, 龍溪國際, 2022; traduttrice 邱喜麗. Registro WorldCat: ID 269098. La disponibilita' del momento non e' registrata."@it ;
+    brv:sourceRecord "07.33" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://cyut.on.worldcat.org/search?queryString=bn%3A9786269565818> ] ;
     brv:verificationStatus "verified-primary" .
 
 :laurea-architettura-sapienza a schema:EducationalOccupationalCredential ;
@@ -2399,20 +3011,391 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Degree date and university from the public CNAPPC national register; grade from the official Sapienza degree certificate held by the author (not public)"@en ;
     brv:verificationStatus "verified-primary" .
 
+:lib-aic a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Chicago" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "784" ] ;
+    schema:name "Art Institute of Chicago" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-cardiff a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "GB" ;
+            schema:addressLocality "Cardiff" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "61511" ] ;
+    schema:name "Cardiff University" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-colorado a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Boulder" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "462" ] ;
+    schema:name "University of Colorado Boulder" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-cyut a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "TW" ;
+            schema:addressLocality "Taichung" ] ;
+    schema:alternateName "朝陽科技大學圖書館"@zh-Hant ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "269098" ] ;
+    schema:name "Chaoyang University of Technology Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-fit a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "New York" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1914" ] ;
+    schema:name "Fashion Institute of Technology Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-getty a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Los Angeles" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5616" ] ;
+    schema:name "Getty Research Institute" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-hanze a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "NL" ;
+            schema:addressLocality "Groningen" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "57335" ] ;
+    schema:name "Hanze University of Applied Sciences" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-kentucky a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Lexington" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1150" ] ;
+    schema:name "University of Kentucky Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-mcad a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Minneapolis" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1549" ] ;
+    schema:name "Minneapolis College of Art & Design" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-michigan a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Ann Arbor" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5293" ] ;
+    schema:name "University of Michigan Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-ocad a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CA" ;
+            schema:addressLocality "Toronto" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "44004" ] ;
+    schema:name "OCAD University, Dorothy H. Hoover Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-oklahoma a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Norman" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "2390" ] ;
+    schema:name "University of Oklahoma" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-oregon a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Eugene" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "2429" ] ;
+    schema:name "University of Oregon Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-pratt a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Brooklyn" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1993" ] ;
+    schema:name "Pratt Institute Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-stanford a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Stanford" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "3227" ] ;
+    schema:name "Stanford University Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-sydney a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "AU" ;
+            schema:addressLocality "Sydney" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "54040" ] ;
+    schema:name "University of Sydney Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-tib a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "DE" ;
+            schema:addressLocality "Hannover" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "87413" ] ;
+    schema:name "Technische Informationsbibliothek (TIB)" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-ttu a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Lubbock" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "2942" ] ;
+    schema:name "Texas Tech University Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-tulane a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "New Orleans" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5461" ] ;
+    schema:name "Tulane University" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-umn a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Minneapolis" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5360" ] ;
+    schema:name "University of Minnesota, Twin Cities" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-union a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Schenectady" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "2062" ] ;
+    schema:name "Union College, Schaffer Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-unlv a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Las Vegas" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1733" ] ;
+    schema:name "University of Nevada, Las Vegas Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-usi a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CH" ;
+            schema:addressLocality "Mendrisio" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "100017" ] ;
+    schema:name "Università della Svizzera italiana" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-utoronto a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CA" ;
+            schema:addressLocality "Toronto" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "103741" ] ;
+    schema:name "University of Toronto Architecture Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-uw a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Seattle" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5725" ] ;
+    schema:name "University of Washington Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-vcu a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Richmond" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "3066" ] ;
+    schema:name "Virginia Commonwealth University" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
 :manzala-library a bf:Organization,
         schema:Library ;
-    schema:name "Manzala Academy - Higher Institute of Engineering and Technology - Digital Library (Egypt)" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "EG" ] ;
+    schema:name "Manzala Academy - Higher Institute of Engineering and Technology - Digital Library (Egypt)" ;
+    brv:dataQualityNote "Biblioteca digitale (Omeka) di Manzala Academy, Egitto: nessuna voce Wikidata trovata; citta' non verificata, quindi omessa."@it ;
+    brv:verificationStatus "verified-secondary" .
 
 :ncl-taiwan a bf:Organization,
         schema:Library ;
-    schema:name "National Central Library (Taiwan)" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "TW" ;
+            schema:addressLocality "Taipei" ] ;
+    schema:name "National Central Library (Taiwan)" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q618340> ;
+    schema:url <https://www.ncl.edu.tw/> ;
+    brv:dataQualityNote "Wikidata Q618340 (National Central Library, Taiwan): sito ufficiale; nessuna coordinata ne' ISIL in Wikidata (distretto Zhongzheng, Taipei)."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q618340> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :oappc-roma a schema:Organization ;
     schema:name "OAPPC Roma e Provincia (Ordine degli Architetti PPC)"@it .
 
+:ouc a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "Ocean University of China" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1074015> ;
+    schema:url <http://www.ouc.edu.cn/> .
+
 :ouc-library a bf:Organization,
         schema:Library ;
-    schema:name "Ocean University of China (OUC) - Library" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CN" ;
+            schema:addressLocality "Qingdao" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 36.065 ;
+            schema:longitude 120.3325 ] ;
+    schema:name "Ocean University of China (OUC) - Library" ;
+    schema:parentOrganization :ouc ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q1074015> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :pancrazio-capoccia a schema:Person ;
     schema:description "Pancrazio Capoccia: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself."@en ;
@@ -2586,6 +3569,11 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :volume-fa-design-comunicazione-07 ] ;
     brv:verificationStatus "verified-secondary" .
 
+:series-tujie-sheji-siwei a schema:BookSeries ;
+    schema:alternateName "Tu jie she ji si wei guo cheng xiao shu ku" ;
+    schema:name "图解设计思维过程小书库"@zh-Hans ;
+    schema:publisher :china-machine-press .
+
 :shinkenchiku-sha a schema:Organization ;
     schema:description "Shinkenchiku-sha Co., Ltd.: organisation in the Baires Raffaelli knowledge graph; sponsor of '41st Central Glass International Architectural Design Competition: Co…'."@en ;
     schema:name "Shinkenchiku-sha Co., Ltd." .
@@ -2594,10 +3582,34 @@ brv:viaRecord a rdf:Property ;
     schema:description "Stefano Sinibaldi: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself."@en ;
     schema:name "Stefano Sinibaldi" .
 
+:stuba a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "Slovak University of Technology in Bratislava" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1778355> ;
+    schema:url <http://www.stuba.sk> .
+
 :stuba-fad-library a bf:Organization,
         schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "SK" ;
+            schema:addressLocality "Bratislava" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 48.15467057 ;
+            schema:longitude 17.11743951 ] ;
     schema:name "Slovak University of Technology in Bratislava - Fakulta architektúry a dizajnu - Knižnica FAD" ;
-    schema:url <https://www.fad.stuba.sk/sk/fakulta/struktura-ludia/samostatne-a-ucelove-pracoviska/kniznica-fad-stu> .
+    schema:parentOrganization :stuba ;
+    schema:url <https://www.fad.stuba.sk/sk/fakulta/struktura-ludia/samostatne-a-ucelove-pracoviska/kniznica-fad-stu> ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q1778355> ] ;
+    brv:verificationStatus "verified-secondary" .
+
+:tcdc a bf:Organization,
+        schema:Organization ;
+    schema:name "Thailand Creative & Design Center (TCDC)" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6632289> ;
+    schema:url <https://www.tcdc.or.th/> .
 
 :thesis-phd-item a bf:Item,
         schema:Thing ;
@@ -2633,9 +3645,27 @@ brv:viaRecord a rdf:Property ;
     brv:verificationBasis "academic-record" ;
     brv:verificationStatus "verified-primary" .
 
+:uap-bd a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "University of Asia Pacific (Bangladesh)" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7895090> ;
+    schema:url <http://uap-bd.edu/index.html> .
+
 :uap-bd-library a bf:Organization,
         schema:Library ;
-    schema:name "University of Asia Pacific (Bangladesh) - Central Library" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "BD" ;
+            schema:addressLocality "Dhaka" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 23.754777 ;
+            schema:longitude 90.389382 ] ;
+    schema:name "University of Asia Pacific (Bangladesh) - Central Library" ;
+    schema:parentOrganization :uap-bd ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q7895090> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :unistrasi a schema:EducationalOrganization ;
     schema:name "Università per Stranieri di Siena (UniStraSi)"@it .
@@ -2649,9 +3679,27 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "verified-secondary" .
 
+:xauat a bf:Organization,
+        schema:CollegeOrUniversity ;
+    schema:name "Xi'an University of Architecture and Technology" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4418179> ;
+    schema:url <http://www.xauat.edu.cn/zh-cn/index.php> .
+
 :xauat-library a bf:Organization,
         schema:Library ;
-    schema:name "Xi'an University of Architecture and Technology (XAUAT) - Library" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "CN" ;
+            schema:addressLocality "Xi'an" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 34.2402 ;
+            schema:longitude 108.9617 ] ;
+    schema:name "Xi'an University of Architecture and Technology (XAUAT) - Library" ;
+    schema:parentOrganization :xauat ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q4418179> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :alberto-capitanucci a bf:Person,
         schema:Person ;
@@ -2688,14 +3736,6 @@ brv:viaRecord a rdf:Property ;
     brv:verificationBasis "link-not-rechecked" ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "verified-secondary" .
-
-:china-machine-press a bf:Organization,
-        schema:Organization ;
-    schema:alternateName "China Machine Press" ;
-    schema:description "机械工业出版社: organisation in the Baires Raffaelli knowledge graph; publisher of '建筑造型速成指南: 创意、操作和实例'."@en ;
-    schema:location [ a schema:Place ;
-            schema:name "Beijing, China" ] ;
-    schema:name "机械工业出版社"@zh-Hans .
 
 :cite-scholar-architect-2022 a schema:Book ;
     rdfs:seeAlso <https://www.researchgate.net/publication/375853926_The_urban_planning_basis_of_projects>,
@@ -2779,6 +3819,19 @@ brv:viaRecord a rdf:Property ;
     schema:description "Claudio Ronconi: person in the Baires Raffaelli knowledge graph; collaborator on the San Nicolo civic centre in Spoleto (Paolo Luccioni). Not Baires Raffaelli himself."@en ;
     schema:name "Claudio Ronconi" ;
     brv:verificationBasis "author-supplied-document" ;
+    brv:verificationStatus "verified-secondary" .
+
+:columbia-libraries a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "New York" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "4861" ] ;
+    schema:name "Columbia University Libraries (New York)" ;
+    schema:url <https://library.columbia.edu/> ;
+    brv:dataQualityNote "Nodo creato dal catalogo CLIO (clio.columbia.edu). Indirizzo ridotto a citta' e paese; nessun ISIL o coordinata verificati."@it ;
     brv:verificationStatus "verified-secondary" .
 
 :comune-bettona a bf:Organization,
@@ -2919,6 +3972,45 @@ brv:viaRecord a rdf:Property ;
     brv:verificationBasis "author-supplied-document" ;
     brv:verificationStatus "verified-secondary" .
 
+:lib-berkeley a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Berkeley" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "5689" ] ;
+    schema:name "UC Berkeley Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-harvard a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Cambridge" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "73876" ] ;
+    schema:name "Harvard University Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-penn a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Philadelphia" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "2583" ] ;
+    schema:name "University of Pennsylvania Libraries" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
 :long-sea a bf:Organization,
         schema:Organization ;
     schema:alternateName "Long Sea Publishing" ;
@@ -2972,7 +4064,19 @@ brv:viaRecord a rdf:Property ;
 
 :tcdc-library a bf:Organization,
         schema:Library ;
-    schema:name "Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok" .
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "TH" ;
+            schema:addressLocality "Bangkok" ] ;
+    schema:geo [ a schema:GeoCoordinates ;
+            schema:latitude 13.726985 ;
+            schema:longitude 100.515421 ] ;
+    schema:name "Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok" ;
+    schema:parentOrganization :tcdc ;
+    brv:dataQualityNote "Coordinate e citta' sono quelle dell'istituzione (Wikidata, 28/10/2026), non dell'edificio della biblioteca. Nessun ISIL in Wikidata."@it ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://www.wikidata.org/wiki/Q6632289> ] ;
+    brv:verificationStatus "verified-secondary" .
 
 :tetra-engineering a bf:Organization,
         schema:Organization ;
@@ -3070,6 +4174,14 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "A source link exists in the record but was not logged as checked in the last audit pass; recheck pending."@en ;
     brv:verificationStatus "verified-primary" .
 
+:china-machine-press a bf:Organization,
+        schema:Organization ;
+    schema:alternateName "China Machine Press" ;
+    schema:description "机械工业出版社: organisation in the Baires Raffaelli knowledge graph; publisher of '建筑造型速成指南: 创意、操作和实例'."@en ;
+    schema:location [ a schema:Place ;
+            schema:name "Beijing, China" ] ;
+    schema:name "机械工业出版社"@zh-Hans .
+
 :cite-bucchetti-2024 a schema:Book ;
     schema:datePublished "2024"^^xsd:gYear ;
     schema:description "Source document 'Design della comunicazione. Un ritratto disciplinare: studi e traiettorie' (2024); page evidence: PDF p. 92."@en ;
@@ -3158,6 +4270,32 @@ brv:viaRecord a rdf:Property ;
             brv:viaRecord :cite-gelfond-raasn-2020 ] ;
     brv:verificationStatus "verified-secondary" .
 
+:lib-princeton a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "Princeton" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "1791" ] ;
+    schema:name "Princeton University Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dai record di catalogo inviati dall'autore (screenshot del 29/10/2026). Nessun ISIL ne' coordinata verificati."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
+:lib-yale a bf:Organization,
+        schema:Library ;
+    schema:address [ a schema:PostalAddress ;
+            schema:addressCountry "US" ;
+            schema:addressLocality "New Haven" ] ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC registry ID" ;
+            schema:value "544" ] ;
+    schema:name "Yale University Library" ;
+    brv:dataQualityNote "Nodo creato dall'elenco WorldCat e dal catalogo della biblioteca (28/10/2026). Citta' e paese dall'elenco WorldCat; nessun ISIL ne' coordinata verificati. L'ID di registro OCLC identifica l'istituzione su WorldCat."@it ;
+    brv:verificationBasis "worldcat-list" ;
+    brv:verificationStatus "verified-secondary" .
+
 :luigi-prestinenza-puglisi a bf:Person,
         schema:Person ;
     schema:description "Luigi Prestinenza Puglisi: contributor to 'The Fast Guide to Architectural Form' and speaker at the 6 October 2021 Perugia webinar, where the poster introduces him as president of the 'Ass. Italiana di Architettura e Critica'. Not Baires Raffaelli."@en ;
@@ -3226,17 +4364,26 @@ brv:viaRecord a rdf:Property ;
     bf:contribution [ a bf:PrimaryContribution ;
             bf:agent :baires-raffaelli ;
             bf:role [ a bf:Role ;
-                    rdfs:label "author" ] ] ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :silvia-antonini ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "translator" ] ] ;
     bf:hasInstance :inst-fundamentals-en ;
     owl:sameAs <http://www.wikidata.org/entity/Q138836771> ;
-    schema:alternateName "The Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project"@en ;
+    schema:alternateName "Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project"@en,
+        "The Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project"@en ;
     schema:author :baires-raffaelli ;
     schema:description "Theoretical and foundational guide to architectural design in 33 steps."@en ;
     schema:inLanguage "en" ;
+    schema:keywords "Architecture / General (BISAC)" ;
     schema:name "The Fast Guide to the Fundamentals of Architectural Design"@en ;
     schema:sameAs <https://www.goodreads.com/book/show/195821007-the-fast-guide-to-the-fundamentals-of-architectural-design> ;
+    schema:translator :silvia-antonini ;
     schema:workExample :inst-fundamentals-en ;
-    brv:dataQualityNote "Il sottotitolo 'Strategies and Techniques for Creating a Successful Project' e i '33 passi' derivano dal sito baires.eu (omessi dal dataset). Wikidata ha un'entita' separata per questo libro (Q138836771)."@it ;
+    brv:dataQualityNote "Il sottotitolo 'Strategies and Techniques for Creating a Successful Project' e i '33 passi' derivano dal sito baires.eu (omessi dal dataset). Wikidata ha un'entita' separata per questo libro (Q138836771)."@it,
+        "WORLDCAT (screenshot dell'autore con numero OCLC, 28/10/2026): scheda OCLC 1437299399 (Bis B.V., Uitgeverij (BIS Publishers), anno 2024, 144 p., ISBN 9789063696856 / 906369685X, soggetto BISAC 'ARCHITECTURE / General'); la scheda raggruppa 4 edizioni e formati posseduti da 13 biblioteche. Titolo catalogato con il sottotitolo 'Strategies and Techniques for Creating a Successful Project'. ANNO: WorldCat indica 2024, il dataset mantiene 2023 per decisione dell'autore (28/10/2026), perche' coincide con la scheda dell'editore (Fall 2023); il 2024 e' coerente con Goodreads (14/05/2024) e va letto come data di catalogazione o di distribuzione. TRADUTRICE: WorldCat non mostra Silvia Antonini per questo libro (solo l'autore); il ruolo di traduttrice e' registrato su dichiarazione dell'autore (28/10/2026), non su una fonte indipendente."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1437299399: dichiarate 4 edizioni e formati in 13 biblioteche; l'elenco restituito contiene 4 voci (NC State, Minnesota, CUHK, Sydney; nel CSV)."@it ;
     brv:sourceRecord "04.06" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
@@ -3285,53 +4432,10 @@ brv:viaRecord a rdf:Property ;
     brv:verificationNote "Design credit confirmed by the author and by a published paper (Tosi & Pistolesi) supplied by the author"@en ;
     brv:verificationStatus "verified-secondary" .
 
-:inst-accessibility-en a bf:Instance,
-        bf:Print,
-        schema:Book ;
-    bf:hasItem :item-accessibility-tcdc ;
-    bf:identifiedBy [ a bf:Isbn ;
-            rdf:value "9789063695712" ],
-        [ a bf:Isbn ;
-            rdf:value "9063695713" ],
-        [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "OCLC" ] ;
-            rdf:value "1199329767" ] ;
-    bf:instanceOf :work-accessibility ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent :bis-publishers ;
-            bf:date "2020" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam" ] ] ;
-    schema:author :baires-raffaelli ;
-    schema:datePublished "2020"^^xsd:gYear ;
-    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to Accessibility Design', language en, published by BIS Publishers in 2020; ISBN 9789063695712; 160 pages."@en ;
-    schema:exampleOfWork :work-accessibility ;
-    schema:identifier [ a schema:PropertyValue ;
-            schema:propertyID "OCLC" ;
-            schema:url <https://worldcat.org/it/title/1199329767> ;
-            schema:value "1199329767" ],
-        [ a schema:PropertyValue ;
-            schema:propertyID "K10plus-PPN" ;
-            schema:value "1681242095" ;
-            brv:verificationStatus "verified-secondary" ] ;
-    schema:inLanguage "en" ;
-    schema:isbn "9063695713",
-        "9789063695712" ;
-    schema:name "The Fast Guide to Accessibility Design"@en ;
-    schema:numberOfPages 160 ;
-    schema:publisher :bis-publishers ;
-    schema:url <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> ;
-    brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it ;
-    brv:sourceRecord "04.05" ;
-    brv:verification [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> ] ;
-    brv:verificationStatus "verified-primary" .
-
 :li-xi a bf:Person,
         schema:Person ;
-    schema:alternateName "Li Xi" ;
+    schema:alternateName "Li Xi",
+        "Qian Li" ;
     schema:description "栗茜: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself."@en ;
     schema:name "栗茜"@zh-Hans .
 
@@ -3357,11 +4461,6 @@ brv:viaRecord a rdf:Property ;
     schema:publisher :atlantis-press ;
     brv:sourceRecord "07.01" .
 
-:silvia-antonini a bf:Person,
-        schema:Person ;
-    schema:description "Silvia Antonini: person in the Baires Raffaelli knowledge graph; translator of 'The Fast Guide to Architectural Form'; illustrator of 'The Fast Guide to Architectural Form'. Not Baires Raffaelli himself."@en ;
-    schema:name "Silvia Antonini" .
-
 :teng-yimeng a bf:Person,
         schema:Person ;
     schema:alternateName "Teng Yimeng" ;
@@ -3374,6 +4473,10 @@ brv:viaRecord a rdf:Property ;
     bf:extent [ a bf:Extent ;
             rdfs:label "140 p. ; 1 v. + allegato 'Keep in Mind: Cheekmate in three Moves'" ] ;
     bf:hasItem :thesis-phd-item ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1508168248" ] ;
     bf:instanceOf :thesis-phd-work ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent :sapienza ;
@@ -3386,17 +4489,25 @@ brv:viaRecord a rdf:Property ;
     schema:exampleOfWork :thesis-phd-work ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "Sebina-RMS" ;
-            schema:value "RMS02820805" ] ;
+            schema:value "RMS02820805" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/title/1508168248> ;
+            schema:value "1508168248" ] ;
     schema:inLanguage "it" ;
     schema:name "Semantica e tipologia della forma nell'architettura contemporanea ..."@it ;
     schema:numberOfPages 140 ;
     schema:publisher :sapienza ;
     schema:url <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> ;
-    brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it ;
+    brv:dataQualityNote "Fonte: Sebina OPAC Sapienza (tutor Luciano De Licio; variante di nome 'Raffaelli, Bares')."@it,
+        "WORLDCAT, OCLC 1508168248 (screenshot dell'autore, 28/10/2026): 'Bares Raffaelli' autore, Luciano De Licio relatore di tesi, Sapienza Universita' di Roma, Roma 2012, 140 p. : ill. ; 21 cm; nota 'Tesi di Dottorato in Architettura Teorie e progetto, XXIV ciclo, a.a. 2008-201[1]'; 1 edizione posseduta da 1 biblioteca (non identificata nello screenshot; la Sapienza e' gia' registrata come Item)."@it ;
     brv:sourceRecord "02.03" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> ] ;
+            brv:source <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.worldcat.org/title/1508168248> ] ;
     brv:verificationStatus "verified-primary" .
 
 :udr-ais a schema:ResearchOrganization ;
@@ -3520,42 +4631,6 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://www.iranketab.ir/book/86347-the-fast-guide-to-architectural-form> ] ;
     brv:verificationStatus "verified-secondary" .
 
-:inst-fundamentals-en a bf:Instance,
-        bf:Print,
-        schema:Book ;
-    bf:hasItem :item-fundamentals-cud ;
-    bf:identifiedBy [ a bf:Isbn ;
-            rdf:value "9789063696856" ],
-        [ a bf:Isbn ;
-            rdf:value "906369685X" ] ;
-    bf:instanceOf :work-fundamentals ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent :bis-publishers ;
-            bf:date "2023" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam" ] ] ;
-    schema:author :baires-raffaelli ;
-    schema:datePublished "2023"^^xsd:gYear ;
-    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to the Fundamentals of Architectural Design', language en, published by BIS Publishers in 2023; ISBN 9789063696856; 144 pages."@en ;
-    schema:exampleOfWork :work-fundamentals ;
-    schema:inLanguage "en" ;
-    schema:isbn "906369685X",
-        "9789063696856" ;
-    schema:name "The Fast Guide to the Fundamentals of Architectural Design"@en ;
-    schema:numberOfPages 144 ;
-    schema:publisher :bis-publishers ;
-    schema:url <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X>,
-        <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> ;
-    brv:dataQualityNote "DATA E PAGINE (chiuse il 25/10/2026): la scheda dell'editore BIS indica Fall 2023 e 144 p.: adottati (il dataset originale indicava 160 pp.; Goodreads 14 maggio 2024 e 144 pp.; il catalogo CUD (Dubai) usa 'NA2750 .R33 2023')."@it ;
-    brv:sourceRecord "04.06" ;
-    brv:verification [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> ],
-        [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> ] ;
-    brv:verificationStatus "verified-primary" .
-
 :luciano-de-licio a bf:Person,
         schema:Person ;
     schema:description "Luciano De Licio: person in the Baires Raffaelli knowledge graph; contributor to 'Semantica e tipologia della forma nell'architettura contemporanea : a…'. Not Baires Raffaelli himself."@en ;
@@ -3595,6 +4670,8 @@ brv:viaRecord a rdf:Property ;
     schema:translationOfWork :work-form ;
     schema:translator :qiu-xili ;
     schema:workExample :inst-form-zh-hant ;
+    brv:dataQualityNote "WORLDCAT (screenshot dell'autore, 28/10/2026): 2 edizioni e formati posseduti da 4 biblioteche (tra cui National Central Library, Taipei e National Cheng Kung University Library). Editore catalogato 龍溪國際出版 : 北星文化總經銷, 新北市, 2022[民111], 初版; responsabilita': 拉菲利 / Baires Raffaelli, 邱喜麗."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1322054519: dichiarate 2 edizioni e formati in 4 biblioteche; l'elenco restituito contiene 1 voce (Chaoyang University of Technology, Taichung)."@it ;
     brv:sourceRecord "04.03" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
@@ -3629,92 +4706,6 @@ brv:viaRecord a rdf:Property ;
     schema:description "Carlos Acosta Fontana: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself."@en ;
     schema:name "Carlos Acosta Fontana" .
 
-:inst-form-en a bf:Instance,
-        bf:Print,
-        schema:Book ;
-    bf:extent [ a bf:Extent ;
-            rdfs:label "140 p., colour illustrations, plans ; 15 cm (CCA, TCDC)" ] ;
-    bf:hasItem :item-form-cca,
-        :item-form-manzala,
-        :item-form-tcdc,
-        :item-form-uap ;
-    bf:identifiedBy [ a bf:Isbn ;
-            rdf:value "9789063694111" ],
-        [ a bf:Isbn ;
-            rdf:value "9063694113" ],
-        [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "OCLC" ] ;
-            rdf:value "945632977" ],
-        [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "OCLC" ] ;
-            rdf:value "1151886440" ],
-        [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "OCLC" ] ;
-            rdf:value "920019079" ],
-        [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "OCLC" ] ;
-            rdf:value "1322054519" ] ;
-    bf:instanceOf :work-form ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent :bis-publishers ;
-            bf:date "2016" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam" ] ] ;
-    schema:author :baires-raffaelli ;
-    schema:bookFormat schema:Paperback ;
-    schema:datePublished "2016"^^xsd:gYear ;
-    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to Architectural Form', language en, published by BIS Publishers in 2016; ISBN 9789063694111; 144 pages; translated by Silvia Antonini."@en ;
-    schema:exampleOfWork :work-form ;
-    schema:identifier [ a schema:PropertyValue ;
-            schema:propertyID "OCLC" ;
-            schema:url <https://www.worldcat.org/oclc/945632977> ;
-            schema:value "945632977" ],
-        [ a schema:PropertyValue ;
-            schema:propertyID "OCLC" ;
-            schema:value "1151886440" ],
-        [ a schema:PropertyValue ;
-            schema:propertyID "OCLC" ;
-            schema:url <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> ;
-            schema:value "920019079" ],
-        [ a schema:PropertyValue ;
-            schema:propertyID "OCLC" ;
-            schema:url <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> ;
-            schema:value "1322054519" ],
-        [ a schema:PropertyValue ;
-            rdfs:seeAlso <https://www.sudoc.abes.fr/cbs/DB=2.1//SRCH?IKT=12&TRM=256506191> ;
-            schema:propertyID "Sudoc-PPN" ;
-            schema:url <https://www.sudoc.fr/256506191> ;
-            schema:value "256506191" ] ;
-    schema:illustrator :silvia-antonini ;
-    schema:inLanguage "en" ;
-    schema:isbn "9063694113",
-        "9789063694111" ;
-    schema:name "The Fast Guide to Architectural Form"@en ;
-    schema:numberOfPages 144 ;
-    schema:publisher :bis-publishers ;
-    schema:translator :silvia-antonini ;
-    schema:url <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form>,
-        <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113>,
-        <https://www.bispublishers.com/the-fast-guide-to-architectural-form.html> ;
-    brv:dataQualityNote "ANNO E PAGINE (chiusi il 25/10/2026): la scheda dell'editore BIS indica Spring 2016, 144 p., 154 x 105 mm, ed e' la fonte adottata (regola: dati editoriali per l'opera, conteggi di biblioteca nelle note); l'autore conferma il 2016. CCA (Montreal) e TCDC (Bangkok) catalogano 140 p. (15 cm), UAP Bangladesh 124 p. (22 cm), il dataset originale 160. Le date 2018 (Scholar Architect, ricerca RG) e 2023 (curriculum rumeno) nei documenti citanti sono errori di fonte o riferimenti a ristampe: secondo l'autore esistono 2-3 ristampe in inglese, non documentate nei cataloghi e quindi non modellate come Instance. ISBN-10/13 con checksum valido. WorldCat: Cloudflare, quindi gli OCLC non sono stati confermati dall'audit; l'autore indica come funzionanti gli URL WorldCat 920019079 e 1322054519 (25/10/2026), e 920019079 compare comunque nel record CCA. Il link CCFr con parametro ts= si apre ma in una sessione nuova mostra 'Votre session a expire': e' un URL di sessione, non un permalink."@it ;
-    brv:deprecatedUrl "https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&record=z3950_sudoc:SUDOC:rsName-RS15~rsIndex-2~256506191&query=PUBLIC_CATALOGUE_SIMPLE&setCache=z3950_sudoc.SUDOC&fromList=true&action=public_search_federated&source=all_simple",
-        "https://ndlsearch.ndl.go.jp/books/R100000136-I1130854726247033132#bib" ;
-    brv:sourceRecord "04.01" ;
-    brv:verification [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form> ],
-        [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113> ],
-        [ a brv:Verification ;
-            brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> ] ;
-    brv:verificationStatus "verified-primary" .
-
 :tommaso-passalacqua a schema:Person ;
     schema:description "Tommaso Passalacqua: person in the Baires Raffaelli knowledge graph; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Pump It Up House'. Not Baires Raffaelli himself."@en ;
     schema:name "Tommaso Passalacqua" .
@@ -3745,7 +4736,9 @@ brv:viaRecord a rdf:Property ;
     schema:translator :li-xi,
         :teng-yimeng ;
     schema:workExample :inst-form-zh-hans ;
-    brv:dataQualityNote "Il sito baires.eu cita una raccomandazione di 韩林飞 (Han Linfei) per l'edizione cinese e '28 tecniche'. Traduttori 滕艺梦 (Teng Yimeng) e 栗茜 (Li Xi) confermati dal record NLC (verifica del 25/10/2026); il dataset aveva solo la romanizzazione e la v2 precedente aveva ideogrammi errati (滕一萌, 李希). Articolo Zhihu di 建道教育 ArchiDogs del 10/01/2020 (:zhihu-archidogs-2020, letto il 25/10/2026): presenta la serie 《图解设计思维过程小书库》 (4 volumi, tra cui 建筑造型速成指南), a firma dei traduttori 滕艺梦 e 栗茜, riporta una prefazione per l'edizione cinese di Baires Raffaelli e la raccomandazione di 韩林飞; prova che il volume era in distribuzione a gennaio 2020."@it ;
+    brv:dataQualityNote "Il sito baires.eu cita una raccomandazione di 韩林飞 (Han Linfei) per l'edizione cinese e '28 tecniche'. Traduttori 滕艺梦 (Teng Yimeng) e 栗茜 (Li Xi) confermati dal record NLC (verifica del 25/10/2026); il dataset aveva solo la romanizzazione e la v2 precedente aveva ideogrammi errati (滕一萌, 李希). Articolo Zhihu di 建道教育 ArchiDogs del 10/01/2020 (:zhihu-archidogs-2020, letto il 25/10/2026): presenta la serie 《图解设计思维过程小书库》 (4 volumi, tra cui 建筑造型速成指南), a firma dei traduttori 滕艺梦 e 栗茜, riporta una prefazione per l'edizione cinese di Baires Raffaelli e la raccomandazione di 韩林飞; prova che il volume era in distribuzione a gennaio 2020."@it,
+        "WORLDCAT (screenshot dell'autore, 28/10/2026): 1 edizione posseduta da 2 biblioteche (tra cui Shanghai Library); 机械工业出版社, Beijing 2020, Di 1 ban, collana 图解设计思维过程小书库; responsabilita' (意)布亚斯·拉菲利 著, 滕艺梦, 栗茜 译. Il conteggio WorldCat e' un minimo: il dataset registra altre tre biblioteche cinesi con copie (XAUAT, HRBEU, OUC)."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1511286356: dichiarata 1 edizione in 2 biblioteche; l'elenco non restituisce voci ('Nessuna biblioteca con abbonamento WorldCat.org e' in possesso di questo articolo')."@it ;
     brv:sourceRecord "04.04" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
@@ -3760,17 +4753,26 @@ brv:viaRecord a rdf:Property ;
 :inst-form-zh-hans a bf:Instance,
         bf:Print,
         schema:Book ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "137 p. : ill. (chiefly col.) ; 19 cm (WorldCat; NLC: xi, 137 p.)" ] ;
     bf:hasItem :item-form-zh-hrbeu,
         :item-form-zh-ouc,
         :item-form-zh-xauat ;
     bf:identifiedBy [ a bf:Isbn ;
-            rdf:value "9787111637998" ] ;
+            rdf:value "9787111637998" ],
+        [ a bf:Isbn ;
+            rdf:value "7111637992" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1511286356" ] ;
     bf:instanceOf :work-form-zh-hans ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent :china-machine-press ;
             bf:date "2020" ;
             bf:place [ a bf:Place ;
                     rdfs:label "Beijing" ] ] ;
+    bf:seriesStatement "图解设计思维过程小书库" ;
     rdfs:seeAlso <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true>,
         <http://opac.nlc.cn/F/JFH6S11MASLJ7SRSPMFU8KFLRU9APFVQFRBK4ASXGKN282MFM5-14792?func=short> ;
     schema:author :baires-raffaelli ;
@@ -3780,16 +4782,24 @@ brv:viaRecord a rdf:Property ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "NLC-system-number" ;
             schema:value "032658037" ;
-            brv:verificationStatus "unverified" ] ;
+            brv:verificationStatus "unverified" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/title/1511286356> ;
+            schema:value "1511286356" ] ;
     schema:inLanguage "zh-Hans" ;
-    schema:isbn "9787111637998" ;
+    schema:isPartOf :series-tujie-sheji-siwei ;
+    schema:isbn "7111637992",
+        "9787111637998" ;
     schema:name "建筑造型速成指南: 创意、操作和实例"@zh-Hans ;
+    schema:numberOfPages 137 ;
     schema:publisher :china-machine-press ;
     schema:subjectOf :zhihu-archidogs-2020 ;
     schema:translator :li-xi,
         :teng-yimeng ;
     schema:url <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> ;
-    brv:dataQualityNote "Record NLC verificato il 25/10/2026 (find.nlc.cn, link confermato anche dall'autore): 建筑造型速成指南, (意)布亚斯·拉菲利 著, 滕艺梦 栗茜 译, 机械工业出版社, Beijing 2020, ISBN 978-7-111-63799-8, sottotitolo 创意、操作和实例, CLC TU2-64, paginazione '11,137' (xi + 137 p.). Gli URL find.nlc.cn sono query/sessione, non permalink: non usati come sameAs. Il vecchio opac.nlc.cn resta non verificato. Nota: il testo 'China Machine Press... ministerial publisher' del dataset e' una descrizione, non un fatto bibliografico; la Wikipedia cinese cita per questo libro un ISBN errato (978-9063694111)."@it ;
+    brv:dataQualityNote "Record NLC verificato il 25/10/2026 (find.nlc.cn, link confermato anche dall'autore): 建筑造型速成指南, (意)布亚斯·拉菲利 著, 滕艺梦 栗茜 译, 机械工业出版社, Beijing 2020, ISBN 978-7-111-63799-8, sottotitolo 创意、操作和实例, CLC TU2-64, paginazione '11,137' (xi + 137 p.). Gli URL find.nlc.cn sono query/sessione, non permalink: non usati come sameAs. Il vecchio opac.nlc.cn resta non verificato. Nota: il testo 'China Machine Press... ministerial publisher' del dataset e' una descrizione, non un fatto bibliografico; la Wikipedia cinese cita per questo libro un ISBN errato (978-9063694111)."@it,
+        "WORLDCAT, OCLC 1511286356 (screenshot dell'autore, 28/10/2026): titolo '建筑造型速成指南 创意、操作和实例 = The fast guide to architectural form', 机械工业出版社 Beijing 2020, Di 1 ban, collana 图解设计思维过程小书库, 137 p. : ill. (chiefly col.) ; 19 cm, ISBN 9787111637998 / 7111637992. Traduttori: WorldCat (pagina riletta il 28/10/2026) riporta 滕艺梦 e 栗茜, con romanizzazioni 'Yimeng Teng', 'teng yi meng' e 'Qian Li' / 'li qian yi'; la variante 'Qian Li' di 栗茜 (nel dataset 'Li Xi', da NLC) e' registrata come alternateName. Pagine 137: concordano NLC (xi + 137) e WorldCat; aggiunte al nodo."@it ;
     brv:deprecatedUrl "http://opac.nlc.cn",
         "http://opac.nlc.cn/F/?func=find-a&find_code=AUT&request=Raffaelli" ;
     brv:sourceRecord "01.09",
@@ -3799,7 +4809,62 @@ brv:viaRecord a rdf:Property ;
             brv:source <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> ],
         [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> ] ;
+            brv:source <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.worldcat.org/title/1511286356> ] ;
+    brv:verificationStatus "verified-primary" .
+
+:inst-fundamentals-en a bf:Instance,
+        bf:Print,
+        schema:Book ;
+    bf:hasItem :item-fun-sydney,
+        :item-fun-umn,
+        :item-fundamentals-cud ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9789063696856" ],
+        [ a bf:Isbn ;
+            rdf:value "906369685X" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1437299399" ] ;
+    bf:instanceOf :work-fundamentals ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent :bis-publishers ;
+            bf:date "2023" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Amsterdam" ] ] ;
+    schema:alternateName "Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project"@en ;
+    schema:author :baires-raffaelli ;
+    schema:datePublished "2023"^^xsd:gYear ;
+    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to the Fundamentals of Architectural Design', language en, published by BIS Publishers in 2023; ISBN 9789063696856; 144 pages; translated by Silvia Antonini."@en ;
+    schema:exampleOfWork :work-fundamentals ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/title/1437299399> ;
+            schema:value "1437299399" ] ;
+    schema:inLanguage "en" ;
+    schema:isbn "906369685X",
+        "9789063696856" ;
+    schema:name "The Fast Guide to the Fundamentals of Architectural Design"@en ;
+    schema:numberOfPages 144 ;
+    schema:publisher :bis-publishers ;
+    schema:translator :silvia-antonini ;
+    schema:url <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X>,
+        <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> ;
+    brv:dataQualityNote "DATA E PAGINE (chiuse il 25/10/2026): la scheda dell'editore BIS indica Fall 2023 e 144 p.: adottati (il dataset originale indicava 160 pp.; Goodreads 14 maggio 2024 e 144 pp.; il catalogo CUD (Dubai) usa 'NA2750 .R33 2023')."@it,
+        "OCLC 1437299399 (screenshot WorldCat dell'autore, 28/10/2026): anno catalogato 2024, adottato 2023 (vedi nota sul Work)."@it ;
+    brv:sourceRecord "04.06" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.worldcat.org/title/1437299399> ] ;
     brv:verificationStatus "verified-primary" .
 
 :michela-de-licio a bf:Person,
@@ -3808,18 +4873,28 @@ brv:viaRecord a rdf:Property ;
     schema:memberOf :brre-architects ;
     schema:name "Michela De Licio" .
 
+:paolo-luccioni a schema:Person ;
+    schema:description "Paolo Luccioni: architect (Archstudio Luccioni s.r.l.); lead designer of the San Nicolo civic centre in Spoleto, on which Baires Raffaelli collaborated, and co-designer with Baires Raffaelli of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
+    schema:name "Paolo Luccioni" ;
+    brv:dataQualityNote "Indicato come 'P. Luccioni' su baires.eu."@it .
+
 :inst-form-zh-hant a bf:Instance,
         bf:Print,
         schema:Book ;
-    bf:hasItem :item-form-zh-hant-ncl ;
-    bf:identifiedBy [ a bf:Isbn ;
+    bf:hasItem :item-form-zh-hant-ncl,
+        :item-tw-cyut ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1322054519" ],
+        [ a bf:Isbn ;
+            rdf:value "9786269565818" ],
+        [ a bf:Isbn ;
             rdf:value "6269565812" ],
         [ a bf:Local ;
             bf:source [ a bf:Source ;
                     rdfs:label "National Central Library, Taiwan (Alma)" ] ;
-            rdf:value "alma990054563240209684" ],
-        [ a bf:Isbn ;
-            rdf:value "9786269565818" ] ;
+            rdf:value "alma990054563240209684" ] ;
     bf:instanceOf :work-form-zh-hant ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent :long-sea ;
@@ -3831,13 +4906,18 @@ brv:viaRecord a rdf:Property ;
         <https://www.sohu.com/a/377550041_657284>,
         <https://zhuanlan.zhihu.com/p/112587426> ;
     schema:author :baires-raffaelli ;
+    schema:bookEdition "初版"@zh-Hant ;
     schema:bookFormat schema:Paperback ;
     schema:datePublished "2022-02-25"^^xsd:date ;
     schema:description "Print edition (BIBFRAME Instance) of '建築造型速成指南', language zh-Hant, published by 龍溪國際圖書 on 2022-02-25; ISBN 9786269565818; 144 pages."@en ;
     schema:exampleOfWork :work-form-zh-hant ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "Longsea-book-code" ;
-            schema:value "LS-0146" ] ;
+            schema:value "LS-0146" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> ;
+            schema:value "1322054519" ] ;
     schema:inLanguage "zh-Hant" ;
     schema:isbn "6269565812",
         "9786269565818" ;
@@ -3848,7 +4928,8 @@ brv:viaRecord a rdf:Property ;
     schema:url <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1>,
         <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=>,
         <https://www.kingstone.com.tw/basic/2019210026128/> ;
-    brv:dataQualityNote "SCHEDA EDITORE (letta nel browser il 25/10/2026, link fornito dall'autore): Longsea riporta 拜爾斯．拉菲利 (Baires Raffaelli) 作, 邱喜麗 譯, 龍溪圖書, 出版日期 2022-02-25, 17x12.5 cm, 144 p., brossura, NT$280, codice LS-0146, ISBN 9786269565818: adottati (regola editore-first; coerente con NCL 2022.02). La foto del retro fornita dall'autore mostra lo stesso ISBN e il prezzo 280 (con www.longsea.com.tw). Kingstone riporta 2022/03/01, verosimilmente la data di messa in vendita; la scheda NLC indica 140 p. Kingstone conferma traduttrice 邱喜麗. Le recensioni Zhihu (2020-02) e Sohu (04/03/2020) precedono la data 2022 del libro taiwanese e quindi riguardano verosimilmente l'edizione cinese semplificata. Sohu verificata il 25/10/2026: risponde, nomina Baires Raffaelli e cita il libro come 《建筑造型速成指南》. Zhihu verificata il 25/10/2026 (la pagina si apre senza login): articolo di 黄家骏 (ArchiDogs, modificato il 2020-03-12, revisione di 栗茜) 'Le forme architettoniche si imparano in fretta?', sul volume cinese semplificato. Record della National Central Library (Taiwan) verificato il 25/10/2026 (pagina Primo dinamica: i dati compaiono dopo il caricamento; link confermato anche dall'autore): 建築造型速成指南 = The fast guide to architectural form, 拜爾斯.拉菲利 作 ; 邱喜麗 譯, 新北市 (New Taipei): 龍溪國際圖書, 2022.02, ISBN 9786269565818, collocazione 921 8457:2 (copia in 總館典藏書庫). La data NCL 2022.02 differisce da Kingstone (2022/03/01, verosimilmente messa in vendita); la scheda NLC conferma 140 p., ISBN 978-626-95658-1-8, traduttrice 邱喜丽. Il sito baires.eu parla di una seconda stampa taiwanese. CORREZIONE v3: l'ISBN-10 6269565814 del dataset non supera il checksum (atteso 2); sostituito con 6269565812, derivato dall'ISBN-13 978-626-95658-1-8."@it ;
+    brv:dataQualityNote "SCHEDA EDITORE (letta nel browser il 25/10/2026, link fornito dall'autore): Longsea riporta 拜爾斯．拉菲利 (Baires Raffaelli) 作, 邱喜麗 譯, 龍溪圖書, 出版日期 2022-02-25, 17x12.5 cm, 144 p., brossura, NT$280, codice LS-0146, ISBN 9786269565818: adottati (regola editore-first; coerente con NCL 2022.02). La foto del retro fornita dall'autore mostra lo stesso ISBN e il prezzo 280 (con www.longsea.com.tw). Kingstone riporta 2022/03/01, verosimilmente la data di messa in vendita; la scheda NLC indica 140 p. Kingstone conferma traduttrice 邱喜麗. Le recensioni Zhihu (2020-02) e Sohu (04/03/2020) precedono la data 2022 del libro taiwanese e quindi riguardano verosimilmente l'edizione cinese semplificata. Sohu verificata il 25/10/2026: risponde, nomina Baires Raffaelli e cita il libro come 《建筑造型速成指南》. Zhihu verificata il 25/10/2026 (la pagina si apre senza login): articolo di 黄家骏 (ArchiDogs, modificato il 2020-03-12, revisione di 栗茜) 'Le forme architettoniche si imparano in fretta?', sul volume cinese semplificato. Record della National Central Library (Taiwan) verificato il 25/10/2026 (pagina Primo dinamica: i dati compaiono dopo il caricamento; link confermato anche dall'autore): 建築造型速成指南 = The fast guide to architectural form, 拜爾斯.拉菲利 作 ; 邱喜麗 譯, 新北市 (New Taipei): 龍溪國際圖書, 2022.02, ISBN 9786269565818, collocazione 921 8457:2 (copia in 總館典藏書庫). La data NCL 2022.02 differisce da Kingstone (2022/03/01, verosimilmente messa in vendita); la scheda NLC conferma 140 p., ISBN 978-626-95658-1-8, traduttrice 邱喜丽. Il sito baires.eu parla di una seconda stampa taiwanese. CORREZIONE v3: l'ISBN-10 6269565814 del dataset non supera il checksum (atteso 2); sostituito con 6269565812, derivato dall'ISBN-13 978-626-95658-1-8."@it,
+        "WORLDCAT, OCLC 1322054519 (screenshot dell'autore, 28/10/2026): 建築造型速成指南, 拉菲利, Baires Raffaelli, 邱喜麗; 2022[民111], 初版; 龍溪國際出版 : 北星文化總經銷, 新北市永和區; [143]面 : 部份彩圖 ; 17公分; ISBN 9786269565818 / 6269565812; soggetto 建築美術設計; nota '譯自: The fastest guide to architectural form' (titolo originale citato con refuso 'fastest'). Il numero OCLC 1322054519 era stato attribuito per errore alla Instance inglese di Form e qui e' stato corretto. Pagine: 143 (WorldCat), 140 (NLC), 144 (editore, adottato)."@it ;
     brv:deprecatedUrl "https://nclsearch.ncl.edu.tw/search?q=9786269565818" ;
     brv:sourceRecord "01.08",
         "04.03" ;
@@ -3860,13 +4941,18 @@ brv:viaRecord a rdf:Property ;
             brv:source <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> ],
         [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
-            brv:source <https://www.kingstone.com.tw/basic/2019210026128/> ] ;
+            brv:source <https://www.kingstone.com.tw/basic/2019210026128/> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> ] ;
     brv:verificationStatus "verified-primary" .
 
-:paolo-luccioni a schema:Person ;
-    schema:description "Paolo Luccioni: architect (Archstudio Luccioni s.r.l.); lead designer of the San Nicolo civic centre in Spoleto, on which Baires Raffaelli collaborated, and co-designer with Baires Raffaelli of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself."@en ;
-    schema:name "Paolo Luccioni" ;
-    brv:dataQualityNote "Indicato come 'P. Luccioni' su baires.eu."@it .
+:silvia-antonini a bf:Person,
+        schema:Person ;
+    schema:description "Silvia Antonini: person in the Baires Raffaelli knowledge graph; translator of 'The Fast Guide to Accessibility Design'; translator of 'The Fast Guide to Architectural Form'; translator of 'The Fast Guide to the Fundamentals of Architectural Design'. Not Baires Raffaelli himself."@en ;
+    schema:name "Silvia Antonini" ;
+    brv:dataQualityNote "CATALOGHI DELLE BIBLIOTECHE (28/10/2026): nei cataloghi letti in Chrome Antonini compare come traduttrice (translated by Silvia Antonini / translator) in quasi tutti i record; alcuni cataloghi (UC Berkeley, Kentucky, UNLV, Virginia Tech, Bristol, CCA) la elencano anche o solo come 'illustrator' per Form: errore di catalogazione, ruolo corretto traduttrice (conferma dell'autore)."@it,
+        "Ruolo di traduttrice confermato da una fonte indipendente: i record CLIO di Columbia University (28/10/2026) riportano 'translated by Silvia Antonini' per Form e per Accessibility; WorldCat la indica traduttrice di Accessibility e illustratrice di Form (errore del catalogo, secondo l'autore). Per Fundamentals il ruolo e' dichiarazione dell'autore."@it .
 
 :sapienza a bf:Organization,
         schema:CollegeOrUniversity ;
@@ -3876,6 +4962,78 @@ brv:viaRecord a rdf:Property ;
     schema:name "Sapienza Università di Roma"@it ;
     schema:sameAs <http://www.wikidata.org/entity/Q209344>,
         <https://ror.org/02be6w209> .
+
+:inst-accessibility-en a bf:Instance,
+        bf:Print,
+        schema:Book ;
+    bf:hasItem :item-acc-berkeley,
+        :item-acc-fit,
+        :item-acc-getty,
+        :item-acc-harvard,
+        :item-acc-mcad,
+        :item-acc-ocad,
+        :item-acc-oklahoma,
+        :item-acc-penn,
+        :item-acc-union,
+        :item-acc-uw,
+        :item-acc-vcu,
+        :item-acc-yale,
+        :item-accessibility-columbia,
+        :item-accessibility-michigan,
+        :item-accessibility-princeton,
+        :item-accessibility-tcdc ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9789063695712" ],
+        [ a bf:Isbn ;
+            rdf:value "9063695713" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1151886440" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "1199329767" ] ;
+    bf:instanceOf :work-accessibility ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent :bis-publishers ;
+            bf:date "2020" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Amsterdam" ] ] ;
+    schema:author :baires-raffaelli ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to Accessibility Design', language en, published by BIS Publishers in 2020; ISBN 9789063695712; 160 pages; translated by Silvia Antonini."@en ;
+    schema:exampleOfWork :work-accessibility ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/title/1151886440> ;
+            schema:value "1151886440" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://worldcat.org/it/title/1199329767> ;
+            schema:value "1199329767" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "K10plus-PPN" ;
+            schema:value "1681242095" ;
+            brv:verificationStatus "verified-secondary" ] ;
+    schema:inLanguage "en" ;
+    schema:isbn "9063695713",
+        "9789063695712" ;
+    schema:name "The Fast Guide to Accessibility Design"@en ;
+    schema:numberOfPages 160 ;
+    schema:publisher :bis-publishers ;
+    schema:translator :silvia-antonini ;
+    schema:url <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> ;
+    brv:dataQualityNote "ISBN-13 valido. ISBN-10 9063695713 derivato dal checksum (assente nel dataset). K10plus PPN 1681242095 e ISBN-10 90-6369-571-3 da ORCID. PAGINE: 160 secondo la scheda dell'editore BIS (Spring 2020), concorde col dataset originale e adottata; TCDC cataloga 157 p.; il catalogo Thames & Hudson AU indica 144 (probabile errore, coincide con il libro Form)."@it,
+        "OCLC 1151886440 e' il record WorldCat di questa edizione (screenshot dell'autore, 28/10/2026), in precedenza attribuito per errore alla Instance di Form. 1199329767 resta come altro record OCLC (non mostrato negli screenshot, forse un'altra edizione o formato tra le 3 raggruppate)."@it ;
+    brv:sourceRecord "04.05" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-28"^^xsd:date ;
+            brv:source <https://search.worldcat.org/title/1151886440> ] ;
+    brv:verificationStatus "verified-primary" .
 
 :brre-architects a bf:Organization,
         schema:Organization ;
@@ -3905,20 +5063,122 @@ brv:viaRecord a rdf:Property ;
     bf:contribution [ a bf:PrimaryContribution ;
             bf:agent :baires-raffaelli ;
             bf:role [ a bf:Role ;
-                    rdfs:label "author" ] ] ;
+                    rdfs:label "author" ] ],
+        [ a bf:Contribution ;
+            bf:agent :silvia-antonini ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "translator" ] ] ;
     bf:hasInstance :inst-accessibility-en ;
     owl:sameAs <http://www.wikidata.org/entity/Q138836723> ;
     schema:author :baires-raffaelli ;
     schema:description "'The Fast Guide to Accessibility Design' (BIS Publishers, Amsterdam, 2020): handbook-checklist by Baires Raffaelli on designing accessible, inclusive everyday spaces and cities; cited in theses and university texts (Metropolia 2022, UMinho 2022, Bucchetti 2024)."@en ;
     schema:genre "inclusive and universal design handbook"@en ;
     schema:inLanguage "en" ;
+    schema:keywords "Architectural accessibility",
+        "Barrier-free design",
+        "Accessibilité aux personnes handicapées"@fr ;
     schema:name "The Fast Guide to Accessibility Design"@en ;
+    schema:translator :silvia-antonini ;
     schema:workExample :inst-accessibility-en ;
+    brv:dataQualityNote "WORLDCAT (screenshot dell'autore con numero OCLC, 28/10/2026): scheda OCLC 1151886440 (inglese, Bis Publishers Amsterdam 2020, 157 p., 15 cm, ISBN 9789063695712 / 9063695713, note 'Translated from the Italian'); la scheda raggruppa 3 edizioni e formati posseduti da 64 biblioteche. Il numero e' aggregato su piu' record OCLC e cambia nel tempo. WorldCat indica Silvia Antonini come traduttrice, e l'autore conferma (28/10/2026): ruolo registrato su Work e Instance. Pagine: il dataset mantiene 160 (scheda dell'editore), WorldCat 157 come TCDC. Soggetti di WorldCat riportati in schema:keywords."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 1151886440: dichiarate 3 edizioni e formati in 64 biblioteche; l'elenco restituito contiene 44 voci (nel CSV worldcat-libraries-2026-10-28.csv)."@it ;
     brv:sourceRecord "04.05" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
             brv:source <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> ;
             brv:viaRecord :inst-accessibility-en ] ;
+    brv:verificationStatus "verified-primary" .
+
+:inst-form-en a bf:Instance,
+        bf:Print,
+        schema:Book ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "140 p., colour illustrations, plans ; 15 cm (CCA, TCDC)" ] ;
+    bf:hasItem :item-form-aic,
+        :item-form-berkeley,
+        :item-form-cardiff,
+        :item-form-cca,
+        :item-form-colorado,
+        :item-form-columbia,
+        :item-form-hanze,
+        :item-form-harvard,
+        :item-form-kentucky,
+        :item-form-manzala,
+        :item-form-oregon,
+        :item-form-penn,
+        :item-form-pratt,
+        :item-form-princeton,
+        :item-form-princeton-2,
+        :item-form-stanford,
+        :item-form-tcdc,
+        :item-form-tib,
+        :item-form-ttu,
+        :item-form-tulane,
+        :item-form-uap,
+        :item-form-unlv,
+        :item-form-usi,
+        :item-form-utoronto,
+        :item-form-yale,
+        :item-form-yale-2 ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "9789063694111" ],
+        [ a bf:Isbn ;
+            rdf:value "9063694113" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "945632977" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "OCLC" ] ;
+            rdf:value "920019079" ] ;
+    bf:instanceOf :work-form ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent :bis-publishers ;
+            bf:date "2016" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Amsterdam" ] ] ;
+    schema:author :baires-raffaelli ;
+    schema:bookFormat schema:Paperback ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:description "Print edition (BIBFRAME Instance) of 'The Fast Guide to Architectural Form', language en, published by BIS Publishers in 2016; ISBN 9789063694111; 144 pages; translated by Silvia Antonini."@en ;
+    schema:exampleOfWork :work-form ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://www.worldcat.org/oclc/945632977> ;
+            schema:value "945632977" ],
+        [ a schema:PropertyValue ;
+            schema:propertyID "OCLC" ;
+            schema:url <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> ;
+            schema:value "920019079" ],
+        [ a schema:PropertyValue ;
+            rdfs:seeAlso <https://www.sudoc.abes.fr/cbs/DB=2.1//SRCH?IKT=12&TRM=256506191> ;
+            schema:propertyID "Sudoc-PPN" ;
+            schema:url <https://www.sudoc.fr/256506191> ;
+            schema:value "256506191" ] ;
+    schema:inLanguage "en" ;
+    schema:isbn "9063694113",
+        "9789063694111" ;
+    schema:name "The Fast Guide to Architectural Form"@en ;
+    schema:numberOfPages 144 ;
+    schema:publisher :bis-publishers ;
+    schema:translator :silvia-antonini ;
+    schema:url <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form>,
+        <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113>,
+        <https://www.bispublishers.com/the-fast-guide-to-architectural-form.html> ;
+    brv:dataQualityNote "ANNO E PAGINE (chiusi il 25/10/2026): la scheda dell'editore BIS indica Spring 2016, 144 p., 154 x 105 mm, ed e' la fonte adottata (regola: dati editoriali per l'opera, conteggi di biblioteca nelle note); l'autore conferma il 2016. CCA (Montreal) e TCDC (Bangkok) catalogano 140 p. (15 cm), UAP Bangladesh 124 p. (22 cm), il dataset originale 160. Le date 2018 (Scholar Architect, ricerca RG) e 2023 (curriculum rumeno) nei documenti citanti sono errori di fonte o riferimenti a ristampe: secondo l'autore esistono 2-3 ristampe in inglese, non documentate nei cataloghi e quindi non modellate come Instance. ISBN-10/13 con checksum valido. WorldCat: Cloudflare, quindi gli OCLC non sono stati confermati dall'audit; l'autore indica come funzionanti gli URL WorldCat 920019079 e 1322054519 (25/10/2026), e 920019079 compare comunque nel record CCA. CORREZIONE del 28/10/2026 (screenshot WorldCat con numero OCLC): 920019079 e' la scheda di Form (2016, 140 p.); 1151886440 e' invece l'edizione 2020 di Accessibility e 1322054519 l'edizione di Taiwan 2022: i due numeri erano stati attribuiti per errore a questa Instance e sono stati spostati sulle Instance corrette. 945632977 resta qui, non e' contraddetto ma non e' stato rivisto. Il link CCFr con parametro ts= si apre ma in una sessione nuova mostra 'Votre session a expire': e' un URL di sessione, non un permalink."@it ;
+    brv:deprecatedUrl "https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&record=z3950_sudoc:SUDOC:rsName-RS15~rsIndex-2~256506191&query=PUBLIC_CATALOGUE_SIMPLE&setCache=z3950_sudoc.SUDOC&fromList=true&action=public_search_federated&source=all_simple",
+        "https://ndlsearch.ndl.go.jp/books/R100000136-I1130854726247033132#bib" ;
+    brv:sourceRecord "04.01" ;
+    brv:verification [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113> ],
+        [ a brv:Verification ;
+            brv:accessedOn "2026-10-25"^^xsd:date ;
+            brv:source <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> ] ;
     brv:verificationStatus "verified-primary" .
 
 :work-form a bf:Text,
@@ -3931,7 +5191,7 @@ brv:viaRecord a rdf:Property ;
         [ a bf:Contribution ;
             bf:agent :silvia-antonini ;
             bf:role [ a bf:Role ;
-                    rdfs:label "translator, illustrator" ] ],
+                    rdfs:label "translator" ] ],
         [ a bf:Contribution ;
             bf:agent :luigi-prestinenza-puglisi ;
             bf:role [ a bf:Role ;
@@ -3945,6 +5205,11 @@ brv:viaRecord a rdf:Property ;
     schema:description "A practical guide to the basic forms and shapes in architectural planning and design: sixty architectural forms, each with a schematic illustration and photographs of buildings that use the form."@en ;
     schema:genre "architectural design handbook"@en ;
     schema:inLanguage "en" ;
+    schema:keywords "Aesthetics",
+        "Architecture: Buildings, Public, Commercial & Industrial (BISAC)",
+        "Architecture: Design, Drafting, Drawing & Presentation (BISAC)",
+        "Architecture: Methods & Materials (BISAC)",
+        "Architecture: Study & Teaching (BISAC)" ;
     schema:name "The Fast Guide to Architectural Form"@en ;
     schema:sameAs <https://cir.nii.ac.jp/crid/1130854726247033132> ;
     schema:translator :silvia-antonini ;
@@ -3952,7 +5217,10 @@ brv:viaRecord a rdf:Property ;
     schema:workTranslation :work-form-fa,
         :work-form-zh-hans,
         :work-form-zh-hant ;
-    brv:dataQualityNote "Il Work e' unico; CiNii crid 1130854726247033132 e' la scheda del libro (non della persona). Il record NDL R100000136-I1130854726247033132 del dataset risponde 404."@it ;
+    brv:dataQualityNote "Il Work e' unico; CiNii crid 1130854726247033132 e' la scheda del libro (non della persona). Il record NDL R100000136-I1130854726247033132 del dataset risponde 404."@it,
+        "WORLDCAT (screenshot dell'autore, 28/10/2026, autore collegato, posizione impostata su Bologna): la scheda raggruppa 2 edizioni e formati posseduti da 62 biblioteche (Stati Uniti, Canada, Germania, Paesi Bassi, Regno Unito, Hong Kong, Singapore, Australia, Nuova Zelanda e altri). Il numero e' un dato aggregato su piu' record OCLC, cambia nel tempo e non e' riferito a una singola Instance; l'elenco delle biblioteche non e' stato registrato (nessun segno di inventario, solo il nome)."@it,
+        "WORLDCAT, OCLC 920019079 (pagina riletta il 28/10/2026): Bis Publishers Amsterdam 2016, 140 p. : colour illustrations, plans ; 15 cm, ISBN 9789063694111 / 9063694113. Responsabilita' in WorldCat: Baires Raffaelli (Autore), Silvia Antonini (Illustratore). L'autore precisa (28/10/2026) che Silvia Antonini e' solo traduttrice, mai illustratrice: il ruolo 'illustratore' di WorldCat e' un errore del catalogo e il dataset registra solo 'translator' (rimosso il ruolo di illustratrice che era presente). Contenuti: prefazione di Luigi Prestinenza Puglisi, gia' presente."@it,
+        "WORLDCAT, rilettura in Chrome del 28/10/2026 sulla scheda OCLC 920019079: dichiarate 3 edizioni e formati in 92 biblioteche (nello screenshot dell'autore erano 2 edizioni e 62 biblioteche: il conteggio cambia con le impostazioni e nel tempo). L'elenco restituito contiene 66 voci su 2 pagine; le voci sono nel file CSV worldcat-libraries-2026-10-28.csv, fuori dal grafo."@it ;
     brv:sourceRecord "04.01" ;
     brv:verification [ a brv:Verification ;
             brv:accessedOn "2026-10-25"^^xsd:date ;
@@ -3996,7 +5264,9 @@ brv:viaRecord a rdf:Property ;
             schema:affiliation :udr-ais ;
             schema:roleName "Researcher / PhD candidate"@en ] ;
     schema:alternateName "Raffaelli, Baires, 1975-",
-        "Raffaelli, Bares" ;
+        "Raffaelli, Bares",
+        "布亚斯·拉菲利"@zh-Hans,
+        "拜爾斯．拉菲利"@zh-Hant ;
     schema:alumniOf :sapienza ;
     schema:birthDate "1975"^^xsd:gYear ;
     schema:birthPlace :fabriano ;

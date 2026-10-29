@@ -2,8 +2,8 @@
 BAIRES RAFFAELLI - BIBLIOGRAPHIC, ACADEMIC, AND AUTHORITY CONTROL DATASET
 Format: Structured Key-Value / Knowledge Graph Ingestion & RAG-Optimized Text
 Standards: Schema.org / BIBFRAME 2.0 / Linked Open Data (LOD) Compliant
-Version: 3.0.2
-Version Date: 2026-10-27
+Version: 3.0.3
+Version Date: 2026-10-28
 DOI: 10.5281/zenodo.23647642 (https://doi.org/10.5281/zenodo.23647642, all versions)
 License: Creative Commons Zero v1.0 Universal (CC0 1.0)
 Canonical Home: https://w3id.org/baires-raffaelli/
@@ -40,7 +40,7 @@ Entity_ID: baires-raffaelli
 Entity_IRI: https://w3id.org/baires-raffaelli/id/baires-raffaelli
 Ontological_Type: bf:Person | http://xmlns.com/foaf/0.1/Person | schema:Person
 Name: Baires Raffaelli
-Alternate_Name: Raffaelli, Baires, 1975- | Raffaelli, Bares
+Alternate_Name: Raffaelli, Baires, 1975- | Raffaelli, Bares | 布亚斯·拉菲利 | 拜爾斯．拉菲利
 Description: Italian architect, university researcher and author (PhD in Architecture, Sapienza University of Rome); author of the BIS Publishers series 'The Fast Guide to ...' and creator of the AVLA accessibility index.
 Disambiguation: Baires Raffaelli (b. 1975, Fabriano, Italy): architect, Sapienza PhD, author of the BIS Publishers 'Fast Guide' series. Not the same person as Giorgio Raffaelli of the Festival per le Citta Accessibili.
 Birth_Date: 1975
@@ -111,16 +111,17 @@ Translator: 邱喜麗 (qiu-xili)
 Publisher: 龍溪國際圖書 (long-sea)
 Date_Published: 2022-02-25
 Language: zh-Hant
+Book_Edition: 初版
 ISBN: 6269565812 | 9786269565818
 Pages: 144
 Format: schema:Paperback
 Instance_Of: 建築造型速成指南 (work-form-zh-hant)
-Identifier: Longsea-book-code: LS-0146
+Identifier: Longsea-book-code: LS-0146 | OCLC: 1322054519 <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519>
 Official_URL: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> | <https://www.kingstone.com.tw/basic/2019210026128/>
 See_Also: <http://find.nlc.cn/search/showDocDetails?docId=-7101963411491452306&dataSource=ucs01&query=BAIRES%20RAFFAELLI> | <https://ncltw.primo.exlibrisgroup.com/nde/search?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli> | <https://www.sohu.com/a/377550041_657284> | <https://zhuanlan.zhihu.com/p/112587426>
 Do_Not_Follow_URL: https://nclsearch.ncl.edu.tw/search?q=9786269565818
 Verification_Status: verified-primary
-Verified_Against: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> (accessed 2026-10-25) | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> (accessed 2026-10-25) | <https://www.kingstone.com.tw/basic/2019210026128/> (accessed 2026-10-25)
+Verified_Against: <http://www.longsea.com.tw/tw/product/show.php?num=746&kind=28&category=TWBOOK&page=1> (accessed 2026-10-25) | <https://ncltw.primo.exlibrisgroup.com/nde/fulldisplay?search_scope=MyInstitution&vid=886NCL_INST:LIB&tab=LIBlang&lang=en&query=baires%20raffaelli&docid=alma990054563240209684&adaptor=Local%20Search%20Engine&context=L&isFrbr=false&isHighlightedRecord=false&state=> (accessed 2026-10-25) | <https://www.kingstone.com.tw/basic/2019210026128/> (accessed 2026-10-25) | <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> (accessed 2026-10-28)
 
 [RECORD 01.05]
 Entity_ID: inst-form-zh-hans
@@ -133,15 +134,18 @@ Translator: 栗茜 (li-xi) | 滕艺梦 (teng-yimeng)
 Publisher: 机械工业出版社 (china-machine-press)
 Date_Published: 2020
 Language: zh-Hans
-ISBN: 9787111637998
+ISBN: 7111637992 | 9787111637998
+Pages: 137
+Is_Part_Of: 图解设计思维过程小书库 (series-tujie-sheji-siwei)
 Instance_Of: 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans)
-Identifier: NLC-system-number: 032658037
+Identifier: NLC-system-number: 032658037 | OCLC: 1511286356 <https://search.worldcat.org/title/1511286356>
 Official_URL: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI>
 See_Also: <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> | <http://opac.nlc.cn/F/JFH6S11MASLJ7SRSPMFU8KFLRU9APFVQFRBK4ASXGKN282MFM5-14792?func=short>
 Do_Not_Follow_URL: http://opac.nlc.cn | http://opac.nlc.cn/F/?func=find-a&find_code=AUT&request=Raffaelli
 Verification_Status: verified-primary
-Verified_Against: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> (accessed 2026-10-25) | <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> (accessed 2026-10-25)
+Verified_Against: <http://find.nlc.cn/search/showDocDetails?docId=-8516799482584648576&dataSource=ucs01&query=BAIRES%20RAFFAELLI> (accessed 2026-10-25) | <http://find.nlc.cn/search/doSearch?query=BAIRES%20RAFFAELLI&secQuery=&actualQuery=BAIRES%20RAFFAELLI&searchType=2&docType=%E5%85%A8%E9%83%A8&isGroup=isGroup&targetFieldLog=%E5%85%A8%E9%83%A8%E5%AD%97%E6%AE%B5&fromHome=true> (accessed 2026-10-25) | <https://search.worldcat.org/title/1511286356> (accessed 2026-10-28)
 Subject_Of: 2020年，你还在为做设计没灵感而困扰吗？4本书掌握建筑造型 (zhihu-archidogs-2020)
+Extent: 137 p. : ill. (chiefly col.) ; 19 cm (WorldCat; NLC: xi, 137 p.)
 
 [RECORD 01.06]
 Entity_ID: dataset
@@ -158,8 +162,8 @@ Based_On: <https://orcid.org/0009-0001-6673-2672> | <https://www.baires.eu/> | <
 Identifier: DOI: 10.5281/zenodo.23647642 <https://doi.org/10.5281/zenodo.23647642>
 Authority_URI: <https://doi.org/10.5281/zenodo.23647642> | <https://github.com/by-res/baires-raffaelli>
 Official_URL: <https://w3id.org/baires-raffaelli/>
-Version: 3.0.2
-Date_Modified: 2026-10-27
+Version: 3.0.3
+Date_Modified: 2026-10-28
 License: <https://creativecommons.org/publicdomain/zero/1.0/>
 Distribution: schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.ttl>, schema:encodingFormat=text/turtle | schema:contentUrl=<https://w3id.org/baires-raffaelli/data/baires-raffaelli.jsonld>, schema:encodingFormat=application/ld+json | Key-value text edition for LLM ingestion | Provenance layer (editorial notes)
 Free_To_Access: true
@@ -226,10 +230,10 @@ Date_Published: 2012
 Language: it
 Pages: 140
 Instance_Of: Semantica e tipologia della forma nell'architettura contemporanea : articolazioni ed operazioni attraverso l'analisi degli esempi e delle teorie (thesis-phd-work)
-Identifier: Sebina-RMS: RMS02820805
+Identifier: Sebina-RMS: RMS02820805 | OCLC: 1508168248 <https://search.worldcat.org/title/1508168248>
 Official_URL: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805>
 Verification_Status: verified-primary
-Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25)
+Verified_Against: <https://opac.uniroma1.it/SebinaOpacRMS/resource/semantica-e-tipologia-della-forma-nellarchitettura-contemporanea-articolazioni-ed-operazioni-attrave/RMS02820805> (accessed 2026-10-25) | <https://search.worldcat.org/title/1508168248> (accessed 2026-10-28)
 Extent: 140 p. ; 1 v. + allegato 'Keep in Mind: Cheekmate in three Moves'
 
 [RECORD 02.06]
@@ -373,7 +377,6 @@ Name: The Fast Guide to Architectural Form
 Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to Architectural Form', language en, published by BIS Publishers in 2016; ISBN 9789063694111; 144 pages; translated by Silvia Antonini.
 Author: Baires Raffaelli (baires-raffaelli)
 Translator: Silvia Antonini (silvia-antonini)
-Illustrator: Silvia Antonini (silvia-antonini)
 Publisher: BIS Publishers (bis-publishers)
 Date_Published: 2016
 Language: en
@@ -381,7 +384,7 @@ ISBN: 9063694113 | 9789063694111
 Pages: 144
 Format: schema:Paperback
 Instance_Of: The Fast Guide to Architectural Form (work-form)
-Identifier: OCLC: 945632977 <https://www.worldcat.org/oclc/945632977> | OCLC: 1151886440 | OCLC: 920019079 <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> | OCLC: 1322054519 <https://search.worldcat.org/it/title/1322054519?oclcNum=1322054519> | Sudoc-PPN: 256506191 <https://www.sudoc.fr/256506191>
+Identifier: OCLC: 945632977 <https://www.worldcat.org/oclc/945632977> | OCLC: 920019079 <https://search.worldcat.org/it/title/920019079?oclcNum=920019079> | Sudoc-PPN: 256506191 <https://www.sudoc.fr/256506191>
 Official_URL: <https://issuu.com/bis_publishers/docs/fast_guide_to_architectural_form> | <https://www.amazon.it/Fast-Guide-Architectural-Form/dp/9063694113> | <https://www.bispublishers.com/the-fast-guide-to-architectural-form.html>
 Do_Not_Follow_URL: https://ccfr.bnf.fr/portailccfr/servlet/ViewManager?menu=public_menu_view&record=z3950_sudoc:SUDOC:rsName-RS15~rsIndex-2~256506191&query=PUBLIC_CATALOGUE_SIMPLE&setCache=z3950_sudoc.SUDOC&fromList=true&action=public_search_federated&source=all_simple | https://ndlsearch.ndl.go.jp/books/R100000136-I1130854726247033132#bib
 Verification_Status: verified-primary
@@ -400,6 +403,7 @@ Contributor: Luigi Prestinenza Puglisi (luigi-prestinenza-puglisi)
 Translator: Silvia Antonini (silvia-antonini)
 Language: en
 Genre: architectural design handbook
+Keywords: Aesthetics | Architecture: Buildings, Public, Commercial & Industrial (BISAC) | Architecture: Design, Drafting, Drawing & Presentation (BISAC) | Architecture: Methods & Materials (BISAC) | Architecture: Study & Teaching (BISAC)
 Award: Honorable Mention, romArchitettura 6 - Premio Bruno Zevi per la diffusione della cultura architettonica (2017)
 Work_Translation: مبانی فرم (work-form-fa) | 建筑造型速成指南: 创意、操作和实例 (work-form-zh-hans) | 建築造型速成指南 (work-form-zh-hant)
 Has_Instance: The Fast Guide to Architectural Form (inst-form-en)
@@ -470,18 +474,19 @@ Entity_ID: inst-accessibility-en
 Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-accessibility-en
 Ontological_Type: bf:Instance | bf:Print | schema:Book
 Name: The Fast Guide to Accessibility Design
-Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to Accessibility Design', language en, published by BIS Publishers in 2020; ISBN 9789063695712; 160 pages.
+Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to Accessibility Design', language en, published by BIS Publishers in 2020; ISBN 9789063695712; 160 pages; translated by Silvia Antonini.
 Author: Baires Raffaelli (baires-raffaelli)
+Translator: Silvia Antonini (silvia-antonini)
 Publisher: BIS Publishers (bis-publishers)
 Date_Published: 2020
 Language: en
 ISBN: 9063695713 | 9789063695712
 Pages: 160
 Instance_Of: The Fast Guide to Accessibility Design (work-accessibility)
-Identifier: OCLC: 1199329767 <https://worldcat.org/it/title/1199329767> | K10plus-PPN: 1681242095
+Identifier: OCLC: 1151886440 <https://search.worldcat.org/title/1151886440> | OCLC: 1199329767 <https://worldcat.org/it/title/1199329767> | K10plus-PPN: 1681242095
 Official_URL: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html>
 Verification_Status: verified-primary
-Verified_Against: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> (accessed 2026-10-25)
+Verified_Against: <https://www.bispublishers.com/the-fast-guide-to-accessibility-design.html> (accessed 2026-10-25) | <https://search.worldcat.org/title/1151886440> (accessed 2026-10-28)
 
 [RECORD 04.08]
 Entity_ID: work-accessibility
@@ -490,8 +495,10 @@ Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
 Name: The Fast Guide to Accessibility Design
 Description: 'The Fast Guide to Accessibility Design' (BIS Publishers, Amsterdam, 2020): handbook-checklist by Baires Raffaelli on designing accessible, inclusive everyday spaces and cities; cited in theses and university texts (Metropolia 2022, UMinho 2022, Bucchetti 2024).
 Author: Baires Raffaelli (baires-raffaelli)
+Translator: Silvia Antonini (silvia-antonini)
 Language: en
 Genre: inclusive and universal design handbook
+Keywords: Architectural accessibility | Barrier-free design | Accessibilité aux personnes handicapées
 Has_Instance: The Fast Guide to Accessibility Design (inst-accessibility-en)
 Same_As_Wikidata: <http://www.wikidata.org/entity/Q138836723>
 Verification_Status: verified-primary
@@ -502,27 +509,32 @@ Entity_ID: inst-fundamentals-en
 Entity_IRI: https://w3id.org/baires-raffaelli/id/inst-fundamentals-en
 Ontological_Type: bf:Instance | bf:Print | schema:Book
 Name: The Fast Guide to the Fundamentals of Architectural Design
-Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to the Fundamentals of Architectural Design', language en, published by BIS Publishers in 2023; ISBN 9789063696856; 144 pages.
+Alternate_Name: Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project
+Description: Print edition (BIBFRAME Instance) of 'The Fast Guide to the Fundamentals of Architectural Design', language en, published by BIS Publishers in 2023; ISBN 9789063696856; 144 pages; translated by Silvia Antonini.
 Author: Baires Raffaelli (baires-raffaelli)
+Translator: Silvia Antonini (silvia-antonini)
 Publisher: BIS Publishers (bis-publishers)
 Date_Published: 2023
 Language: en
 ISBN: 906369685X | 9789063696856
 Pages: 144
 Instance_Of: The Fast Guide to the Fundamentals of Architectural Design (work-fundamentals)
+Identifier: OCLC: 1437299399 <https://search.worldcat.org/title/1437299399>
 Official_URL: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html>
 Verification_Status: verified-primary
-Verified_Against: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> (accessed 2026-10-25) | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> (accessed 2026-10-25)
+Verified_Against: <https://www.amazon.it/Fast-Guide-Fundamentals-Architectural-Design/dp/906369685X> (accessed 2026-10-25) | <https://www.bispublishers.com/the-fast-guide-to-the-fundamentals-of-architectura.html> (accessed 2026-10-25) | <https://search.worldcat.org/title/1437299399> (accessed 2026-10-28)
 
 [RECORD 04.10]
 Entity_ID: work-fundamentals
 Entity_IRI: https://w3id.org/baires-raffaelli/id/work-fundamentals
 Ontological_Type: bf:Text | bf:Work | schema:CreativeWork
 Name: The Fast Guide to the Fundamentals of Architectural Design
-Alternate_Name: The Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project
+Alternate_Name: Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project | The Fast Guide to the Fundamentals of Architectural Design: Strategies and Techniques for Creating a Successful Project
 Description: Theoretical and foundational guide to architectural design in 33 steps.
 Author: Baires Raffaelli (baires-raffaelli)
+Translator: Silvia Antonini (silvia-antonini)
 Language: en
+Keywords: Architecture / General (BISAC)
 Has_Instance: The Fast Guide to the Fundamentals of Architectural Design (inst-fundamentals-en)
 Authority_URI: <https://www.goodreads.com/book/show/195821007-the-fast-guide-to-the-fundamentals-of-architectural-design>
 Same_As_Wikidata: <http://www.wikidata.org/entity/Q138836771>
@@ -946,6 +958,14 @@ Verification_Status: self-published
 Verification_Basis: link-not-rechecked
 Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
 List_Items: Industrial Warehouse I and II, Rome | Urban Nexus | Renovation of optical/photography store | Villa with picture frame windows | Magix advertising shop | Innovative housing prototype for the elderly | Renovation of historic building into a resort, Spoleto | Unified architectural intervention
+
+[RECORD 04.45]
+Entity_ID: series-tujie-sheji-siwei
+Entity_IRI: https://w3id.org/baires-raffaelli/id/series-tujie-sheji-siwei
+Ontological_Type: schema:BookSeries
+Name: 图解设计思维过程小书库
+Alternate_Name: Tu jie she ji si wei guo cheng xiao shu ku
+Publisher: 机械工业出版社 (china-machine-press)
 
 
 [05. COMPETITIONS AND PROJECTS]
@@ -2400,6 +2420,448 @@ Verification_Status: verified-primary
 Verified_Against: <https://www.library.manzalaacademy.edu.eg/items/show/404> (accessed 2026-10-25)
 
 [RECORD 11.10]
+Entity_ID: item-accessibility-columbia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-accessibility-columbia
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Columbia (Avery, offsite)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Columbia University Libraries (New York) (columbia-libraries)
+Shelf_Mark: NA2545.P5 R34 2020g
+Official_URL: <https://clio.columbia.edu/catalog/14971752>
+Verification_Status: verified-primary
+Verified_Against: <https://clio.columbia.edu/catalog/14971752> (accessed 2026-10-28)
+
+[RECORD 11.11]
+Entity_ID: item-form-columbia
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-columbia
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Columbia (Avery, offsite)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Columbia University Libraries (New York) (columbia-libraries)
+Shelf_Mark: NA2760 .R34 2016g
+Official_URL: <https://clio.columbia.edu/catalog/11876088>
+Verification_Status: verified-primary
+Verified_Against: <https://clio.columbia.edu/catalog/11876088> (accessed 2026-10-28)
+
+[RECORD 11.12]
+Entity_ID: item-acc-berkeley
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-berkeley
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia UC Berkeley Libraries (Environmental Design Library)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: UC Berkeley Libraries (lib-berkeley)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://search.library.berkeley.edu/discovery/search?vid=01UCS_BER:UCB&lang=en&tab=Everything&offset=0&search_scope=MyInstitution&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.13]
+Entity_ID: item-acc-fit
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-fit
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Fashion Institute of Technology Library (Gladys Marcus Library, 5th floor Main Stacks)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Fashion Institute of Technology Library (lib-fit)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://onesearch.fitnyc.edu/discovery/search?vid=01SUNY_FIT:01SUNY_FIT&mode=advanced&offset=0&tab=Everything&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.14]
+Entity_ID: item-acc-getty
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-getty
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Getty Research Institute (General Collections, Library Annex)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Getty Research Institute (lib-getty)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://primo.getty.edu/primo-explore/search?tab=all_gri&search_scope=COMBINED&vid=GRI&institution=01GRI_INST&mode=basic&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.15]
+Entity_ID: item-acc-harvard
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-harvard
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Harvard University Library (Frances Loeb Library, Offsite Storage)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Harvard University Library (lib-harvard)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://hollis.harvard.edu/discovery/search?vid=01HVD_INST:HVD2&tab=LibraryCatalog&query=isbn,contains,9789063695712&search_scope=MyInstitution> (accessed 2026-10-28)
+
+[RECORD 11.16]
+Entity_ID: item-acc-mcad
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-mcad
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Minneapolis College of Art & Design (MCAD Book Stacks)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Minneapolis College of Art & Design (lib-mcad)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://mnpals-mcad.primo.exlibrisgroup.com/discovery/openurl?institution=01MNPALS_MCAD&vid=01MNPALS_MCAD:MCAD&rft.isbn=9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.17]
+Entity_ID: item-acc-ocad
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-ocad
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia OCAD University, Dorothy H. Hoover Library (Dorothy H. Hoover Library, Circulating)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: OCAD University, Dorothy H. Hoover Library (lib-ocad)
+Shelf_Mark: NA2545 P5 R23 2020
+Verification_Status: verified-primary
+Verified_Against: <https://ocadu.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_OCAD:OMNI&tab=Everything&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.18]
+Entity_ID: item-acc-oklahoma
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-oklahoma
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia University of Oklahoma (Off-Site Storage, Library Service Center)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: University of Oklahoma (lib-oklahoma)
+Shelf_Mark: NA 2545 .P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&query=any,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.19]
+Entity_ID: item-acc-penn
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-penn
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia University of Pennsylvania Libraries (Fine Arts Library)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: University of Pennsylvania Libraries (lib-penn)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://find.library.upenn.edu/?search_field=isxn_search&q=9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.20]
+Entity_ID: item-acc-union
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-union
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Union College, Schaffer Library (Schaffer Library, Basement - Books)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Union College, Schaffer Library (lib-union)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://union.primo.exlibrisgroup.com/discovery/search?tab=Everything&search_scope=MyInst_and_CI&vid=01UCNY_INST:01UCNY_INST&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.21]
+Entity_ID: item-acc-uw
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-uw
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia University of Washington Libraries (Built Environments Library, General Stacks)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: University of Washington Libraries (lib-uw)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://orbiscascade-washington.primo.exlibrisgroup.com/nde/search?tab=UW_default&search_scope=UW_EVERYTHING&mode=advanced&vid=01ALLIANCE_UW:UW_NDE&lang=en&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.22]
+Entity_ID: item-acc-vcu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-vcu
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Virginia Commonwealth University (Cabell Library, General Collection)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Virginia Commonwealth University (lib-vcu)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://vcu.primo.exlibrisgroup.com/discovery/search?vid=01VCU_INST:VCUL&sortby=rank&lang=en&query=isbn,contains,9789063695712> (accessed 2026-10-28)
+
+[RECORD 11.23]
+Entity_ID: item-acc-yale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-acc-yale
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Yale University Library (Offsite Library Collection)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Yale University Library (lib-yale)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verified_Against: <https://search.library.yale.edu/catalog> (accessed 2026-10-28)
+
+[RECORD 11.24]
+Entity_ID: item-form-aic
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-aic
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Art Institute of Chicago (Ryerson & Burnham Libraries, RBL Stack 4)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Art Institute of Chicago (lib-aic)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://artic.primo.exlibrisgroup.com/discovery/search?vid=01ARTIC_INST:01ARTIC&mode=advanced&tab=default_tab&offset=0&query=isbn,exact,9789063694111&sortby=rank&search_scope=MyInst_and_CI&lang=en> (accessed 2026-10-28)
+
+[RECORD 11.25]
+Entity_ID: item-form-berkeley
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-berkeley
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia UC Berkeley Libraries (Environmental Design Library)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: UC Berkeley Libraries (lib-berkeley)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://search.library.berkeley.edu/discovery/search?vid=01UCS_BER:UCB&lang=en&tab=Everything&offset=0&search_scope=MyInstitution&query=isbn,contains,9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.26]
+Entity_ID: item-form-cardiff
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-cardiff
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Cardiff University (Architecture Library)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Cardiff University (lib-cardiff)
+Shelf_Mark: 720.1 RAF
+Verification_Status: verified-primary
+Verified_Against: <https://librarysearch.cardiff.ac.uk/nde/search?vid=44WHELF_CAR:CAR&tab=CSCOP_EVERYTHING&search_scope=CU_Search_ALL&query=9789063694111&lang=en> (accessed 2026-10-28)
+
+[RECORD 11.27]
+Entity_ID: item-form-colorado
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-colorado
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Colorado Boulder (Norlin Library, Art & Architecture Stacks)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Colorado Boulder (lib-colorado)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://libcat.colorado.edu/Search/Results?type=oclc_num&lookfor=920019079> (accessed 2026-10-28)
+
+[RECORD 11.28]
+Entity_ID: item-form-hanze
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-hanze
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Hanze University of Applied Sciences (HanzeMediatheek, Minerva)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Hanze University of Applied Sciences (lib-hanze)
+Shelf_Mark: 711.3 RAFF
+Verification_Status: verified-primary
+Verified_Against: <https://hanze.on.worldcat.org/search?queryString=bn%3A9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.29]
+Entity_ID: item-form-harvard
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-harvard
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Harvard University Library (Frances Loeb Library)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Harvard University Library (lib-harvard)
+Shelf_Mark: NA2760 .R34X 2016
+Verification_Status: verified-primary
+Verified_Against: <https://hollis.harvard.edu/discovery/search?vid=01HVD_INST:HVD2&tab=LibraryCatalog&query=isbn,contains,9789063694111&search_scope=MyInstitution> (accessed 2026-10-28)
+
+[RECORD 11.30]
+Entity_ID: item-form-kentucky
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-kentucky
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Kentucky Libraries (Fine Arts Library, Miniature)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Kentucky Libraries (lib-kentucky)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://saalck-uky.primo.exlibrisgroup.com/discovery/search?sortby=rank&vid=01SAA_UKY:UKY&lang=en_US&query=any,contains,9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.31]
+Entity_ID: item-form-oregon
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-oregon
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Oregon Libraries (Design Library, Stacks (floors 2-3))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Oregon Libraries (lib-oregon)
+Shelf_Mark: NA2760 .R34x 2016
+Verification_Status: verified-primary
+Verified_Against: <https://alliance-uoregon.primo.exlibrisgroup.com/discovery/search?vid=01ALLIANCE_UO:UO&tab=Rollup&search_scope=Everything&sortby=rank&offset=0&query=isbn,contains,9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.32]
+Entity_ID: item-form-penn
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-penn
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Pennsylvania Libraries (Fine Arts Library)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Pennsylvania Libraries (lib-penn)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://find.library.upenn.edu/?search_field=isxn_search&q=9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.33]
+Entity_ID: item-form-pratt
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-pratt
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Pratt Institute Libraries (Brooklyn Stacks)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Pratt Institute Libraries (lib-pratt)
+Shelf_Mark: 729 R136
+Verification_Status: verified-primary
+Verified_Against: <https://cat.pratt.edu/search/?searchtype=i&SORT=D&searcharg=9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.34]
+Entity_ID: item-form-tib
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-tib
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Technische Informationsbibliothek (TIB) (Hannover)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Technische Informationsbibliothek (TIB) (lib-tib)
+Shelf_Mark: U 16 B 979
+Verification_Status: verified-primary
+Verified_Against: <https://opac.tib.eu/DB=1/LNG=EN/CLK?IKT=12&TRM=1618773887> (accessed 2026-10-28)
+
+[RECORD 11.35]
+Entity_ID: item-form-ttu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-ttu
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Texas Tech University Libraries (Architecture Library, Stacks (8th floor))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Texas Tech University Libraries (lib-ttu)
+Shelf_Mark: NA2760 .R3413 2016
+Verification_Status: verified-primary
+Verified_Against: <https://ttu.primo.exlibrisgroup.com/discovery/search?vid=01TTU_INST:01TTU&mode=advanced&tab=LibraryCatalog&query=isbn,contains,9789063694111&lang=en&search_scope=MyInstitution> (accessed 2026-10-28)
+
+[RECORD 11.36]
+Entity_ID: item-form-tulane
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-tulane
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Tulane University (Howard-Tilton Library, Stacks)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Tulane University (lib-tulane)
+Shelf_Mark: NA2760 .R25 2016
+Verification_Status: verified-primary
+Verified_Against: <https://library.search.tulane.edu/discovery/search?mode=simple&vid=01TUL_INST:Tulane&search_scope=MyInst_and_CI&query=isbn,contains,9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.37]
+Entity_ID: item-form-unlv
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-unlv
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Nevada, Las Vegas Libraries (Architecture Studies Library, Architecture Book Stacks)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Nevada, Las Vegas Libraries (lib-unlv)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://unlv.primo.exlibrisgroup.com/discovery/search?vid=01UNLV_INST:UNLV&query=isbn,contains,9789063694111&sortby=rank&lang=en> (accessed 2026-10-28)
+
+[RECORD 11.38]
+Entity_ID: item-form-usi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-usi
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Università della Svizzera italiana (Biblioteca Accademia di architettura, Sala 4 (Collezione generale))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Università della Svizzera italiana (lib-usi)
+Shelf_Mark: AAM 720.011 Raff
+Verification_Status: verified-primary
+Verified_Against: <https://reperio.usi.ch/discovery/search?tab=41SLSP_USI_MyInst_and_CI&search_scope=MyInst_MEGA&vid=41SLSP_USI:BiUSI&mode=advanced&offset=0&query=isbn,contains,9789063694111> (accessed 2026-10-28)
+
+[RECORD 11.39]
+Entity_ID: item-form-utoronto
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-utoronto
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia University of Toronto Architecture Library (Architecture, Landscape & Design (Eberhard Zeidler Library), Stacks)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: University of Toronto Architecture Library (lib-utoronto)
+Shelf_Mark: NA2760 .R3413 2016
+Verification_Status: verified-primary
+Verified_Against: <https://librarysearch.library.utoronto.ca/nde/search?vid=01UTORONTO_INST:UTORONTO_NDE&mode=advanced&tab=Everything&query=isbn,contains,9789063694111&lang=en> (accessed 2026-10-28)
+
+[RECORD 11.40]
+Entity_ID: item-form-yale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-yale
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Yale University Library (Offsite Library Collection (In Library Use Only))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Yale University Library (lib-yale)
+Shelf_Mark: NA2760 .R34 2016g
+Verification_Status: verified-primary
+Verified_Against: <https://search.library.yale.edu/catalog> (accessed 2026-10-28)
+
+[RECORD 11.41]
+Entity_ID: item-form-yale-2
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-yale-2
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Yale University Library (Offsite Library Collection (richiesta in qualsiasi biblioteca Yale))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Yale University Library (lib-yale)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verified_Against: <https://search.library.yale.edu/catalog> (accessed 2026-10-28)
+
+[RECORD 11.42]
+Entity_ID: item-fun-sydney
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-fun-sydney
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to fundamentals of architectural design - copia University of Sydney Library (SciTech Library, General)
+Item_Of: The Fast Guide to the Fundamentals of Architectural Design (inst-fundamentals-en)
+Held_By: University of Sydney Library (lib-sydney)
+Shelf_Mark: 729 251
+Verification_Status: verified-primary
+Verified_Against: <https://sydney.primo.exlibrisgroup.com/discovery/search?vid=61USYD_INST:sydney&lang=en&query=isbn,contains,9789063696856> (accessed 2026-10-28)
+
+[RECORD 11.43]
+Entity_ID: item-fun-umn
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-fun-umn
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to fundamentals of architectural design - copia University of Minnesota, Twin Cities (T. C. Wilson Library, General Collection)
+Item_Of: The Fast Guide to the Fundamentals of Architectural Design (inst-fundamentals-en)
+Held_By: University of Minnesota, Twin Cities (lib-umn)
+Shelf_Mark: NA2750 .R34 2023
+Verification_Status: verified-primary
+Verified_Against: <https://primo.lib.umn.edu/discovery/search?vid=01UMN_INST:TWINCITIES&institution=TWINCITIES&highlight=true&query=isbn,exact,9789063696856&indx=1&dym=true&search_scope=TwinCitiesCampus&lang=en> (accessed 2026-10-28)
+
+[RECORD 11.44]
+Entity_ID: item-tw-cyut
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-tw-cyut
+Ontological_Type: bf:Item | schema:Thing
+Name: 建築造型速成指南 - copia Chaoyang University of Technology Library (Main Library, 6F Stack)
+Item_Of: 建築造型速成指南 (inst-form-zh-hant)
+Held_By: Chaoyang University of Technology Library (lib-cyut)
+Shelf_Mark: 921.026 5042 C681621
+Verification_Status: verified-primary
+Verified_Against: <https://cyut.on.worldcat.org/search?queryString=bn%3A9786269565818> (accessed 2026-10-28)
+
+[RECORD 11.45]
+Entity_ID: item-accessibility-michigan
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-accessibility-michigan
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia University of Michigan Library (Art Architecture & Engineering Main Collection, 3rd floor)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: University of Michigan Library (lib-michigan)
+Shelf_Mark: NA 2545 .P5 R34 2020
+Verification_Status: verified-primary
+Verification_Basis: author-supplied-document
+
+[RECORD 11.46]
+Entity_ID: item-accessibility-princeton
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-accessibility-princeton
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to accessibility design - copia Princeton University Library (ReCAP Remote Storage)
+Item_Of: The Fast Guide to Accessibility Design (inst-accessibility-en)
+Held_By: Princeton University Library (lib-princeton)
+Shelf_Mark: NA2545.P5 R34 2020
+Verification_Status: verified-primary
+Verification_Basis: author-supplied-document
+
+[RECORD 11.47]
+Entity_ID: item-form-princeton
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-princeton
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Princeton University Library (ReCAP Remote Storage)
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Princeton University Library (lib-princeton)
+Shelf_Mark: NA2760 .R34 2016
+Verification_Status: verified-primary
+Verification_Basis: author-supplied-document
+
+[RECORD 11.48]
+Entity_ID: item-form-princeton-2
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-princeton-2
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Princeton University Library (ReCAP Remote Storage (In Library Use Only))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Princeton University Library (lib-princeton)
+Shelf_Mark: NA2760 .R34 2016g
+Verification_Status: verified-primary
+Verification_Basis: author-supplied-document
+
+[RECORD 11.49]
+Entity_ID: item-form-stanford
+Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-stanford
+Ontological_Type: bf:Item | schema:Thing
+Name: The fast guide to architectural form - copia Stanford University Libraries (SAL3 (Off-campus collections))
+Item_Of: The Fast Guide to Architectural Form (inst-form-en)
+Held_By: Stanford University Libraries (lib-stanford)
+Shelf_Mark: NA2760 .R24 2016 T
+Verification_Status: verified-primary
+Verification_Basis: author-supplied-document
+
+[RECORD 11.50]
 Entity_ID: item-form-cca
 Entity_IRI: https://w3id.org/baires-raffaelli/id/item-form-cca
 Ontological_Type: bf:Item | schema:Thing
@@ -2412,7 +2874,7 @@ Verification_Status: verified-primary
 Verification_Basis: link-not-rechecked
 Verification_Note: A source link exists in the record but was not logged as checked in the last audit pass; recheck pending.
 
-[RECORD 11.11]
+[RECORD 11.51]
 Entity_ID: thesis-phd-item
 Entity_IRI: https://w3id.org/baires-raffaelli/id/thesis-phd-item
 Ontological_Type: bf:Item | schema:Thing
@@ -2573,6 +3035,8 @@ Entity_ID: biblioteche-sapienza
 Entity_IRI: https://w3id.org/baires-raffaelli/id/biblioteche-sapienza
 Ontological_Type: bf:Organization | schema:Library
 Name: Biblioteche dell'Università La Sapienza di Roma
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q209344> (accessed 2026-10-28)
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
 [RECORD 12.19]
@@ -2597,6 +3061,11 @@ Entity_ID: cca-montreal
 Entity_IRI: https://w3id.org/baires-raffaelli/id/cca-montreal
 Ontological_Type: bf:Organization | schema:Library
 Name: Canadian Centre for Architecture (CCA), Montréal
+Identifier: ISIL: CA-QMCCA
+Authority_URI: <http://www.wikidata.org/entity/Q57697917>
+Official_URL: <https://www.cca.qc.ca/en/34195/guide-to-the-library-collection>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q57697917> (accessed 2026-10-28)
 
 [RECORD 12.22]
 Entity_ID: central-glass
@@ -2624,18 +3093,27 @@ Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
 [RECORD 12.25]
+Entity_ID: columbia-libraries
+Entity_IRI: https://w3id.org/baires-raffaelli/id/columbia-libraries
+Ontological_Type: bf:Organization | schema:Library
+Name: Columbia University Libraries (New York)
+Identifier: OCLC registry ID: 4861
+Official_URL: <https://library.columbia.edu/>
+Verification_Status: verified-secondary
+
+[RECORD 12.26]
 Entity_ID: comune-albano
 Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-albano
 Ontological_Type: schema:GovernmentOrganization
 Name: Comune di Albano Laziale
 
-[RECORD 12.26]
+[RECORD 12.27]
 Entity_ID: comune-assisi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-assisi
 Ontological_Type: schema:GovernmentOrganization
 Name: Comune di Assisi
 
-[RECORD 12.27]
+[RECORD 12.28]
 Entity_ID: comune-bettona
 Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-bettona
 Ontological_Type: bf:Organization | schema:GovernmentOrganization
@@ -2645,25 +3123,36 @@ Location: Bettona (PG), Italy
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.28]
+[RECORD 12.29]
 Entity_ID: comune-castellaneta
 Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-castellaneta
 Ontological_Type: schema:GovernmentOrganization
 Name: Comune di Castellaneta
 
-[RECORD 12.29]
+[RECORD 12.30]
 Entity_ID: comune-santa-margherita
 Entity_IRI: https://w3id.org/baires-raffaelli/id/comune-santa-margherita
 Ontological_Type: schema:GovernmentOrganization
 Name: Comune di Santa Margherita Ligure
 
-[RECORD 12.30]
+[RECORD 12.31]
+Entity_ID: cud
+Entity_IRI: https://w3id.org/baires-raffaelli/id/cud
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Canadian University Dubai
+Authority_URI: <http://www.wikidata.org/entity/Q5030654>
+Official_URL: <http://www.cud.ac.ae/>
+
+[RECORD 12.32]
 Entity_ID: cud-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/cud-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Canadian University Dubai - Learning Resource Centre
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q5030654> (accessed 2026-10-28)
+Parent_Organization: Canadian University Dubai (cud)
 
-[RECORD 12.31]
+[RECORD 12.33]
 Entity_ID: dana-buntrock
 Entity_IRI: https://w3id.org/baires-raffaelli/id/dana-buntrock
 Ontological_Type: schema:Person
@@ -2672,7 +3161,7 @@ Description: Dana Buntrock: person in the Baires Raffaelli knowledge graph; auth
 Affiliation: University of California, Berkeley - College of Environmental Design
 Official_URL: <https://ced.berkeley.edu/people/dana-buntrock>
 
-[RECORD 12.32]
+[RECORD 12.34]
 Entity_ID: diap
 Entity_IRI: https://w3id.org/baires-raffaelli/id/diap
 Ontological_Type: bf:Organization | schema:Organization
@@ -2681,7 +3170,7 @@ Alternate_Name: DiAP
 Description: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; issuing institution of 'Semantica e tipologia della forma nell'architettura contemporanea : a…'.
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
-[RECORD 12.33]
+[RECORD 12.35]
 Entity_ID: dicea
 Entity_IRI: https://w3id.org/baires-raffaelli/id/dicea
 Ontological_Type: bf:Organization | schema:Organization
@@ -2690,14 +3179,14 @@ Alternate_Name: DICEA
 Description: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma: organisation in the Baires Raffaelli knowledge graph; producer of 'AVLA'.
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
-[RECORD 12.34]
+[RECORD 12.36]
 Entity_ID: edilportale
 Entity_IRI: https://w3id.org/baires-raffaelli/id/edilportale
 Ontological_Type: schema:Organization
 Name: Edilportale.com
 Description: Edilportale.com: organisation in the Baires Raffaelli knowledge graph; sponsor of 'International Design Competition LIVINGBOX: Modulo Abitativo del Futu…'.
 
-[RECORD 12.35]
+[RECORD 12.37]
 Entity_ID: elio-rava
 Entity_IRI: https://w3id.org/baires-raffaelli/id/elio-rava
 Ontological_Type: bf:Person | schema:Person
@@ -2705,28 +3194,28 @@ Name: Elio Ravà
 Description: Elio Ravà: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Concorso di Idee per la Riqualificazione dell'Area Demaniale Marittim…'; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'. Not Baires Raffaelli himself.
 Member_Of: BRRE architects (brre-architects)
 
-[RECORD 12.36]
+[RECORD 12.38]
 Entity_ID: evanthia-dova
 Entity_IRI: https://w3id.org/baires-raffaelli/id/evanthia-dova
 Ontological_Type: schema:Person
 Name: Evanthia Dova
 Description: Evanthia Dova: person in the Baires Raffaelli knowledge graph; author or co-author of 'Formal Strategies of Familiarization and de-Familiarization'. Not Baires Raffaelli himself.
 
-[RECORD 12.37]
+[RECORD 12.39]
 Entity_ID: facolta-architettura-sapienza
 Entity_IRI: https://w3id.org/baires-raffaelli/id/facolta-architettura-sapienza
 Ontological_Type: schema:EducationalOrganization
 Name: Facoltà di Architettura 'Ludovico Quaroni', Sapienza Università di Roma
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
-[RECORD 12.38]
+[RECORD 12.40]
 Entity_ID: facolta-ingegneria-sapienza
 Entity_IRI: https://w3id.org/baires-raffaelli/id/facolta-ingegneria-sapienza
 Ontological_Type: schema:EducationalOrganization
 Name: Facoltà di Ingegneria, Sapienza Università di Roma
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
-[RECORD 12.39]
+[RECORD 12.41]
 Entity_ID: francesca-buratta
 Entity_IRI: https://w3id.org/baires-raffaelli/id/francesca-buratta
 Ontological_Type: bf:Person | schema:Person
@@ -2734,7 +3223,7 @@ Name: Francesca Buratta
 Description: Francesca Buratta: person in the Baires Raffaelli knowledge graph; collaborator on 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself.
 Verification_Status: self-published
 
-[RECORD 12.40]
+[RECORD 12.42]
 Entity_ID: francesco-grispo
 Entity_IRI: https://w3id.org/baires-raffaelli/id/francesco-grispo
 Ontological_Type: bf:Person | schema:Person
@@ -2743,20 +3232,20 @@ Description: Francesco Grispo: person in the Baires Raffaelli knowledge graph; c
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.41]
+[RECORD 12.43]
 Entity_ID: francoangeli
 Entity_IRI: https://w3id.org/baires-raffaelli/id/francoangeli
 Ontological_Type: bf:Organization | schema:Organization
 Name: FrancoAngeli
 
-[RECORD 12.42]
+[RECORD 12.44]
 Entity_ID: gangemi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/gangemi
 Ontological_Type: bf:Organization | schema:Organization
 Name: Gangemi Editore
 Description: Gangemi Editore: organisation in the Baires Raffaelli knowledge graph; publisher of 'Strutture della mobilità. L'area della Stazione Tuscolana a Roma'.
 
-[RECORD 12.43]
+[RECORD 12.45]
 Entity_ID: gerardo-filocamo
 Entity_IRI: https://w3id.org/baires-raffaelli/id/gerardo-filocamo
 Ontological_Type: bf:Person | schema:Person
@@ -2764,14 +3253,14 @@ Name: Gerardo Filocamo
 Description: Gerardo Filocamo: person in the Baires Raffaelli knowledge graph; collaborator on the 2007 small railway stations competition entry (Baires Raffaelli, lead designer). Not Baires Raffaelli himself.
 Verification_Status: self-published
 
-[RECORD 12.44]
+[RECORD 12.46]
 Entity_ID: han-linfei
 Entity_IRI: https://w3id.org/baires-raffaelli/id/han-linfei
 Ontological_Type: schema:Person
 Name: 韩林飞
 Alternate_Name: Han Linfei
 
-[RECORD 12.45]
+[RECORD 12.47]
 Entity_ID: housing-lab
 Entity_IRI: https://w3id.org/baires-raffaelli/id/housing-lab
 Ontological_Type: bf:Organization | schema:ResearchOrganization
@@ -2781,26 +3270,37 @@ Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 Parent_Organization: Dipartimento di Architettura e Progetto (DiAP), Sapienza Università di Roma (diap)
 
-[RECORD 12.46]
+[RECORD 12.48]
+Entity_ID: hrbeu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/hrbeu
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Harbin Engineering University
+Authority_URI: <http://www.wikidata.org/entity/Q23102>
+Official_URL: <http://www.hrbeu.edu.cn>
+
+[RECORD 12.49]
 Entity_ID: hrbeu-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/hrbeu-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Harbin Engineering University (HEU) - Library
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q23102> (accessed 2026-10-28)
+Parent_Organization: Harbin Engineering University (hrbeu)
 
-[RECORD 12.47]
+[RECORD 12.50]
 Entity_ID: inu
 Entity_IRI: https://w3id.org/baires-raffaelli/id/inu
 Ontological_Type: bf:Organization | schema:Organization
 Name: Istituto Nazionale di Urbanistica (INU)
 
-[RECORD 12.48]
+[RECORD 12.51]
 Entity_ID: ivan-carbonelli
 Entity_IRI: https://w3id.org/baires-raffaelli/id/ivan-carbonelli
 Ontological_Type: schema:Person
 Name: Ivan Carbonelli
 Description: Ivan Carbonelli: person in the Baires Raffaelli knowledge graph; author or co-author of 'Progetto di Riqualificazione di Area Residenziale e Commerciale ubica…'. Not Baires Raffaelli himself.
 
-[RECORD 12.49]
+[RECORD 12.52]
 Entity_ID: kappazeta
 Entity_IRI: https://w3id.org/baires-raffaelli/id/kappazeta
 Ontological_Type: bf:Organization | schema:Organization
@@ -2808,7 +3308,7 @@ Name: Kappazeta S.p.A.
 Description: Kappazeta S.p.A.: organisation in the Baires Raffaelli knowledge graph; partner on 'Pump It Up House' (2007).
 Verification_Status: self-published
 
-[RECORD 12.50]
+[RECORD 12.53]
 Entity_ID: kasra-publishing
 Entity_IRI: https://w3id.org/baires-raffaelli/id/kasra-publishing
 Ontological_Type: bf:Organization | schema:Organization
@@ -2817,7 +3317,7 @@ Alternate_Name: انتشارات کسری
 Description: Kasra Publishing: organisation in the Baires Raffaelli knowledge graph; publisher of 'مبانی فرم'.
 Location: Mashhad, Iran
 
-[RECORD 12.51]
+[RECORD 12.54]
 Entity_ID: laura-rossi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/laura-rossi
 Ontological_Type: bf:Person | schema:Person
@@ -2826,15 +3326,295 @@ Description: Laura Rossi: person in the Baires Raffaelli knowledge graph; collab
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.52]
+[RECORD 12.55]
 Entity_ID: li-xi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/li-xi
 Ontological_Type: bf:Person | schema:Person
 Name: 栗茜
-Alternate_Name: Li Xi
+Alternate_Name: Li Xi | Qian Li
 Description: 栗茜: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself.
 
-[RECORD 12.53]
+[RECORD 12.56]
+Entity_ID: lib-aic
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-aic
+Ontological_Type: bf:Organization | schema:Library
+Name: Art Institute of Chicago
+Identifier: OCLC registry ID: 784
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.57]
+Entity_ID: lib-berkeley
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-berkeley
+Ontological_Type: bf:Organization | schema:Library
+Name: UC Berkeley Libraries
+Identifier: OCLC registry ID: 5689
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.58]
+Entity_ID: lib-cardiff
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-cardiff
+Ontological_Type: bf:Organization | schema:Library
+Name: Cardiff University
+Identifier: OCLC registry ID: 61511
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.59]
+Entity_ID: lib-colorado
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-colorado
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Colorado Boulder
+Identifier: OCLC registry ID: 462
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.60]
+Entity_ID: lib-cyut
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-cyut
+Ontological_Type: bf:Organization | schema:Library
+Name: Chaoyang University of Technology Library
+Alternate_Name: 朝陽科技大學圖書館
+Identifier: OCLC registry ID: 269098
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.61]
+Entity_ID: lib-fit
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-fit
+Ontological_Type: bf:Organization | schema:Library
+Name: Fashion Institute of Technology Library
+Identifier: OCLC registry ID: 1914
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.62]
+Entity_ID: lib-getty
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-getty
+Ontological_Type: bf:Organization | schema:Library
+Name: Getty Research Institute
+Identifier: OCLC registry ID: 5616
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.63]
+Entity_ID: lib-hanze
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-hanze
+Ontological_Type: bf:Organization | schema:Library
+Name: Hanze University of Applied Sciences
+Identifier: OCLC registry ID: 57335
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.64]
+Entity_ID: lib-harvard
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-harvard
+Ontological_Type: bf:Organization | schema:Library
+Name: Harvard University Library
+Identifier: OCLC registry ID: 73876
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.65]
+Entity_ID: lib-kentucky
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-kentucky
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Kentucky Libraries
+Identifier: OCLC registry ID: 1150
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.66]
+Entity_ID: lib-mcad
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-mcad
+Ontological_Type: bf:Organization | schema:Library
+Name: Minneapolis College of Art & Design
+Identifier: OCLC registry ID: 1549
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.67]
+Entity_ID: lib-michigan
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-michigan
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Michigan Library
+Identifier: OCLC registry ID: 5293
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.68]
+Entity_ID: lib-ocad
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-ocad
+Ontological_Type: bf:Organization | schema:Library
+Name: OCAD University, Dorothy H. Hoover Library
+Identifier: OCLC registry ID: 44004
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.69]
+Entity_ID: lib-oklahoma
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-oklahoma
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Oklahoma
+Identifier: OCLC registry ID: 2390
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.70]
+Entity_ID: lib-oregon
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-oregon
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Oregon Libraries
+Identifier: OCLC registry ID: 2429
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.71]
+Entity_ID: lib-penn
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-penn
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Pennsylvania Libraries
+Identifier: OCLC registry ID: 2583
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.72]
+Entity_ID: lib-pratt
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-pratt
+Ontological_Type: bf:Organization | schema:Library
+Name: Pratt Institute Libraries
+Identifier: OCLC registry ID: 1993
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.73]
+Entity_ID: lib-princeton
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-princeton
+Ontological_Type: bf:Organization | schema:Library
+Name: Princeton University Library
+Identifier: OCLC registry ID: 1791
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.74]
+Entity_ID: lib-stanford
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-stanford
+Ontological_Type: bf:Organization | schema:Library
+Name: Stanford University Libraries
+Identifier: OCLC registry ID: 3227
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.75]
+Entity_ID: lib-sydney
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-sydney
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Sydney Library
+Identifier: OCLC registry ID: 54040
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.76]
+Entity_ID: lib-tib
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-tib
+Ontological_Type: bf:Organization | schema:Library
+Name: Technische Informationsbibliothek (TIB)
+Identifier: OCLC registry ID: 87413
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.77]
+Entity_ID: lib-ttu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-ttu
+Ontological_Type: bf:Organization | schema:Library
+Name: Texas Tech University Libraries
+Identifier: OCLC registry ID: 2942
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.78]
+Entity_ID: lib-tulane
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-tulane
+Ontological_Type: bf:Organization | schema:Library
+Name: Tulane University
+Identifier: OCLC registry ID: 5461
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.79]
+Entity_ID: lib-umn
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-umn
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Minnesota, Twin Cities
+Identifier: OCLC registry ID: 5360
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.80]
+Entity_ID: lib-union
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-union
+Ontological_Type: bf:Organization | schema:Library
+Name: Union College, Schaffer Library
+Identifier: OCLC registry ID: 2062
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.81]
+Entity_ID: lib-unlv
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-unlv
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Nevada, Las Vegas Libraries
+Identifier: OCLC registry ID: 1733
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.82]
+Entity_ID: lib-usi
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-usi
+Ontological_Type: bf:Organization | schema:Library
+Name: Università della Svizzera italiana
+Identifier: OCLC registry ID: 100017
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.83]
+Entity_ID: lib-utoronto
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-utoronto
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Toronto Architecture Library
+Identifier: OCLC registry ID: 103741
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.84]
+Entity_ID: lib-uw
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-uw
+Ontological_Type: bf:Organization | schema:Library
+Name: University of Washington Libraries
+Identifier: OCLC registry ID: 5725
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.85]
+Entity_ID: lib-vcu
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-vcu
+Ontological_Type: bf:Organization | schema:Library
+Name: Virginia Commonwealth University
+Identifier: OCLC registry ID: 3066
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.86]
+Entity_ID: lib-yale
+Entity_IRI: https://w3id.org/baires-raffaelli/id/lib-yale
+Ontological_Type: bf:Organization | schema:Library
+Name: Yale University Library
+Identifier: OCLC registry ID: 544
+Verification_Status: verified-secondary
+Verification_Basis: worldcat-list
+
+[RECORD 12.87]
 Entity_ID: long-sea
 Entity_IRI: https://w3id.org/baires-raffaelli/id/long-sea
 Ontological_Type: bf:Organization | schema:Organization
@@ -2844,7 +3624,7 @@ Description: 龍溪國際圖書: organisation in the Baires Raffaelli knowledge 
 Location: Taipei, Taiwan
 Official_URL: <http://www.longsea.com.tw/>
 
-[RECORD 12.54]
+[RECORD 12.88]
 Entity_ID: loretta-della-botte
 Entity_IRI: https://w3id.org/baires-raffaelli/id/loretta-della-botte
 Ontological_Type: bf:Person | schema:Person
@@ -2852,7 +3632,7 @@ Name: Loretta della Botte
 Description: Loretta della Botte: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and on the San Nicolo civic centre in Spoleto (both by Paolo Luccioni). Not Baires Raffaelli himself.
 Verification_Status: self-published
 
-[RECORD 12.55]
+[RECORD 12.89]
 Entity_ID: luciano-de-licio
 Entity_IRI: https://w3id.org/baires-raffaelli/id/luciano-de-licio
 Ontological_Type: bf:Person | schema:Person
@@ -2861,20 +3641,21 @@ Description: Luciano De Licio: person in the Baires Raffaelli knowledge graph; c
 Job_Title: Professor, Sapienza - coordinator of UdR AIS; doctoral advisor
 Authority_URI: <http://www.wikidata.org/entity/Q124855359>
 
-[RECORD 12.56]
+[RECORD 12.90]
 Entity_ID: luigi-prestinenza-puglisi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/luigi-prestinenza-puglisi
 Ontological_Type: bf:Person | schema:Person
 Name: Luigi Prestinenza Puglisi
 Description: Luigi Prestinenza Puglisi: contributor to 'The Fast Guide to Architectural Form' and speaker at the 6 October 2021 Perugia webinar, where the poster introduces him as president of the 'Ass. Italiana di Architettura e Critica'. Not Baires Raffaelli.
 
-[RECORD 12.57]
+[RECORD 12.91]
 Entity_ID: manzala-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/manzala-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Manzala Academy - Higher Institute of Engineering and Technology - Digital Library (Egypt)
+Verification_Status: verified-secondary
 
-[RECORD 12.58]
+[RECORD 12.92]
 Entity_ID: marco-ferrero
 Entity_IRI: https://w3id.org/baires-raffaelli/id/marco-ferrero
 Ontological_Type: bf:Person | schema:Person
@@ -2883,7 +3664,7 @@ Description: Marco Ferrero: person in the Baires Raffaelli knowledge graph; auth
 Job_Title: Professor of Architectural Technology, DICEA, Sapienza
 Affiliation: Dipartimento di Ingegneria Civile, Edile e Ambientale (DICEA), Sapienza Università di Roma (dicea)
 
-[RECORD 12.59]
+[RECORD 12.93]
 Entity_ID: marta-baldella
 Entity_IRI: https://w3id.org/baires-raffaelli/id/marta-baldella
 Ontological_Type: bf:Person | schema:Person
@@ -2891,13 +3672,13 @@ Name: Marta Baldella
 Description: Marta Baldella: person in the Baires Raffaelli knowledge graph; collaborator on 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself.
 Verification_Status: self-published
 
-[RECORD 12.60]
+[RECORD 12.94]
 Entity_ID: marta-calzolaretti
 Entity_IRI: https://w3id.org/baires-raffaelli/id/marta-calzolaretti
 Ontological_Type: schema:Person
 Name: Marta Calzolaretti
 
-[RECORD 12.61]
+[RECORD 12.95]
 Entity_ID: michela-de-licio
 Entity_IRI: https://w3id.org/baires-raffaelli/id/michela-de-licio
 Ontological_Type: bf:Person | schema:Person
@@ -2905,13 +3686,17 @@ Name: Michela De Licio
 Description: Michela De Licio: person in the Baires Raffaelli knowledge graph; author or co-author of '41st Central Glass International Architectural Design Competition: Co…'; author or co-author of 'Nordic Built Competition - entry (Tampere, Finland)'; member of BRRE architects. Not Baires Raffaelli himself.
 Member_Of: BRRE architects (brre-architects)
 
-[RECORD 12.62]
+[RECORD 12.96]
 Entity_ID: ncl-taiwan
 Entity_IRI: https://w3id.org/baires-raffaelli/id/ncl-taiwan
 Ontological_Type: bf:Organization | schema:Library
 Name: National Central Library (Taiwan)
+Authority_URI: <http://www.wikidata.org/entity/Q618340>
+Official_URL: <https://www.ncl.edu.tw/>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q618340> (accessed 2026-10-28)
 
-[RECORD 12.63]
+[RECORD 12.97]
 Entity_ID: oappc-perugia
 Entity_IRI: https://w3id.org/baires-raffaelli/id/oappc-perugia
 Ontological_Type: bf:Organization | schema:Organization
@@ -2922,13 +3707,13 @@ Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 Verification_Note: Named on the Perugia posters supplied by the author
 
-[RECORD 12.64]
+[RECORD 12.98]
 Entity_ID: oappc-roma
 Entity_IRI: https://w3id.org/baires-raffaelli/id/oappc-roma
 Ontological_Type: schema:Organization
 Name: OAPPC Roma e Provincia (Ordine degli Architetti PPC)
 
-[RECORD 12.65]
+[RECORD 12.99]
 Entity_ID: oikos-progetti
 Entity_IRI: https://w3id.org/baires-raffaelli/id/oikos-progetti
 Ontological_Type: bf:Organization | schema:Organization
@@ -2937,34 +3722,45 @@ Description: Oikos Progetti: organisation in the Baires Raffaelli knowledge grap
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.66]
+[RECORD 12.100]
+Entity_ID: ouc
+Entity_IRI: https://w3id.org/baires-raffaelli/id/ouc
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Ocean University of China
+Authority_URI: <http://www.wikidata.org/entity/Q1074015>
+Official_URL: <http://www.ouc.edu.cn/>
+
+[RECORD 12.101]
 Entity_ID: ouc-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/ouc-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Ocean University of China (OUC) - Library
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q1074015> (accessed 2026-10-28)
+Parent_Organization: Ocean University of China (ouc)
 
-[RECORD 12.67]
+[RECORD 12.102]
 Entity_ID: pancrazio-capoccia
 Entity_IRI: https://w3id.org/baires-raffaelli/id/pancrazio-capoccia
 Ontological_Type: schema:Person
 Name: Pancrazio Capoccia
 Description: Pancrazio Capoccia: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself.
 
-[RECORD 12.68]
+[RECORD 12.103]
 Entity_ID: paolo-luccioni
 Entity_IRI: https://w3id.org/baires-raffaelli/id/paolo-luccioni
 Ontological_Type: schema:Person
 Name: Paolo Luccioni
 Description: Paolo Luccioni: architect (Archstudio Luccioni s.r.l.); lead designer of the San Nicolo civic centre in Spoleto, on which Baires Raffaelli collaborated, and co-designer with Baires Raffaelli of 'Sports Hall, Passignano sul Trasimeno (PG)'. Not Baires Raffaelli himself.
 
-[RECORD 12.69]
+[RECORD 12.104]
 Entity_ID: prisma-bruxelles
 Entity_IRI: https://w3id.org/baires-raffaelli/id/prisma-bruxelles
 Ontological_Type: bf:Organization | schema:Organization
 Name: Prisme Editions (Prisma), Bruxelles
 Description: Prisme Editions (Prisma), Bruxelles: organisation in the Baires Raffaelli knowledge graph; publisher of 'Re-change'.
 
-[RECORD 12.70]
+[RECORD 12.105]
 Entity_ID: qiu-xili
 Entity_IRI: https://w3id.org/baires-raffaelli/id/qiu-xili
 Ontological_Type: bf:Person | schema:Person
@@ -2972,19 +3768,19 @@ Name: 邱喜麗
 Alternate_Name: Qiu Xili
 Description: 邱喜麗: person in the Baires Raffaelli knowledge graph; translator of '建築造型速成指南'. Not Baires Raffaelli himself.
 
-[RECORD 12.71]
+[RECORD 12.106]
 Entity_ID: roberto-grio
 Entity_IRI: https://w3id.org/baires-raffaelli/id/roberto-grio
 Ontological_Type: schema:Person
 Name: Roberto Grio
 
-[RECORD 12.72]
+[RECORD 12.107]
 Entity_ID: rossana-battistacci
 Entity_IRI: https://w3id.org/baires-raffaelli/id/rossana-battistacci
 Ontological_Type: schema:Person
 Name: Rossana Battistacci
 
-[RECORD 12.73]
+[RECORD 12.108]
 Entity_ID: saperi-co
 Entity_IRI: https://w3id.org/baires-raffaelli/id/saperi-co
 Ontological_Type: schema:Organization
@@ -2993,7 +3789,7 @@ Description: Centro di Ricerca Design Sapienza 'Saperi&Co': organisation in the 
 Official_URL: <https://saperico.web.uniroma1.it/>
 Parent_Organization: Sapienza Università di Roma (sapienza)
 
-[RECORD 12.74]
+[RECORD 12.109]
 Entity_ID: sapienza
 Entity_IRI: https://w3id.org/baires-raffaelli/id/sapienza
 Ontological_Type: bf:Organization | schema:CollegeOrUniversity
@@ -3001,35 +3797,46 @@ Name: Sapienza Università di Roma
 Identifier: ROR: 02be6w209
 Authority_URI: <http://www.wikidata.org/entity/Q209344> | <https://ror.org/02be6w209>
 
-[RECORD 12.75]
+[RECORD 12.110]
 Entity_ID: shinkenchiku-sha
 Entity_IRI: https://w3id.org/baires-raffaelli/id/shinkenchiku-sha
 Ontological_Type: schema:Organization
 Name: Shinkenchiku-sha Co., Ltd.
 Description: Shinkenchiku-sha Co., Ltd.: organisation in the Baires Raffaelli knowledge graph; sponsor of '41st Central Glass International Architectural Design Competition: Co…'.
 
-[RECORD 12.76]
+[RECORD 12.111]
 Entity_ID: silvia-antonini
 Entity_IRI: https://w3id.org/baires-raffaelli/id/silvia-antonini
 Ontological_Type: bf:Person | schema:Person
 Name: Silvia Antonini
-Description: Silvia Antonini: person in the Baires Raffaelli knowledge graph; translator of 'The Fast Guide to Architectural Form'; illustrator of 'The Fast Guide to Architectural Form'. Not Baires Raffaelli himself.
+Description: Silvia Antonini: person in the Baires Raffaelli knowledge graph; translator of 'The Fast Guide to Accessibility Design'; translator of 'The Fast Guide to Architectural Form'; translator of 'The Fast Guide to the Fundamentals of Architectural Design'. Not Baires Raffaelli himself.
 
-[RECORD 12.77]
+[RECORD 12.112]
 Entity_ID: stefano-sinibaldi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/stefano-sinibaldi
 Ontological_Type: schema:Person
 Name: Stefano Sinibaldi
 Description: Stefano Sinibaldi: person in the Baires Raffaelli knowledge graph; contributor to 'AVLA'. Not Baires Raffaelli himself.
 
-[RECORD 12.78]
+[RECORD 12.113]
+Entity_ID: stuba
+Entity_IRI: https://w3id.org/baires-raffaelli/id/stuba
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Slovak University of Technology in Bratislava
+Authority_URI: <http://www.wikidata.org/entity/Q1778355>
+Official_URL: <http://www.stuba.sk>
+
+[RECORD 12.114]
 Entity_ID: stuba-fad-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/stuba-fad-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Slovak University of Technology in Bratislava - Fakulta architektúry a dizajnu - Knižnica FAD
 Official_URL: <https://www.fad.stuba.sk/sk/fakulta/struktura-ludia/samostatne-a-ucelove-pracoviska/kniznica-fad-stu>
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q1778355> (accessed 2026-10-28)
+Parent_Organization: Slovak University of Technology in Bratislava (stuba)
 
-[RECORD 12.79]
+[RECORD 12.115]
 Entity_ID: studio-tix
 Entity_IRI: https://w3id.org/baires-raffaelli/id/studio-tix
 Ontological_Type: schema:Organization
@@ -3037,13 +3844,24 @@ Name: Studio TIX (Tix Studio Architetti Associati)
 Description: Studio TIX (Tix Studio Architetti Associati): organisation in the Baires Raffaelli knowledge graph; author or co-author of 'Riqualificazione Urbana e Paesaggistica di Piazza Mazzini ad Albano L…'.
 Official_URL: <https://www.studiotix.it/>
 
-[RECORD 12.80]
+[RECORD 12.116]
+Entity_ID: tcdc
+Entity_IRI: https://w3id.org/baires-raffaelli/id/tcdc
+Ontological_Type: bf:Organization | schema:Organization
+Name: Thailand Creative & Design Center (TCDC)
+Authority_URI: <http://www.wikidata.org/entity/Q6632289>
+Official_URL: <https://www.tcdc.or.th/>
+
+[RECORD 12.117]
 Entity_ID: tcdc-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/tcdc-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Thailand Creative & Design Center (TCDC) - Resource Center, Bangkok
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q6632289> (accessed 2026-10-28)
+Parent_Organization: Thailand Creative & Design Center (TCDC) (tcdc)
 
-[RECORD 12.81]
+[RECORD 12.118]
 Entity_ID: teng-yimeng
 Entity_IRI: https://w3id.org/baires-raffaelli/id/teng-yimeng
 Ontological_Type: bf:Person | schema:Person
@@ -3051,7 +3869,7 @@ Name: 滕艺梦
 Alternate_Name: Teng Yimeng
 Description: 滕艺梦: person in the Baires Raffaelli knowledge graph; translator of '建筑造型速成指南: 创意、操作和实例'. Not Baires Raffaelli himself.
 
-[RECORD 12.82]
+[RECORD 12.119]
 Entity_ID: tetra-engineering
 Entity_IRI: https://w3id.org/baires-raffaelli/id/tetra-engineering
 Ontological_Type: bf:Organization | schema:Organization
@@ -3060,20 +3878,31 @@ Description: Tetra Engineering: organisation in the Baires Raffaelli knowledge g
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.83]
+[RECORD 12.120]
 Entity_ID: tommaso-passalacqua
 Entity_IRI: https://w3id.org/baires-raffaelli/id/tommaso-passalacqua
 Ontological_Type: schema:Person
 Name: Tommaso Passalacqua
 Description: Tommaso Passalacqua: person in the Baires Raffaelli knowledge graph; author or co-author of 'Robin Hood Gardens Refurbishment and Regeneration Ideas Competition -…'; author or co-author of 'Pump It Up House'. Not Baires Raffaelli himself.
 
-[RECORD 12.84]
+[RECORD 12.121]
+Entity_ID: uap-bd
+Entity_IRI: https://w3id.org/baires-raffaelli/id/uap-bd
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: University of Asia Pacific (Bangladesh)
+Authority_URI: <http://www.wikidata.org/entity/Q7895090>
+Official_URL: <http://uap-bd.edu/index.html>
+
+[RECORD 12.122]
 Entity_ID: uap-bd-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/uap-bd-library
 Ontological_Type: bf:Organization | schema:Library
 Name: University of Asia Pacific (Bangladesh) - Central Library
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q7895090> (accessed 2026-10-28)
+Parent_Organization: University of Asia Pacific (Bangladesh) (uap-bd)
 
-[RECORD 12.85]
+[RECORD 12.123]
 Entity_ID: uauim-press
 Entity_IRI: https://w3id.org/baires-raffaelli/id/uauim-press
 Ontological_Type: bf:Organization | schema:Organization
@@ -3081,7 +3910,7 @@ Name: Editura Universitară 'Ion Mincu'
 Description: Editura Universitară 'Ion Mincu': organisation in the Baires Raffaelli knowledge graph; publisher of 'Scholar Architect 2022: Cercetarea și implementarea unor tendințe, in…'; publisher of 'Scholar Architect 2022 (English edition)'.
 Official_URL: <https://editura.uauim.ro/>
 
-[RECORD 12.86]
+[RECORD 12.124]
 Entity_ID: ulrich-ruefli
 Entity_IRI: https://w3id.org/baires-raffaelli/id/ulrich-ruefli
 Ontological_Type: bf:Person | schema:Person
@@ -3091,13 +3920,13 @@ Description: Ulrich Ruefli: person in the Baires Raffaelli knowledge graph; co-a
 Verification_Status: verified-secondary
 Verification_Basis: author-supplied-document
 
-[RECORD 12.87]
+[RECORD 12.125]
 Entity_ID: unistrasi
 Entity_IRI: https://w3id.org/baires-raffaelli/id/unistrasi
 Ontological_Type: schema:EducationalOrganization
 Name: Università per Stranieri di Siena (UniStraSi)
 
-[RECORD 12.88]
+[RECORD 12.126]
 Entity_ID: viviana-mastrotilli
 Entity_IRI: https://w3id.org/baires-raffaelli/id/viviana-mastrotilli
 Ontological_Type: bf:Person | schema:Person
@@ -3106,13 +3935,24 @@ Alternate_Name: Viviana Mastrolilli
 Description: Viviana Mastrotilli: person in the Baires Raffaelli knowledge graph; collaborator on the Passignano sports hall and (spelled 'Mastrolilli') on the San Nicolo civic centre in Spoleto. Not Baires Raffaelli himself.
 Verification_Status: self-published
 
-[RECORD 12.89]
+[RECORD 12.127]
+Entity_ID: xauat
+Entity_IRI: https://w3id.org/baires-raffaelli/id/xauat
+Ontological_Type: bf:Organization | schema:CollegeOrUniversity
+Name: Xi'an University of Architecture and Technology
+Authority_URI: <http://www.wikidata.org/entity/Q4418179>
+Official_URL: <http://www.xauat.edu.cn/zh-cn/index.php>
+
+[RECORD 12.128]
 Entity_ID: xauat-library
 Entity_IRI: https://w3id.org/baires-raffaelli/id/xauat-library
 Ontological_Type: bf:Organization | schema:Library
 Name: Xi'an University of Architecture and Technology (XAUAT) - Library
+Verification_Status: verified-secondary
+Verified_Against: <https://www.wikidata.org/wiki/Q4418179> (accessed 2026-10-28)
+Parent_Organization: Xi'an University of Architecture and Technology (xauat)
 
-[RECORD 12.90]
+[RECORD 12.129]
 Entity_ID: zampetti-costruzioni
 Entity_IRI: https://w3id.org/baires-raffaelli/id/zampetti-costruzioni
 Ontological_Type: bf:Organization | schema:Organization
@@ -3121,4 +3961,4 @@ Description: Zampetti Costruzioni s.r.l.: organisation in the Baires Raffaelli k
 Verification_Status: self-published
 
 ====================================================================================================
-END OF DATASET - 269 records
+END OF DATASET - 349 records
