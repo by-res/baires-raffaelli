@@ -1,5 +1,5 @@
 # Baires Raffaelli - bibliographic, academic and authority control dataset (core graph)
-# Version 3.0 - 2026-10-25 - Turtle / RDF 1.1 - Schema.org + BIBFRAME 2.0 (+ local vocabulary brv:)
+# Version 3.0.3 - 2026-10-28 - Turtle / RDF 1.1 - Schema.org + BIBFRAME 2.0 (+ local vocabulary brv:)
 # License: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
 # Editorial notes (brv:dataQualityNote) and source-record ids (brv:sourceRecord) are in the companion
 # file baires-raffaelli-provenance.ttl; load both files to get the full graph.

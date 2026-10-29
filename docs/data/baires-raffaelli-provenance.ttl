@@ -1,4 +1,4 @@
-# Baires Raffaelli dataset v3.0 - provenance layer
+# Baires Raffaelli dataset v3.0.3 - provenance layer
 # Editorial notes (brv:dataQualityNote, mostly in Italian) and ids of the records of the original working
 # dataset (brv:sourceRecord). Notes written about blank nodes (identifiers, roles) are attached to the
 # parent node and prefixed with the identifier in square brackets. Companion of baires-raffaelli.ttl. CC0 1.0.
